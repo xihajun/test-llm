@@ -7,7 +7,10 @@ on:
         description: "YouTube视频URL"
         required: true
         type: string
-
+        
+permissions:
+  contents: write  # Gives permission to push to the repository
+  
 jobs:
   download-and-process:
     runs-on: downloader
