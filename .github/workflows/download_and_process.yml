@@ -15,16 +15,18 @@ jobs:
   download-and-process:
     runs-on: downloader
 
-    env:
-      PYTHONPATH: /home/junfan/test/venv/lib/python3.10
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
 
     - name: Set Branch ID
       id: set_branch_id
-      run: echo "::set-output name=branch_id::$(echo ${GITHUB_SHA::8})"
+      run: |
+        # 从URL中提取视频ID
+        VIDEO_ID=$(echo "${{ github.event.inputs.url }}" | grep -oP "(?<=v=)[^&]*|(?<=be/)[^&]*")
+        # 生成带时间戳的branch id
+        TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+        echo "branch_id=${VIDEO_ID}_${TIMESTAMP}" >> $GITHUB_OUTPUT
 
     - name: Download MP3 from YouTube
       run: yt-dlp -x --audio-format mp3 -o "output.mp3" "${{ github.event.inputs.url }}"
