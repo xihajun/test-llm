@@ -56,22 +56,40 @@ jobs:
         source /home/junfan/test/venv/bin/activate
         export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
         python3 << EOF
-        import whisper_jax as whisper
-        import torch
-
-        with torch.device("cuda"):
-            pipeline = whisper.FlaxWhisperPipline("openai/whisper-large-v2")
-            text = pipeline("output.mp3")
-
-        with open('transcript.txt', 'w', encoding='utf-8') as f:
-            f.write(text)
-        print("Transcription completed and saved to transcript.txt")
+        from whisper_jax import FlaxWhisperPipline
+        import jax.numpy as jnp
+    
+        # Initialize the pipeline with bfloat16 precision and batching
+        pipeline = FlaxWhisperPipline("openai/whisper-large-v2", dtype=jnp.bfloat16, batch_size=16)
+    
+        # Transcribe the audio file with timestamps
+        result = pipeline("output.mp3", task="transcribe", return_timestamps=True)
+    
+        # Save the transcription with timestamps
+        with open('transcript.srt', 'w', encoding='utf-8') as f:
+            for i, segment in enumerate(result['chunks'], start=1):
+                start = segment['timestamp'][0]
+                end = segment['timestamp'][1]
+                text = segment['text'].strip()
+                
+                f.write(f"{i}\n")
+                f.write(f"{format_timestamp(start)} --> {format_timestamp(end)}\n")
+                f.write(f"{text}\n\n")
+    
+        print("Transcription completed and saved to transcript.srt")
+    
+        def format_timestamp(seconds):
+            hours = int(seconds // 3600)
+            minutes = int((seconds % 3600) // 60)
+            secs = int(seconds % 60)
+            millisecs = int((seconds % 1) * 1000)
+            return f"{hours:02d}:{minutes:02d}:{secs:02d},{millisecs:03d}"
         EOF
-        
+
     - name: Commit transcript
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add transcript.txt
+        git add .
         git commit -m 'Add transcript'
         git push origin "process-${{ needs.download-and-process.outputs.branch_id }}"
