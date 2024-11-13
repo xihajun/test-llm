@@ -54,6 +54,7 @@ jobs:
     - name: Process MP3 with Whisper JAX
       run: |
         source /home/junfan/test/venv/bin/activate
+        export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
         python3 << EOF
         import whisper_jax as whisper
         import torch
