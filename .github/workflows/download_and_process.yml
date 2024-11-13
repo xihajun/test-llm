@@ -56,8 +56,11 @@ jobs:
         source /home/junfan/test/venv/bin/activate
         python3 << EOF
         import whisper_jax as whisper
-        pipeline = whisper.FlaxWhisperPipline("openai/whisper-large-v2")
-        text = pipeline("output.mp3")
+
+        with torch.device("cuda"):
+            pipeline = whisper.FlaxWhisperPipline("openai/whisper-large-v2")
+            text = pipeline("output.mp3")
+
         with open('transcript.txt', 'w', encoding='utf-8') as f:
             f.write(text)
         print("Transcription completed and saved to transcript.txt")
