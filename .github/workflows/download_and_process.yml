@@ -47,8 +47,7 @@ jobs:
   process-mp3:
     runs-on: runner
     needs: download-and-process
-    env:
-      PYTHONPATH: /home/junfan/test/venv/lib/python3.10
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -59,7 +58,7 @@ jobs:
       run: |
         source /home/junfan/test/venv/bin/activate
 
-        python3 << EOF
+        python << EOF
         from whisper_jax import FlaxWhisperPipeline
         
         # Initialize the pipeline
