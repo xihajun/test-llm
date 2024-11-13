@@ -10,7 +10,8 @@ on:
 
 jobs:
   download-and-process:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    name: downloader
 
     env:
       PYTHONPATH: /home/junfan/test/venv/lib/python3.10
@@ -27,7 +28,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -U yt-dlp
+        pip install yt-dlp whisper-jax
 
     - name: Download MP3 from YouTube
       run: yt-dlp -x --audio-format mp3 -o "output.mp3" "https://www.youtube.com/watch?v=LG9G4aA28rU"
@@ -42,6 +43,7 @@ jobs:
 
   process-mp3:
     runs-on: self-hosted
+    name: runner
 
     env:
       PYTHONPATH: /home/junfan/test/venv/lib/python3.10
@@ -58,4 +60,3 @@ jobs:
         pipeline = FlaxWhisperPipline("openai/whisper-large-v2")
         text = pipeline("output.mp3")
         echo $text
-      shell: python
