@@ -27,10 +27,10 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install youtube-dl whisper-jax
+        pip install yt-dlp whisper-jax
 
     - name: Download MP3 from YouTube
-      run: youtube-dl -x --audio-format mp3 <YOUTUBE_URL>
+      run: yt-dlp -x --audio-format mp3 -o "output.mp3" "https://www.youtube.com/watch?v=LG9G4aA28rU"
 
     - name: Commit MP3 to repository
       run: |
@@ -66,5 +66,5 @@ jobs:
       run: |
         from whisper_jax import FlaxWhisperPipline
         pipeline = FlaxWhisperPipline("openai/whisper-large-v2")
-        text = pipeline("audio.mp3")
+        text = pipeline("output.mp3")
         echo $text

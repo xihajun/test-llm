@@ -39,20 +39,50 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install youtube-dl whisper-jax
+        pip install yt-dlp whisper-jax
 
     - name: Download MP3 from YouTube
-      run: youtube-dl -x --audio-format mp3 <YOUTUBE_URL>
+      run: yt-dlp -x --audio-format mp3 -o "output.mp3" "https://www.youtube.com/watch?v=LG9G4aA28rU"
+
+    - name: Commit MP3 to repository
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add *.mp3
+        git commit -m 'Add downloaded MP3 file'
+        git push
+
+  process-mp3:
+    runs-on: self-hosted
+
+    env:
+      PYTHONPATH: /home/junfan/test/venv/lib/python3.10
+
+    needs: download-and-process
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install whisper-jax
 
     - name: Process MP3 with Whisper JAX
       run: |
         from whisper_jax import FlaxWhisperPipline
         pipeline = FlaxWhisperPipline("openai/whisper-large-v2")
-        text = pipeline("audio.mp3")
+        text = pipeline("output.mp3")
         echo $text
 ```
 
-3. Replace `<YOUTUBE_URL>` with the actual YouTube URL you want to download the MP3 from.
+3. Replace the YouTube URL in the `Download MP3 from YouTube` step with the actual YouTube URL you want to download the MP3 from.
 
 4. Commit and push the changes to your repository.
 
@@ -60,7 +90,7 @@ jobs:
 
 This workflow requires the following dependencies:
 
-- `youtube-dl`: A command-line program to download videos from YouTube and other video sites.
+- `yt-dlp`: A command-line program to download videos from YouTube and other video sites.
 - `whisper-jax`: A package for processing audio files with the Whisper JAX pipeline.
 
 Make sure to install these dependencies in your Python environment.
