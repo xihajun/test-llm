@@ -23,6 +23,9 @@ jobs:
       id: set_branch_id
       run: echo "::set-output name=branch_id::$(echo ${GITHUB_SHA::8})"
 
+    - name: Download MP3 from YouTube
+      run: yt-dlp -x --audio-format mp3 -o "output.mp3" "${{ github.event.inputs.url }}"
+
     - name: Commit MP3 to repository
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -33,17 +36,6 @@ jobs:
         git commit -m 'Add downloaded MP3 file'
         git push origin process-${{ steps.set_branch_id.outputs.branch_id }}
 
-
-    - name: Download MP3 from YouTube
-      run: yt-dlp -x --audio-format mp3 -o "output.mp3" "${{ github.event.inputs.url }}"
-
-    - name: Commit MP3 to repository
-      run: |
-        git config --global user.name 'github-actions'
-        git config --global user.email 'github-actions@github.com'
-        git add output.mp3
-        git commit -m 'Add downloaded MP3 file'
-        git push origin process-${{ steps.set_branch_id.outputs.branch_id }}
 
   process-mp3:
     runs-on: runner
