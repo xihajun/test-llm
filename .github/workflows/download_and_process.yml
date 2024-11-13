@@ -1,49 +1,46 @@
 name: Download and Process MP3
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "YouTube视频URL"
+        required: true
+        type: string
 
 jobs:
   download-and-process:
-    runs-on: self-hosted
-    name: downloader
+    runs-on: downloader
 
     env:
       PYTHONPATH: /home/junfan/test/venv/lib/python3.10
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.10'
+    - name: Set Branch ID
+      id: set_branch_id
+      run: echo "::set-output name=branch_id::$(echo ${GITHUB_SHA::8})"
 
-    - name: Install dependencies
+    - name: Create branch
       run: |
-        python -m pip install --upgrade pip
-        pip install yt-dlp whisper-jax
+        git checkout -b process-${{ steps.set_branch_id.outputs.branch_id }}
+        git push origin process-${{ steps.set_branch_id.outputs.branch_id }}
 
     - name: Download MP3 from YouTube
-      run: yt-dlp -x --audio-format mp3 -o "output.mp3" "https://www.youtube.com/watch?v=LG9G4aA28rU"
+      run: yt-dlp -x --audio-format mp3 -o "output.mp3" "${{ github.event.inputs.url }}"
 
     - name: Commit MP3 to repository
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add *.mp3
+        git add output.mp3
         git commit -m 'Add downloaded MP3 file'
-        git push
+        git push origin process-${{ steps.set_branch_id.outputs.branch_id }}
 
   process-mp3:
-    runs-on: self-hosted
-    name: runner
+    runs-on: runner
 
     env:
       PYTHONPATH: /home/junfan/test/venv/lib/python3.10
@@ -53,6 +50,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        ref: process-${{ needs.download-and-process.outputs.branch_id }}
 
     - name: Process MP3 with Whisper JAX
       run: |
