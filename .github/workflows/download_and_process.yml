@@ -9,13 +9,13 @@ on:
         type: string
         
 permissions:
-  contents: write  # Gives permission to push to the repository
+  contents: write
   
 jobs:
   download-and-process:
     runs-on: downloader
     outputs:
-      branch_id: ${{ steps.set_branch_id.outputs.branch_id }}  # Add this line to share branch_id
+      branch_id: ${{ steps.set_branch_id.outputs.branch_id }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -23,9 +23,7 @@ jobs:
     - name: Set Branch ID
       id: set_branch_id
       run: |
-        # Extract video ID from URL
         VIDEO_ID=$(echo "${{ github.event.inputs.url }}" | grep -oP "(?<=v=)[^&]*|(?<=be/)[^&]*")
-        # Generate branch id with timestamp
         TIMESTAMP=$(date +%Y%m%d_%H%M%S)
         BRANCH_ID="${VIDEO_ID}_${TIMESTAMP}"
         echo "branch_id=${BRANCH_ID}" >> $GITHUB_OUTPUT
@@ -47,7 +45,6 @@ jobs:
   process-mp3:
     runs-on: runner
     needs: download-and-process
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -57,19 +54,13 @@ jobs:
     - name: Process MP3 with Whisper JAX
       run: |
         source /home/junfan/test/venv/bin/activate
-
-        python << EOF
-        from whisper_jax import FlaxWhisperPipeline
-        
-        # Initialize the pipeline
-        pipeline = FlaxWhisperPipeline("openai/whisper-large-v2")
-        
-        # Process the audio file
+        python3 << EOF
+        import whisper_jax as whisper
+        pipeline = whisper.FlaxWhisperPipline("openai/whisper-large-v2")
         text = pipeline("output.mp3")
-        
-        # Save the output to a file
         with open('transcript.txt', 'w', encoding='utf-8') as f:
             f.write(text)
+        print("Transcription completed and saved to transcript.txt")
         EOF
         
     - name: Commit transcript
