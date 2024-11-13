@@ -27,7 +27,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install yt-dlp whisper-jax
+        pip install -U yt-dlp
 
     - name: Download MP3 from YouTube
       run: yt-dlp -x --audio-format mp3 -o "output.mp3" "https://www.youtube.com/watch?v=LG9G4aA28rU"
