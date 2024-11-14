@@ -142,7 +142,7 @@ jobs:
           
           # Create JSON array and output to GitHub
           # Save the batch branches JSON to a file
-          BATCH_BRANCHES_JSON=$(printf '["%s"]' $(IFS=','; echo "${BATCH_BRANCHES[*]}"))
+          BATCH_BRANCHES_JSON=$(printf '%s' "$(IFS=','; echo "[\"${BATCH_BRANCHES[*]}\"]")")
           echo "$BATCH_BRANCHES_JSON" > batch_branches.json
           
       # Upload batch_branches.json as an artifact
