@@ -53,13 +53,13 @@ jobs:
 
       - name: Create README with Title and URL
         run: |
-          echo "# Transcription for ${{ steps.set_branch_id.outputs.video_title }}" > README.md
-          echo "## Video URL" >> README.md
-          echo "${{ matrix.url }}" >> README.md
-          echo " " >> README.md
-          echo "## Files" >> README.md
-          echo "- [Transcript (.txt)](./transcript.txt)" >> README.md
-          echo "- [Subtitle (.srt)](./transcript.srt)" >> README.md
+          echo "# Transcription for ${{ steps.set_branch_id.outputs.video_title }}" > README.MD
+          echo "## Video URL" >> README.MD
+          echo "${{ matrix.url }}" >> README.MD
+          echo " " >> README.MD
+          echo "## Files" >> README.MD
+          echo "- [Transcript (.txt)](./transcript.txt)" >> README.MD
+          echo "- [Subtitle (.srt)](./transcript.srt)" >> README.MD
 
       - name: Commit MP3 and README
         env:
@@ -68,6 +68,11 @@ jobs:
           git config --global user.name 'xihajun'
           git config --global user.email 'www.junfan.com@gmail.com'
           git checkout -b "process-${{ steps.set_branch_id.outputs.branch_id }}"
-          git add output.mp3 README.md
+          git add output.mp3 README.MD
           git commit -m 'Add downloaded MP3 file and README with title and URL'
           git push origin "process-${{ steps.set_branch_id.outputs.branch_id }}"
+          echo 1 > test
+          git add .
+          git commit -m 'test'
+          git push
+          
