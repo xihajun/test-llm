@@ -1,0 +1,62 @@
+name: Transcribe YouTube URLs from Issues
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+
+jobs:
+  extract-links:
+    runs-on: ubuntu-latest
+    outputs:
+      links: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract YouTube Links from Issue Body
+        id: extract_links
+        run: |
+          # Extract YouTube URLs from issue body and save to links.txt
+          echo "${{ github.event.issue.body }}" | grep -o 'https://www.youtube.com[^ ]*' > links.txt
+          echo "Extracted Links:"
+          cat links.txt
+          jq -R -s -c 'split("\n") | map(select(length > 0))' links.txt > links.json
+
+      - name: Set up output matrix
+        id: set-matrix
+        run: echo "matrix=$(cat links.json)" >> $GITHUB_OUTPUT
+
+  download-mp3:
+    runs-on: downloader  # Use the downloader for this job
+    needs: extract-links
+    strategy:
+      matrix:
+        url: ${{ fromJson(needs.extract-links.outputs.links) }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set Branch ID
+        id: set_branch_id
+        run: |
+          VIDEO_ID=$(echo "${{ matrix.url }}" | grep -oP "(?<=v=)[^&]*|(?<=be/)[^&]*")
+          TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+          BRANCH_ID="${VIDEO_ID}_${TIMESTAMP}"
+          echo "branch_id=${BRANCH_ID}" >> $GITHUB_OUTPUT
+
+      - name: Download MP3 from YouTube
+        run: yt-dlp -x --audio-format mp3 -o "output.mp3" "${{ matrix.url }}"
+
+      - name: Commit MP3 to repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git checkout -b "process-${{ steps.set_branch_id.outputs.branch_id }}"
+          git add output.mp3
+          git commit -m 'Add downloaded MP3 file'
+          git push origin "process-${{ steps.set_branch_id.outputs.branch_id }}"
