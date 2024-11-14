@@ -43,10 +43,9 @@ jobs:
         id: set_branch_id
         run: |
           VIDEO_ID=$(echo "${{ matrix.url }}" | grep -oP "(?<=v=)[^&]*|(?<=be/)[^&]*")
-          TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-          BRANCH_ID="${VIDEO_ID}_${TIMESTAMP}"
+          BRANCH_ID_CLEAN=$(echo "$VIDEO_ID" | tr -d '\r\n')  # Remove any unwanted characters
           TITLE=$(yt-dlp --get-title "${{ matrix.url }}")
-          echo "branch_id=${BRANCH_ID}" >> $GITHUB_OUTPUT
+          echo "branch_id=${BRANCH_ID_CLEAN}" >> $GITHUB_OUTPUT
           echo "video_title=${TITLE}" >> $GITHUB_OUTPUT
 
       - name: Download MP3 from YouTube
