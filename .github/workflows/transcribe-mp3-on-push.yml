@@ -111,28 +111,28 @@ jobs:
             BATCH_NUMBER=1
           fi
           echo "Processing batch number: $BATCH_NUMBER"
-
           TOTAL_BRANCHES=$(wc -l < branches_to_process.txt)
           TOTAL_BATCHES=$(( (TOTAL_BRANCHES + BATCH_SIZE - 1) / BATCH_SIZE ))
           echo "Total batches: $TOTAL_BATCHES"
-
           START_INDEX=$(( (BATCH_NUMBER - 1) * BATCH_SIZE + 1 ))
           END_INDEX=$(( BATCH_NUMBER * BATCH_SIZE ))
           if [ $END_INDEX -gt $TOTAL_BRANCHES ]; then
             END_INDEX=$TOTAL_BRANCHES
           fi
-
           echo "Processing branches from $START_INDEX to $END_INDEX"
-
-          # Extract the branches for this batch
-          sed -n "${START_INDEX},${END_INDEX}p" branches_to_process.txt > batch_branches.txt
-
-          cat batch_branches.txt
-
-          # Output variables
+          
+          # Extract the branches for this batch and convert to JSON format
+          BATCH_BRANCHES=()
+          while IFS= read -r branch; do
+            BATCH_BRANCHES+=("\"$branch\"")
+          done < <(sed -n "${START_INDEX},${END_INDEX}p" branches_to_process.txt)
+          
+          # Create JSON array and output to GitHub
+          BATCH_BRANCHES_JSON="[${BATCH_BRANCHES[*]}]"
+          echo "batch_branches=$BATCH_BRANCHES_JSON" >> $GITHUB_OUTPUT
           echo "total_batches=$TOTAL_BATCHES" >> $GITHUB_OUTPUT
-          BRANCHES_JSON=$(jq -R -s -c 'split("\n") | map(select(length > 0))' batch_branches.txt)
-          echo "batch_branches=$BRANCHES_JSON" >> $GITHUB_OUTPUT
+          
+          echo "Batch branches JSON: $BATCH_BRANCHES_JSON"
 
   transcribe-on-dispatch:
     if: github.event_name == 'workflow_dispatch' && needs.find-branches.outputs.batch_branches != '[]'
