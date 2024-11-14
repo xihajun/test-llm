@@ -15,23 +15,53 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history to check branches
 
-      - name: Extract YouTube Links from Issue Body
+      - name: Extract YouTube Links and Check Existing Branches
         id: extract_links
         run: |
-          # Extract YouTube URLs from issue body and save to links.txt
-          echo "${{ github.event.issue.body }}" | grep -o 'https://www.youtube.com[^ ]*' > links.txt
-          echo "Extracted Links:"
-          cat links.txt
+          # Extract YouTube URLs from issue body
+          echo "${{ github.event.issue.body }}" | grep -o 'https://www.youtube.com[^ ]*' > all_links.txt
+          
+          # Create array to store links that need processing
+          > links.txt
+          
+          while IFS= read -r url; do
+            if [ -n "$url" ]; then
+              # Extract video ID
+              VIDEO_ID=$(echo "$url" | grep -oP "(?<=v=)[^&]*|(?<=be/)[^&]*")
+              BRANCH_NAME="process-${VIDEO_ID}"
+              
+              # Check if branch exists and has output.mp3
+              if git ls-remote --heads origin "$BRANCH_NAME" | grep -q "$BRANCH_NAME"; then
+                echo "Branch $BRANCH_NAME already exists, checking for output.mp3..."
+                git fetch origin "$BRANCH_NAME"
+                if git ls-tree -r "origin/$BRANCH_NAME" | grep -q "output.mp3"; then
+                  echo "Skipping $url - MP3 already exists in branch $BRANCH_NAME"
+                  continue
+                fi
+              fi
+              
+              # If we get here, we need to process this URL
+              echo "$url" >> links.txt
+            fi
+          done < all_links.txt
+          
+          # Convert to JSON array for matrix
           jq -R -s -c 'split("\n") | map(select(length > 0))' links.txt > links.json
+          
+          echo "Links to process:"
+          cat links.txt
 
       - name: Set up output matrix
         id: set-matrix
         run: echo "matrix=$(cat links.json)" >> $GITHUB_OUTPUT
 
   download-mp3:
-    runs-on: downloader  # Use the downloader for this job
+    runs-on: downloader
     needs: extract-links
+    if: ${{ fromJson(needs.extract-links.outputs.links)[0] != null }}
     strategy:
       matrix:
         url: ${{ fromJson(needs.extract-links.outputs.links) }}
@@ -40,20 +70,46 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
 
       - name: Set Branch ID and Retrieve Title
         id: set_branch_id
         run: |
           VIDEO_ID=$(echo "${{ matrix.url }}" | grep -oP "(?<=v=)[^&]*|(?<=be/)[^&]*")
-          BRANCH_ID_CLEAN=$(echo "$VIDEO_ID" | tr -d '\r\n')  # Remove any unwanted characters
+          BRANCH_ID_CLEAN=$(echo "$VIDEO_ID" | tr -d '\r\n')
           TITLE=$(yt-dlp --get-title "${{ matrix.url }}")
           echo "branch_id=${BRANCH_ID_CLEAN}" >> $GITHUB_OUTPUT
           echo "video_title=${TITLE}" >> $GITHUB_OUTPUT
 
+      - name: Check and Setup Branch
+        run: |
+          BRANCH_NAME="process-${{ steps.set_branch_id.outputs.branch_id }}"
+          
+          # Try to checkout existing branch or create new one
+          if git fetch origin $BRANCH_NAME; then
+            git checkout $BRANCH_NAME
+            git pull origin $BRANCH_NAME
+          else
+            git checkout -b $BRANCH_NAME
+          fi
+
+      - name: Check if MP3 exists
+        id: check_mp3
+        continue-on-error: true
+        run: |
+          if [ -f "output.mp3" ]; then
+            echo "MP3 already exists, skipping download"
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Download MP3 from YouTube
+        if: steps.check_mp3.outputs.skip != 'true'
         run: yt-dlp -x --audio-format mp3 -o "output.mp3" "${{ matrix.url }}"
 
       - name: Create README with Title and URL
+        if: steps.check_mp3.outputs.skip != 'true'
         run: |
           echo "# Transcription for ${{ steps.set_branch_id.outputs.video_title }}" > README.MD
           echo "## Video URL" >> README.MD
@@ -64,18 +120,12 @@ jobs:
           echo "- [Subtitle (.srt)](./transcript.srt)" >> README.MD
 
       - name: Commit MP3 and README
+        if: steps.check_mp3.outputs.skip != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.name 'xihajun'
           git config --global user.email 'www.junfan.com@gmail.com'
-          git checkout -b "process-${{ steps.set_branch_id.outputs.branch_id }}"
           git add output.mp3 README.MD
           git commit -m 'Add downloaded MP3 file and README with title and URL'
           git push --set-upstream origin "process-${{ steps.set_branch_id.outputs.branch_id }}"
-          
-          echo 1 > test
-          git add .
-          git commit -m 'test'
-          git push
-          
