@@ -65,8 +65,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
+          git config --global user.name 'xihajun'
+          git config --global user.email 'www.junfan.com@gmail.com'
           git checkout -b "process-${{ steps.set_branch_id.outputs.branch_id }}"
           git add output.mp3 README.md
           git commit -m 'Add downloaded MP3 file and README with title and URL'
