@@ -271,10 +271,16 @@ jobs:
         with:
           name: branch-info
   
-      - name: Read and process each branch in batch_branches.json
+      - name: Process branches
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          if [ ! -f branch_info/branches_to_process.txt ] || [ ! -s branch_info/branches_to_process.txt ]; then
+            echo "No branches need processing"
+            exit 0
+          fi
+          
+          cp .github/workflows/convert2txt.py .
           while IFS= read -r branch; do
             echo "Processing branch $branch"
 
