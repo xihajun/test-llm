@@ -269,7 +269,7 @@ jobs:
       - name: Download batch_branches.json artifact
         uses: actions/download-artifact@v3
         with:
-          name: batch_branches
+          name: branch-info
   
       - name: Read and process each branch in batch_branches.json
         env:
