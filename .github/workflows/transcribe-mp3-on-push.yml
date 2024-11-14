@@ -1,13 +1,7 @@
-name: Transcribe MP3 on Push
+name: Transcribe MP3 on Schedule
 
 on:
-  push:
-    branches:
-      - 'process-*'  # Trigger only on branches that start with "process-"
-  workflow_run:
-    workflows: ["Transcribe YouTube URLs from Issues"]
-    types:
-      - completed
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -18,48 +12,62 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref }}
-        
-      - name: Process MP3 with Whisper JAX
-        run: |
-          source /home/junfan/test/venv/bin/activate
-          export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
-          python3 << EOF
-          from transformers import pipeline
-          asr_pipeline = pipeline("automatic-speech-recognition", model="openai/whisper-base", device=0)
-          result = asr_pipeline("output.mp3", return_timestamps=True)
 
-          def format_timestamp(seconds):
-              hours = int(seconds // 3600)
-              minutes = int((seconds % 3600) // 60)
-              seconds = seconds % 60
-              milliseconds = int((seconds - int(seconds)) * 1000)
-              return f"{hours:02}:{minutes:02}:{int(seconds):02},{milliseconds:03}"
-
-          with open('transcript.srt', 'w', encoding='utf-8') as f:
-              for i, segment in enumerate(result['chunks'], start=1):
-                  start = segment['timestamp'][0]
-                  end = segment['timestamp'][1]
-                  text = segment['text'].strip()
-                  f.write(f"{i}\n{format_timestamp(start)} --> {format_timestamp(end)}\n{text}\n\n")
-          # Generate the .txt file in the requested format
-          with open('transcript.txt', 'w', encoding='utf-8') as f:
-              for segment in result['chunks']:
-                  start = segment['timestamp'][0]
-                  end = segment['timestamp'][1]
-                  text = segment['text'].strip()
-                  f.write(f"[{format_timestamp(start)} -> {format_timestamp(end)}] {text}\n")
-
-          print("Transcription completed and saved.")
-          EOF
-
-      - name: Commit Transcript
+      - name: List branches matching process-*
+        id: list_branches
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add transcript.srt transcript.txt
-          git commit -m 'Add transcription files'
-          git push origin ${{ github.ref }}
+          branches=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+                    "https://api.github.com/repos/${{ github.repository }}/branches" | 
+                    jq -r '.[] | select(.name | startswith("process-")) | .name')
+          echo "branches=${branches}" >> $GITHUB_ENV
+
+      - name: Transcribe each branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for branch in ${{ env.branches }}; do
+            echo "Processing branch: $branch"
+            git fetch origin $branch
+            git checkout $branch
+
+            # Transcription process
+            source /home/junfan/test/venv/bin/activate
+            export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+            python3 << EOF
+            from transformers import pipeline
+            asr_pipeline = pipeline("automatic-speech-recognition", model="openai/whisper-base", device=0)
+            result = asr_pipeline("output.mp3", return_timestamps=True)
+
+            def format_timestamp(seconds):
+                hours = int(seconds // 3600)
+                minutes = int((seconds % 3600) // 60)
+                seconds = seconds % 60
+                milliseconds = int((seconds - int(seconds)) * 1000)
+                return f"{hours:02}:{minutes:02}:{int(seconds):02},{milliseconds:03}"
+
+            with open('transcript.srt', 'w', encoding='utf-8') as f:
+                for i, segment in enumerate(result['chunks'], start=1):
+                    start = segment['timestamp'][0]
+                    end = segment['timestamp'][1]
+                    text = segment['text'].strip()
+                    f.write(f"{i}\n{format_timestamp(start)} --> {format_timestamp(end)}\n{text}\n\n")
+            
+            with open('transcript.txt', 'w', encoding='utf-8') as f:
+                for segment in result['chunks']:
+                    start = segment['timestamp'][0]
+                    end = segment['timestamp'][1]
+                    text = segment['text'].strip()
+                    f.write(f"[{format_timestamp(start)} -> {format_timestamp(end)}] {text}\n")
+
+            print("Transcription completed and saved.")
+            EOF
+
+            # Commit and push transcription
+            git config --global user.name 'github-actions'
+            git config --global user.email 'github-actions@github.com'
+            git add transcript.srt transcript.txt
+            git commit -m "Add transcription files for $branch"
+            git push origin $branch
+          done
