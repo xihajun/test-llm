@@ -70,7 +70,8 @@ jobs:
           git checkout -b "process-${{ steps.set_branch_id.outputs.branch_id }}"
           git add output.mp3 README.MD
           git commit -m 'Add downloaded MP3 file and README with title and URL'
-          git push origin "process-${{ steps.set_branch_id.outputs.branch_id }}"
+          git push --set-upstream origin "process-${{ steps.set_branch_id.outputs.branch_id }}"
+          
           echo 1 > test
           git add .
           git commit -m 'test'
