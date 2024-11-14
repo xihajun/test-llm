@@ -5,6 +5,11 @@ on:
     branches:
       - 'process-*'
   workflow_dispatch:
+    inputs:
+      batch_number:
+        description: 'Batch number to process (starting from 1)'
+        required: false
+        default: '256'
 
 permissions:
   contents: write
@@ -68,7 +73,8 @@ jobs:
     if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     outputs:
-      branches: ${{ steps.set-branches.outputs.branches }}
+      total_batches: ${{ steps.calculate-batches.outputs.total_batches }}
+      batch_branches: ${{ steps.calculate-batches.outputs.batch_branches }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -76,10 +82,11 @@ jobs:
           fetch-depth: 0
 
       - name: List branches
-        id: set-branches
+        id: list-branches
         run: |
           git fetch --all
           BRANCHES=$(git ls-remote --heads origin "process-*" | awk '{print $2}' | sed 's|refs/heads/||')
+
           echo "Found branches:"
           echo "$BRANCHES"
 
@@ -94,16 +101,46 @@ jobs:
             fi
           done
 
-          echo "Branches to process: ${BRANCHES_TO_PROCESS[@]}"
-          echo "::set-output name=branches::$(printf '%s\n' "${BRANCHES_TO_PROCESS[@]}" | jq -R -s -c 'split("\n") | map(select(length > 0))')"
+          echo "Branches to process:"
+          printf '%s\n' "${BRANCHES_TO_PROCESS[@]}" > branches_to_process.txt
+
+      - name: Calculate Batches
+        id: calculate-batches
+        run: |
+          BATCH_SIZE=256
+          BATCH_NUMBER=${{ github.event.inputs.batch_number }}
+          if [ -z "$BATCH_NUMBER" ]; then
+            BATCH_NUMBER=1
+          fi
+          echo "Processing batch number: $BATCH_NUMBER"
+
+          TOTAL_BRANCHES=$(wc -l < branches_to_process.txt)
+          TOTAL_BATCHES=$(( (TOTAL_BRANCHES + BATCH_SIZE - 1) / BATCH_SIZE ))
+          echo "Total batches: $TOTAL_BATCHES"
+
+          START_INDEX=$(( (BATCH_NUMBER - 1) * BATCH_SIZE + 1 ))
+          END_INDEX=$(( BATCH_NUMBER * BATCH_SIZE ))
+          if [ $END_INDEX -gt $TOTAL_BRANCHES ]; then
+            END_INDEX=$TOTAL_BRANCHES
+          fi
+
+          echo "Processing branches from $START_INDEX to $END_INDEX"
+
+          # Extract the branches for this batch
+          sed -n "${START_INDEX},${END_INDEX}p" branches_to_process.txt > batch_branches.txt
+
+          # Output variables
+          echo "total_batches=$TOTAL_BATCHES" >> $GITHUB_OUTPUT
+          BRANCHES_JSON=$(jq -R -s -c 'split("\n") | map(select(length > 0))' batch_branches.txt)
+          echo "batch_branches=$BRANCHES_JSON" >> $GITHUB_OUTPUT
 
   transcribe-on-dispatch:
-    if: github.event_name == 'workflow_dispatch' && needs.find-branches.outputs.branches != '[]'
+    if: github.event_name == 'workflow_dispatch' && needs.find-branches.outputs.batch_branches != '[]'
     needs: [find-branches]
     runs-on: runner
     strategy:
       matrix:
-        branch: ${{ fromJson(needs.find-branches.outputs.branches) }}
+        branch: ${{ fromJson(needs.find-branches.outputs.batch_branches) }}
       fail-fast: false
     steps:
       - name: Checkout repository
