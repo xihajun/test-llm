@@ -163,26 +163,50 @@ jobs:
   
       - name: Read and process each branch in batch_branches.json
         env:
-            GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-            cp .github/workflows/convert2txt.py .
-            # Load the JSON file and parse each branch
-            for branch in $(jq -r '.[]' batch_branches.json); do
-              echo "Processing branch $branch"
+          if [ ! -f batch_branches.json ]; then
+            echo "No branches to process"
+            exit 0
+          fi
+          
+          cp .github/workflows/convert2txt.py .
+          # Load the JSON file and parse each branch
+          for branch in $(jq -r '.[]' batch_branches.json); do
+            echo "Processing branch $branch"
 
-              # Checkout the branch
-              git checkout $branch
-              git pull
-              # Run transcription commands here
-              source /home/junfan/test/venv/bin/activate
-              export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
-              python3 convert2txt.py
+            # Checkout the branch
+            git checkout $branch || {
+              echo "Failed to checkout branch $branch"
+              continue
+            }
+            git pull
 
+            # Check if output.mp3 exists
+            if [ ! -f output.mp3 ]; then
+              echo "No output.mp3 found in branch $branch"
+              continue
+            }
+
+            # Run transcription commands
+            source /home/junfan/test/venv/bin/activate
+            export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+            python3 convert2txt.py
+
+            # Check if transcription files were created
+            if [ -f transcript.srt ] && [ -f transcript.txt ]; then
               # Commit the transcription files
               git config --global user.name 'github-actions'
               git config --global user.email 'github-actions@github.com'
               git remote set-url origin https://${{ github.actor }}:${{ env.GH_TOKEN }}@github.com/${{ github.repository }}
               git add transcript.srt transcript.txt
-              git commit -m "Add transcription files for $branch"
-              git push origin $branch
-            done
+              if ! git diff --staged --quiet; then
+                git commit -m "Add transcription files for $branch"
+                git push origin $branch || echo "Failed to push to $branch"
+              else
+                echo "No changes to commit for $branch"
+              fi
+            else
+              echo "Transcription failed for branch $branch"
+            fi
+          done
