@@ -86,23 +86,21 @@ jobs:
         run: |
           git fetch --all
           BRANCHES=$(git ls-remote --heads origin "process-*" | awk '{print $2}' | sed 's|refs/heads/||')
-
           echo "Found branches:"
           echo "$BRANCHES"
-
-          BRANCHES_TO_PROCESS=()
+          # Clear or create the file to avoid appending to old data
+          > branches_to_process.txt
           for BRANCH in $BRANCHES; do
             echo "Checking branch $BRANCH"
             if ! git ls-tree -r --name-only origin/$BRANCH | grep -qE 'transcript\.txt|transcript\.srt'; then
               echo "Branch $BRANCH does not have transcript files."
-              BRANCHES_TO_PROCESS+=("$BRANCH")
+              echo "$BRANCH" >> branches_to_process.txt
             else
               echo "Branch $BRANCH already has transcript files."
             fi
           done
-
           echo "Branches to process:"
-          printf '%s\n' "${BRANCHES_TO_PROCESS[@]}" > branches_to_process.txt
+          cat branches_to_process.txt
 
       - name: Calculate Batches
         id: calculate-batches
