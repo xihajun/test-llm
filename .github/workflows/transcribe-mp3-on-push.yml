@@ -172,7 +172,7 @@ jobs:
 
               # Checkout the branch
               git checkout $branch
-
+              git pull
               # Run transcription commands here
               source /home/junfan/test/venv/bin/activate
               export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
