@@ -31,7 +31,7 @@ jobs:
           export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
           python3 << EOF
           from transformers import pipeline
-          asr_pipeline = pipeline("automatic-speech-recognition", model="openai/whisper-base", device=0)
+          asr_pipeline = pipeline("automatic-speech-recognition", model="openai/whisper-large-v2", device=0)
           result = asr_pipeline("output.mp3", return_timestamps=True)
 
           def format_timestamp(seconds):
