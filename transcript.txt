@@ -1,0 +1,47 @@
+[00:00:00,000 -> 00:00:07,240] looking for in a senior engineer is can they explain what they're doing to someone less
+[00:00:07,240 -> 00:00:15,539] technical? And are they willing to do that? Right? Are they eager or are they resistant?
+[00:00:15,539 -> 00:00:20,940] Do they want to participate in the leadership process? Because when I'm promoting, say,
+[00:00:20,940 -> 00:00:26,440] someone to principal engineer, I need that person to do two fundamental tasks for me
+[00:00:00,000 -> 00:00:06,000] that are new, I need them to be able to advise me on decisions I need to make.
+[00:00:06,000 -> 00:00:10,259] And I need to be able to trust their advice, which means they need to be right,
+[00:00:10,259 -> 00:00:15,199] that's technical ability, but they also need to be able to communicate it to me
+[00:00:15,199 -> 00:00:20,640] when I know less than they do about their domain. The second thing is
+[00:00:20,640 -> 00:00:25,839] principal engineers or staff engineers, very senior ICs, are often used as a
+[00:00:00,000 -> 00:00:04,139] as a leader's proxy or ambassador.
+[00:00:04,139 -> 00:00:07,940] So I wanna be able to send my principal engineer
+[00:00:07,940 -> 00:00:11,900] to the principal engineer for another division
+[00:00:11,900 -> 00:00:15,359] and have them represent what we're trying to do
+[00:00:15,359 -> 00:00:17,120] and influence that person.
+[00:00:18,019 -> 00:00:21,260] Because often if I go talk to my peer, another VP,
+[00:00:21,260 -> 00:00:23,839] that VP says, well, maybe we could do that.
+[00:00:23,839 -> 00:00:25,800] What does my PE say?
+[00:00:25,800 -> 00:00:27,620] What does my advisor say?
+[00:00:00,000 -> 00:00:02,600] And so I need to be able to send my advisor to their advisor.
+[00:00:02,600 -> 00:00:05,879] And picking senior engineers, it does matter
+[00:00:05,879 -> 00:00:08,800] that my advisor has the technical skill to be right,
+[00:00:09,679 -> 00:00:13,679] but it also matters that they have the social skill
+[00:00:13,679 -> 00:00:18,679] to go talk to the other engineer and convince them.
+[00:00:19,760 -> 00:00:23,120] And of course, sometimes it happens
+[00:00:23,120 -> 00:00:24,559] that when my principal engineer
+[00:00:24,559 -> 00:00:27,039] talks to their principal engineer,
+[00:00:27,039 -> 00:00:28,559] actually their principal engineer
+[00:00:00,000 -> 00:00:04,799] convinces my principal engineer to change his mind,
+[00:00:04,799 -> 00:00:07,339] which can be okay,
+[00:00:07,339 -> 00:00:10,199] but then I need someone who can come back to me and say,
+[00:00:11,199 -> 00:00:13,279] I talked to that group,
+[00:00:13,279 -> 00:00:16,079] actually the plan we had isn't the best, Ethan,
+[00:00:16,079 -> 00:00:18,760] we should change our plan to be this.
+[00:00:18,760 -> 00:00:20,719] I need someone who can carry that message
+[00:00:20,719 -> 00:00:23,440] and explain it to me in a way that I feel good about it.
+[00:00:23,440 -> 00:00:27,280] Right, that I feel like, oh, okay, we learned something
+[00:00:00,000 -> 00:00:02,839] and changing our plan is a good decision,
+[00:00:02,839 -> 00:00:06,500] as opposed to me thinking, for example, like, oh, maybe
+[00:00:06,500 -> 00:00:09,000] you just lost the negotiation.
+[00:00:09,000 -> 00:00:09,519] Right?
+[00:00:09,519 -> 00:00:11,160] Yeah.
+[00:00:11,160 -> 00:00:17,039] And so when I'm deciding who to promote,
+[00:00:17,039 -> 00:00:19,960] I'm looking for those skills.
+[00:00:19,960 -> 00:00:22,660] All of these skills have to do with not just building
+[00:00:22,660 -> 00:00:25,980] technology, but your ability to explain it, understand it
+[00:00:00,000 -> 00:00:05,000] and context and influence others.
+[00:00:05,799 -> 00:00:08,000] And there's no escaping this.
