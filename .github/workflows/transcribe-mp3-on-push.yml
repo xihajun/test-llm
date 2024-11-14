@@ -22,7 +22,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           ref: ${{ github.ref }}
 
       - name: Process MP3 with Whisper JAX
@@ -60,11 +60,11 @@ jobs:
 
       - name: Commit Transcript
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git remote set-url origin https://${{ github.actor }}:${{ env.PAT_TOKEN }}@github.com/${{ github.repository }}
+          git remote set-url origin https://${{ github.actor }}:${{ env.GH_TOKEN }}@github.com/${{ github.repository }}
           git add transcript.srt transcript.txt
           git commit -m 'Add transcription files'
           git push origin ${{ github.ref }}
@@ -146,7 +146,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           ref: ${{ matrix.branch }}
 
       - name: Process MP3 with Whisper JAX
@@ -184,11 +184,11 @@ jobs:
 
       - name: Commit Transcript
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git remote set-url origin https://${{ github.actor }}:${{ env.PAT_TOKEN }}@github.com/${{ github.repository }}
+          git remote set-url origin https://${{ github.actor }}:${{ env.GH_TOKEN }}@github.com/${{ github.repository }}
           git add transcript.srt transcript.txt
           git commit -m 'Add transcription files'
           git push origin ${{ matrix.branch }}
