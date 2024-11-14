@@ -136,7 +136,7 @@ jobs:
       
           # Extract the branches for this batch and convert to JSON array format
           BATCH_BRANCHES=$(sed -n "${START_INDEX},${END_INDEX}p" branches_to_process.txt | jq -R . | jq -s .)
-          echo "BATCH_BRANCHES_JSON=$BATCH_BRANCHES" > batch_branches.json
+          echo "$BATCH_BRANCHES" > batch_branches.json
 
           
       # Upload batch_branches.json as an artifact
