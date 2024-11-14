@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - 'process-*'  # Trigger only on branches that start with "process-"
+  workflow_run:
+    workflows: ["Transcribe YouTube URLs from Issues"]
+    types:
+      - completed
 
 permissions:
   contents: write
