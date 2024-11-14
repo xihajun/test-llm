@@ -101,7 +101,7 @@ jobs:
           done
           echo "Branches to process:"
           cat branches_to_process.txt
-
+      
       - name: Calculate Batches
         id: calculate-batches
         run: |
@@ -110,10 +110,10 @@ jobs:
           if [ -z "$BATCH_NUMBER" ]; then
             BATCH_NUMBER=1
           fi
-          
+      
           TOTAL_BRANCHES=$(wc -l < branches_to_process.txt)
           TOTAL_BATCHES=$(( (TOTAL_BRANCHES + BATCH_SIZE - 1) / BATCH_SIZE ))
-          
+      
           # Check if BATCH_NUMBER is within a valid range
           if [ "$BATCH_NUMBER" -gt "$TOTAL_BATCHES" ]; then
             echo "Error: BATCH_NUMBER $BATCH_NUMBER exceeds TOTAL_BATCHES $TOTAL_BATCHES."
@@ -123,27 +123,21 @@ jobs:
           echo "Processing batch number: $BATCH_NUMBER"
           echo "Total branches: $TOTAL_BRANCHES"
           echo "Total batches: $TOTAL_BATCHES"
-          
+      
           START_INDEX=$(( (BATCH_NUMBER - 1) * BATCH_SIZE + 1 ))
           END_INDEX=$(( BATCH_NUMBER * BATCH_SIZE ))
-          
+      
           # Adjust END_INDEX if it exceeds TOTAL_BRANCHES
           if [ $END_INDEX -gt $TOTAL_BRANCHES ]; then
             END_INDEX=$TOTAL_BRANCHES
           fi
-          
+      
           echo "Processing branches from $START_INDEX to $END_INDEX"
-          
-          # Extract the branches for this batch and convert to JSON format
-          BATCH_BRANCHES=()
-          while IFS= read -r branch; do
-            BATCH_BRANCHES+=("\"$branch\"")
-          done < <(sed -n "${START_INDEX},${END_INDEX}p" branches_to_process.txt)
-          
-          # Create JSON array and output to GitHub
-          # Save the batch branches JSON to a file
-          BATCH_BRANCHES_JSON=$(printf '%s' "$(IFS=','; echo "[\"${BATCH_BRANCHES[*]}\"]")")
-          echo "$BATCH_BRANCHES_JSON" > batch_branches.json
+      
+          # Extract the branches for this batch and convert to JSON array format
+          BATCH_BRANCHES=$(sed -n "${START_INDEX},${END_INDEX}p" branches_to_process.txt | jq -R . | jq -s .)
+          echo "BATCH_BRANCHES_JSON=$BATCH_BRANCHES" > batch_branches.json
+
           
       # Upload batch_branches.json as an artifact
       - name: Upload batch_branches.json artifact
