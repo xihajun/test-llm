@@ -37,13 +37,13 @@ jobs:
                   end = segment['timestamp'][1]
                   text = segment['text'].strip()
                   f.write(f"{i}\n{format_timestamp(start)} --> {format_timestamp(end)}\n{text}\n\n")
-
+          # Generate the .txt file in the requested format
           with open('transcript.txt', 'w', encoding='utf-8') as f:
               for segment in result['chunks']:
                   start = segment['timestamp'][0]
                   end = segment['timestamp'][1]
                   text = segment['text'].strip()
-                  f.write(f"{format_timestamp(start)} -> {format_timestamp(end)} {text}\n")
+                  f.write(f"[{format_timestamp(start)} -> {format_timestamp(end)}] {text}\n")
 
           print("Transcription completed and saved.")
           EOF
