@@ -39,24 +39,36 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set Branch ID
+      - name: Set Branch ID and Retrieve Title
         id: set_branch_id
         run: |
           VIDEO_ID=$(echo "${{ matrix.url }}" | grep -oP "(?<=v=)[^&]*|(?<=be/)[^&]*")
           TIMESTAMP=$(date +%Y%m%d_%H%M%S)
           BRANCH_ID="${VIDEO_ID}_${TIMESTAMP}"
+          TITLE=$(yt-dlp --get-title "${{ matrix.url }}")
           echo "branch_id=${BRANCH_ID}" >> $GITHUB_OUTPUT
+          echo "video_title=${TITLE}" >> $GITHUB_OUTPUT
 
       - name: Download MP3 from YouTube
         run: yt-dlp -x --audio-format mp3 -o "output.mp3" "${{ matrix.url }}"
 
-      - name: Commit MP3 to repository
+      - name: Create README with Title and URL
+        run: |
+          echo "# Transcription for ${{ steps.set_branch_id.outputs.video_title }}" > README.md
+          echo "## Video URL" >> README.md
+          echo "${{ matrix.url }}" >> README.md
+          echo " " >> README.md
+          echo "## Files" >> README.md
+          echo "- [Transcript (.txt)](./transcript.txt)" >> README.md
+          echo "- [Subtitle (.srt)](./transcript.srt)" >> README.md
+
+      - name: Commit MP3 and README
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git checkout -b "process-${{ steps.set_branch_id.outputs.branch_id }}"
-          git add output.mp3
-          git commit -m 'Add downloaded MP3 file'
+          git add output.mp3 README.md
+          git commit -m 'Add downloaded MP3 file and README with title and URL'
           git push origin "process-${{ steps.set_branch_id.outputs.branch_id }}"
