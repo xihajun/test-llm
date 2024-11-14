@@ -1,0 +1,1412 @@
+1
+00:00:00,000 --> 00:00:07,000
+Also it becomes extremely important like, okay, well, which team should I double down
+
+2
+00:00:07,000 --> 00:00:08,000
+on?
+
+3
+00:00:08,000 --> 00:00:10,000
+Or which team should I wind down on?
+
+4
+00:00:10,000 --> 00:00:12,000
+Or which project should I wind down on?
+
+5
+00:00:12,000 --> 00:00:13,000
+Welcome back.
+
+6
+00:00:13,000 --> 00:00:14,000
+Thank you.
+
+7
+00:00:14,000 --> 00:00:15,000
+It's good to have you.
+
+8
+00:00:15,000 --> 00:00:18,000
+It's good to see the company after a year.
+
+9
+00:00:18,000 --> 00:00:19,000
+Yeah.
+
+10
+00:00:19,000 --> 00:00:21,600
+I think the last time you were here, we were in the Kirkland office, right?
+
+11
+00:00:21,600 --> 00:00:22,600
+Yeah.
+
+12
+00:00:22,600 --> 00:00:23,600
+Yeah, that was a...
+
+13
+00:00:23,600 --> 00:00:24,600
+You had about 10 to 15 people.
+
+14
+00:00:24,600 --> 00:00:25,600
+Yeah.
+
+15
+00:00:25,600 --> 00:00:26,600
+Now we have over 45, 46 people.
+
+16
+00:00:26,600 --> 00:00:29,079
+It's grown quite a bit.
+
+17
+00:00:00,000 --> 00:00:02,600
+By the time you post the video, it'll probably be 50.
+
+18
+00:00:02,600 --> 00:00:05,919
+And how much will you grow by valuation and revenue?
+
+19
+00:00:05,919 --> 00:00:09,080
+I think, so the last time we were at Series A,
+
+20
+00:00:09,080 --> 00:00:12,439
+so we raised Series B, you probably saw,
+
+21
+00:00:12,439 --> 00:00:16,960
+we raised $43 million, and a pretty good valuation.
+
+22
+00:00:16,960 --> 00:00:18,719
+So we're pretty happy.
+
+23
+00:00:18,719 --> 00:00:20,760
+Do you have real customers now?
+
+24
+00:00:20,760 --> 00:00:22,320
+Yeah, we have lots of customers now,
+
+25
+00:00:22,320 --> 00:00:24,640
+so we're pretty, we're doing well
+
+26
+00:00:24,640 --> 00:00:26,440
+in terms of like customer attraction.
+
+27
+00:00:26,440 --> 00:00:28,960
+I know it's one of those things where early stage,
+
+28
+00:00:00,000 --> 00:00:04,040
+When you're building a company, first for five months you get, you're worried if anyone
+
+29
+00:00:04,040 --> 00:00:05,839
+will want to use your product.
+
+30
+00:00:05,839 --> 00:00:07,559
+Every founder's nightmare is that, right?
+
+31
+00:00:07,559 --> 00:00:11,599
+You build something that you believe in and then you wait for somebody to come and use
+
+32
+00:00:11,599 --> 00:00:12,599
+it.
+
+33
+00:00:12,599 --> 00:00:13,599
+Yeah.
+
+34
+00:00:13,599 --> 00:00:17,039
+And then when you actually have people coming in and using the product, the next stage is
+
+35
+00:00:17,039 --> 00:00:21,039
+like, are they going to pay for the service?
+
+36
+00:00:21,039 --> 00:00:25,280
+So getting paying customers is the next level of validation.
+
+37
+00:00:25,280 --> 00:00:28,120
+And so that was nerve wracking.
+
+38
+00:00:00,000 --> 00:00:04,120
+And then once you get one of those, then you write a contract, and then it becomes like,
+
+39
+00:00:04,120 --> 00:00:08,720
+okay, whatever we're building is actually still valuable for people to the point where
+
+40
+00:00:08,720 --> 00:00:14,359
+they're willing to pay a good amount of money for a contract, which is great.
+
+41
+00:00:14,359 --> 00:00:18,260
+And then the next step is like repeat that.
+
+42
+00:00:18,260 --> 00:00:23,039
+Make them feel like the tool is valuable, retain them, and then grow that, make it into
+
+43
+00:00:23,039 --> 00:00:24,940
+a repeatable motion, and so on.
+
+44
+00:00:00,000 --> 00:00:06,000
+So far we have been very fortunate to get a lot of customers that find value in what
+
+45
+00:00:06,000 --> 00:00:07,200
+we're building.
+
+46
+00:00:07,200 --> 00:00:09,839
+So when did all those steps happen?
+
+47
+00:00:09,839 --> 00:00:13,160
+Yeah, I think over time.
+
+48
+00:00:13,160 --> 00:00:16,800
+So I think our first...
+
+49
+00:00:16,800 --> 00:00:20,800
+Last interview, I think you were like two, three months into building the company?
+
+50
+00:00:20,800 --> 00:00:21,800
+Yeah.
+
+51
+00:00:21,800 --> 00:00:24,120
+And the first contract, when did it come?
+
+52
+00:00:24,120 --> 00:00:28,320
+So the first customer came four months in.
+
+53
+00:00:00,000 --> 00:00:07,080
+So that was, I think, a Take app, which was a small app that was built by an ex-Facebook
+
+54
+00:00:07,080 --> 00:00:10,699
+engineer in Singapore.
+
+55
+00:00:10,699 --> 00:00:14,439
+And then he launched it, and then we started seeing traffic.
+
+56
+00:00:14,439 --> 00:00:19,879
+So that was great, because first time ever we saw customers use our product and then
+
+57
+00:00:19,879 --> 00:00:26,280
+the end users using the product or feeling the effect of the product, which is great.
+
+58
+00:00:00,000 --> 00:00:05,320
+And then about six months in, we got the first major customer.
+
+59
+00:00:05,320 --> 00:00:08,960
+That was Headspace, and they were trying the product out.
+
+60
+00:00:08,960 --> 00:00:16,480
+There was also an ex-Facebook team that loved the product, and they missed the tools inside
+
+61
+00:00:16,480 --> 00:00:17,480
+Facebook, right?
+
+62
+00:00:17,480 --> 00:00:23,280
+So it was good to have that kind of validation, and then that subsequently ended up in a contract
+
+63
+00:00:23,280 --> 00:00:24,739
+and so on.
+
+64
+00:00:00,000 --> 00:00:08,560
+And subsequently, one of the good things is the ex-Facebook, ex-Uber, ex-Google, ex-Airbnb,
+
+65
+00:00:08,560 --> 00:00:13,560
+these folks have used tools like this before and they miss the tools.
+
+66
+00:00:13,560 --> 00:00:17,399
+And so when they see Statsync, it kind of resonates really well.
+
+67
+00:00:17,399 --> 00:00:22,600
+And I feel like it's not only do they miss the infrastructure, missing the tool, they
+
+68
+00:00:22,600 --> 00:00:26,879
+also have conviction of what the tool can help them achieve.
+
+69
+00:00:26,879 --> 00:00:27,879
+Yeah.
+
+70
+00:00:00,000 --> 00:00:08,519
+And that is important though, because having an intuitive feeling for how profound these
+
+71
+00:00:08,519 --> 00:00:15,119
+tools can have an impact on your product culture, product shipping culture, the velocity with
+
+72
+00:00:15,119 --> 00:00:20,000
+which you ship, even to the element of engineering happiness.
+
+73
+00:00:20,000 --> 00:00:26,519
+Because instead of debating product features on the merits of your debate, you actually
+
+74
+00:00:26,519 --> 00:00:29,079
+are able to test it out.
+
+75
+00:00:00,000 --> 00:00:04,559
+Everyone can have ideas, everyone can have autonomy to test something out in production
+
+76
+00:00:04,559 --> 00:00:07,839
+and then if the impact is there, then it stays.
+
+77
+00:00:07,839 --> 00:00:12,480
+If the impact is not there, you wind it down and then you move on.
+
+78
+00:00:12,480 --> 00:00:16,719
+It's such a powerful way of running or building software.
+
+79
+00:00:16,719 --> 00:00:18,760
+And the cultural impact doesn't stop with that.
+
+80
+00:00:18,760 --> 00:00:20,879
+I think it continues on.
+
+81
+00:00:20,879 --> 00:00:27,760
+I remember when I used to set up goals, and the goals for the end of the half used to
+
+82
+00:00:27,760 --> 00:00:29,879
+be like shipping goals.
+
+83
+00:00:00,000 --> 00:00:03,439
+Oh, by the end of this half, I'm going to ship these features.
+
+84
+00:00:03,439 --> 00:00:06,759
+And then I remember at Facebook, we never talked about shipping things.
+
+85
+00:00:06,759 --> 00:00:09,439
+It's always about what impact did it have?
+
+86
+00:00:09,439 --> 00:00:11,880
+Did it actually meaningfully...
+
+87
+00:00:11,880 --> 00:00:15,679
+If you ship garbage, then you just do garbage work.
+
+88
+00:00:15,679 --> 00:00:16,679
+It doesn't matter, right?
+
+89
+00:00:16,679 --> 00:00:21,800
+So I think it's important to like, okay, did we add value to our users, to the customers,
+
+90
+00:00:21,800 --> 00:00:25,300
+and how can we quantify that becomes important.
+
+91
+00:00:00,000 --> 00:00:05,040
+I remember seeing this number in the Trustworthy Online Control experiment.
+
+92
+00:00:05,040 --> 00:00:11,000
+90% of business ideas are either negative or insignificant.
+
+93
+00:00:11,000 --> 00:00:16,000
+I think we saw very similar numbers at Facebook too.
+
+94
+00:00:16,000 --> 00:00:23,320
+I feel like unless you're really good in product sense, I think there should be a level of
+
+95
+00:00:23,320 --> 00:00:25,640
+humility to have.
+
+96
+00:00:00,000 --> 00:00:03,520
+Maybe we don't know everything that we don't know about how customers are going to use
+
+97
+00:00:03,520 --> 00:00:05,240
+our product.
+
+98
+00:00:05,240 --> 00:00:10,119
+And I think a good way to think about it is like, you know, one third of the features
+
+99
+00:00:10,119 --> 00:00:14,279
+you believe you ship are going to be positive for your metrics.
+
+100
+00:00:14,279 --> 00:00:16,079
+One third are going to be neutral.
+
+101
+00:00:16,079 --> 00:00:19,160
+And then about a third is actually hurting.
+
+102
+00:00:19,160 --> 00:00:22,719
+But if you don't know which one is the third, then you don't know.
+
+103
+00:00:22,719 --> 00:00:23,719
+We don't.
+
+104
+00:00:23,719 --> 00:00:24,719
+We never know.
+
+105
+00:00:24,719 --> 00:00:25,719
+Right.
+
+106
+00:00:00,000 --> 00:00:09,199
+Another Twitter from Navelle, the famous Angelis founder, he developed a mental model about
+
+107
+00:00:09,199 --> 00:00:16,079
+the complexity of decisions and his sense is just humans are very bad at making complex
+
+108
+00:00:16,079 --> 00:00:17,079
+decisions.
+
+109
+00:00:17,079 --> 00:00:20,440
+Yeah, especially if there's an element of subjective, like, you know, look, I came up
+
+110
+00:00:20,440 --> 00:00:24,399
+with the idea and I feel so personally invested in the idea.
+
+111
+00:00:00,000 --> 00:00:07,139
+It becomes very hard without data to be able to actually make the right decision.
+
+112
+00:00:07,139 --> 00:00:12,279
+With the current economic climate, it also becomes extremely important.
+
+113
+00:00:12,279 --> 00:00:15,359
+Which team should I double down on?
+
+114
+00:00:15,359 --> 00:00:17,019
+Which team should I wind down?
+
+115
+00:00:17,019 --> 00:00:18,660
+Which project should I wind down?
+
+116
+00:00:18,660 --> 00:00:19,660
+It's important.
+
+117
+00:00:19,660 --> 00:00:23,120
+If you just go and wind down the projects that are actually beneficial to the product,
+
+118
+00:00:23,120 --> 00:00:24,519
+that's actually worse.
+
+119
+00:00:24,519 --> 00:00:28,480
+It never hurts to understand the impact of the effort that you're putting in.
+
+120
+00:00:00,000 --> 00:00:06,000
+I feel like A-B testing is the ultimate tool for achieving intellectual honesty.
+
+121
+00:00:06,000 --> 00:00:07,000
+I think so.
+
+122
+00:00:07,000 --> 00:00:13,519
+Now, one thing I would say is like, you know, A-B testing is the, I think, the state of
+
+123
+00:00:13,519 --> 00:00:17,960
+the art, the way to identify which ones work, which ones don't.
+
+124
+00:00:17,960 --> 00:00:23,500
+Now, but the problem with A-B testing is that it is a time-consuming process.
+
+125
+00:00:23,500 --> 00:00:27,660
+The process of A-B testing comes up with like, first you have to come up with a hypothesis,
+
+126
+00:00:00,000 --> 00:00:02,799
+And then you have to build a variance for validating
+
+127
+00:00:02,799 --> 00:00:03,879
+those hypotheses.
+
+128
+00:00:03,879 --> 00:00:05,559
+Then you have to ship those variants.
+
+129
+00:00:05,559 --> 00:00:08,560
+And then you have to allocate samples, isolate the experiment,
+
+130
+00:00:08,560 --> 00:00:10,919
+run the experiment for, I don't know, two, three weeks,
+
+131
+00:00:10,919 --> 00:00:13,119
+depending on how many samples you have.
+
+132
+00:00:13,119 --> 00:00:16,000
+And then you have to have your data science team go back
+
+133
+00:00:16,000 --> 00:00:19,359
+and analyze it and then verify it,
+
+134
+00:00:19,359 --> 00:00:22,960
+all to whether you validate or invalidate the hypothesis
+
+135
+00:00:22,960 --> 00:00:24,120
+that you originally had.
+
+136
+00:00:24,120 --> 00:00:25,839
+That entire process takes so long
+
+137
+00:00:25,839 --> 00:00:28,839
+that most people don't run experiments as many times
+
+138
+00:00:00,000 --> 00:00:04,879
+they should because then what they do is they save the big decisions for experiments and
+
+139
+00:00:04,879 --> 00:00:07,639
+the rest of them they rely on product intuition.
+
+140
+00:00:07,639 --> 00:00:08,960
+Or the convenient decisions.
+
+141
+00:00:08,960 --> 00:00:09,960
+Yeah, right.
+
+142
+00:00:09,960 --> 00:00:17,780
+And so I think it becomes important for tools to make it so simple.
+
+143
+00:00:17,780 --> 00:00:18,879
+It should be automatic.
+
+144
+00:00:18,879 --> 00:00:24,239
+The whole idea of every code feature release should automatically be subscribed into an
+
+145
+00:00:24,239 --> 00:00:25,239
+A-B test.
+
+146
+00:00:00,000 --> 00:00:02,540
+And the tools should take the work or the burden
+
+147
+00:00:02,540 --> 00:00:07,099
+of analyzing those and giving you back numbers
+
+148
+00:00:07,099 --> 00:00:09,939
+that you can then use to make product decisions.
+
+149
+00:00:09,939 --> 00:00:12,099
+Is that the biggest selling point for StatsIg?
+
+150
+00:00:12,099 --> 00:00:15,199
+Yeah, so the idea behind StatsIg is like,
+
+151
+00:00:15,199 --> 00:00:17,519
+we think that A-B testing is great,
+
+152
+00:00:17,519 --> 00:00:20,179
+but A-B testing is such a time-consuming
+
+153
+00:00:20,179 --> 00:00:23,320
+and manual process that most people don't run
+
+154
+00:00:23,320 --> 00:00:25,219
+as many A-B tests as they should.
+
+155
+00:00:25,219 --> 00:00:28,379
+And so it is important for a tool like StatsIg
+
+156
+00:00:00,000 --> 00:00:02,899
+to come in and say, look, you focus on building features
+
+157
+00:00:02,899 --> 00:00:04,599
+because that's what you're really good at.
+
+158
+00:00:04,599 --> 00:00:06,400
+That's what you should be spending time on.
+
+159
+00:00:06,400 --> 00:00:09,960
+Let the tools take over the idea of, OK,
+
+160
+00:00:09,960 --> 00:00:12,720
+any time we see a rollout.
+
+161
+00:00:12,720 --> 00:00:14,720
+And that generates an opportunity for us
+
+162
+00:00:14,720 --> 00:00:16,500
+to go in and understand, OK, here's
+
+163
+00:00:16,500 --> 00:00:20,239
+a split in an otherwise statistically random sample
+
+164
+00:00:20,239 --> 00:00:22,800
+that we can take the people that are exposed to the feature
+
+165
+00:00:22,800 --> 00:00:26,239
+as your treatment and the people that are not exposed
+
+166
+00:00:26,239 --> 00:00:28,359
+to the feature as control.
+
+167
+00:00:28,359 --> 00:00:29,600
+Let's compare.
+
+168
+00:00:00,000 --> 00:00:02,600
+Let's compare all the metrics, the hundreds of metrics,
+
+169
+00:00:02,600 --> 00:00:05,519
+and then see if there's any statistical differences
+
+170
+00:00:05,519 --> 00:00:06,719
+between those metrics.
+
+171
+00:00:06,719 --> 00:00:08,640
+And that is useful information for you, right?
+
+172
+00:00:08,640 --> 00:00:12,199
+So that gives you, because why would you build a feature
+
+173
+00:00:12,199 --> 00:00:13,039
+in the first place?
+
+174
+00:00:13,039 --> 00:00:14,580
+You would build a feature because you
+
+175
+00:00:14,580 --> 00:00:17,519
+believe that feature is good for your users, customers,
+
+176
+00:00:17,519 --> 00:00:19,160
+or business, or anything.
+
+177
+00:00:19,160 --> 00:00:20,960
+Something about that feature is good.
+
+178
+00:00:20,960 --> 00:00:22,320
+And that's your hypothesis.
+
+179
+00:00:22,320 --> 00:00:23,320
+Let's validate that.
+
+180
+00:00:23,320 --> 00:00:25,280
+So I have two questions.
+
+181
+00:00:25,280 --> 00:00:27,399
+I think both are linked to your market size
+
+182
+00:00:27,399 --> 00:00:29,679
+or your total addressable market.
+
+183
+00:00:00,000 --> 00:00:07,559
+The first question is, how many of your current customers are ex-Facebook, ex-Google, and
+
+184
+00:00:07,559 --> 00:00:11,679
+ex-Uber because they have all used the advertising platform?
+
+185
+00:00:11,679 --> 00:00:17,359
+But I found it is difficult for people that never used this kind of advertising platform
+
+186
+00:00:17,359 --> 00:00:20,120
+to realize the value behind it.
+
+187
+00:00:20,120 --> 00:00:27,039
+Yeah, so this is a really interesting question because whenever we talk to someone new, we
+
+188
+00:00:00,000 --> 00:00:02,399
+we can quickly tell if we're selling,
+
+189
+00:00:03,399 --> 00:00:05,839
+you know, in the realm of selling, right?
+
+190
+00:00:05,839 --> 00:00:09,560
+And are we selling a Tylenol or are we selling a vitamin?
+
+191
+00:00:09,560 --> 00:00:10,480
+I'll explain what that is.
+
+192
+00:00:10,480 --> 00:00:13,519
+Like, you know, Tylenol is a painkiller.
+
+193
+00:00:13,519 --> 00:00:15,880
+So imagine someone comes to you and says like,
+
+194
+00:00:15,880 --> 00:00:18,239
+look, I have a headache and I need a Tylenol.
+
+195
+00:00:18,239 --> 00:00:21,320
+It's easy for you to like, look, here's a Tylenol.
+
+196
+00:00:21,320 --> 00:00:24,960
+It solves for your pain and I can sell it to you.
+
+197
+00:00:24,960 --> 00:00:26,800
+Whereas a vitamin is a little bit different
+
+198
+00:00:26,800 --> 00:00:29,039
+because you have to first convince people
+
+199
+00:00:00,000 --> 00:00:02,419
+that it is important for you to have the vitamin.
+
+200
+00:00:02,419 --> 00:00:04,160
+But the moment you try a vitamin,
+
+201
+00:00:04,160 --> 00:00:06,280
+then you feel the benefit of it
+
+202
+00:00:06,280 --> 00:00:08,720
+and you're never gonna not want it.
+
+203
+00:00:08,720 --> 00:00:13,720
+And so when we talk to the ex-Facebook,
+
+204
+00:00:14,640 --> 00:00:17,359
+ex-Uber, ex-Airbnb, it is very clear.
+
+205
+00:00:17,359 --> 00:00:21,039
+Like they realize the value intuitively
+
+206
+00:00:21,039 --> 00:00:22,320
+of a tool like StatSig
+
+207
+00:00:22,320 --> 00:00:25,000
+and it becomes a much easier conversation.
+
+208
+00:00:25,000 --> 00:00:27,839
+And then when we talk to the other set of folks,
+
+209
+00:00:27,839 --> 00:00:29,960
+there is an element of like for us,
+
+210
+00:00:00,000 --> 00:00:02,980
+We have a lot of awareness to build.
+
+211
+00:00:02,980 --> 00:00:06,740
+We need to be out there, do some content,
+
+212
+00:00:06,740 --> 00:00:08,560
+build some right blog posts,
+
+213
+00:00:08,560 --> 00:00:13,560
+and go to conferences and talk to educate,
+
+214
+00:00:13,880 --> 00:00:16,620
+or to build awareness for a different way
+
+215
+00:00:16,620 --> 00:00:20,239
+of building, measuring, and then using the data
+
+216
+00:00:20,239 --> 00:00:22,559
+to inform your product decisions.
+
+217
+00:00:22,559 --> 00:00:24,600
+And that is a large market,
+
+218
+00:00:24,600 --> 00:00:29,059
+and that we are starting to slowly build up.
+
+219
+00:00:00,000 --> 00:00:08,160
+But for us so far, the success has come from the people that already understand the value
+
+220
+00:00:08,160 --> 00:00:09,160
+of the tool.
+
+221
+00:00:09,160 --> 00:00:14,000
+So, we're super early, we're only like 18 months in, so right now we're kind of like
+
+222
+00:00:14,000 --> 00:00:19,039
+in the, you know, we're happy just serving the Tylenol market.
+
+223
+00:00:19,039 --> 00:00:22,399
+Eventually we want to address the vitamin market.
+
+224
+00:00:22,399 --> 00:00:28,640
+Yeah, I think it's just a very hard problem to solve.
+
+225
+00:00:00,000 --> 00:00:02,799
+people to realize the value of Lightermaze.
+
+226
+00:00:02,799 --> 00:00:04,960
+Yeah, no it is.
+
+227
+00:00:04,960 --> 00:00:07,080
+And there are companies that have done that really, really well.
+
+228
+00:00:07,080 --> 00:00:10,800
+I think, you know, even just feature flagging, right?
+
+229
+00:00:10,800 --> 00:00:16,280
+Some of our competitors have done a pretty great job of convincing people that feature
+
+230
+00:00:16,280 --> 00:00:19,480
+flagging is a great way to build products.
+
+231
+00:00:19,480 --> 00:00:24,839
+It decouples code shipments, code releases from feature releases.
+
+232
+00:00:24,839 --> 00:00:27,079
+You don't have to tie those two things together.
+
+233
+00:00:27,079 --> 00:00:28,280
+That's a very powerful concept.
+
+234
+00:00:00,000 --> 00:00:05,059
+And so the people before us have done a pretty good job of bringing awareness.
+
+235
+00:00:05,059 --> 00:00:08,980
+And now it's on us to build the awareness to the next level, which is like, it's not
+
+236
+00:00:08,980 --> 00:00:11,980
+just enough if you just put features behind a feature flag.
+
+237
+00:00:11,980 --> 00:00:15,759
+It is important for you to understand how each feature is performing.
+
+238
+00:00:15,759 --> 00:00:20,179
+Is it beneficial for your customers, your users, your business?
+
+239
+00:00:20,179 --> 00:00:22,379
+You talk about the competitors.
+
+240
+00:00:22,379 --> 00:00:27,059
+What is the biggest difference between you and other like Optimize and I think there
+
+241
+00:00:27,059 --> 00:00:29,460
+are a couple, a split?
+
+242
+00:00:00,000 --> 00:00:08,560
+Yeah, so like I said, one of the things that I have observed was that whenever people talk
+
+243
+00:00:08,560 --> 00:00:13,119
+about product experimentation, the state of the art is A-B testing.
+
+244
+00:00:13,119 --> 00:00:15,240
+That's where it stops.
+
+245
+00:00:15,240 --> 00:00:21,440
+Whereas what we all learned inside Facebook is like A-B testing is great, but it favors
+
+246
+00:00:21,440 --> 00:00:24,519
+precision over decision.
+
+247
+00:00:00,000 --> 00:00:06,240
+And so what ends up happening is people obsess so much about the precision of the A-B test
+
+248
+00:00:06,240 --> 00:00:10,800
+and in practice what ends up happening is you need to be making a lot more product decisions.
+
+249
+00:00:10,800 --> 00:00:16,000
+And so where Statsit comes in is like, you know, automates the entirety of running an
+
+250
+00:00:16,000 --> 00:00:23,480
+A-B test so much so that we believe that our customers are now running ten times more experiments
+
+251
+00:00:23,480 --> 00:00:24,480
+than they were running before.
+
+252
+00:00:24,480 --> 00:00:25,480
+I see.
+
+253
+00:00:25,480 --> 00:00:27,679
+The efficiency of running experiments.
+
+254
+00:00:27,679 --> 00:00:28,679
+Simplicity even.
+
+255
+00:00:28,679 --> 00:00:29,679
+Yes.
+
+256
+00:00:00,000 --> 00:00:08,400
+So the biggest differentiators are how simple our tool is for you to just get those metrics right away.
+
+257
+00:00:08,400 --> 00:00:09,400
+Two lines of code, right?
+
+258
+00:00:09,400 --> 00:00:10,400
+Well, yeah.
+
+259
+00:00:10,400 --> 00:00:13,800
+And then everything else flows from there.
+
+260
+00:00:13,800 --> 00:00:21,600
+The second part is you don't need to occupy your data science team to constantly be analyzing and making product decisions.
+
+261
+00:00:21,600 --> 00:00:27,000
+The engineers, the product managers, and the designers can make these decisions using StatsIg.
+
+262
+00:00:00,000 --> 00:00:06,160
+And what it does is like, it's pretty important because it's hard enough to find good data scientists.
+
+263
+00:00:06,160 --> 00:00:08,560
+Good data scientists are...
+
+264
+00:00:08,560 --> 00:00:10,560
+See, there's not very many.
+
+265
+00:00:10,560 --> 00:00:11,919
+It's very difficult.
+
+266
+00:00:11,919 --> 00:00:17,120
+And then what happens is most of the companies that we talk to hire these great data scientists
+
+267
+00:00:17,120 --> 00:00:18,879
+and then what do they put them on?
+
+268
+00:00:18,879 --> 00:00:22,559
+They put them on, go analyze this A-B test.
+
+269
+00:00:22,559 --> 00:00:28,879
+And what ends up happening is these teams of data scientists are looking backwards
+
+270
+00:00:00,000 --> 00:00:07,879
+and analyzing and diagnosing and running queries on an experiment and then making like, okay,
+
+271
+00:00:07,879 --> 00:00:10,480
+here's a report and make your product decision.
+
+272
+00:00:10,480 --> 00:00:14,480
+Instead, those people, I mean, obviously, I don't think people enjoy doing that.
+
+273
+00:00:14,480 --> 00:00:15,960
+They should be looking forward.
+
+274
+00:00:15,960 --> 00:00:20,960
+They should be like analyzing, okay, what should the product be going forward into versus
+
+275
+00:00:20,960 --> 00:00:22,640
+like looking backwards.
+
+276
+00:00:22,640 --> 00:00:28,800
+And so, what StatsIQ does is also relieves these data scientists from the grunt work
+
+277
+00:00:00,000 --> 00:00:04,000
+and lets them do creative work, which is what everybody wants to do.
+
+278
+00:00:04,000 --> 00:00:07,000
+Yeah, as a data scientist, I really thank you for...
+
+279
+00:00:07,000 --> 00:00:09,000
+Yeah, yeah, I think it's important.
+
+280
+00:00:09,000 --> 00:00:11,000
+We see so many of our customers like,
+
+281
+00:00:11,000 --> 00:00:14,000
+you have such an amazing data science team, but what are they doing?
+
+282
+00:00:14,000 --> 00:00:16,000
+They're doing grunt work.
+
+283
+00:00:16,000 --> 00:00:18,000
+Yeah, I think this is a very good angle,
+
+284
+00:00:18,000 --> 00:00:21,000
+like looking backwards versus looking forwards.
+
+285
+00:00:21,000 --> 00:00:26,000
+I think all the great data scientists want to help shape the future of the company.
+
+286
+00:00:26,000 --> 00:00:29,000
+Shape the future, strategy, what the product should evolve into,
+
+287
+00:00:00,000 --> 00:00:02,000
+Not what the product was already done.
+
+288
+00:00:02,000 --> 00:00:04,000
+Better decisions.
+
+289
+00:00:04,000 --> 00:00:08,000
+Looking at the past is only taking information for the future.
+
+290
+00:00:08,000 --> 00:00:09,000
+Correct.
+
+291
+00:00:09,000 --> 00:00:13,000
+The second question is also about total addressable market.
+
+292
+00:00:13,000 --> 00:00:19,000
+We know at Facebook it's very easy to do A-B testing because of the traffic size.
+
+293
+00:00:19,000 --> 00:00:23,000
+You have billions of people using the app.
+
+294
+00:00:23,000 --> 00:00:27,000
+But it's not the case for most companies.
+
+295
+00:00:00,000 --> 00:00:07,480
+Yeah, this is a common myth. The myth is that you need to have large sample sizes like Facebook
+
+296
+00:00:07,480 --> 00:00:14,359
+in order to run experiments. And I think that's not true at all. See, if you're looking for
+
+297
+00:00:14,359 --> 00:00:21,780
+0.01% improvements in your MAU or DAU metric or your revenue metric, then you do need millions
+
+298
+00:00:21,780 --> 00:00:27,679
+of billions of samples. Obviously, you know this better than anyone else, which is in
+
+299
+00:00:00,000 --> 00:00:09,439
+In order to get sample size or the statistical power, you have two factors going.
+
+300
+00:00:09,439 --> 00:00:16,500
+There's the minimum detectable effect and then the baseline conversion rate as well
+
+301
+00:00:16,500 --> 00:00:18,280
+as the sample size.
+
+302
+00:00:18,280 --> 00:00:24,000
+It turns out that the minimum detectable effect has a much higher bearing on your statistical
+
+303
+00:00:24,000 --> 00:00:25,000
+power.
+
+304
+00:00:00,000 --> 00:00:06,360
+So when small companies with only a few thousands of samples, what they're looking for is 10%
+
+305
+00:00:06,360 --> 00:00:08,039
+wins, 20% wins.
+
+306
+00:00:08,039 --> 00:00:09,039
+They're not looking for.01%.
+
+307
+00:00:09,039 --> 00:00:13,699
+If you're a small company with only a thousand samples, if you're looking for.1%, I would
+
+308
+00:00:13,699 --> 00:00:15,599
+say you should stop.
+
+309
+00:00:15,599 --> 00:00:18,199
+You should go look for larger wins.
+
+310
+00:00:18,199 --> 00:00:22,120
+And so when you're looking for 10, 20% wins, you don't need millions of samples.
+
+311
+00:00:22,120 --> 00:00:23,260
+That's true.
+
+312
+00:00:23,260 --> 00:00:28,679
+And so we have to bust this myth because this comes up a lot of times.
+
+313
+00:00:00,000 --> 00:00:02,600
+39% of our customers are our B2B companies.
+
+314
+00:00:02,600 --> 00:00:04,320
+And B2B companies, they don't have,
+
+315
+00:00:04,320 --> 00:00:06,280
+when they generally talk to us, they're like,
+
+316
+00:00:06,280 --> 00:00:10,279
+oh, we don't have that many samples.
+
+317
+00:00:10,279 --> 00:00:11,720
+And how do we run experiments?
+
+318
+00:00:11,720 --> 00:00:13,359
+You can definitely run experiments.
+
+319
+00:00:13,359 --> 00:00:15,320
+And these are all still valid.
+
+320
+00:00:15,320 --> 00:00:17,960
+I would still say, look, you should still
+
+321
+00:00:17,960 --> 00:00:20,800
+put every feature behind the feature flag
+
+322
+00:00:20,800 --> 00:00:23,600
+and then still validate the impact of those features.
+
+323
+00:00:23,600 --> 00:00:25,600
+Because sometimes what happens is
+
+324
+00:00:25,600 --> 00:00:27,800
+you introduce a bug without really noticing.
+
+325
+00:00:00,000 --> 00:00:03,560
+And those bugs have this massive MDE.
+
+326
+00:00:03,560 --> 00:00:08,800
+And those MDEs will manifest itself as a change
+
+327
+00:00:08,800 --> 00:00:11,359
+with statistical significance instantly.
+
+328
+00:00:11,359 --> 00:00:13,519
+You don't have to wait for two weeks.
+
+329
+00:00:13,519 --> 00:00:15,279
+You'll get back that right away.
+
+330
+00:00:15,279 --> 00:00:17,879
+And you should be looking at that and capturing those,
+
+331
+00:00:17,879 --> 00:00:20,160
+and then fixing the bugs, and not
+
+332
+00:00:20,160 --> 00:00:23,760
+wait until your experiment is done to look at those.
+
+333
+00:00:23,760 --> 00:00:27,079
+So I generally say it would be beneficial
+
+334
+00:00:27,079 --> 00:00:29,280
+if the entire data science community comes together
+
+335
+00:00:00,000 --> 00:00:04,540
+It actually busts this myth that you need to have lots of samples.
+
+336
+00:00:04,540 --> 00:00:10,419
+I remember on Facebook I always tell the engineers, don't look at the funnel metrics, rather than
+
+337
+00:00:10,419 --> 00:00:11,419
+at MAGs.
+
+338
+00:00:11,419 --> 00:00:15,220
+At first, look at adoption at different layers.
+
+339
+00:00:15,220 --> 00:00:17,899
+And that often tells you more information.
+
+340
+00:00:17,899 --> 00:00:19,620
+Oh, absolutely.
+
+341
+00:00:19,620 --> 00:00:23,219
+That's another good technique where you look at the top of the funnel, and the correlating
+
+342
+00:00:00,000 --> 00:00:07,080
+metrics, things that have less inertia, things that can move right away.
+
+343
+00:00:07,080 --> 00:00:12,199
+It's also a pretty good way to pick the right metric for how you measure the success of
+
+344
+00:00:12,199 --> 00:00:13,939
+your own product.
+
+345
+00:00:13,939 --> 00:00:18,440
+Sometimes if you pick too deep of a funnel metric, say if you pick the bottom of the
+
+346
+00:00:18,440 --> 00:00:22,960
+funnel metric, it's very hard to move those metrics and you don't know if the work you're
+
+347
+00:00:22,960 --> 00:00:24,960
+doing is actually impacting.
+
+348
+00:00:24,960 --> 00:00:29,539
+Sometimes people pick like 30 day average metrics and then those metrics have inertia
+
+349
+00:00:00,000 --> 00:00:04,200
+then what happens is like, you know, whatever changes you're making don't immediately manifest.
+
+350
+00:00:04,200 --> 00:00:06,280
+You have to wait a long time for it to see.
+
+351
+00:00:06,839 --> 00:00:10,679
+So my general philosophy is like, you know, pick top of the funnel metrics,
+
+352
+00:00:11,119 --> 00:00:13,919
+generally the ones that are correlated to the ones that you want to move.
+
+353
+00:00:14,279 --> 00:00:16,440
+And if they're moving in the right direction, then that's a good sign.
+
