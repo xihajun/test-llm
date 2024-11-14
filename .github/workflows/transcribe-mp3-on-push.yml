@@ -110,15 +110,28 @@ jobs:
           if [ -z "$BATCH_NUMBER" ]; then
             BATCH_NUMBER=1
           fi
-          echo "Processing batch number: $BATCH_NUMBER"
+          
           TOTAL_BRANCHES=$(wc -l < branches_to_process.txt)
           TOTAL_BATCHES=$(( (TOTAL_BRANCHES + BATCH_SIZE - 1) / BATCH_SIZE ))
+          
+          # Check if BATCH_NUMBER is within a valid range
+          if [ "$BATCH_NUMBER" -gt "$TOTAL_BATCHES" ]; then
+            echo "Error: BATCH_NUMBER $BATCH_NUMBER exceeds TOTAL_BATCHES $TOTAL_BATCHES."
+            exit 1
+          fi
+      
+          echo "Processing batch number: $BATCH_NUMBER"
+          echo "Total branches: $TOTAL_BRANCHES"
           echo "Total batches: $TOTAL_BATCHES"
+          
           START_INDEX=$(( (BATCH_NUMBER - 1) * BATCH_SIZE + 1 ))
           END_INDEX=$(( BATCH_NUMBER * BATCH_SIZE ))
+          
+          # Adjust END_INDEX if it exceeds TOTAL_BRANCHES
           if [ $END_INDEX -gt $TOTAL_BRANCHES ]; then
             END_INDEX=$TOTAL_BRANCHES
           fi
+          
           echo "Processing branches from $START_INDEX to $END_INDEX"
           
           # Extract the branches for this batch and convert to JSON format
@@ -133,6 +146,7 @@ jobs:
           echo "total_batches=$TOTAL_BATCHES" >> $GITHUB_OUTPUT
           
           echo "Batch branches JSON: $BATCH_BRANCHES_JSON"
+
 
   transcribe-on-dispatch:
     if: github.event_name == 'workflow_dispatch' && needs.find-branches.outputs.batch_branches != '[]'
