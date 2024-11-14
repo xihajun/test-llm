@@ -141,7 +141,7 @@ jobs:
           done < <(sed -n "${START_INDEX},${END_INDEX}p" branches_to_process.txt)
           
           # Create JSON array and output to GitHub
-          BATCH_BRANCHES_JSON="[${BATCH_BRANCHES[*]}]"
+          BATCH_BRANCHES_JSON="[\"$(echo ${BATCH_BRANCHES[@]} | sed 's/ /","/g')\"]"
           echo "batch_branches=$BATCH_BRANCHES_JSON" >> $GITHUB_OUTPUT
           echo "total_batches=$TOTAL_BATCHES" >> $GITHUB_OUTPUT
           
