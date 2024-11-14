@@ -9,7 +9,7 @@ on:
       batch_number:
         description: 'Batch number to process (starting from 1)'
         required: false
-        default: '256'
+        default: '1'
 
 permissions:
   contents: write
@@ -141,7 +141,7 @@ jobs:
           done < <(sed -n "${START_INDEX},${END_INDEX}p" branches_to_process.txt)
           
           # Create JSON array and output to GitHub
-          BATCH_BRANCHES_JSON="[\"$(echo ${BATCH_BRANCHES[@]} | sed 's/ /","/g')\"]"
+          BATCH_BRANCHES_JSON=$(printf '["%s"]' "$(IFS=','; echo "${BATCH_BRANCHES[*]}")")
           echo "batch_branches=$BATCH_BRANCHES_JSON" >> $GITHUB_OUTPUT
           echo "total_batches=$TOTAL_BATCHES" >> $GITHUB_OUTPUT
           
