@@ -275,18 +275,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          if [ ! -f batch_branches.json ]; then
-            echo "No branches to process"
-            exit 0
-          fi
-          
-          cp .github/workflows/convert2txt.py .
-          # Load the JSON file and parse each branch
-          for branch in $(jq -r '.[]' batch_branches.json); do
+          while IFS= read -r branch; do
             echo "Processing branch $branch"
 
             # Checkout the branch
-            git checkout $branch || {
+            git checkout "$branch" || {
               echo "Failed to checkout branch $branch"
               continue
             }
@@ -296,7 +289,7 @@ jobs:
             if [ ! -f output.mp3 ]; then
               echo "No output.mp3 found in branch $branch"
               continue
-            }
+            fi
 
             # Run transcription commands
             source /home/junfan/test/venv/bin/activate
@@ -312,11 +305,11 @@ jobs:
               git add transcript.srt transcript.txt
               if ! git diff --staged --quiet; then
                 git commit -m "Add transcription files for $branch"
-                git push origin $branch || echo "Failed to push to $branch"
+                git push origin "$branch" || echo "Failed to push to $branch"
               else
                 echo "No changes to commit for $branch"
               fi
             else
               echo "Transcription failed for branch $branch"
             fi
-          done
+          done < branch_info/branches_to_process.txt
