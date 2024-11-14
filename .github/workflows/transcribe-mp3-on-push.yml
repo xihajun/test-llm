@@ -163,6 +163,8 @@ jobs:
           name: batch_branches
   
       - name: Read and process each branch in batch_branches.json
+        env:
+            GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           # Load the JSON file and parse each branch
           for branch in $(jq -r '.[]' batch_branches.json); do
