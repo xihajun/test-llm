@@ -165,6 +165,7 @@ jobs:
         env:
             GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+            cp .github/convert2txt.py .
             # Load the JSON file and parse each branch
             for branch in $(jq -r '.[]' batch_branches.json); do
               echo "Processing branch $branch"
