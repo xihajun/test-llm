@@ -1,0 +1,257 @@
+[00:00:00,000 -> 00:00:03,960] You are one of the most successful and popular Maven instructor.
+[00:00:03,960 -> 00:00:09,279] Your course is $900 and you have another executive course that is $2,500.
+[00:00:09,279 -> 00:00:12,279] So everything you share is actually highly valuable
+[00:00:12,279 -> 00:00:15,439] and probably people need to pay money to listen to this.
+[00:00:15,439 -> 00:00:18,879] And before you were doing this Maven course,
+[00:00:18,879 -> 00:00:23,079] you were Amazon VP leading, I believe, more than 800 people
+[00:00:23,079 -> 00:00:26,920] and you wrote a sentence, a very important sentence
+[00:00:26,920 -> 00:00:29,440] in the Amazon Leadership Principle.
+[00:00:00,000 -> 00:00:01,199] All of those things are true.
+[00:00:01,199 -> 00:00:01,560] Yeah.
+[00:00:01,560 -> 00:00:04,219] Some things about work of course, change with time.
+[00:00:04,219 -> 00:00:05,719] Some things will never change.
+[00:00:05,780 -> 00:00:12,000] Uh, meaning as long as we're still working with people, um, human nature,
+[00:00:12,099 -> 00:00:15,060] uh, hasn't changed a lot.
+[00:00:15,060 -> 00:00:19,660] Some technical experts are building monuments to their own expertise.
+[00:00:19,660 -> 00:00:22,480] They're focused on, is this an elegant algorithm?
+[00:00:22,859 -> 00:00:24,420] Am I solving the hardest problem?
+[00:00:24,420 -> 00:00:26,160] Am I using the newest technology?
+[00:00:00,000 -> 00:00:04,000] But that doesn't actually necessarily help the business progress.
+[00:00:04,000 -> 00:00:05,000] All right.
+[00:00:05,000 -> 00:00:11,679] So I sent you the agenda, but I think this is how I think can be most helpful to the
+[00:00:11,679 -> 00:00:13,119] audience of my channel.
+[00:00:13,119 -> 00:00:17,600] There are two challenges that I sense a lot of people face.
+[00:00:17,600 -> 00:00:24,879] First, are the experiences we hear from successful leaders like you are still relevant in today's
+[00:00:24,879 -> 00:00:25,879] age?
+[00:00:00,000 -> 00:00:06,799] especially, you know, there are less opportunities in the tech industry is growing slower. That's the perception
+[00:00:07,200 -> 00:00:11,599] So like people feel okay. I hear a lot of a lot from
+[00:00:12,160 -> 00:00:19,859] Gurus or the collective coach that speak to their experience, but not necessarily to my experience
+[00:00:20,600 -> 00:00:23,359] Because there are so much fewer opportunities
+[00:00:23,480 -> 00:00:29,399] so that is kind of problem number one and problem number two is many people do not
+[00:00:00,000 -> 00:00:01,860] enjoy their work.
+[00:00:01,860 -> 00:00:04,280] I feel the sense is like,
+[00:00:04,280 -> 00:00:07,040] well, I guess a little bit about myself.
+[00:00:07,040 -> 00:00:11,259] I graduated 2017 from Cornell as a Econ PhD
+[00:00:11,259 -> 00:00:13,800] and then joined Amazon for two years.
+[00:00:13,800 -> 00:00:17,679] So 2017 to 2019 as an economist.
+[00:00:17,679 -> 00:00:21,719] And then moved to Meta as a data scientist for two years.
+[00:00:21,719 -> 00:00:24,320] Went back to China, joined Tencent,
+[00:00:24,320 -> 00:00:26,280] Tencent Games for two years,
+[00:00:00,000 -> 00:00:04,379] vice director for data science and manage 30 people.
+[00:00:04,379 -> 00:00:09,240] But I share this feeling with many people
+[00:00:09,240 -> 00:00:13,820] that before the pandemic, before 2019 especially,
+[00:00:15,000 -> 00:00:17,719] people like to enjoy their work.
+[00:00:17,719 -> 00:00:22,500] And the morale, the vibe is pretty good.
+[00:00:22,500 -> 00:00:25,019] Office is a place that energizes you.
+[00:00:25,019 -> 00:00:28,440] But after pandemic, especially with hybrid working
+[00:00:00,000 -> 00:00:03,000] and the slowdown, the layoffs,
+[00:00:03,000 -> 00:00:07,580] many people start to feel stuck in their work
+[00:00:07,580 -> 00:00:10,279] and do not enjoy going to work anymore.
+[00:00:10,279 -> 00:00:13,460] So that's kind of the two overarching problem.
+[00:00:13,460 -> 00:00:18,460] And I know you must have so many experiences in this.
+[00:00:18,480 -> 00:00:22,039] I think, I don't know if we should do a quick introduction,
+[00:00:22,039 -> 00:00:23,879] if I should do a quick introduction about you
+[00:00:23,879 -> 00:00:24,780] and then you can.
+[00:00:26,239 -> 00:00:27,079] Yeah, it's empty.
+[00:00:27,079 -> 00:00:28,480] I mean, I love those topics.
+[00:00:28,480 -> 00:00:29,739] I'm happy to talk about them.
+[00:00:00,000 -> 00:00:02,040] I do have strong opinions about them.
+[00:00:05,000 -> 00:00:06,679] As for an introduction,
+[00:00:06,679 -> 00:00:10,240] that's for what you feel helps your channel most.
+[00:00:10,240 -> 00:00:13,880] So I knew you through Mevan and LinkedIn,
+[00:00:13,880 -> 00:00:16,399] and you are one of the most successful
+[00:00:16,399 -> 00:00:18,640] and popular Mevan instructor.
+[00:00:18,640 -> 00:00:22,239] So, and your course is, I believe is $900,
+[00:00:22,239 -> 00:00:25,899] and you have another executive course that is 2,500.
+[00:00:25,899 -> 00:00:28,879] So everything you share is actually highly valuable,
+[00:00:00,000 -> 00:00:03,200] and probably people need to pay money to listen to this.
+[00:00:03,200 -> 00:00:06,639] And before you were doing this Maven course,
+[00:00:06,639 -> 00:00:10,839] you were Amazon VP leading, I believe, more than 800 people
+[00:00:10,839 -> 00:00:14,679] and you wrote a sentence, very important sentence
+[00:00:14,679 -> 00:00:17,199] in the Amazon leadership principle.
+[00:00:17,199 -> 00:00:18,359] All of those things are true.
+[00:00:18,359 -> 00:00:23,359] Yeah, I worked 15 years at Amazon from 2005 to 2020,
+[00:00:23,399 -> 00:00:27,199] probably best known there for helping start Prime Video
+[00:00:00,000 -> 00:00:02,580] and then also helping start Prime Gaming.
+[00:00:03,680 -> 00:00:06,519] And I spent 12 years in startups before that though.
+[00:00:06,519 -> 00:00:08,800] So I also have startup experience,
+[00:00:08,800 -> 00:00:12,019] albeit kind of one generation back.
+[00:00:12,019 -> 00:00:16,239] And now I work for myself, teaching others what I learned.
+[00:00:17,160 -> 00:00:18,000] Cool.
+[00:00:18,000 -> 00:00:20,559] Yeah, we have learnings from successful people,
+[00:00:20,559 -> 00:00:22,879] but do those learnings still apply
+[00:00:22,879 -> 00:00:27,879] to today's working environment or today's challenges?
+[00:00:00,000 -> 00:00:02,640] Yeah, so that's of course a hugely broad question.
+[00:00:02,640 -> 00:00:05,360] And if you, after I say a little bit about it,
+[00:00:05,360 -> 00:00:08,160] if you want to specialize or follow up, I invite you to.
+[00:00:10,199 -> 00:00:14,519] But some things about work, of course, change with time.
+[00:00:14,519 -> 00:00:16,600] Some things will never change.
+[00:00:16,600 -> 00:00:20,219] Meaning, as long as we're still working with people,
+[00:00:21,120 -> 00:00:25,079] human nature hasn't changed.
+[00:00:25,079 -> 00:00:29,539] A lot of things about how to work well with people
+[00:00:00,000 -> 00:00:03,200] maybe now called emotional intelligence,
+[00:00:03,200 -> 00:00:06,000] I find you can find references to them
+[00:00:06,000 -> 00:00:09,179] in the ancient wisdom
+[00:00:09,179 -> 00:00:11,820] of any of the great world religions, for example.
+[00:00:11,820 -> 00:00:14,119] So I often will find myself
+[00:00:16,579 -> 00:00:21,579] quoting long dead scholars on how to interact with people.
+[00:00:22,120 -> 00:00:24,199] So something as an example,
+[00:00:24,199 -> 00:00:26,940] since you talk about a Chinese audience
+[00:00:26,940 -> 00:00:28,920] that comes, I believe, from Lao Tzu,
+[00:00:00,000 -> 00:00:04,799] is the master does the non-doing and everything falls into place,
+[00:00:05,519 -> 00:00:11,880] there is a lesson to be drawn today still from that.
+[00:00:11,880 -> 00:00:15,839] Of course, people also focus on learnings from the art of war
+[00:00:15,839 -> 00:00:21,440] and other ancient masters of how things work.
+[00:00:21,760 -> 00:00:25,239] So I think human interaction, there's plenty to be learned,
+[00:00:25,239 -> 00:00:28,480] not just from leaders my age who are still alive,
+[00:00:00,000 -> 00:00:03,259] but also from historical leaders.
+[00:00:03,259 -> 00:00:05,559] If anything has changed.
+[00:00:05,559 -> 00:00:06,400] Yeah, go ahead.
+[00:00:06,400 -> 00:00:07,240] Oh, sorry.
+[00:00:07,240 -> 00:00:09,000] I was gonna say, so the tactics changed,
+[00:00:09,000 -> 00:00:10,919] but the wisdom is the same wisdom,
+[00:00:10,919 -> 00:00:13,199] but people need to learn the wisdom.
+[00:00:13,199 -> 00:00:16,600] You need, yeah, you need to figure out how to apply those.
+[00:00:16,600 -> 00:00:21,600] So for example, obviously most of those leaders,
+[00:00:21,839 -> 00:00:23,879] any place in the world,
+[00:00:23,879 -> 00:00:26,699] grew up in a time of face-to-face communication.
+[00:00:00,000 -> 00:00:03,359] now we have hybrid distributed workforces,
+[00:00:03,359 -> 00:00:04,960] that's a little bit different.
+[00:00:06,059 -> 00:00:09,300] And so you have to think about how do you apply this wisdom
+[00:00:09,300 -> 00:00:11,839] maybe in a hybrid environment?
+[00:00:11,839 -> 00:00:15,439] You know, obviously if we think of Sun Tzu
+[00:00:15,439 -> 00:00:16,559] who wrote Art of War,
+[00:00:16,559 -> 00:00:19,280] he wasn't thinking about time zones, right?
+[00:00:19,280 -> 00:00:22,000] He didn't have this like follow the sun model, you know?
+[00:00:22,000 -> 00:00:26,920] So we have some new problems,
+[00:00:26,920 -> 00:00:29,300] but to answer your fundamental root question,
+[00:00:00,000 -> 00:00:11,560] I don't think building relationships and coordinating groups of people has fundamentally changed.
+[00:00:11,560 -> 00:00:22,480] The challenge of organizing a group of people to get something done remains largely similar.
+[00:00:22,480 -> 00:00:27,679] Definitely some of the tools and tactics need to evolve.
+[00:00:00,000 -> 00:00:03,839] It's very interesting, not because what's changed
+[00:00:03,839 -> 00:00:07,059] was not changed, but because what you think
+[00:00:07,059 -> 00:00:11,339] the crux of the problem is, you summarize
+[00:00:11,339 -> 00:00:15,500] as managing a relationship and coordinating people.
+[00:00:15,500 -> 00:00:19,219] But when I think about this, I was especially trying
+[00:00:19,219 -> 00:00:23,339] to emphasize with a lot of IC or land managers,
+[00:00:23,339 -> 00:00:26,500] like staff level IC, senior level IC,
+[00:00:00,000 -> 00:00:03,799] they will think there are not many promotion opportunities.
+[00:00:05,000 -> 00:00:07,320] So they don't think about these people
+[00:00:07,320 -> 00:00:09,640] or they don't think people is the important part.
+[00:00:09,640 -> 00:00:11,759] As long as I do the job well,
+[00:00:11,759 -> 00:00:14,400] or I have a high scope project,
+[00:00:14,400 -> 00:00:17,800] or I have a certain domain,
+[00:00:17,800 -> 00:00:20,219] I have certain opportunities, I get promoted.
+[00:00:20,219 -> 00:00:23,420] But seems like you feel the other part
+[00:00:23,420 -> 00:00:25,280] is the more important aspect of this.
+[00:00:25,280 -> 00:00:26,559] Well, it's not surprising
+[00:00:26,559 -> 00:00:29,519] because I went into personnel leadership very early.
+[00:00:00,000 -> 00:00:05,000] I did, once I left graduate school,
+[00:00:05,160 -> 00:00:07,620] I was an IC for less than one year
+[00:00:07,620 -> 00:00:10,980] before going into management for the rest of my career.
+[00:00:10,980 -> 00:00:13,480] So it's not surprising I emphasize that.
+[00:00:13,480 -> 00:00:18,239] But one thing I find ICs make a mistake,
+[00:00:19,179 -> 00:00:21,260] there are limited promotion opportunities,
+[00:00:21,260 -> 00:00:23,179] but there are not none.
+[00:00:23,179 -> 00:00:28,059] And ICs make a mistake, which is they think
+[00:00:00,000 -> 00:00:04,400] that hard work and technical expertise are the only things required.
+[00:00:04,400 -> 00:00:14,839] And in fact, the people making decisions about promotions and who gets those opportunities,
+[00:00:16,199 -> 00:00:22,440] usually number one, there's a lot of people who have at least technical competence,
+[00:00:22,899 -> 00:00:28,760] meaning several people may be good technically or with their skills
+[00:00:00,000 -> 00:00:02,520] or have a good scope project.
+[00:00:02,520 -> 00:00:06,480] So having a little bit better skill
+[00:00:06,480 -> 00:00:08,480] may not be enough to set you apart
+[00:00:08,480 -> 00:00:12,320] versus having a good working relationship with the manager,
+[00:00:12,320 -> 00:00:16,160] having shown that you can add value,
+[00:00:16,160 -> 00:00:17,960] not just by your technical skill,
+[00:00:17,960 -> 00:00:22,199] but by your ability to relate that technical skill
+[00:00:22,199 -> 00:00:25,600] to business value makes a big difference
+[00:00:25,600 -> 00:00:28,820] because as an engineer,
+[00:00:00,000 -> 00:00:03,200] And as someone who led a lot of engineers,
+[00:00:03,200 -> 00:00:06,519] some technical experts are building monuments
+[00:00:06,519 -> 00:00:07,879] to their own expertise.
+[00:00:07,879 -> 00:00:11,080] They're focused on, is this an elegant algorithm?
+[00:00:11,080 -> 00:00:12,640] Am I solving the hardest problem?
+[00:00:12,640 -> 00:00:14,679] Am I using the newest technology?
+[00:00:14,679 -> 00:00:16,879] But that doesn't actually necessarily
+[00:00:16,879 -> 00:00:18,679] help the business progress.
+[00:00:18,679 -> 00:00:21,480] In other words, a working hack and an elegant algorithm
+[00:00:21,480 -> 00:00:24,399] may have the same business value.
+[00:00:24,399 -> 00:00:26,199] Some people are stuck in the mindset,
+[00:00:26,199 -> 00:00:28,260] but I've done better work if I came up
+[00:00:00,000 -> 00:00:01,960] with an elegant algorithm?
+[00:00:01,960 -> 00:00:03,960] Well, maybe, but it's not necessarily
+[00:00:03,960 -> 00:00:05,400] going to be tied to promotion.
+[00:00:08,039 -> 00:00:17,760] So even for ICs, I often coach ICs that to move up,
+[00:00:17,760 -> 00:00:22,079] you need to think beyond personal technical performance
+[00:00:22,079 -> 00:00:24,120] or even scope of the project.
+[00:00:24,120 -> 00:00:28,160] Because so much of it is trust, relationship,
+[00:00:00,000 -> 00:00:04,280] and ability to relate your technology to business value.
+[00:00:05,879 -> 00:00:09,960] Yeah, and there are other guests on my channel
+[00:00:09,960 -> 00:00:12,839] that spoke the same message.
+[00:00:12,839 -> 00:00:15,419] But I find like people,
+[00:00:15,419 -> 00:00:17,879] like there are of course people start paying attention,
+[00:00:17,879 -> 00:00:21,780] but it's hard to do for some reason,
+[00:00:21,780 -> 00:00:23,760] or maybe it's uncomfortable to do.
+[00:00:24,760 -> 00:00:28,140] So like you put, like you raise the awareness
+[00:00:00,000 -> 00:00:02,799] that you need to pay attention to the business value,
+[00:00:02,799 -> 00:00:06,360] you need to pay attention to connections, relationship.
+[00:00:06,360 -> 00:00:10,240] But then there is no textbook, there is no right or wrong.
+[00:00:10,240 -> 00:00:12,539] Like if you have an elegant algorithm,
+[00:00:12,539 -> 00:00:15,039] you know it's elegant, the code is there.
+[00:00:15,039 -> 00:00:18,160] But then, and do other things,
+[00:00:18,160 -> 00:00:20,280] you'll enter the domain of uncertainty.
+[00:00:20,280 -> 00:00:22,600] I think the uncertainty is the painful part.
+[00:00:22,600 -> 00:00:26,960] Is there a way to help you guide through the uncertainty
+[00:00:00,000 -> 00:00:04,400] and kind of have at least a feedback loop of knowing,
+[00:00:04,400 -> 00:00:06,280] am I doing right or wrong?
+[00:00:06,280 -> 00:00:09,240] Because there are so many factors.
+[00:00:09,240 -> 00:00:11,800] Yeah, so I'm going to answer your question,
+[00:00:11,800 -> 00:00:14,439] but with a little bit of background first.
+[00:00:14,439 -> 00:00:18,920] I think our school system creates some of the behavior.
+[00:00:18,920 -> 00:00:23,440] Because if you think about, everyone began in school.
+[00:00:23,440 -> 00:00:26,480] And school has very clear assignments,
+[00:00:26,480 -> 00:00:28,039] and you get grades on them.
+[00:00:00,000 -> 00:00:01,960] and you're taught that there's a right and wrong
+[00:00:01,960 -> 00:00:03,960] and higher marks are better.
+[00:00:03,960 -> 00:00:07,519] And all of that encourages a push towards
+[00:00:07,519 -> 00:00:11,279] the sort of measurable scientific or pseudoscientific,
+[00:00:11,279 -> 00:00:15,439] but the firmly measured.
+[00:00:15,439 -> 00:00:16,640] And we get good at that.
+[00:00:16,640 -> 00:00:21,640] Everyone at a top company has gone to a good school
+[00:00:23,000 -> 00:00:26,719] and they've striven, they've worked hard to get top marks.
+[00:00:26,719 -> 00:00:27,960] So they're very skilled at that
+[00:00:00,000 -> 00:00:02,600] because actually they started training and doing it
+[00:00:02,600 -> 00:00:05,400] maybe as young as five, but definitely at 10 years old,
+[00:00:05,400 -> 00:00:08,759] 12 years old, 15 years old, and they have years of training.
+[00:00:08,759 -> 00:00:12,419] When you move to this fuzzy domain, they have no training.
+[00:00:12,419 -> 00:00:13,560] And it's very uncomfortable
+[00:00:13,560 -> 00:00:15,699] because it may be uncomfortable for their personality,
+[00:00:15,699 -> 00:00:17,399] but it's also unfamiliar.
+[00:00:19,019 -> 00:00:22,500] So then your question is, how do you persist in doing it?
+[00:00:22,500 -> 00:00:24,460] Or maybe how do you measure it?
+[00:00:25,539 -> 00:00:26,760] I don't know if there's a good way
+[00:00:00,000 -> 00:00:04,099] to like convert relationship to a measurement.
+[00:00:05,679 -> 00:00:10,679] But there, I mean, you've asked a really good question.
+[00:00:13,119 -> 00:00:16,539] How do you take this fuzzy area and know how you're doing?
+[00:00:16,539 -> 00:00:21,019] And the feedback signals are very soft.
+[00:00:21,019 -> 00:00:26,019] They, the feedback signals come in the form,
+[00:00:26,460 -> 00:00:29,559] they come informally of someone telling you
+[00:00:00,000 -> 00:00:02,680] that was helpful or that's a good idea
+[00:00:02,680 -> 00:00:07,000] or could you advise us on this project?
+[00:00:07,000 -> 00:00:11,560] One of the ways I have said that senior ICs
+[00:00:11,560 -> 00:00:13,800] can know they're influential
+[00:00:13,800 -> 00:00:18,359] is when is their opinion being sought out
+[00:00:18,359 -> 00:00:21,140] when it's not their project?
+[00:00:21,140 -> 00:00:25,239] In other words, is someone coming to ask you about your,
+[00:00:00,000 -> 00:00:05,000] Ask for your opinion when it's not your work.
+[00:00:06,519 -> 00:00:08,400] That's a huge sign of influence,
+[00:00:08,400 -> 00:00:11,000] is we'd like your advice because you're a good advisor.
+[00:00:11,000 -> 00:00:12,359] Now, how do you get there?
+[00:00:13,359 -> 00:00:14,439] That's a different question.
+[00:00:14,439 -> 00:00:16,839] But if you're being asked to give your input
+[00:00:16,839 -> 00:00:20,320] on things outside your direct work,
+[00:00:20,320 -> 00:00:21,960] the more you're being asked to do that,
+[00:00:21,960 -> 00:00:26,000] the more you've succeeded in being influential
+[00:00:26,000 -> 00:00:27,699] and valuable to the business.
+[00:00:00,000 -> 00:00:01,000] Nice.
