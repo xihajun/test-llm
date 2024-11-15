@@ -1,0 +1,1576 @@
+1
+00:00:00,000 --> 00:00:05,000
+Hi, I don't remember my English opening.
+
+2
+00:00:05,000 --> 00:00:08,000
+Hi folks, welcome back to my channel.
+
+3
+00:00:08,000 --> 00:00:11,000
+Today I'm at Statsic interviewing Tim.
+
+4
+00:00:11,000 --> 00:00:15,000
+Tim is the, actually Tim, why don't you give a introduction?
+
+5
+00:00:15,000 --> 00:00:17,000
+Hi, I lead data science at Statsic.
+
+6
+00:00:17,000 --> 00:00:21,000
+I've been with the company from the very start in February of 2021.
+
+7
+00:00:21,000 --> 00:00:29,559
+So prior to this, I was a data scientist at Facebook, so where I spent I think like five,
+
+8
+00:00:29,559 --> 00:00:34,759
+total five years working on Facebook core app in gaming.
+
+9
+00:00:34,759 --> 00:00:38,960
+And also I worked a little bit in Facebook reality labs, so doing some of the more cutting
+
+10
+00:00:38,960 --> 00:00:42,420
+edge metaverse style projects.
+
+11
+00:00:42,420 --> 00:00:49,560
+So I tell people that I've worked on Products that I've had as large as a billion users and as small as just like 10,000 users
+
+12
+00:00:49,560 --> 00:00:53,560
+Which one is the 10,000? That would be like the Facebook reality labs. Yeah
+
+13
+00:00:53,560 --> 00:00:58,539
+I heard they are having that many users today. What is the 1 billion?
+
+14
+00:00:59,079 --> 00:01:04,400
+So that would be like on Facebook gaming. It's just like you had that many eyeballs on gaming content
+
+15
+00:01:04,400 --> 00:01:08,159
+It was our opportunity to try to capture that and drive engagement.
+
+16
+00:01:08,159 --> 00:01:11,959
+How is working at Starup?
+
+17
+00:01:11,959 --> 00:01:14,079
+It's been a lot of fun, it's been pretty intense.
+
+18
+00:01:14,079 --> 00:01:21,560
+I think I've got to try, I've been able to learn a bunch of new skills that I would have
+
+19
+00:01:21,560 --> 00:01:23,480
+never had the opportunity before.
+
+20
+00:01:23,480 --> 00:01:26,480
+So being the only data person on the team.
+
+21
+00:01:26,480 --> 00:01:28,120
+Wait, the only?
+
+22
+00:01:28,120 --> 00:01:29,120
+At the beginning.
+
+23
+00:01:29,120 --> 00:01:31,719
+I was the only data person on the team.
+
+24
+00:01:31,719 --> 00:01:33,920
+I had to be more than a data scientist.
+
+25
+00:01:33,920 --> 00:01:35,959
+I had to be also a data engineer.
+
+26
+00:01:35,959 --> 00:01:39,200
+I also had to be a data architect and design data.
+
+27
+00:01:39,200 --> 00:01:42,480
+I also had to be thinking.
+
+28
+00:01:42,480 --> 00:01:47,079
+There was no one else thinking at the time about things like marketing or our business
+
+29
+00:01:47,079 --> 00:01:49,560
+positioning or our strategy.
+
+30
+00:01:49,560 --> 00:01:56,319
+Like even those sort of things, I was able to contribute to at the early start of Satsig.
+
+31
+00:01:56,319 --> 00:01:58,799
+How many data people do you have today?
+
+32
+00:01:58,799 --> 00:02:03,959
+Now we have three data scientists and we have a lot of engineers working on the data infrastructure
+
+33
+00:02:03,959 --> 00:02:04,959
+side.
+
+34
+00:02:04,959 --> 00:02:09,840
+How do you define engineers working on data infrastructure versus data engineers?
+
+35
+00:02:09,840 --> 00:02:12,400
+Yeah, it's actually a blurry line.
+
+36
+00:02:12,400 --> 00:02:20,360
+I don't think there's actually a really clear definition and I think there's a lot of shared
+
+37
+00:02:20,360 --> 00:02:34,719
+responsibilities between the two. So early on, you were basically a Jack of all trades, but mainly as a data scientist,
+
+38
+00:02:34,719 --> 00:02:41,039
+what is a unique value or unique contribution that no one else can replace?
+
+39
+00:02:41,039 --> 00:02:42,039
+At StatSig?
+
+40
+00:02:42,039 --> 00:02:43,039
+At StatSig.
+
+41
+00:02:43,039 --> 00:02:50,360
+At StatSig. At Statsig. Let's start with that. At Statsig, yeah. I think the way I view it is that because we're selling an analytics tool, we not only
+
+42
+00:02:50,360 --> 00:02:55,960
+are there to engage with other data scientists, because other data scientists want to be able
+
+43
+00:02:55,960 --> 00:02:59,719
+to speak with somebody who understands data science.
+
+44
+00:02:59,719 --> 00:03:04,500
+Partly they have to believe that we've set up the analytics and the computations correctly,
+
+45
+00:03:04,500 --> 00:03:08,680
+and so we're the ones that, we do that, and we're also the ones that are able to communicate
+
+46
+00:03:08,680 --> 00:03:09,680
+that.
+
+47
+00:03:09,680 --> 00:03:11,360
+So that's the first thing.
+
+48
+00:03:11,360 --> 00:03:16,879
+The second thing is we also represent the viewpoint of the customers when building our
+
+49
+00:03:16,879 --> 00:03:17,879
+tool.
+
+50
+00:03:17,879 --> 00:03:19,479
+Both from, there's two perspectives.
+
+51
+00:03:19,479 --> 00:03:22,500
+One is what would a data scientist want to see in the product?
+
+52
+00:03:22,500 --> 00:03:28,080
+But also, data scientists are a little bit like almost guardians of data at their companies
+
+53
+00:03:28,080 --> 00:03:29,939
+and how people use data.
+
+54
+00:03:29,939 --> 00:03:34,240
+And so they have to be able to trust that we are putting a tool in the hands of PMs
+
+55
+00:03:34,240 --> 00:03:40,120
+and engineers, and data scientists want to make sure we're doing it faithfully in a way
+
+56
+00:03:40,120 --> 00:03:43,000
+that doesn't cause them more work.
+
+57
+00:03:43,000 --> 00:03:47,039
+Because there's ways to misinterpret data that could actually cause people to have wrong
+
+58
+00:03:47,039 --> 00:03:48,120
+insights.
+
+59
+00:03:48,120 --> 00:03:52,759
+And at that point, data scientists are now struggling to actually squash problems that
+
+60
+00:03:52,759 --> 00:03:57,879
+we've created, instead of us solving problems for them.
+
+61
+00:03:57,879 --> 00:04:11,599
+I think there are two main follow-up questions from this. Why Stasix mission or Stasix differentiator with other A-B testing companies like Splitwise
+
+62
+00:04:11,599 --> 00:04:21,839
+or whatever, with other competitors is you want to make A-B testing easier, thus less
+
+63
+00:04:21,839 --> 00:04:26,319
+complicated or less academically.
+
+64
+00:04:26,319 --> 00:04:33,579
+I feel like that creates some tension between giving this to two engineers and they can
+
+65
+00:04:33,579 --> 00:04:39,899
+just run it versus a data scientist wanting to have a rigorous process and rigorous thinking
+
+66
+00:04:39,899 --> 00:04:43,100
+after like with the A-B testing.
+
+67
+00:04:43,100 --> 00:04:52,160
+How do you balance that? And the second question is, in order to convince other data scientists, your customers, data
+
+68
+00:04:52,160 --> 00:04:56,560
+scientists, that we are providing the right tool, you basically have to know more than
+
+69
+00:04:56,560 --> 00:04:57,560
+them, right?
+
+70
+00:04:57,560 --> 00:05:01,699
+Do you feel that to be a necessity?
+
+71
+00:05:01,699 --> 00:05:07,079
+But I think I'll start with your first question over how do we balance making experimentation
+
+72
+00:05:07,079 --> 00:05:10,259
+accessible but also being rigorous.
+
+73
+00:05:10,259 --> 00:05:14,439
+And that is the biggest challenge we have as a data science team.
+
+74
+00:05:14,439 --> 00:05:19,199
+Actually, I think that's the biggest challenge we have as a company in general because our
+
+75
+00:05:19,199 --> 00:05:25,000
+tool is fairly sophisticated from a stats and analytics perspective.
+
+76
+00:05:25,000 --> 00:05:31,000
+And yet we're trying to put this powerful tool in the hands of people
+
+77
+00:05:31,000 --> 00:05:35,000
+who may not fully understand statistics or may not know the definition of a p-value.
+
+78
+00:05:35,000 --> 00:05:41,000
+I think a lot of what we're building is fueled by the fact that we've seen this work at Facebook or Meta,
+
+79
+00:05:41,000 --> 00:05:45,959
+that you can put a powerful statistical tool in the hands of people who
+
+80
+00:05:45,959 --> 00:05:51,759
+aren't data scientists and have it really power product development.
+
+81
+00:05:51,759 --> 00:05:57,939
+And so we've tried to capture some of that nicety, but also adding our own flavor on
+
+82
+00:05:57,939 --> 00:05:59,480
+top of that.
+
+83
+00:05:59,480 --> 00:06:15,000
+It is tricky and it is something that we actively think about. What we try very hard to is, our principle is that we will give you a lot of flexibility,
+
+84
+00:06:15,000 --> 00:06:19,959
+but we will try to guide you through UI and design to best practices.
+
+85
+00:06:19,959 --> 00:06:25,160
+So things like making sure that when you are deciding how long to run an experiment for,
+
+86
+00:06:25,160 --> 00:06:28,300
+that there's a power calculator that's readily accessible.
+
+87
+00:06:28,300 --> 00:06:31,740
+Things like if you're going to make an early decision, we actually let you know that, hey,
+
+88
+00:06:31,740 --> 00:06:35,000
+it's possible this experiment is not fully powered yet.
+
+89
+00:06:35,000 --> 00:06:39,779
+Just little nudges like that into the UI and design that sort of guide people where you
+
+90
+00:06:39,779 --> 00:06:44,360
+may not fully understand the peaking problem and the nuances of it, but the fact that our
+
+91
+00:06:44,360 --> 00:06:49,920
+UI is sort of pushing you to run this experiment a little longer than you may be, or just to let you
+
+92
+00:06:49,920 --> 00:06:53,519
+know a warning that you are making an early decision.
+
+93
+00:06:53,519 --> 00:06:56,240
+These are the things that we've tried to build in.
+
+94
+00:06:56,240 --> 00:07:02,160
+From your experience, what kind of knowledge or understanding does it take for someone
+
+95
+00:07:02,160 --> 00:07:09,360
+to use the tool correctly without the UI nudges?
+
+96
+00:07:09,360 --> 00:07:16,079
+Not knowing the definition of p-value or not understanding the true implications of p-value,
+
+97
+00:07:16,079 --> 00:07:18,199
+is it okay to...
+
+98
+00:07:18,199 --> 00:07:27,720
+Yeah, I think we discuss this heavily a lot because ultimately we are showing frequentist results that have
+
+99
+00:07:27,720 --> 00:07:32,319
+p-values and confidence intervals, and we know what those mean to statisticians.
+
+100
+00:07:32,319 --> 00:07:36,959
+And that might not necessarily be the takeaway that someone who doesn't understand type 1
+
+101
+00:07:36,959 --> 00:07:39,240
+and type 2 errors will take away.
+
+102
+00:07:39,240 --> 00:07:43,759
+But what we do want to give that people know is, for example, subtle indicators like making
+
+103
+00:07:43,759 --> 00:07:50,000
+a result green signify that this is actually the result you are looking for.
+
+104
+00:07:50,000 --> 00:07:54,399
+We all know this means it's a low p-value underneath your 95% significance threshold.
+
+105
+00:07:54,399 --> 00:08:01,160
+And while an experimentalist may not actually know that full definition, seeing a green
+
+106
+00:08:01,160 --> 00:08:05,839
+result should give you some confidence that that is actually what you're trying to look for
+
+107
+00:08:05,839 --> 00:08:07,120
+when you're running this.
+
+108
+00:08:07,120 --> 00:08:09,439
+We also do things like making sure that
+
+109
+00:08:09,439 --> 00:08:12,519
+we encourage folks to list out their key metrics up front.
+
+110
+00:08:12,519 --> 00:08:13,680
+That's experimental best practice.
+
+111
+00:08:13,680 --> 00:08:15,360
+How much is the information lost?
+
+112
+00:08:16,240 --> 00:08:20,360
+Yeah, so we do this, the way our UI is designed,
+
+113
+00:08:20,360 --> 00:08:22,399
+and probably this is best for a lot of
+
+114
+00:08:22,399 --> 00:08:24,839
+really technical products, is that we actually show you
+
+115
+00:08:24,839 --> 00:08:27,600
+a very simplified version of your data
+
+116
+00:08:27,600 --> 00:08:30,300
+where it's very distilled down and there's like,
+
+117
+00:08:30,300 --> 00:08:34,000
+very visually you can sort of like instantly get some very key takeaways.
+
+118
+00:08:34,000 --> 00:08:37,600
+But what we hope, and this is especially true in experimentation,
+
+119
+00:08:37,600 --> 00:08:40,299
+it's a lot of like peeling an onion where like,
+
+120
+00:08:40,299 --> 00:08:42,700
+whenever you see initial results,
+
+121
+00:08:42,700 --> 00:08:45,360
+at least data people will have follow-up questions
+
+122
+00:08:45,360 --> 00:08:47,879
+immediately, and you'll want to drill in on those.
+
+123
+00:08:47,879 --> 00:08:52,879
+And so we actually provide in the UI very easy ways to go deeper and deeper into more
+
+124
+00:08:52,879 --> 00:08:55,960
+complex things, into more complex statistics.
+
+125
+00:08:55,960 --> 00:09:00,360
+So we haven't dumbed down our product.
+
+126
+00:09:00,360 --> 00:09:11,799
+We've simplified the initial version, but if you wanted all the complex stats and the drill-downs such as being able to see time series or filters by cohorts, that's all available
+
+127
+00:09:11,799 --> 00:09:15,600
+in there and readily accessible.
+
+128
+00:09:15,600 --> 00:09:20,039
+That is actually a great point because I feel like at least at Facebook or other companies
+
+129
+00:09:20,039 --> 00:09:27,519
+I work at, when people see experimental results, data scientists, back to a roadmap
+
+130
+00:09:27,519 --> 00:09:32,559
+post as well, data scientists usually have a hypothesis. They want to understand why
+
+131
+00:09:32,559 --> 00:09:38,200
+this result happened, right? Versus a lot of PMs and engineers are looking for specific
+
+132
+00:09:38,200 --> 00:09:41,559
+results. They're looking for the green. If they got the green, then good to go. If they
+
+133
+00:09:41,559 --> 00:09:49,720
+don't get the green, they want to, what else can I try to make it green? Sometimes they don't have a hypothesis behind it.
+
+134
+00:09:49,720 --> 00:09:53,840
+This is one area that we really want to train our customers. You don't want to just look
+
+135
+00:09:53,840 --> 00:10:02,720
+for the green. I call it telling a complete story. Whatever results you see should be
+
+136
+00:10:02,720 --> 00:10:05,440
+consistent with the change that you made.
+
+137
+00:10:05,440 --> 00:10:07,279
+And it should be somewhat expected.
+
+138
+00:10:07,279 --> 00:10:12,100
+If you have something very unexpected, you should question that result.
+
+139
+00:10:12,100 --> 00:10:17,759
+And so we try to make sure that that's why we ask for folks to put their hypothesis down,
+
+140
+00:10:17,759 --> 00:10:22,840
+what they expect to see, and quote some metrics that they expect to move.
+
+141
+00:10:22,840 --> 00:10:24,639
+Things should be somewhat consistent.
+
+142
+00:10:24,639 --> 00:10:27,740
+You shouldn't just look for green things.
+
+143
+00:10:27,740 --> 00:10:28,740
+Just make that decision.
+
+144
+00:10:28,740 --> 00:10:34,899
+I also feel like when people have hypotheses, they usually overestimate how often they are
+
+145
+00:10:34,899 --> 00:10:35,899
+right.
+
+146
+00:10:35,899 --> 00:10:36,899
+Absolutely.
+
+147
+00:10:36,899 --> 00:10:43,399
+Which is at one third, but in the online control experiments, one tenth of the hypotheses are
+
+148
+00:10:43,399 --> 00:10:52,419
+as expected. Most of the changes, they either are insignificant or even proven to be negative.
+
+149
+00:10:52,419 --> 00:10:57,059
+So people would have frustration when they don't see the green.
+
+150
+00:10:57,059 --> 00:11:01,220
+And sometimes the frustration can be a question about the truth.
+
+151
+00:11:01,220 --> 00:11:05,840
+I was right and your two is not showing me grain, so your two must be wrong.
+
+152
+00:11:06,799 --> 00:11:11,440
+Yeah, we have this happen all the time. I find that experimentation is super humbling,
+
+153
+00:11:12,080 --> 00:11:18,480
+not only in the number of ideas that you could have that work, but also in the magnitude. Very
+
+154
+00:11:18,480 --> 00:11:22,399
+oftentimes, if somebody's never done experimentation, they'll say, oh yeah,
+
+155
+00:11:22,399 --> 00:11:26,279
+this change is so obvious, this is going to be good, it's gonna be plus 10% of revenue,
+
+156
+00:11:26,279 --> 00:11:28,200
+and then they run it, and it may still be good,
+
+157
+00:11:28,200 --> 00:11:29,879
+but it's like plus 1%.
+
+158
+00:11:29,879 --> 00:11:32,159
+And it's just like, you have to,
+
+159
+00:11:32,159 --> 00:11:33,960
+I think everyone who does experimentation
+
+160
+00:11:33,960 --> 00:11:36,480
+sort of knows how to calibrate downward.
+
+161
+00:11:36,480 --> 00:11:39,759
+It never calibrates upward.
+
+162
+00:11:39,759 --> 00:11:42,039
+But we also find that some companies
+
+163
+00:11:42,039 --> 00:11:43,840
+also just have a higher batting average.
+
+164
+00:11:43,840 --> 00:11:48,960
+So usually small companies that are working on unoptimized products, usually there's a
+
+165
+00:11:48,960 --> 00:11:50,679
+lot more wins around.
+
+166
+00:11:50,679 --> 00:11:54,519
+But whereas if you're at a big company like Facebook level, the number of good ideas that
+
+167
+00:11:54,519 --> 00:11:57,039
+are out there is far fewer.
+
+168
+00:11:57,039 --> 00:11:59,000
+So it's a lot harder to find those wins.
+
+169
+00:11:59,000 --> 00:12:02,159
+But yeah, it's something we have to temper expectations of our customers.
+
+170
+00:12:02,159 --> 00:12:05,360
+That like, hey, this is like the fact you are seeing a negative result
+
+171
+00:12:05,360 --> 00:12:09,240
+or a neutral result is not a bad thing.
+
+172
+00:12:09,240 --> 00:12:12,440
+You actually now are able to measure your impact.
+
+173
+00:12:12,440 --> 00:12:14,919
+It's up to you what you do with it.
+
+174
+00:12:14,919 --> 00:12:22,279
+I feel like this would be way easier if your customer has seen work at Facebook, for example,
+
+175
+00:12:22,279 --> 00:12:28,279
+has seen this work, and it would be way harder if they never ran experiments before,
+
+176
+00:12:28,279 --> 00:12:31,960
+or correct experiments before.
+
+177
+00:12:31,960 --> 00:12:35,320
+The latter problem, is it even solvable?
+
+178
+00:12:35,320 --> 00:12:36,320
+You're 100% correct.
+
+179
+00:12:36,320 --> 00:12:43,639
+I think our biggest challenge is getting people to realize the value of experimentation.
+
+180
+00:12:43,639 --> 00:12:49,480
+I think if people have worked at a company like Facebook or Google or Microsoft,
+
+181
+00:12:49,480 --> 00:12:52,519
+they sort of understand the value of experimentation.
+
+182
+00:12:52,519 --> 00:12:56,980
+But if you've never been exposed to that and you read things online,
+
+183
+00:12:56,980 --> 00:13:01,240
+I think it's harder to convince you that this is a good thing.
+
+184
+00:13:01,240 --> 00:13:06,720
+Yeah. But that's our challenge is to show people how it's done at big companies,
+
+185
+00:13:06,720 --> 00:13:08,580
+medium-sized and small companies,
+
+186
+00:13:08,580 --> 00:13:12,659
+and what sort of learnings and how people are using it today,
+
+187
+00:13:12,659 --> 00:13:16,200
+and how that's driving product development.
+
+188
+00:13:16,200 --> 00:13:19,679
+Have you had examples of people not believing it at first,
+
+189
+00:13:19,679 --> 00:13:22,419
+or very skeptical at first,
+
+190
+00:13:22,419 --> 00:13:27,679
+and then over time start to trust them more?
+
+191
+00:13:27,679 --> 00:13:29,559
+We're starting to chip away at that.
+
+192
+00:13:29,559 --> 00:13:33,840
+I don't think we've had somebody who's completely skeptical use our product and be convinced
+
+193
+00:13:33,840 --> 00:13:38,840
+the other way, but we've had people who have been, listen, we want to try Statsig for just
+
+194
+00:13:38,840 --> 00:13:44,399
+rolling out features and just the fact they're seeing measurement and data, now they're realizing,
+
+195
+00:13:44,399 --> 00:13:45,799
+oh, we can actually
+
+196
+00:13:45,799 --> 00:13:47,240
+start to make decisions on this
+
+197
+00:13:47,240 --> 00:13:49,320
+that they may not have in the past.
+
+198
+00:13:49,320 --> 00:13:52,220
+And so I think just by, the way I view it is like,
+
+199
+00:13:52,220 --> 00:13:53,559
+we're just shining a flashlight
+
+200
+00:13:53,559 --> 00:13:55,840
+on what your features are actually doing.
+
+201
+00:13:55,840 --> 00:13:57,159
+It's up to you to take a look,
+
+202
+00:13:57,159 --> 00:13:59,120
+it's up to you to interpret it,
+
+203
+00:13:59,120 --> 00:14:01,240
+and it's up to you to make decisions.
+
+204
+00:14:01,240 --> 00:14:02,759
+But I think just showing people,
+
+205
+00:14:02,759 --> 00:14:06,480
+just shining light on this data and results
+
+206
+00:14:06,480 --> 00:14:11,480
+has been pretty powerful so far in getting people to realize the value.
+
+207
+00:14:11,480 --> 00:14:19,200
+It is a necessary first step, but unleashing the power or the full potential, I feel like
+
+208
+00:14:19,200 --> 00:14:26,360
+there are several steps. For example, you need to just measure which one is positive and which one is negative.
+
+209
+00:14:26,360 --> 00:14:31,840
+But then you need to build a hypothesis and understand a product and guide it to a better
+
+210
+00:14:31,840 --> 00:14:32,840
+direction.
+
+211
+00:14:32,840 --> 00:14:36,240
+That's the forward thinking part comes in.
+
+212
+00:14:36,240 --> 00:14:40,320
+I think we're already transitioning to the second question, so let's just go there.
+
+213
+00:14:40,320 --> 00:14:45,279
+How do you feel the talent density?
+
+214
+00:14:45,279 --> 00:14:52,600
+In order to do, especially step two, realizing the power of experiments, I feel like this
+
+215
+00:14:52,600 --> 00:14:55,080
+power is step one.
+
+216
+00:14:55,080 --> 00:15:00,700
+And unleashing the power by having hypothesis and having the experiments, not only to tell
+
+217
+00:15:00,700 --> 00:15:05,940
+you which one is positive, but also to help you learn your customer better
+
+218
+00:15:05,940 --> 00:15:08,879
+or learn your products better.
+
+219
+00:15:08,879 --> 00:15:12,679
+That takes talent, right?
+
+220
+00:15:12,679 --> 00:15:16,500
+I think the experimentation journey is actually fairly long.
+
+221
+00:15:16,500 --> 00:15:20,960
+When you first start using it, you can operate at one level, but you have to become sort
+
+222
+00:15:20,960 --> 00:15:21,960
+of like practice.
+
+223
+00:15:21,960 --> 00:15:25,919
+And hopefully, having a reliable tool supports that.
+
+224
+00:15:25,919 --> 00:15:30,360
+But there's definitely many layers you can get to in experimentation to the point where
+
+225
+00:15:30,360 --> 00:15:36,120
+you're actually comfortable just trying random ideas and being able to just build it quickly
+
+226
+00:15:36,120 --> 00:15:37,759
+and test quickly.
+
+227
+00:15:37,759 --> 00:15:44,039
+I think that to me is where what we saw happen at Facebook and what we think companies can
+
+228
+00:15:44,039 --> 00:15:45,440
+get to eventually.
+
+229
+00:15:45,440 --> 00:15:49,840
+But I think you're right that people have to take small steps in order to get to that point.
+
+230
+00:15:49,840 --> 00:15:57,840
+My question is about, do you see the second step being done at companies other than this big tech company?
+
+231
+00:15:57,840 --> 00:16:05,000
+Like, have a hypothesis around the experiments, interpreting the results to understand the product and the people,
+
+232
+00:16:05,000 --> 00:16:09,000
+the customers, instead of just, you know, this is positive, that is negative, let's move on.
+
+233
+00:16:09,000 --> 00:16:15,000
+Yeah, I think we guide people there. We actually tell people that you should be focusing on
+
+234
+00:16:15,000 --> 00:16:19,000
+metrics that matter to you, you should be focusing on the user experience, and the metrics
+
+235
+00:16:19,000 --> 00:16:26,360
+that you see go positive, negative, or neutral should be consistent with what you think the user is experiencing.
+
+236
+00:16:26,360 --> 00:16:31,600
+I think different companies are at different stages.
+
+237
+00:16:31,600 --> 00:16:35,600
+I find that if there is a data scientist on the other side, they can actually use StatsIG
+
+238
+00:16:35,600 --> 00:16:41,240
+to guide their teams to how to interpret this, and I think that's usually a faster process.
+
+239
+00:16:41,240 --> 00:16:47,320
+But then we also have found that purely engineering teams are able to view
+
+240
+00:16:47,320 --> 00:16:53,440
+metrics with a degree of skepticism, and so therefore start actually being able to interpret
+
+241
+00:16:53,440 --> 00:16:58,600
+it properly. But I think it's easier if you have somebody to guide that, and that's partly
+
+242
+00:16:58,600 --> 00:17:00,000
+the role of a data scientist.
+
+243
+00:17:00,000 --> 00:17:05,359
+All right. My question is about the distribution of data scientists at different stages of
+
+244
+00:17:05,359 --> 00:17:06,359
+companies.
+
+245
+00:17:06,359 --> 00:17:10,240
+You said you have a spectrum, a mixture of different companies.
+
+246
+00:17:10,240 --> 00:17:17,880
+So very early, I guess, Series A, Series B, the pre-IPO and big IPO companies.
+
+247
+00:17:17,880 --> 00:17:22,680
+I don't know if that's the right kind of stages, but the distribution of data scientists.
+
+248
+00:17:22,680 --> 00:17:28,559
+Yeah, I sort of link this to what I call data maturity, and it's very different.
+
+249
+00:17:28,559 --> 00:17:32,759
+There's not really a set formula that once you hit 20 engineers, you must have your first
+
+250
+00:17:32,759 --> 00:17:34,039
+data scientist.
+
+251
+00:17:34,039 --> 00:17:37,680
+We've seen some companies bring on a data person very early on, and we've seen other
+
+252
+00:17:37,680 --> 00:17:41,920
+companies not have any data people, so they get to be fairly large.
+
+253
+00:17:41,920 --> 00:17:45,319
+There's not really a set formula.
+
+254
+00:17:45,319 --> 00:17:51,359
+I think for me, and we have to work with companies all across the spectrum, I think the way I
+
+255
+00:17:51,359 --> 00:17:56,319
+see the data maturity going is that usually you'll get your first data person that will
+
+256
+00:17:56,319 --> 00:18:03,460
+actually start helping your... The real value of a data scientist to me is helping the rest
+
+257
+00:18:03,460 --> 00:18:06,920
+of your team up-level their analytics ability,
+
+258
+00:18:06,920 --> 00:18:09,279
+helping them understand how to interpret data.
+
+259
+00:18:09,279 --> 00:18:13,400
+The data scientists themselves can produce insights, but I think the real power is actually
+
+260
+00:18:13,400 --> 00:18:16,839
+educating your team how to use data properly.
+
+261
+00:18:16,839 --> 00:18:22,799
+Data maturity, at the different stages of data maturity, do they really first hire a
+
+262
+00:18:22,799 --> 00:18:26,640
+data engineer or a data scientist?
+
+263
+00:18:26,640 --> 00:18:30,799
+If you go by the book, I've seen best practices that usually you bring in a data engineer
+
+264
+00:18:30,799 --> 00:18:37,359
+first so they can at least lay down the groundwork that here's a few data sets.
+
+265
+00:18:37,359 --> 00:18:42,079
+Engineers and PMs can do some basic queries on there in order to be able to get some value
+
+266
+00:18:42,079 --> 00:18:43,079
+out.
+
+267
+00:18:43,079 --> 00:18:45,559
+And so usually a data scientist comes after.
+
+268
+00:18:45,559 --> 00:18:49,839
+I have seen times where your first data scientist is hired before a data engineer, but their
+
+269
+00:18:49,839 --> 00:18:54,079
+work that they start doing at the beginning is data engineering work.
+
+270
+00:18:54,079 --> 00:19:00,200
+Yeah, I heard this happen a lot at pharmaceutical companies, actually.
+
+271
+00:19:00,200 --> 00:19:09,599
+The executives want to do deep learning, they want to do AI, so they hire a lot of AI scientists and end up doing the engineering work.
+
+272
+00:19:09,599 --> 00:19:13,799
+Yeah, I think it's one of those things where if you don't have that function at your company,
+
+273
+00:19:13,799 --> 00:19:17,799
+it's hard to, that first person you hire is actually hard to know what you're looking for.
+
+274
+00:19:17,799 --> 00:19:21,460
+It's actually how does a person interview someone in another field
+
+275
+00:19:21,460 --> 00:19:23,440
+and know that they're going to be a fit for the company.
+
+276
+00:19:23,440 --> 00:19:26,160
+It's a little bit tricky.
+
+277
+00:19:26,160 --> 00:19:34,559
+What is your advice for data scientists who want to try working at a startup?
+
+278
+00:19:34,559 --> 00:19:40,079
+Because it's very easy for engineers to jump from a big tech to startups, but it's perceived
+
+279
+00:19:40,079 --> 00:19:42,880
+as very hard for data scientists to do so.
+
+280
+00:19:42,880 --> 00:19:47,759
+For example, data scientists at big companies, they are used to this nice infrastructure,
+
+281
+00:19:47,759 --> 00:19:50,519
+clean data, and they start to...
+
+282
+00:19:50,519 --> 00:19:52,039
+Yeah, I think it's...
+
+283
+00:19:52,039 --> 00:19:54,839
+So I would have two pieces of advice.
+
+284
+00:19:54,839 --> 00:20:00,839
+One is just have very much a startup mentality, where you are prepared to roll up your sleeves.
+
+285
+00:20:00,839 --> 00:20:04,000
+And I tell people, get dirty with the data.
+
+286
+00:20:04,000 --> 00:20:06,799
+There is no data task that is beneath you
+
+287
+00:20:07,440 --> 00:20:13,160
+If you're at a startup, so like even just cleaning data removing nulls like just these the basic grunt work
+
+288
+00:20:13,160 --> 00:20:15,160
+Like there's no one else to do it. You have to do it
+
+289
+00:20:16,359 --> 00:20:20,440
+That is like the first thing is just like that's the startup mentality
+
+290
+00:20:20,440 --> 00:20:25,680
+The second one is just and maybe it's similar, but be prepared to learn new skills.
+
+291
+00:20:25,680 --> 00:20:27,180
+Be willing to learn new skills.
+
+292
+00:20:27,180 --> 00:20:31,339
+Be willing to try things that are outside your comfort zone.
+
+293
+00:20:31,339 --> 00:20:38,579
+And so, for example, one of the things we had to do was learn how to set up Spark for
+
+294
+00:20:38,579 --> 00:20:39,700
+our compute.
+
+295
+00:20:39,700 --> 00:20:52,000
+And that is not something which I would have ever thought I would know how to do. Fun fact, back at Amazon, I spent a week setting up Spark to query data from other orgs.
+
+296
+00:20:52,000 --> 00:20:53,000
+Okay, nice.
+
+297
+00:20:53,000 --> 00:20:58,000
+But I know the task would take a data engineer at most half a day.
+
+298
+00:20:58,000 --> 00:20:59,000
+Yeah.
+
+299
+00:20:59,000 --> 00:21:00,000
+Yeah.
+
+300
+00:21:00,000 --> 00:21:09,039
+Yeah, but it's one of these things where like there is, like and I fully know that somebody else could have done this job faster,
+
+301
+00:21:09,039 --> 00:21:10,319
+but there's nobody else around.
+
+302
+00:21:10,319 --> 00:21:10,640
+Yeah.
+
+303
+00:21:10,640 --> 00:21:14,000
+You are the person, so like you have no choice but to roll up your sleeves
+
+304
+00:21:14,000 --> 00:21:17,519
+and just find a way to do it and learn and find the quickest way to do it.
+
+305
+00:21:17,519 --> 00:21:21,279
+Like you know you haven't done it well, but it's good enough to move forward.
+
+306
+00:21:21,279 --> 00:21:29,700
+So I guess it doesn't hurt to be more full-stack like for startup you have to be who's that kind of I yeah
+
+307
+00:21:29,700 --> 00:21:32,359
+I think like so when I joined stats egg
+
+308
+00:21:32,359 --> 00:21:36,460
+I was not full stack, but I think so I think my recommendation is just a willingness to learn
+
+309
+00:21:37,279 --> 00:21:39,279
+or just let him
+
+310
+00:21:39,480 --> 00:21:43,240
+Can do attitude like yeah to know like yeah, yeah
+
+311
+00:21:44,599 --> 00:21:46,319
+That's exactly it. Yeah, so scrappiness. Yeah, yeah. That's exactly it.
+
+312
+00:21:46,319 --> 00:21:52,400
+So just find a way to do it, and even if it's outside your comfort zone.
+
+313
+00:21:52,400 --> 00:21:58,160
+Because you deal with a lot of startups who need data scientists, basically, at least
+
+314
+00:21:58,160 --> 00:22:00,759
+they need the tools to run experiments.
+
+315
+00:22:00,759 --> 00:22:07,960
+Do you think it's going to be a viable path or a growing path for data scientists to join
+
+316
+00:22:07,960 --> 00:22:08,960
+startup companies?
+
+317
+00:22:08,960 --> 00:22:17,400
+Or do they feel like your two can just satisfy most of the demand?
+
+318
+00:22:17,400 --> 00:22:20,240
+It depends what it is that your company is looking for.
+
+319
+00:22:20,240 --> 00:22:26,160
+But I find the way I phrase what StatSig does is we actually up-level your data scientists.
+
+320
+00:22:26,160 --> 00:22:32,240
+When I was at Facebook, and maybe you had the same experience, I had interviewed hundreds
+
+321
+00:22:32,240 --> 00:22:36,799
+of other data scientists, and I would always just, as a warm-up question, just ask them,
+
+322
+00:22:36,799 --> 00:22:41,079
+like, hey, how's your current company, and why are you looking for a job?
+
+323
+00:22:41,079 --> 00:22:47,039
+And more than half the times, they would tell me, hey, I'm the only data scientist at a small startup
+
+324
+00:22:47,039 --> 00:22:49,839
+and all I'm doing is crunching confidence intervals.
+
+325
+00:22:49,839 --> 00:22:53,079
+And it sucks.
+
+326
+00:22:53,079 --> 00:22:54,079
+And I've been there.
+
+327
+00:22:54,079 --> 00:22:56,079
+I know it's super tedious.
+
+328
+00:22:56,079 --> 00:22:59,519
+It's one of those things where if you mess up one small part of the calculation,
+
+329
+00:22:59,519 --> 00:23:01,240
+you'll get the opposite insight.
+
+330
+00:23:01,240 --> 00:23:04,160
+And so you have to triple check, quadruple check these things.
+
+331
+00:23:04,160 --> 00:23:10,079
+It's not really fun and it doesn't feel like a company's getting their full value of their
+
+332
+00:23:10,079 --> 00:23:12,519
+data scientists if they have them just crunching confidence intervals.
+
+333
+00:23:12,519 --> 00:23:16,279
+So data scientists don't want to do that job, and the company probably doesn't want their
+
+334
+00:23:16,279 --> 00:23:17,420
+data scientists doing that job.
+
+335
+00:23:17,420 --> 00:23:23,240
+So I think our tool can come in and take that very elementary level of analytics burden
+
+336
+00:23:23,240 --> 00:23:27,880
+off of the data scientists, so now the data scientist is not crunching results.
+
+337
+00:23:27,880 --> 00:23:32,039
+They're now focusing on more important problems such as designing the experiment, interpreting
+
+338
+00:23:32,039 --> 00:23:37,880
+the experiment, looking for follow-ups, like diving deep into the data and seeing what
+
+339
+00:23:37,880 --> 00:23:39,920
+else other insights there are.
+
+340
+00:23:39,920 --> 00:23:44,880
+I think that's where a data scientist starts bringing a lot more value to their company
+
+341
+00:23:44,880 --> 00:23:48,420
+than just crunching A-B test results.
+
+342
+00:23:48,420 --> 00:23:55,140
+So I guess by making experiments easier to run, right?
+
+343
+00:23:55,140 --> 00:23:59,500
+And unleashing the power of data scientists, we can actually have data scientists contributing
+
+344
+00:23:59,500 --> 00:24:02,319
+more to these companies.
+
+345
+00:24:02,319 --> 00:24:05,299
+And hopefully we can have more data scientists working at these companies
+
+346
+00:24:05,299 --> 00:24:06,299
+as well.
+
+347
+00:24:06,299 --> 00:24:07,299
+Yeah, that's it.
+
+348
+00:24:07,299 --> 00:24:08,299
+Okay, thank you Tim.
+
+349
+00:24:08,299 --> 00:24:09,299
+Oh, awesome.
+
+350
+00:24:09,299 --> 00:24:13,299
+Do you have any other things you want to add?
+
+351
+00:24:13,299 --> 00:24:14,299
+No, thank you very much.
+
+352
+00:24:14,299 --> 00:24:17,299
+I also heard Stasik is hiring data scientists.
+
+353
+00:24:17,299 --> 00:24:19,740
+What kind of data scientists are you hiring?
+
+354
+00:24:19,740 --> 00:24:22,460
+We're hiring data scientists and data engineers.
+
+355
+00:24:22,460 --> 00:24:29,000
+And I think as long as we continue to succeed, we will continue to be hiring, even if we don't have actually job openings.
+
+356
+00:24:29,000 --> 00:24:35,640
+But the data scientists we're looking for, there's sort of like two skills.
+
+357
+00:24:35,640 --> 00:24:38,559
+And one is being able to work with customers directly.
+
+358
+00:24:38,559 --> 00:24:44,319
+So communication skills, being able to translate statistics or complicated experimental concepts
+
+359
+00:24:44,319 --> 00:24:46,799
+in easy, plain English
+
+360
+00:24:46,799 --> 00:24:48,680
+is a pretty important one.
+
+361
+00:24:48,680 --> 00:24:58,319
+The second one is more on the technical side, so being able to put ideas and data science
+
+362
+00:24:58,319 --> 00:25:00,039
+concepts into code.
+
+363
+00:25:00,039 --> 00:25:04,000
+Being able to write in SQL, being able to write in Spark.
+
+364
+00:25:04,000 --> 00:25:05,000
+I would call a little bit more
+
+365
+00:25:05,000 --> 00:25:08,359
+of like a statistical engineer or an analytics engineer.
+
+366
+00:25:08,359 --> 00:25:10,200
+Yeah, but those are the sort of two skills.
+
+367
+00:25:10,200 --> 00:25:12,480
+And they're kind of on the opposite side of the spectrum.
+
+368
+00:25:12,480 --> 00:25:14,000
+Applied statistics.
+
+369
+00:25:14,000 --> 00:25:16,000
+Maybe applied statistics, yeah.
+
+370
+00:25:16,000 --> 00:25:17,799
+Essentially, like we need people who work
+
+371
+00:25:17,799 --> 00:25:20,599
+and work in the code base and ship production code.
+
+372
+00:25:20,599 --> 00:25:21,720
+Nice.
+
+373
+00:25:21,720 --> 00:25:23,880
+Okay, what about data engineering?
+
+374
+00:25:23,880 --> 00:25:25,480
+Data engineering is somewhat similar.
+
+375
+00:25:25,480 --> 00:25:26,480
+Do you have any?
+
+376
+00:25:26,480 --> 00:25:27,880
+We don't have any.
+
+377
+00:25:27,880 --> 00:25:28,880
+We're looking.
+
+378
+00:25:28,880 --> 00:25:33,359
+Yeah, I think data modeling is something we need to bring in.
+
+379
+00:25:33,359 --> 00:25:39,039
+So you asked what the difference is between an engineer that works with data and a data
+
+380
+00:25:39,039 --> 00:25:40,039
+engineer.
+
+381
+00:25:40,039 --> 00:25:41,440
+And I mentioned there's a lot of overlap.
+
+382
+00:25:41,440 --> 00:25:44,599
+I think one thing that doesn't overlap well is actually data modeling.
+
+383
+00:25:44,599 --> 00:25:48,279
+I think data engineers who are really good at data modeling is something we're looking
+
+384
+00:25:48,279 --> 00:25:49,279
+for.
+
+385
+00:25:49,279 --> 00:25:50,279
+All right.
+
+386
+00:25:50,279 --> 00:25:51,279
+Okay.
+
+387
+00:25:51,279 --> 00:25:52,279
+Thank you.
+
+388
+00:25:52,279 --> 00:25:53,720
+If you are interested, you can find Tim Linking.
+
+389
+00:25:53,720 --> 00:25:54,720
+Yeah, absolutely.
+
+390
+00:25:54,720 --> 00:25:55,720
+Please.
+
+391
+00:25:55,720 --> 00:25:56,720
+All right.
+
+392
+00:25:56,720 --> 00:25:57,720
+Thank you.
+
+393
+00:25:57,720 --> 00:25:58,720
+Thank you.
+
+394
+00:25:58,720 --> 00:25:58,740
+Bye.
+
