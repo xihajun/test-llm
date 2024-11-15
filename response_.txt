@@ -1,0 +1,44 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Emily",
+    "role": "MBA Student at Yale",
+    "category": "career",
+    "episodes": [
+      {
+        "title": "Emily的职业发展与MBA学习之旅 | 耶鲁大学访谈",
+        "views": "",
+        "url": "",
+        "uploadTime": "3个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期访谈邀请了耶鲁大学MBA学生Emily，她分享了从加州大学伯克利分校本科毕业后的职业发展经历，如何通过实习来明确自己的职业方向，以及在耶鲁MBA学习期间的收获。Emily强调了网络的重要性，并比较了东西部大学以及公立和私立学校的差异。",
+      "keyInsights": [
+        "职业发展需要早早规划，通过多种实习体验来确定职业方向",
+        "在MBA学习中，networking和社交技巧非常重要",
+        "选择MBA项目时，项目特色和个人职业规划的匹配度是关键",
+        "私立学校提供更多社交机会，而公立学校更强调个人主动性"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在AI时代，最危险的是固守过时的知识",
+          "context": "讨论终身学习重要性时的核心观点"
+        },
+        {
+          "quote": "网络是一个非常重要的skill",
+          "context": "Emily在MBA学习期间认识到网络的重要性"
+        }
+      ],
+      "topicsCovered": [
+        "职业规划与实习",
+        "MBA学习与网络",
+        "东西部学校差异",
+        "公立与私立学校的比较"
+      ]
+    }
+  }
+}
+```
