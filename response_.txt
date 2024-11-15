@@ -1,0 +1,46 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "Amazon VP",
+    "role": "Former VP at Amazon, Leadership Coach",
+    "category": "career",
+    "episodes": [
+      {
+        "title": "Navigating Career Growth and Leadership in the Tech Industry | Amazon VP Interview",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "In this interview, a former Amazon VP discusses career development in the evolving tech industry. The focus is on the timeless aspects of leadership and career growth, highlighting the importance of relationships, business value over technical prowess, and adapting to modern work environments like hybrid workforces. The guest shares insights from his extensive experience at Amazon, including starting Prime Video and Prime Gaming, and his current role as a leadership coach.",
+      "keyInsights": [
+        "The fundamental aspects of human interaction and leadership remain unchanged despite technological advancements.",
+        "Career growth in tech isn't just about technical skills but also about understanding business value and building relationships.",
+        "Hybrid and distributed workforces require new tactics but the core principles of leadership remain the same.",
+        "For individual contributors (ICs), success involves more than just technical excellence; it's about influence and relationship management.",
+        "The education system might not prepare individuals for the uncertainty and soft skills required in the workplace."
+      ],
+      "notableQuotes": [
+        {
+          "quote": "The master does the non-doing and everything falls into place.",
+          "context": "Emphasizing the importance of understanding human nature and leadership wisdom from historical figures like Lao Tzu."
+        },
+        {
+          "quote": "A working hack and an elegant algorithm may have the same business value.",
+          "context": "Discussing how technical perfection might not always equate to business progress."
+        }
+      ],
+      "topicsCovered": [
+        "Career growth in tech",
+        "Leadership and relationship building",
+        "Hybrid work environments",
+        "Adapting historical wisdom to modern business",
+        "The role of ICs in tech companies"
+      ]
+    }
+  }
+}
+```
