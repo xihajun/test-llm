@@ -1,0 +1,50 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Tim",
+    "role": "Lead Data Scientist",
+    "category": "tech",
+    "episodes": [
+      {
+        "title": "Exploring Data Science and Experimentation at Statsic | Tim Interview",
+        "views": 5000,
+        "url": "https://www.youtube.com/watch?v=example",
+        "uploadTime": "3个月前"
+      }
+    ],
+    "totalViews": 5000,
+    "analysis": {
+      "summary": "In this interview, Tim, the lead data scientist at Statsic, discusses the role of data science in startups, particularly focusing on A/B testing and experimentation. He shares his journey from working at large tech companies like Facebook to leading the data team at Statsic. Tim emphasizes the importance of making experimentation accessible yet rigorous, the evolution of data roles in startups, and the challenges and opportunities in data-driven decision making.",
+
+      "keyInsights": [
+        "The challenge at Statsic is to balance accessibility and rigor in A/B testing, providing tools that guide users towards best practices without overwhelming them with technical details.",
+        "Data scientists at startups often need to be versatile, taking on roles like data engineering, architecture, and even business strategy due to limited resources.",
+        "Experimentation is humbling as it often shows that even the most promising ideas might only have a small impact or none at all, highlighting the need for continuous calibration of expectations.",
+        "Data maturity in companies varies, with some bringing on data personnel early, while others delay until the company grows larger.",
+        "The value of data scientists in startups lies in their ability to educate and up-level the team's analytics capabilities, not just in producing insights."
+      ],
+
+      "notableQuotes": [
+        {
+          "quote": "The biggest challenge we have as a data science team is making experimentation accessible but also being rigorous.",
+          "context": "Discussing the balance between accessibility and rigor in A/B testing tools."
+        },
+        {
+          "quote": "You don't want to just look for the green. You want to tell a complete story.",
+          "context": "Explaining the importance of interpreting experimental results in the context of the hypothesis and expected outcomes."
+        }
+      ],
+
+      "topicsCovered": [
+        "Role of Data Scientists in Startups",
+        "A/B Testing and Experimentation",
+        "Data Maturity in Companies",
+        "Balancing Accessibility and Rigor in Data Tools",
+        "Challenges in Data Interpretation",
+        "Career Advice for Data Scientists"
+      ]
+    }
+  }
+}
+```
