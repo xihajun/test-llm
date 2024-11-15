@@ -1,0 +1,38 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "Unknown",
+    "role": "Guest",
+    "category": "hobby",
+    "episodes": [
+      {
+        "title": "Exploring Visual Wonders",
+        "views": "",
+        "url": "",
+        "uploadTime": "1周前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "In this brief interview, the guest expresses excitement and surprise about something visual, possibly a new technology or a visual effect. The discussion revolves around the guest's reactions to the visuals, showcasing a sense of awe and wonder.",
+      "keyInsights": [
+        "The guest was not expecting the visual effect or technology demonstrated.",
+        "The sudden impact of the visual element was significant and positively received.",
+        "The discussion highlights the guest's emotional response to visual technology."
+      ],
+      "notableQuotes": [
+        {
+          "quote": "哇!真的是啊!",
+          "context": "The guest's expression of awe and surprise at the visual content."
+        }
+      ],
+      "topicsCovered": [
+        "Visual effects",
+        "Surprise and wonder",
+        "Technology demonstration"
+      ]
+    }
+  }
+}
+```
