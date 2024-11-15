@@ -258,6 +258,7 @@ jobs:
 
   transcribe-on-dispatch:
     if: github.event_name == 'workflow_dispatch'
+    timeout-minutes: 3600 # 或更长时间
     needs: [find-branches]
     runs-on: runner
     steps:
