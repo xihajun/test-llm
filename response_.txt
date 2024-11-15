@@ -1,0 +1,44 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "FREYA",
+    "role": "Data Scientist at Meta",
+    "category": "life",
+    "episodes": [
+      {
+        "title": "FREYA的相亲视频 | 寻找稳定靠谱的另一半",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "FREYA在这期视频中勇敢地分享了自己的相亲视频，讲述了自己对稳定感情的渴望。她介绍了自己的职业、生活态度和兴趣爱好，展示了自己作为一个积极、乐观、热爱生活的个体，同时也表达了对未来另一半的期许和要求。",
+      "keyInsights": [
+        "FREYA强调了在忙碌的生活中寻找稳定感情的挑战性",
+        "她对工作的态度是认真但不过度卷入，优先考虑生活",
+        "强调了兴趣爱好的重要性，如旅游、音乐、运动等",
+        "她希望找到一个有上进心、情绪稳定且开放的另一半"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "我在纽约这样快捷度的一个城市，女生找到一个靠谱对象太难了",
+          "context": "解释为什么她选择通过视频来寻找另一半"
+        },
+        {
+          "quote": "我个人还是prioritize life versus work的一个attitude",
+          "context": "描述她对工作和生活平衡的看法"
+        }
+      ],
+      "topicsCovered": [
+        "个人介绍",
+        "职业发展与生活态度",
+        "兴趣爱好",
+        "寻找伴侣的期许"
+      ]
+    }
+  }
+}
+```
