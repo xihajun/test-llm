@@ -99,30 +99,47 @@ jobs:
         id: calculate-batches
         run: |
           BATCH_SIZE=256
-          BATCH_NUMBER=${{ github.event.inputs.batch_number }}
+          BATCH_NUMBER="${{ github.event.inputs.batch_number }}"
           BATCH_NUMBER=${BATCH_NUMBER:-1}
           
-          if [ ! -f branch_info/branches_to_process.txt ] || [ ! -s branch_info/branches_to_process.txt ]; then
+          if [ ! -f "branch_info/branches_to_process.txt" ] || [ ! -s "branch_info/branches_to_process.txt" ]; then
+            echo "No branches to process"
             echo "total_batches=0" >> $GITHUB_OUTPUT
             echo "batch_branches=[]" >> $GITHUB_OUTPUT
             exit 0
           fi
           
-          TOTAL_BRANCHES=$(wc -l < branch_info/branches_to_process.txt)
+          TOTAL_BRANCHES=$(wc -l < "branch_info/branches_to_process.txt")
           TOTAL_BATCHES=$(( (TOTAL_BRANCHES + BATCH_SIZE - 1) / BATCH_SIZE ))
           
           if [ "$BATCH_NUMBER" -gt "$TOTAL_BATCHES" ]; then
-            echo "Error: Invalid batch number"
+            echo "Error: Batch number $BATCH_NUMBER exceeds total batches $TOTAL_BATCHES"
             exit 1
           fi
           
           START_INDEX=$(( (BATCH_NUMBER - 1) * BATCH_SIZE + 1 ))
           END_INDEX=$(( BATCH_NUMBER * BATCH_SIZE ))
+          if [ $END_INDEX -gt $TOTAL_BRANCHES ]; then
+            END_INDEX=$TOTAL_BRANCHES
+          fi
           
-          BATCH_BRANCHES=$(sed -n "${START_INDEX},${END_INDEX}p" branch_info/branches_to_process.txt | jq -R . | jq -s .)
+          # Create JSON array properly
+          echo "Creating batch array from index $START_INDEX to $END_INDEX"
+          BATCH_BRANCHES=$(sed -n "${START_INDEX},${END_INDEX}p" "branch_info/branches_to_process.txt" | \
+                          sed 's/^/"/; s/$/"/' | \
+                          paste -sd, - | \
+                          sed 's/^/[/; s/$/]/')
+          
+          # Write outputs
           echo "total_batches=$TOTAL_BATCHES" >> $GITHUB_OUTPUT
           echo "batch_branches=$BATCH_BRANCHES" >> $GITHUB_OUTPUT
-          echo "$BATCH_BRANCHES" > branch_info/batch_branches.json
+          echo "$BATCH_BRANCHES" > "branch_info/batch_branches.json"
+          
+          # Debug output
+          echo "Total branches: $TOTAL_BRANCHES"
+          echo "Total batches: $TOTAL_BATCHES"
+          echo "Current batch: $BATCH_NUMBER"
+          echo "Batch branches: $BATCH_BRANCHES"
 
       - name: Upload branch information
         uses: actions/upload-artifact@v3
