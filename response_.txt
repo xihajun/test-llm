@@ -1,0 +1,43 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "不详",
+    "role": "Professional",
+    "category": "career",
+    "episodes": [
+      {
+        "title": "如何通过Artifacts展现职业价值",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期访谈讨论了在职业生涯中如何通过创造有价值的artifacts来展现和提升自己的职业价值。访谈者强调了许多工作的无用性，以及如何通过总结日常工作为有价值的artifacts来引导自己朝有意义的方向努力，并最终成为一个有价值的合作者。",
+      "keyInsights": [
+        "许多日常工作是无价值的，需要通过artifacts来评估工作的价值。",
+        "创造artifacts可以帮助个人识别并专注于有价值的工作。",
+        "展示自己的价值是获得更多工作空间和机会的关键。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "其实我们很多工作都是无用功，我们天天在原地打转",
+          "context": "访谈者讨论日常工作的无用性时提到的观点"
+        },
+        {
+          "quote": "如果你慢慢的去把你的日常的工作积累成artifacts，那你自然而然的就会调节你的工作",
+          "context": "强调通过artifacts来引导工作方向的意义"
+        }
+      ],
+      "topicsCovered": [
+        "职业价值",
+        "工作效率",
+        "个人发展",
+        "工作意义"
+      ]
+    }
+  }
+}
+```
