@@ -1,0 +1,46 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Richard",
+    "role": "Founder, Huma Finance",
+    "category": "tech",
+    "episodes": [
+      {
+        "title": "Huma Finance: 重新定义Web3金融生态",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期访谈中，Huma Finance的创始人Richard详细探讨了Web3金融生态的现状及未来发展。他强调了Web3在隐私和去中心化方面的挑战和机遇，同时介绍了Huma Finance的平台如何通过社区贡献和协议开放性来重塑金融系统的结构。",
+      "keyInsights": [
+        "Web3目前的隐私保护比Web2更差，但未来有巨大的潜力提升",
+        "Huma Finance通过开放协议和社区贡献，提供一个平台来支持各种金融模型和服务",
+        "金融基础设施、DeFi和零知识证明是Richard看好的三大方向",
+        "社区所有权和去中心化平台将带来新的商业模式和用户体验"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "Web3的隐私比web2还要差，因为你的钱包里面所有的transaction都在链上，大家都看得一清二楚的。",
+          "context": "讨论Web3当前面临的隐私问题时"
+        },
+        {
+          "quote": "我们是把这些income这些东西都汇集起来，然后让那些能做这些愿意做这些的人都能产生别的计算，而且他们也能得到他们的fair share of compensation。",
+          "context": "介绍Huma Finance如何通过社区贡献来构建金融模型"
+        }
+      ],
+      "topicsCovered": [
+        "Web3隐私与安全",
+        "金融基础设施",
+        "DeFi和零知识证明",
+        "社区所有权",
+        "新商业模式",
+        "创业体会"
+      ]
+    }
+  }
+}
+```
