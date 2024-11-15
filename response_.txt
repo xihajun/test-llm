@@ -1,0 +1,44 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Bingbing",
+    "role": "Wine Sommelier",
+    "category": "hobby",
+    "episodes": [
+      {
+        "title": "如何在茫茫酒海中选择？ | 品酒大师 Bingbing 访谈",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期访谈聚焦于如何在众多酒品中选择合适的葡萄酒。品酒大师Bingbing分享了他如何利用个人网络来源罕见和优质的葡萄酒，并讨论了普通消费者在选酒时面临的挑战。他强调了建立行业网络的重要性和对不同类型葡萄酒的个人品味。",
+      "keyInsights": [
+        "建立行业网络是成功寻找稀有葡萄酒的关键",
+        "专业酒商和店员的知识受到当前库存的限制",
+        "个人品酒喜好决定了酒单的选择"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "I have the ability if somebody requests a wine I can go to the moon and back to get it.",
+          "context": "描述为了满足客户需求，Bingbing愿意付出巨大努力"
+        },
+        {
+          "quote": "For the people, I know. It's not Master Sommelier for just- For the fine dining restaurant spending like $1,000.",
+          "context": "强调其服务的普及性和对普通消费者的重视"
+        }
+      ],
+      "topicsCovered": [
+        "葡萄酒选择",
+        "行业网络",
+        "个人品味",
+        "罕见葡萄酒",
+        "酒商知识"
+      ]
+    }
+  }
+}
+```
