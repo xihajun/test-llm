@@ -1,0 +1,46 @@
+```json
+{
+  "guest": {
+    "id": 3,
+    "name": "YuanC",
+    "role": "数据科学家",
+    "category": "tech",
+    "episodes": [
+      {
+        "title": "数据科学家的Machine Learning之路是否正确？ | YuanC访谈",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期视频中，YuanC探讨了为什么大多数数据科学家在AI时代做Machine Learning可能没有前途。他强调了Machine Learning的工程价值高于科学价值，并指出数据科学家应注重提升工程能力而非仅停留在科学研究上。",
+      "keyInsights": [
+        "Machine Learning的问题更多是工程问题而非科学问题，需要工程师的技能",
+        "数据科学家需要转向工程能力的提升以保持竞争力",
+        "大型公司更倾向于招聘Machine Learning Engineer而不是数据科学家",
+        "入门门槛低导致许多数据科学家误入Machine Learning领域",
+        "公司可能招聘数据科学家来做Machine Learning只是为了展示或汇报"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在AI时代，最危险的是固守过时的知识",
+          "context": "讨论终身学习的重要性时的核心观点"
+        },
+        {
+          "quote": "真正的价值是工程问题，而不是科学问题",
+          "context": "讲解Machine Learning的发展现状"
+        }
+      ],
+      "topicsCovered": [
+        "Machine Learning的工程价值",
+        "数据科学家与Machine Learning Engineer的区别",
+        "数据科学家职业发展",
+        "AI行业的误区",
+        "科学与工程在Machine Learning中的角色"
+      ]
+    }
+  }
+}
+```
