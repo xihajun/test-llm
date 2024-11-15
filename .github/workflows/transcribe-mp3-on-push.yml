@@ -1,6 +1,6 @@
 name: Transcribe MP3 on Push
 
-# on:
+on:
 #   push:
 #     branches:
 #       - 'process-*'
