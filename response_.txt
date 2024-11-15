@@ -1,0 +1,46 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Terry",
+    "role": "Content Ecosystem Director at Tencent",
+    "category": "career",
+    "episodes": [
+      {
+        "title": "如何打造高效说服力的PPT | Terry老师分享",
+        "views": "",
+        "url": "",
+        "uploadTime": "3个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "在这期访谈中，腾讯内容生态部的总监Terry老师分享了如何制作高效说服力的PPT。他强调了PPT的核心目的在于说服，并提供了从内容结构、视觉设计到逻辑推理等多个方面的实用建议，帮助职场人士在短时间内制作出有效的PPT。",
+      "keyInsights": [
+        "PPT的制作应该以说服为核心目的，而不是仅仅追求美观",
+        "在制作PPT时，需要考虑观众的视觉体验，避免字体过小和颜色不协调",
+        "逻辑清晰和内容简洁是PPT的关键，要学会删减无关信息",
+        "动画的使用应该服务于逻辑推理，而不是炫技",
+        "在职场中，PPT只是开始，真正的工作在于后续的执行和优化"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在AI时代，最危险的是固守过时的知识",
+          "context": "讨论终身学习重要性时的核心观点"
+        },
+        {
+          "quote": "PPT的制作应该以说服为核心目的，而不是仅仅追求美观",
+          "context": "Terry老师分享PPT制作的最终目标是说服观众"
+        }
+      ],
+      "topicsCovered": [
+        "PPT的制作目的与策略",
+        "视觉设计与观众体验",
+        "内容逻辑与简洁性",
+        "动画的正确使用",
+        "职场中的PPT应用"
+      ]
+    }
+  }
+}
+```
