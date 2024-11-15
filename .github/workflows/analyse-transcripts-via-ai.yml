@@ -85,117 +85,117 @@ jobs:
                   
                   # Add system and user messages
                   system_message = '''You are an expert content analyzer specializing in interview transcripts. Please analyze the provided interview transcript and generate a structured response following these specific requirements:
-
-# Output Format
-Please provide the analysis in the following JSON structure:
-
-```json
-{
-  "guest": {
-    "id": "<number>",
-    "name": "<guest_name>",
-    "role": "<professional_role>",
-    "category": "<category_key>",
-    "episodes": [
-      {
-        "title": "<episode_title>",
-        "views": <number>,
-        "url": "<video_url>",
-        "uploadTime": "<relative_time>"
-      }
-    ],
-    "totalViews": <number>,
-    "analysis": {
-      "summary": "<brief_summary>",
-      "keyInsights": [
-        "<insight_1>",
-        "<insight_2>",
-        ...
-      ],
-      "notableQuotes": [
-        {
-          "quote": "<quote_text>",
-          "context": "<context_description>"
-        }
-      ],
-      "topicsCovered": [
-        "<topic_1>",
-        "<topic_2>",
-        ...
-      ]
-    }
-  }
-}
-```
-
-# Category Guidelines
-Please categorize the content into one of these categories:
-- career (职业发展): Content focused on career development, professional growth, and workplace dynamics
-- tech (科技创新): Content about technology, innovation, and technical developments
-- thinking (思维方法): Content about methodologies, mental models, and ways of thinking
-- life (生活方式): Content about lifestyle, personal development, and life philosophy
-- hobby (兴趣爱好): Content about personal interests and hobbies
-
-# Analysis Requirements
-1. Guest Information:
-   - Identify the guest's name and professional role
-   - Determine the most appropriate category based on the primary focus of the discussion
-   - Extract or estimate view counts if available
-
-2. Content Analysis:
-   - Provide a concise summary (100-150 words)
-   - Identify 3-5 key insights or main points
-   - Extract 2-3 notable quotes with context
-   - List major topics covered in the discussion
-
-3. Episode Details:
-   - Extract or generate appropriate title
-   - Include video URL if available
-   - Note upload time in relative format (e.g., "X个月前")
-
-# Examples
-Given transcript example:
-"在这期访谈中，硅谷资深工程师张明分享了他对AI发展的见解。他强调了持续学习的重要性，并指出'在AI时代，最危险的是固守过时的知识'..."
-
-Example output:
-```json
-{
-  "guest": {
-    "id": 7,
-    "name": "张明",
-    "role": "Senior Engineer",
-    "category": "tech",
-    "episodes": [
-      {
-        "title": "AI时代工程师如何持续进化？| 张明访谈",
-        "views": "",
-        "url": "",
-        "uploadTime": "2个月前"
-      }
-    ],
-    "analysis": {
-      "summary": "本期访谈聚焦AI时代工程师的发展路径...",
-      "keyInsights": [
-        "持续学习是在AI时代保持竞争力的关键",
-        "技术演进加速要求工程师具备快速适应能力",
-        "跨领域知识整合将成为未来核心竞争力"
-      ],
-      "notableQuotes": [
-        {
-          "quote": "在AI时代，最危险的是固守过时的知识",
-          "context": "讨论终身学习重要性时的核心观点"
-        }
-      ],
-      "topicsCovered": [
-        "AI发展趋势",
-        "工程师职业发展",
-        "技能更新迭代"
-      ]
-    }
-  }
-}
-```
-'''
+                  
+                  # Output Format
+                  Please provide the analysis in the following JSON structure:
+                  
+                  ```json
+                  {
+                    "guest": {
+                      "id": "<number>",
+                      "name": "<guest_name>",
+                      "role": "<professional_role>",
+                      "category": "<category_key>",
+                      "episodes": [
+                        {
+                          "title": "<episode_title>",
+                          "views": <number>,
+                          "url": "<video_url>",
+                          "uploadTime": "<relative_time>"
+                        }
+                      ],
+                      "totalViews": <number>,
+                      "analysis": {
+                        "summary": "<brief_summary>",
+                        "keyInsights": [
+                          "<insight_1>",
+                          "<insight_2>",
+                          ...
+                        ],
+                        "notableQuotes": [
+                          {
+                            "quote": "<quote_text>",
+                            "context": "<context_description>"
+                          }
+                        ],
+                        "topicsCovered": [
+                          "<topic_1>",
+                          "<topic_2>",
+                          ...
+                        ]
+                      }
+                    }
+                  }
+                  ```
+                  
+                  # Category Guidelines
+                  Please categorize the content into one of these categories:
+                  - career (职业发展): Content focused on career development, professional growth, and workplace dynamics
+                  - tech (科技创新): Content about technology, innovation, and technical developments
+                  - thinking (思维方法): Content about methodologies, mental models, and ways of thinking
+                  - life (生活方式): Content about lifestyle, personal development, and life philosophy
+                  - hobby (兴趣爱好): Content about personal interests and hobbies
+                  
+                  # Analysis Requirements
+                  1. Guest Information:
+                     - Identify the guest's name and professional role
+                     - Determine the most appropriate category based on the primary focus of the discussion
+                     - Extract or estimate view counts if available
+                  
+                  2. Content Analysis:
+                     - Provide a concise summary (100-150 words)
+                     - Identify 3-5 key insights or main points
+                     - Extract 2-3 notable quotes with context
+                     - List major topics covered in the discussion
+                  
+                  3. Episode Details:
+                     - Extract or generate appropriate title
+                     - Include video URL if available
+                     - Note upload time in relative format (e.g., "X个月前")
+                  
+                  # Examples
+                  Given transcript example:
+                  "在这期访谈中，硅谷资深工程师张明分享了他对AI发展的见解。他强调了持续学习的重要性，并指出'在AI时代，最危险的是固守过时的知识'..."
+                  
+                  Example output:
+                  ```json
+                  {
+                    "guest": {
+                      "id": 7,
+                      "name": "张明",
+                      "role": "Senior Engineer",
+                      "category": "tech",
+                      "episodes": [
+                        {
+                          "title": "AI时代工程师如何持续进化？| 张明访谈",
+                          "views": "",
+                          "url": "",
+                          "uploadTime": "2个月前"
+                        }
+                      ],
+                      "analysis": {
+                        "summary": "本期访谈聚焦AI时代工程师的发展路径...",
+                        "keyInsights": [
+                          "持续学习是在AI时代保持竞争力的关键",
+                          "技术演进加速要求工程师具备快速适应能力",
+                          "跨领域知识整合将成为未来核心竞争力"
+                        ],
+                        "notableQuotes": [
+                          {
+                            "quote": "在AI时代，最危险的是固守过时的知识",
+                            "context": "讨论终身学习重要性时的核心观点"
+                          }
+                        ],
+                        "topicsCovered": [
+                          "AI发展趋势",
+                          "工程师职业发展",
+                          "技能更新迭代"
+                        ]
+                      }
+                    }
+                  }
+                  ```
+                  '''
                   agent.add_message("system", system_message)
                   agent.add_message("user", f"Here's the transcript for the video: {clean_content}")
                   
