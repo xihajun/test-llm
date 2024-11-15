@@ -1,0 +1,47 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "Nick",
+    "role": "Wine and Sake Specialist",
+    "category": "hobby",
+    "episodes": [
+      {
+        "title": "Exploring the World of Wine and Sake | Nick's Mystery Box",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "In this episode, Nick introduces a selection of wines and a sake from his mystery box, focusing on different regions, vintages, and production styles. He explains the uniqueness of grower champagnes, the rarity of certain vintages like Krug, and delves into the world of sake, offering insights into small-batch production. The conversation also covers wine pairings and the aging potential of various wines, providing a rich exploration of beverage culture.",
+      "keyInsights": [
+        "Grower champagnes offer a more delicate and detailed flavor profile compared to larger brands.",
+        "The rarity and allocation system in the wine industry reward long-term relationships with suppliers.",
+        "Sake, particularly high-quality small-batch versions, can be a sophisticated alternative to wine.",
+        "Different wines from various regions have unique characteristics that make them suitable for different occasions and pairings.",
+        "Wine aging is not always necessary, as many wines are made to be enjoyed in their accessible drinking window."
+      ],
+      "notableQuotes": [
+        {
+          "quote": "In AI时代，最危险的是固守过时的知识",
+          "context": "Nick explains the importance of understanding and adapting to the nuances of wine production and aging."
+        },
+        {
+          "quote": "They're impressive. The growers are a bit more focused and detailed.",
+          "context": "Comparing the showy nature of big-name champagnes to the detailed craftsmanship of grower champagnes."
+        }
+      ],
+      "topicsCovered": [
+        "Grower Champagnes",
+        "Wine Production",
+        "Sake",
+        "Wine Aging",
+        "Wine Pairing",
+        "Rare Wines"
+      ]
+    }
+  }
+}
+```
