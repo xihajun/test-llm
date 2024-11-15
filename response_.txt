@@ -1,0 +1,41 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "Caterpillar Jon",
+    "role": "YouTuber and Content Creator",
+    "category": "life",
+    "episodes": [
+      {
+        "title": "Caterpillar Jon的会员计划详解",
+        "views": "",
+        "url": "",
+        "uploadTime": "1周前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "在这次访谈中，Caterpillar Jon详细介绍了他的会员频道计划。他分享了加入YouTube和B站会员系统的经历，解释了不同会员级别的福利，并强调了会员支持对他创作动力的重要性。他还探讨了如何通过会员系统更好地与观众互动，以及如何利用专属视频来提供更深入的内容。",
+      "keyInsights": [
+        "会员系统的支持让Jon有动力提供更多优质内容。",
+        "互联网上的付费门槛高，会员支持意义重大。",
+        "Jon计划通过会员系统提供完整访谈视频和专属内容。",
+        "会员评论优先阅读和回复，提升Jon的创作积极性。",
+        "Jon希望在会员区创建一个深度讨论的社区。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在AI时代，最危险的是固守过时的知识",
+          "context": "讨论终身学习重要性时的核心观点"
+        }
+      ],
+      "topicsCovered": [
+        "会员频道规划",
+        "观众互动与支持",
+        "内容深度与创新",
+        "社群建设"
+      ]
+    }
+  }
+}
+```
