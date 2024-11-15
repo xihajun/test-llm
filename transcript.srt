@@ -1,0 +1,940 @@
+1
+00:00:00,000 --> 00:00:10,119
+Okay, Stats Egg was created by a set of ex-Facebook engineers and data scientists with the intention
+
+2
+00:00:10,119 --> 00:00:17,160
+of bringing a set of infrastructure tools that we use inside Facebook to everyone.
+
+3
+00:00:17,160 --> 00:00:22,839
+So inside Facebook, the development infrastructure is very well thought out and a lot of investment
+
+4
+00:00:22,839 --> 00:00:27,800
+has gone in and that enables teams to move really, really fast, make product decisions
+
+5
+00:00:00,000 --> 00:00:06,160
+really really fast and then ship only the right features to the users. And what
+
+6
+00:00:06,160 --> 00:00:11,160
+we want to do at StatSig is give the same power to those teams that may not
+
+7
+00:00:11,160 --> 00:00:16,839
+be able to like actually invest so much in infrastructure tools to get to the
+
+8
+00:00:16,839 --> 00:00:22,199
+right decisions for their own product. What we do is give a set of development
+
+9
+00:00:22,199 --> 00:00:28,679
+tools that allows you to first build your new features and when you build you
+
+10
+00:00:00,000 --> 00:00:06,320
+We want to make it really, really easy to move fast and decouple product features from
+
+11
+00:00:06,320 --> 00:00:07,320
+code shipments.
+
+12
+00:00:07,320 --> 00:00:12,720
+So, for example, if you have a mobile team and a server team that are building the same
+
+13
+00:00:12,720 --> 00:00:17,039
+feature, they need to talk to each other and they need to be able to launch the same feature
+
+14
+00:00:17,039 --> 00:00:18,280
+at the same time.
+
+15
+00:00:18,280 --> 00:00:22,879
+It's very hard to coordinate a bunch of those things, especially because of dependencies
+
+16
+00:00:22,879 --> 00:00:27,519
+with Apple and Android, Google Play and so on.
+
+17
+00:00:00,000 --> 00:00:05,799
+So what we do is we allow these things called feature gates that allow you to build features
+
+18
+00:00:05,799 --> 00:00:10,880
+separately and then turn them on whenever you're ready.
+
+19
+00:00:10,880 --> 00:00:15,400
+And then the second thing is we allow you to measure the impact of each of the features
+
+20
+00:00:15,400 --> 00:00:16,399
+on your product.
+
+21
+00:00:16,399 --> 00:00:20,359
+So when we talk about the measurement, this is important to understand that it's not just
+
+22
+00:00:20,359 --> 00:00:24,679
+about like the surface level metrics, it's about when you ship a new feature, how does
+
+23
+00:00:24,679 --> 00:00:28,199
+it affect the overall company level and the business level metrics.
+
+24
+00:00:00,000 --> 00:00:05,200
+And we allow you to, using simple tools,
+
+25
+00:00:05,200 --> 00:00:08,160
+measure those and get to the right decision.
+
+26
+00:00:08,160 --> 00:00:10,039
+And then once you get to the right decision,
+
+27
+00:00:10,039 --> 00:00:12,480
+you can either ship your product or decide
+
+28
+00:00:12,480 --> 00:00:14,199
+to go iterate on your product.
+
+29
+00:00:14,199 --> 00:00:18,280
+And so the idea is to make it so easy to run
+
+30
+00:00:18,280 --> 00:00:25,960
+these kind of tests in language like experiments and A-B tests,
+
+31
+00:00:25,960 --> 00:00:28,440
+so much so that you should be running
+
+32
+00:00:00,000 --> 00:00:04,160
+every feature as a test, and that allows you to get to 10x
+
+33
+00:00:04,160 --> 00:00:07,320
+more tests than most other tools out there.
+
+34
+00:00:07,320 --> 00:00:11,199
+And then that means you're already well on your way
+
+35
+00:00:11,199 --> 00:00:13,519
+to trying out various different things
+
+36
+00:00:13,519 --> 00:00:17,280
+and having your product lead the way in growing it,
+
+37
+00:00:17,280 --> 00:00:19,859
+rather than waiting for marketing or sales teams
+
+38
+00:00:19,859 --> 00:00:21,399
+to grow your product.
+
+39
+00:00:21,399 --> 00:00:24,879
+The last thing is also arriving at causation.
+
+40
+00:00:24,879 --> 00:00:27,239
+So when you have features behind feature gates
+
+41
+00:00:00,000 --> 00:00:03,120
+And when the tool can give you a really good way
+
+42
+00:00:03,120 --> 00:00:09,080
+to debug why metrics are going in a particular direction,
+
+43
+00:00:09,080 --> 00:00:17,219
+it gets you faster at arriving at why your products are doing
+
+44
+00:00:17,219 --> 00:00:19,920
+what they're doing, and then be able to simplify
+
+45
+00:00:19,920 --> 00:00:25,480
+some of your debugging without relying on data scientists.
+
+46
+00:00:25,480 --> 00:00:27,239
+The other thing I want to mention here
+
+47
+00:00:00,000 --> 00:00:04,440
+is that the team that built all of this came from Facebook
+
+48
+00:00:04,440 --> 00:00:09,320
+and we've seen a lot of the way product growth happens
+
+49
+00:00:09,320 --> 00:00:10,640
+inside these companies.
+
+50
+00:00:10,640 --> 00:00:14,019
+And so a lot of experience has gone into
+
+51
+00:00:14,019 --> 00:00:15,599
+building these tools.
+
+52
+00:00:15,599 --> 00:00:18,160
+Not just that, we also make it extremely reliable
+
+53
+00:00:18,160 --> 00:00:21,339
+and scalable because the tools have served
+
+54
+00:00:21,339 --> 00:00:22,879
+some pretty large companies.
+
+55
+00:00:22,879 --> 00:00:24,500
+So let's start.
+
+56
+00:00:24,500 --> 00:00:26,879
+So when you first go into statsic.com,
+
+57
+00:00:00,000 --> 00:00:03,000
+You see our landing page.
+
+58
+00:00:03,000 --> 00:00:07,000
+The landing page gives you an overview of what we're trying to do.
+
+59
+00:00:07,000 --> 00:00:17,000
+Basically what we want to do is to make it easy for all products to build and measure what they're building
+
+60
+00:00:17,000 --> 00:00:19,000
+and how it affects their product metrics.
+
+61
+00:00:19,000 --> 00:00:24,000
+And then based on those, make decisions to ship or not to ship or to go iterate on the product.
+
+62
+00:00:24,000 --> 00:00:28,000
+So you can read a lot more about what we have going on here.
+
+63
+00:00:00,000 --> 00:00:04,879
+here. We also talk a little bit about a product and the documentation and our team and so on.
+
+64
+00:00:05,679 --> 00:00:13,439
+But once you sign in, we land you in our console which is where you configure our product. The
+
+65
+00:00:13,439 --> 00:00:18,480
+first thing you want to notice is that we have a list of projects that you can create. You can
+
+66
+00:00:18,480 --> 00:00:26,079
+create as many projects as you want. These projects are scopes and these scopes have people from
+
+67
+00:00:00,000 --> 00:00:05,759
+teams invited so that kind of like each team has its own set of features and metrics and
+
+68
+00:00:05,759 --> 00:00:08,400
+so on so they don't step on each other's toes.
+
+69
+00:00:08,400 --> 00:00:11,699
+What I'll do is I'll start showing off our demo project.
+
+70
+00:00:11,699 --> 00:00:16,280
+So we have a demo project where all the data is filled in.
+
+71
+00:00:16,280 --> 00:00:18,440
+So first thing I want to show off is feature gates.
+
+72
+00:00:18,440 --> 00:00:23,280
+So what this does is you have a set of features that you want to build and every time you
+
+73
+00:00:23,280 --> 00:00:29,620
+write code you want to create your code, you want to put that code behind a feature gate.
+
+74
+00:00:00,000 --> 00:00:05,440
+what that allows you to do is decouple code launches from feature launches. And so whenever
+
+75
+00:00:05,440 --> 00:00:12,160
+you're ready to open up a feature, you will then go turn on a feature or turn it off if something
+
+76
+00:00:12,160 --> 00:00:17,440
+goes wrong. Here's a view of all the features, or the feature gates that we have. And you can turn
+
+77
+00:00:17,440 --> 00:00:23,519
+them on or off easily. You can also see how well they're doing in terms of like how many checks are
+
+78
+00:00:00,000 --> 00:00:01,600
+are happening on a daily basis.
+
+79
+00:00:01,600 --> 00:00:05,099
+I'll pick one example to go into and drill.
+
+80
+00:00:05,099 --> 00:00:07,519
+So once you go into a feature gate,
+
+81
+00:00:08,480 --> 00:00:10,039
+you will notice a few things here.
+
+82
+00:00:10,039 --> 00:00:11,980
+So first thing is I'll actually tell you
+
+83
+00:00:11,980 --> 00:00:13,599
+your daily exposures,
+
+84
+00:00:13,599 --> 00:00:16,359
+and then it also gives you a toggle
+
+85
+00:00:16,359 --> 00:00:20,000
+to like either turn on or off as you need.
+
+86
+00:00:20,000 --> 00:00:22,399
+And then once you come in here, you see a set of rules.
+
+87
+00:00:22,399 --> 00:00:27,399
+So the rules are determined how a feature is open for people
+
+88
+00:00:00,000 --> 00:00:05,120
+people and allows you to target a specific feature to specific audiences.
+
+89
+00:00:05,120 --> 00:00:10,640
+And these targeting criteria, we have quite a few of them and each of them follows this
+
+90
+00:00:10,640 --> 00:00:15,279
+kind of like this workflow of rule set, so if then else condition.
+
+91
+00:00:15,279 --> 00:00:20,039
+In this particular case, you have this feature is open to employees only.
+
+92
+00:00:20,039 --> 00:00:25,440
+The way we determine employees only is by checking if an email, if their email, the
+
+93
+00:00:25,440 --> 00:00:28,839
+user email contains any of swagger.com.
+
+94
+00:00:00,000 --> 00:00:03,720
+That means that the user is an employee,
+
+95
+00:00:03,720 --> 00:00:07,320
+and that means we want to open this feature to 100%.
+
+96
+00:00:07,320 --> 00:00:10,359
+And once that rule fails, it'll go to the next rule set,
+
+97
+00:00:10,359 --> 00:00:11,599
+and so on and so forth.
+
+98
+00:00:11,599 --> 00:00:13,240
+And if you want to add more conditions,
+
+99
+00:00:13,240 --> 00:00:14,839
+it's relatively easy.
+
+100
+00:00:14,839 --> 00:00:18,960
+You can add conditions based on all of these criteria.
+
+101
+00:00:18,960 --> 00:00:22,199
+So we have user ID, app version, browser name, browser version,
+
+102
+00:00:22,199 --> 00:00:24,199
+country.
+
+103
+00:00:24,199 --> 00:00:27,519
+Country means you can actually target the feature only
+
+104
+00:00:27,519 --> 00:00:29,820
+to a specific set of countries.
+
+105
+00:00:00,000 --> 00:00:02,080
+We have email environment.
+
+106
+00:00:02,080 --> 00:00:06,759
+We also have ability to either chain existing gates,
+
+107
+00:00:06,759 --> 00:00:10,199
+like either a fails target gate or passes target gate.
+
+108
+00:00:10,199 --> 00:00:11,439
+We have operating systems.
+
+109
+00:00:11,439 --> 00:00:14,240
+So you can target iOS or Android.
+
+110
+00:00:14,240 --> 00:00:17,239
+So for example, you can do iOS Android only.
+
+111
+00:00:17,239 --> 00:00:21,600
+That means you want to only open this feature to mobile users,
+
+112
+00:00:21,600 --> 00:00:22,719
+and so on.
+
+113
+00:00:22,719 --> 00:00:24,519
+Another one of those is time.
+
+114
+00:00:24,519 --> 00:00:26,879
+So you can actually say, open this feature
+
+115
+00:00:26,879 --> 00:00:29,199
+only after a specific day.
+
+116
+00:00:00,000 --> 00:00:03,080
+So if ever you're doing like a Memorial Day sale or something,
+
+117
+00:00:03,080 --> 00:00:07,000
+you can then time your feature.
+
+118
+00:00:07,000 --> 00:00:10,599
+So this is the way you do features,
+
+119
+00:00:10,599 --> 00:00:13,519
+and you can gate these features to specific people.
+
+120
+00:00:13,519 --> 00:00:15,640
+Once you create a gate, you also have the ability
+
+121
+00:00:15,640 --> 00:00:17,480
+to look at the history of the changes
+
+122
+00:00:17,480 --> 00:00:21,399
+and be able to restore to a well-known good state.
+
+123
+00:00:21,399 --> 00:00:24,519
+We also give you ability to take code snippets.
+
+124
+00:00:24,519 --> 00:00:26,519
+You can copy this code and paste it
+
+125
+00:00:00,000 --> 00:00:04,240
+in your client or server, depending on the language
+
+126
+00:00:04,240 --> 00:00:05,900
+and the environment that you're using.
+
+127
+00:00:08,800 --> 00:00:11,279
+Then once you have set up a feature gate,
+
+128
+00:00:11,279 --> 00:00:13,080
+one of the things that you're gonna notice is like,
+
+129
+00:00:13,080 --> 00:00:15,880
+there are some people that are being exposed to the feature
+
+130
+00:00:15,880 --> 00:00:16,719
+and there are some people
+
+131
+00:00:16,719 --> 00:00:18,960
+that are not exposed to the feature.
+
+132
+00:00:18,960 --> 00:00:21,679
+StatSig takes advantage of that fact
+
+133
+00:00:21,679 --> 00:00:26,140
+and then is able to provide a set of features and metrics
+
+134
+00:00:26,140 --> 00:00:28,039
+for the people that are exposed to the feature
+
+135
+00:00:00,000 --> 00:00:05,240
+and people that are not exposed to the feature using this analysis tool called Pulse.
+
+136
+00:00:05,240 --> 00:00:10,960
+Pulse gives you kind of like the cumulative effect of how a particular feature is performing.
+
+137
+00:00:10,960 --> 00:00:15,439
+So in this particular case you can see like 10.45% of the people are being exposed to
+
+138
+00:00:15,439 --> 00:00:18,440
+this feature and then the remaining are not.
+
+139
+00:00:18,440 --> 00:00:24,079
+And then if you go down it will actually show you how that particular feature is doing across
+
+140
+00:00:24,079 --> 00:00:25,359
+a bunch of metrics.
+
+141
+00:00:00,000 --> 00:00:03,359
+So in this particular case, you will see a weekly stickiness
+
+142
+00:00:03,359 --> 00:00:08,119
+is actually down quite significantly by 4.38%.
+
+143
+00:00:08,119 --> 00:00:11,240
+And then any time you see red values,
+
+144
+00:00:11,240 --> 00:00:15,320
+that means it's statistically significantly underperforming.
+
+145
+00:00:15,320 --> 00:00:17,280
+And then any time you see green values,
+
+146
+00:00:17,280 --> 00:00:20,320
+in this particular case, there are no green values,
+
+147
+00:00:20,320 --> 00:00:22,879
+that will be significantly performing better.
+
+148
+00:00:22,879 --> 00:00:25,120
+And then the gray ones are those that
+
+149
+00:00:25,120 --> 00:00:28,440
+are directionally correlated but not quite
+
+150
+00:00:00,000 --> 00:00:02,000
+reached statistical significance.
+
+151
+00:00:02,000 --> 00:00:05,080
+So now you can actually look at this feature,
+
+152
+00:00:05,080 --> 00:00:07,419
+like turns out this feature is doing really poorly
+
+153
+00:00:07,419 --> 00:00:08,759
+and you don't want to launch this feature.
+
+154
+00:00:08,759 --> 00:00:10,800
+So that's the kind of decision that you want to make.
+
+155
+00:00:10,800 --> 00:00:12,400
+And you can drill, go back into Pulse
+
+156
+00:00:12,400 --> 00:00:15,199
+and you can see like we make Pulse available
+
+157
+00:00:15,199 --> 00:00:17,300
+for every feature that you have shipped.
+
+158
+00:00:17,300 --> 00:00:19,440
+And so you can be able to like
+
+159
+00:00:19,440 --> 00:00:21,399
+make the right product decisions
+
+160
+00:00:22,280 --> 00:00:25,199
+based on every feature that you want to watch.
+
+161
+00:00:00,000 --> 00:00:05,000
+Moving on, we have another feature called dynamic config.
+
+162
+00:00:05,000 --> 00:00:09,000
+Dynamic config allows you to provide real-time and
+
+163
+00:00:09,000 --> 00:00:13,000
+runtime configurations based on targeting.
+
+164
+00:00:13,000 --> 00:00:17,000
+One example is localization. For example, if you have a set of
+
+165
+00:00:17,000 --> 00:00:21,000
+strings, you want to provide the default value in English.
+
+166
+00:00:21,000 --> 00:00:25,000
+You have like us, follow us, and share, and so on. These are all provided in English.
+
+167
+00:00:25,000 --> 00:00:29,000
+Then, imagine in the future
+
+168
+00:00:00,000 --> 00:00:03,000
+your localization team comes back and says,
+
+169
+00:00:03,000 --> 00:00:05,639
+hey, we got some Spanish strings.
+
+170
+00:00:05,639 --> 00:00:08,279
+And then you can simply add a new condition
+
+171
+00:00:08,279 --> 00:00:10,240
+where you say, if the user is coming
+
+172
+00:00:10,240 --> 00:00:13,039
+from any of these countries, Mexico, Spain, Argentina,
+
+173
+00:00:13,039 --> 00:00:16,440
+or so on, then you want to provide Spanish strings.
+
+174
+00:00:16,440 --> 00:00:19,000
+And then you can actually go update your configuration
+
+175
+00:00:19,000 --> 00:00:19,800
+this way.
+
+176
+00:00:19,800 --> 00:00:23,079
+This allows you to very easily go
+
+177
+00:00:23,079 --> 00:00:25,000
+change the behavior of the application
+
+178
+00:00:25,000 --> 00:00:28,600
+without having to write code or ship new versions.
+
+179
+00:00:00,000 --> 00:00:05,440
+And this is easily extensible to other languages and so on.
+
+180
+00:00:05,440 --> 00:00:08,560
+The next thing I want to show off is holdouts.
+
+181
+00:00:08,560 --> 00:00:10,039
+So sometimes when you're launching
+
+182
+00:00:10,039 --> 00:00:12,759
+lots and lots of features during a small period of time,
+
+183
+00:00:12,759 --> 00:00:16,000
+especially if you have teams that are moving really fast,
+
+184
+00:00:16,000 --> 00:00:18,480
+you want to understand what is the cumulative effect of all
+
+185
+00:00:18,480 --> 00:00:21,000
+of the features that you've launched during a specific time.
+
+186
+00:00:21,000 --> 00:00:23,839
+So what we do is we provide you with this thing called
+
+187
+00:00:23,839 --> 00:00:27,120
+holdout, which you can set up at the beginning of the half
+
+188
+00:00:27,120 --> 00:00:29,620
+or the quarter, depending on how much time you want to spend
+
+189
+00:00:00,000 --> 00:00:03,720
+measured this thing, and you can make a holdout be global and assign like, you
+
+190
+00:00:03,720 --> 00:00:06,719
+know, a small percentage of people that are held out from every feature. So in
+
+191
+00:00:06,719 --> 00:00:12,560
+this particular case we have 2% holdout. So what that means is like any new
+
+192
+00:00:12,560 --> 00:00:18,920
+feature that you're building in that quarterly period will be behind
+
+193
+00:00:18,920 --> 00:00:22,440
+this holdout. So those features will respect this holdout. So in this
+
+194
+00:00:22,440 --> 00:00:25,440
+particular case, let's go back to the Darkpoint homepage that I showed you,
+
+195
+00:00:00,000 --> 00:00:12,000
+And here you'll see that we have this gate is respecting a list of holdouts and one of them is the H1 product holdout which is 2%.
+
+196
+00:00:12,000 --> 00:00:26,000
+So this is very useful because our Pulse analysis engine automatically picks out holdouts and will also tell you the cumulative effect of all the features that were launched during a specific period of time.
+
+197
+00:00:00,000 --> 00:00:01,899
+And so Pulse is going to tell you like, okay, well,
+
+198
+00:00:01,899 --> 00:00:04,259
+the purchase rate in the last six months has gone
+
+199
+00:00:04,259 --> 00:00:07,960
+up by quite significantly, but the DAU and the MAU
+
+200
+00:00:07,960 --> 00:00:11,300
+and the WAU have actually fallen.
+
+201
+00:00:11,300 --> 00:00:15,720
+So this gives you an overview of like all of the product work
+
+202
+00:00:15,720 --> 00:00:17,300
+that your teams have done.
+
+203
+00:00:17,300 --> 00:00:20,460
+Very, very helpful in like coming up with, you know,
+
+204
+00:00:20,460 --> 00:00:25,920
+the how one feature either impacts positively
+
+205
+00:00:25,920 --> 00:00:29,960
+or negatively other features.
+
+206
+00:00:00,000 --> 00:00:02,879
+We also provide a set of metrics.
+
+207
+00:00:02,879 --> 00:00:04,519
+Metrics are very useful to like,
+
+208
+00:00:04,519 --> 00:00:06,040
+when you're logging new events,
+
+209
+00:00:06,040 --> 00:00:09,480
+you can see how each of these metrics are doing.
+
+210
+00:00:09,480 --> 00:00:10,919
+So in this particular case,
+
+211
+00:00:10,919 --> 00:00:12,160
+product view if I remove,
+
+212
+00:00:12,160 --> 00:00:15,119
+so you can see a set of features.
+
+213
+00:00:15,119 --> 00:00:18,160
+You can also see a set of events that you're logging.
+
+214
+00:00:18,160 --> 00:00:25,000
+These events are really useful to debug your product integration.
+
+215
+00:00:25,000 --> 00:00:28,280
+Then what we also provide is set of derived metrics.
+
+216
+00:00:28,280 --> 00:00:29,600
+In this particular case,
+
+217
+00:00:00,000 --> 00:00:02,000
+We give you a list of all the
+
+218
+00:00:02,560 --> 00:00:09,439
+user level metrics like daily active, weekly active, monthly actives. One of the important features here is we actually overlay
+
+219
+00:00:09,960 --> 00:00:15,839
+a set of feature updates. So whether you've launched a new feature or turned off a new, an old feature
+
+220
+00:00:16,480 --> 00:00:21,460
+and it's overlaid with the metrics. So that kind of gives you a clean idea of like, okay
+
+221
+00:00:21,460 --> 00:00:25,440
+what could have changed any kind of inflection in your metrics. In this particular case
+
+222
+00:00:00,000 --> 00:00:06,679
+you see the metric going down and then we made some changes and then the metric started going up and now you know the list
+
+223
+00:00:06,679 --> 00:00:10,640
+of all the changes is captured right here. So it gives you a really easy way to start debugging
+
+224
+00:00:11,240 --> 00:00:13,240
+any issues.
+
+225
+00:00:14,400 --> 00:00:16,399
+Then finally I want to show off
+
+226
+00:00:16,800 --> 00:00:23,280
+integration. So our product integrates with like lots and lots of data aggregators so that if you have data in any of these
+
+227
+00:00:24,600 --> 00:00:29,120
+places you should be able to like quickly integrate that and the statsig will pull that data.
+
+228
+00:00:00,000 --> 00:00:06,780
+And then if you are a developer, we have lots of documentation around how you can use, you
+
+229
+00:00:06,780 --> 00:00:10,380
+know, walk-through guides of like how you can create your new feature, how do you make
+
+230
+00:00:10,380 --> 00:00:13,640
+your code dynamic, and then so on and so forth.
+
+231
+00:00:13,640 --> 00:00:16,980
+We also have a list of client and server SDKs.
+
+232
+00:00:16,980 --> 00:00:21,179
+So whichever technology you're using, we have a solution for you there.
+
+233
+00:00:21,179 --> 00:00:28,059
+We also have HTTP REST APIs that you can call directly if we don't support your SDKs.
+
+234
+00:00:00,000 --> 00:00:03,759
+So that brings us to the end of this demo.
+
+235
+00:00:03,759 --> 00:00:05,000
+Cool?
+
