@@ -1,0 +1,46 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "Unnamed Data Scientist",
+    "role": "Data Scientist",
+    "category": "tech",
+    "episodes": [
+      {
+        "title": "Why Facebook is Great for Data Scientists",
+        "views": "",
+        "url": "",
+        "uploadTime": "2个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "In this episode, the guest, a data scientist at Facebook, shares insights on why the company is an ideal place for data scientists. The discussion focuses on the importance of data in product development, the supportive infrastructure, the data-driven culture, and the unique organizational structure at Facebook. He also discusses the challenges for junior data scientists and the competitive environment within the company.",
+      "keyInsights": [
+        "Data is central to product strategy and decision-making at Facebook, giving data scientists significant influence.",
+        "The company's infrastructure, including data engineers and automated tools, greatly enhances the efficiency of data scientists.",
+        "A strong engineering culture promotes a meritocratic environment where data is used to validate ideas and experiments.",
+        "The organizational structure at Facebook allows data scientists to be both independent and deeply involved in product development.",
+        "Challenges include less guidance for junior data scientists and potential competition for impactful projects."
+      ],
+      "notableQuotes": [
+        {
+          "quote": "All the products I see at Facebook starts with data and ends as data.",
+          "context": "Highlighting the critical role of data in product lifecycle at Facebook."
+        },
+        {
+          "quote": "If you look at big tech companies at Silicon Valley, Facebook and Google are probably the two most engineer-driven companies.",
+          "context": "Explaining the cultural emphasis on engineering and data at Facebook."
+        }
+      ],
+      "topicsCovered": [
+        "Data Scientist's Role at Facebook",
+        "Data Infrastructure",
+        "Data-Driven Culture",
+        "Organizational Structure",
+        "Challenges for Data Scientists"
+      ]
+    }
+  }
+}
+```
