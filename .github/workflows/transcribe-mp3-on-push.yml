@@ -1,9 +1,9 @@
 name: Transcribe MP3 on Push
 
-on:
-  push:
-    branches:
-      - 'process-*'
+# on:
+#   push:
+#     branches:
+#       - 'process-*'
   workflow_dispatch:
     inputs:
       batch_number:
