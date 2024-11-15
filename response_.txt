@@ -1,0 +1,42 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "Not Specified",
+    "role": "Data Analyst",
+    "category": "career",
+    "episodes": [
+      {
+        "title": "Writing as a Key Skill for Data Analysts",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "analysis": {
+      "summary": "In this interview, the importance of writing for data analysts is emphasized. The guest highlights that writing is perhaps the most critical skill for data analysts, allowing them to delve deeper into problems, clearly articulate their thoughts, and influence others. The discussion also touches on the pitfalls of writing for show rather than for impact, advocating for problem-solving writing as the most valuable artifact for a company.",
+      "keyInsights": [
+        "Writing is the most important skill for data analysts, enabling problem exploration and influence.",
+        "Effective writing should aim to solve problems and influence others rather than merely showcasing knowledge.",
+        "Data analysts are hired to guide business decisions, not to act as librarians of information."
+      ],
+      "notableQuotes": [
+        {
+          "quote": "Writing is perhaps the most important skill for data analysts, even without a doubt.",
+          "context": "Emphasizing the significance of writing for data analysts."
+        },
+        {
+          "quote": "Good writing must aim to solve problems and influence people, creating truly valuable artifacts.",
+          "context": "Discussing the purpose and impact of writing in a professional context."
+        }
+      ],
+      "topicsCovered": [
+        "Writing skills for data analysts",
+        "Problem-solving through writing",
+        "Impact of writing on business decisions",
+        "Writing for influence and clarity"
+      ]
+    }
+  }
+}
+```
