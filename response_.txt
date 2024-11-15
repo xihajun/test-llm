@@ -1,0 +1,46 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "徐老师",
+    "role": "资深硅谷导师",
+    "category": "career",
+    "episodes": [
+      {
+        "title": "硅谷Networking的艺术与实战",
+        "views": "1000",
+        "url": "",
+        "uploadTime": "2天前"
+      }
+    ],
+    "totalViews": 1000,
+    "analysis": {
+      "summary": "本期访谈中，硅谷资深导师徐老师分享了他20多年的职业生涯中关于Networking的深刻见解。他强调了Networking在职业发展中的重要性，介绍了硅谷近期的几起重大并购案例，以及Networking的策略和心态。徐老师指出，在AI时代，个人品牌和人际关系的重要性被放大，Networking应该被视为一个长期的投资。",
+      "keyInsights": [
+        "Networking不仅是建立关系网，更是一种长期的投资和自我品牌的建立。",
+        "在AI时代，个人的网络和声誉对职业发展的影响更大。",
+        "Mentor和Mentee之间的互动应是双向的学习过程。",
+        "职业发展中，帮助自己的经理晋升是重要的策略。",
+        "Networking应以真诚和长期的态度进行，不能急功近利。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在AI时代，最危险的是固守过时的知识",
+          "context": "讨论终身学习重要性时的核心观点"
+        },
+        {
+          "quote": "Networking是一个长期的事情，它是一个注重因果而不是注重结果的事情",
+          "context": "强调Networking需要长期视角和真诚的态度"
+        }
+      ],
+      "topicsCovered": [
+        "硅谷Networking的重要性",
+        "AI时代的人际关系与职业发展",
+        "如何寻找和建立Mentor关系",
+        "并购案例与Networking的实践",
+        "职业发展策略和心态"
+      ]
+    }
+  }
+}
+```
