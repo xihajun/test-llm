@@ -18,6 +18,7 @@ jobs:
   transcribe-on-push:
     if: github.event_name == 'push'
     runs-on: runner
+    timeout-minutes: 180
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,49 +31,10 @@ jobs:
         run: |
           source /home/junfan/test/venv/bin/activate
           export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
-          python3 << EOF
-          from transformers import pipeline
-          import os
-
-          # Check if output.mp3 exists
-          if not os.path.exists('output.mp3'):
-              print("Error: output.mp3 not found")
-              exit(1)
-
-          asr_pipeline = pipeline("automatic-speech-recognition", model="openai/whisper-large-v2", device=0)
-          result = asr_pipeline("output.mp3", return_timestamps=True)
-
-          def format_timestamp(seconds):
-              hours = int(seconds // 3600)
-              minutes = int((seconds % 3600) // 60)
-              seconds = seconds % 60
-              milliseconds = int((seconds - int(seconds)) * 1000)
-              return f"{hours:02}:{minutes:02}:{int(seconds):02},{milliseconds:03}"
-
-          with open('transcript.srt', 'w', encoding='utf-8') as f:
-              for i, segment in enumerate(result['chunks'], start=1):
-                  start = segment['timestamp'][0]
-                  end = segment['timestamp'][1]
-                  text = segment['text'].strip()
-                  f.write(f"{i}\n{format_timestamp(start)} --> {format_timestamp(end)}\n{text}\n\n")
-
-          with open('transcript.txt', 'w', encoding='utf-8') as f:
-              for segment in result['chunks']:
-                  start = segment['timestamp'][0]
-                  end = segment['timestamp'][1]
-                  text = segment['text'].strip()
-                  f.write(f"[{format_timestamp(start)} -> {format_timestamp(end)}] {text}\n")
-
-          # Verify files were created
-          if os.path.exists('transcript.srt') and os.path.exists('transcript.txt'):
-              print("::set-output name=transcription_success::true")
-          else:
-              print("Error: Transcription files not created")
-              exit(1)
-          EOF
+          python3 .github/workflows/convert2txt.py
 
       - name: Commit Transcript
-        if: steps.transcribe.outputs.transcription_success == 'true'
+        if: success()
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
@@ -80,15 +42,13 @@ jobs:
           git config --global user.email 'github-actions@github.com'
           git remote set-url origin https://${{ github.actor }}:${{ env.GH_TOKEN }}@github.com/${{ github.repository }}
           
-          # Check if there are changes to commit
           if [[ -f transcript.srt && -f transcript.txt ]]; then
             git add transcript.srt transcript.txt
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-              exit 0
-            else
+            if ! git diff --staged --quiet; then
               git commit -m 'Add transcription files'
               git push origin ${{ github.ref }}
+            else
+              echo "No changes to commit"
             fi
           else
             echo "Error: Transcription files not found"
@@ -107,216 +67,139 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: List branches
+      - name: List and categorize branches
         id: list-branches
         run: |
-          # Ensure we have the latest data
-          git fetch --all --prune --unshallow || git fetch --all --prune
-          git config --global --add safe.directory "${GITHUB_WORKSPACE}"
-          # Create directory for branch information
           mkdir -p branch_info
           
           # Get all process-* branches
           BRANCHES=$(git ls-remote --heads origin "process-*" | awk '{print $2}' | sed 's|refs/heads/||')
           echo "$BRANCHES" > branch_info/all_branches.txt
-          echo "Found branches:"
-          echo "$BRANCHES"
           
-          # Initialize files for different branch categories
+          # Initialize branch category files
           > branch_info/branches_to_process.txt
           > branch_info/branches_with_transcripts.txt
           > branch_info/branches_without_mp3.txt
-          > branch_info/branch_status.json
-          
-          # Initialize JSON array for branch status
-          echo "[" > branch_info/branch_status.json
-          FIRST_ENTRY=true
           
           for BRANCH in $BRANCHES; do
-            echo "Checking branch $BRANCH"
-            
-            # Prepare JSON entry
-            if [ "$FIRST_ENTRY" = true ]; then
-              FIRST_ENTRY=false
-            else
-              echo "," >> branch_info/branch_status.json
-            fi
-            
-            # Check branch content and categorize
-            # Fetch the specific branch and check its contents
             git fetch origin $BRANCH:refs/remotes/origin/$BRANCH --force
             
-            # Use ls-tree with the full ref path and check the HEAD of the branch
             if ! git ls-tree -r --name-only origin/$BRANCH HEAD | grep -qE 'transcript\.txt|transcript\.srt'; then
               if git ls-tree -r --name-only origin/$BRANCH | grep -q 'output.mp3'; then
-                echo "Branch $BRANCH has MP3 file but no transcript files."
                 echo "$BRANCH" >> branch_info/branches_to_process.txt
-                # Add to JSON with status
-                echo "{
-                  \"branch\": \"$BRANCH\",
-                  \"status\": \"to_process\",
-                  \"has_mp3\": true,
-                  \"has_transcript\": false,
-                  \"checked_at\": \"$(date -u '+%Y-%m-%dT%H:%M:%SZ')\"
-                }" >> branch_info/branch_status.json
               else
-                echo "Branch $BRANCH has no MP3 file to process."
                 echo "$BRANCH" >> branch_info/branches_without_mp3.txt
-                # Add to JSON with status
-                echo "{
-                  \"branch\": \"$BRANCH\",
-                  \"status\": \"no_mp3\",
-                  \"has_mp3\": false,
-                  \"has_transcript\": false,
-                  \"checked_at\": \"$(date -u '+%Y-%m-%dT%H:%M:%SZ')\"
-                }" >> branch_info/branch_status.json
               fi
             else
-              echo "Branch $BRANCH already has transcript files."
               echo "$BRANCH" >> branch_info/branches_with_transcripts.txt
-              # Add to JSON with status
-              echo "{
-                \"branch\": \"$BRANCH\",
-                \"status\": \"has_transcript\",
-                \"has_mp3\": true,
-                \"has_transcript\": true,
-                \"checked_at\": \"$(date -u '+%Y-%m-%dT%H:%M:%SZ')\"
-              }" >> branch_info/branch_status.json
             fi
           done
-          
-          # Close JSON array
-          echo "]" >> branch_info/branch_status.json
-          
-          # Create a summary file
-          {
-            echo "Branch Status Summary ($(date -u '+%Y-%m-%dT%H:%M:%SZ'))"
-            echo "=================================================="
-            echo "Total branches found: $(wc -l < branch_info/all_branches.txt)"
-            echo "Branches to process: $(wc -l < branch_info/branches_to_process.txt)"
-            echo "Branches with transcripts: $(wc -l < branch_info/branches_with_transcripts.txt)"
-            echo "Branches without MP3: $(wc -l < branch_info/branches_without_mp3.txt)"
-          } > branch_info/summary.txt
-          
-          echo "Branches to process:"
-          cat branch_info/branches_to_process.txt
 
       - name: Calculate Batches
         id: calculate-batches
         run: |
           BATCH_SIZE=256
           BATCH_NUMBER=${{ github.event.inputs.batch_number }}
-          if [ -z "$BATCH_NUMBER" ]; then
-            BATCH_NUMBER=1
-          fi
+          BATCH_NUMBER=${BATCH_NUMBER:-1}
           
-          if [ ! -f branches_to_process.txt ] || [ ! -s branches_to_process.txt ]; then
-            echo "No branches to process"
+          if [ ! -f branch_info/branches_to_process.txt ] || [ ! -s branch_info/branches_to_process.txt ]; then
             echo "total_batches=0" >> $GITHUB_OUTPUT
             echo "batch_branches=[]" >> $GITHUB_OUTPUT
             exit 0
           fi
-      
-          TOTAL_BRANCHES=$(wc -l < branches_to_process.txt)
+          
+          TOTAL_BRANCHES=$(wc -l < branch_info/branches_to_process.txt)
           TOTAL_BATCHES=$(( (TOTAL_BRANCHES + BATCH_SIZE - 1) / BATCH_SIZE ))
-      
-          # Check if BATCH_NUMBER is within a valid range
+          
           if [ "$BATCH_NUMBER" -gt "$TOTAL_BATCHES" ]; then
-            echo "Error: BATCH_NUMBER $BATCH_NUMBER exceeds TOTAL_BATCHES $TOTAL_BATCHES."
+            echo "Error: Invalid batch number"
             exit 1
           fi
-      
-          echo "Processing batch number: $BATCH_NUMBER"
-          echo "Total branches: $TOTAL_BRANCHES"
-          echo "Total batches: $TOTAL_BATCHES"
-      
+          
           START_INDEX=$(( (BATCH_NUMBER - 1) * BATCH_SIZE + 1 ))
           END_INDEX=$(( BATCH_NUMBER * BATCH_SIZE ))
-      
-          # Adjust END_INDEX if it exceeds TOTAL_BRANCHES
-          if [ $END_INDEX -gt $TOTAL_BRANCHES ]; then
-            END_INDEX=$TOTAL_BRANCHES
-          fi
-      
-          echo "Processing branches from $START_INDEX to $END_INDEX"
-      
-          # Extract the branches for this batch and convert to JSON array format
-          BATCH_BRANCHES=$(sed -n "${START_INDEX},${END_INDEX}p" branches_to_process.txt | jq -R . | jq -s .)
+          
+          BATCH_BRANCHES=$(sed -n "${START_INDEX},${END_INDEX}p" branch_info/branches_to_process.txt | jq -R . | jq -s .)
           echo "total_batches=$TOTAL_BATCHES" >> $GITHUB_OUTPUT
           echo "batch_branches=$BATCH_BRANCHES" >> $GITHUB_OUTPUT
-          echo "$BATCH_BRANCHES" > batch_branches.json
-          
-      # Upload branch information artifacts
+          echo "$BATCH_BRANCHES" > branch_info/batch_branches.json
+
       - name: Upload branch information
         uses: actions/upload-artifact@v3
         with:
           name: branch-info
-          path: |
-            branch_info/
-            batch_branches.json
+          path: branch_info/
           retention-days: 90
 
   transcribe-on-dispatch:
     if: github.event_name == 'workflow_dispatch'
-    timeout-minutes: 3600 # 或更长时间
     needs: [find-branches]
     runs-on: runner
+    timeout-minutes: 1440  # 24 hours
+    strategy:
+      fail-fast: false
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Download batch_branches.json artifact
+      - name: Download branch information
         uses: actions/download-artifact@v3
         with:
           name: branch-info
-  
+          path: branch_info
+
       - name: Process branches
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          source /home/junfan/test/venv/bin/activate
+          export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+          
           if [ ! -f branch_info/branches_to_process.txt ] || [ ! -s branch_info/branches_to_process.txt ]; then
             echo "No branches need processing"
             exit 0
           fi
           
-          cp .github/workflows/convert2txt.py .
+          # Configure git
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git remote set-url origin https://${{ github.actor }}:${{ env.GH_TOKEN }}@github.com/${{ github.repository }}
+          
+          # Process each branch
           while IFS= read -r branch; do
-            echo "Processing branch $branch"
-
-            # Checkout the branch
-            git checkout "$branch" || {
-              echo "Failed to checkout branch $branch"
-              continue
-            }
-            git pull
-
-            # Check if output.mp3 exists
-            if [ ! -f output.mp3 ]; then
-              echo "No output.mp3 found in branch $branch"
+            echo "Processing branch: $branch"
+            
+            if ! git checkout "$branch"; then
+              echo "Failed to checkout branch: $branch"
               continue
             fi
-
-            # Run transcription commands
-            source /home/junfan/test/venv/bin/activate
-            export HIP_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
-            python3 convert2txt.py
-
-            # Check if transcription files were created
-            if [ -f transcript.srt ] && [ -f transcript.txt ]; then
-              # Commit the transcription files
-              git config --global user.name 'github-actions'
-              git config --global user.email 'github-actions@github.com'
-              git remote set-url origin https://${{ github.actor }}:${{ env.GH_TOKEN }}@github.com/${{ github.repository }}
-              git add transcript.srt transcript.txt
-              if ! git diff --staged --quiet; then
-                git commit -m "Add transcription files for $branch"
-                git push origin "$branch" || echo "Failed to push to $branch"
+            
+            git pull origin "$branch"
+            
+            if [ ! -f output.mp3 ]; then
+              echo "No output.mp3 found in branch: $branch"
+              continue
+            fi
+            
+            if python3 .github/workflows/convert2txt.py; then
+              if [[ -f transcript.srt && -f transcript.txt ]]; then
+                git add transcript.srt transcript.txt
+                if ! git diff --staged --quiet; then
+                  git commit -m "Add transcription files for $branch"
+                  if git push origin "$branch"; then
+                    echo "Successfully processed branch: $branch"
+                  else
+                    echo "Failed to push changes for branch: $branch"
+                  fi
+                else
+                  echo "No changes to commit for branch: $branch"
+                fi
               else
-                echo "No changes to commit for $branch"
+                echo "Transcription failed for branch: $branch"
               fi
             else
-              echo "Transcription failed for branch $branch"
+              echo "Processing failed for branch: $branch"
             fi
           done < branch_info/branches_to_process.txt
