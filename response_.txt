@@ -1,0 +1,43 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Unknown",
+    "role": "Entrepreneur",
+    "category": "thinking",
+    "episodes": [
+      {
+        "title": "如何在竞争中脱颖而出？ | 创业者访谈",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期访谈中，一位创业者分享了如何在竞争激烈的环境中保持成熟和自信。他强调了接受问题空间的成熟度和培养自信的重要性，指出机会不会自动降临到每个人头上，而是需要通过对领域的深入了解来获得。",
+      "keyInsights": [
+        "成熟度意味着接受问题空间的现实，机会不会自动降临到你头上。",
+        "自信源自对领域的深入了解，了解越深，自信越强。",
+        "在竞争环境中，要通过不断学习和深入了解问题来获得竞争优势。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "不要期待有一个好的opportunity hand it to your silver platter",
+          "context": "讨论成熟度时指出机会不会自动来到你面前"
+        },
+        {
+          "quote": "这个信心是源自于你对它的理解",
+          "context": "解释自信来源于对领域的深刻理解"
+        }
+      ],
+      "topicsCovered": [
+        "机会的获取与成熟度",
+        "自信的培养",
+        "领域知识的重要性",
+        "竞争中的策略"
+      ]
+    }
+  }
+}
+```
