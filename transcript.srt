@@ -1,0 +1,4076 @@
+1
+00:00:00,000 --> 00:00:05,960
+So today, I'd like to introduce our speaker, who is also a
+
+2
+00:00:05,960 --> 00:00:10,599
+Cornell student. But right now, he after he graduates from
+
+3
+00:00:10,599 --> 00:00:17,160
+Cornell, he actually has a lot of decisions on how to make a
+
+4
+00:00:17,199 --> 00:00:21,239
+change from one job to another. He was he had experience in
+
+5
+00:00:21,280 --> 00:00:29,839
+building setups. And he also has some inter experience in BCG. So, and later after he chose to not to
+
+6
+00:00:29,839 --> 00:00:34,640
+do consulting anymore and to switch to Amazon and right now
+
+7
+00:00:34,640 --> 00:00:40,399
+he's a senior data scientist on Facebook. So I feel is, you
+
+8
+00:00:40,399 --> 00:00:44,399
+know, he has this is his name is being tied with so many big
+
+9
+00:00:44,399 --> 00:00:47,679
+names of this, you of these great companies.
+
+10
+00:00:47,679 --> 00:00:55,079
+And especially during our personal interaction, I also know Yu Zheng had also wanted to stay
+
+11
+00:00:55,079 --> 00:01:07,680
+in academia, but later he made a transition and go to a non-academia world so i'm really excited to be able to uh have him as our uh second
+
+12
+00:01:08,239 --> 00:01:17,040
+the speaker of our second episode and i i think you will also learn a lot uh especially at this
+
+13
+00:01:17,040 --> 00:01:23,920
+stage of your phd you probably you are having some uh you know you probably want to stay in
+
+14
+00:01:23,920 --> 00:01:28,400
+academia and you also want to uh explore the world. And you also want to explore the world outside. And I
+
+15
+00:01:28,400 --> 00:01:32,400
+think you will benefit a lot from today's talk. So be her
+
+16
+00:01:32,439 --> 00:01:33,719
+introduced the rules.
+
+17
+00:01:33,719 --> 00:01:37,079
+Yeah, just a couple of housekeeping rules before we
+
+18
+00:01:37,079 --> 00:01:41,200
+start. So we would appreciate it if you meet yourself during the
+
+19
+00:01:41,200 --> 00:01:49,000
+talk to eliminate background noise, but you know, feel free to open your camera if you want. And then at
+
+20
+00:01:49,000 --> 00:01:52,799
+the end of the talk, we'll leave a lot of time for q&a, which I
+
+21
+00:01:52,799 --> 00:01:56,439
+think is going to be very, the most the more interesting part
+
+22
+00:01:56,439 --> 00:02:00,079
+where you can actually directly ask each and any questions. If
+
+23
+00:02:00,079 --> 00:02:08,000
+you want to ask directly, then just type raise hand in the chat box and then we will give the mic to you.
+
+24
+00:02:08,000 --> 00:02:14,000
+If you're a bit shy, you can type in the questions in the chat box and then one of us will read it out loud.
+
+25
+00:02:14,000 --> 00:02:25,199
+Please don't ask too many questions, maybe not more than two, but definitely encourage everyone to at least ask one question. I think, oh,
+
+26
+00:02:25,199 --> 00:02:28,599
+last thing, when you're asking questions, it'd be great to turn
+
+27
+00:02:29,080 --> 00:02:32,599
+on your video because it just always feels more personal to
+
+28
+00:02:32,599 --> 00:02:36,759
+see the person face to face. So that's pretty much everything.
+
+29
+00:02:36,759 --> 00:02:39,000
+Should we give the floor to our speaker?
+
+30
+00:02:39,520 --> 00:02:44,560
+Definitely. So I just stopped sharing. Yijun, can you start
+
+31
+00:02:44,560 --> 00:02:44,919
+sharing?
+
+32
+00:02:44,800 --> 00:02:46,280
+So I just stopped sharing. You john, can you start sharing?
+
+33
+00:02:46,759 --> 00:02:49,039
+Hey.
+
+34
+00:02:52,759 --> 00:02:52,800
+Yeah, so thank you for inviting us. Thank you for having this
+
+35
+00:02:56,879 --> 00:02:56,919
+series. I'm going to talk about that in my presentation as well
+
+36
+00:03:00,199 --> 00:03:09,240
+because that is one of the biggest lessons learned I learned as well. Like, looking back to my PhD years that I didn't spend much time knowing what's out there. So
+
+37
+00:03:09,280 --> 00:03:14,599
+just stayed on my epidemiopaths for too long. And that is one of
+
+38
+00:03:14,599 --> 00:03:18,879
+my biggest regrets of my of my life. Otherwise, I'll be much
+
+39
+00:03:18,879 --> 00:03:25,599
+richer than what I am right now. Okay, so thank you. And one more thing.
+
+40
+00:03:25,639 --> 00:03:29,919
+Sometimes I do not control the pace of my pace of my speak
+
+41
+00:03:30,020 --> 00:03:36,439
+well. And if you find something unclear, feel free to interrupt
+
+42
+00:03:36,439 --> 00:03:41,120
+me and ask me to repeat what do I actually mean. All right,
+
+43
+00:03:52,360 --> 00:03:52,400
+Alright, I'll start sharing. Okay, so from econ PhD to tech,
+
+44
+00:03:57,479 --> 00:03:57,520
+I guess the first part is going to be a brief introduction of my
+
+45
+00:04:02,840 --> 00:04:05,879
+journey. And the second is my lessons and kind of my three devices. So self intro,
+
+46
+00:04:05,879 --> 00:04:09,520
+this is just a screenshot of my thinking. Right now I'm a senior
+
+47
+00:04:09,520 --> 00:04:14,360
+data scientist on Facebook, I do Facebook e commerce, not the
+
+48
+00:04:14,360 --> 00:04:19,759
+Facebook shops, the marketplace citizenship. So if you I guess
+
+49
+00:04:19,759 --> 00:04:23,560
+most of us are from China is kind of saying you in the
+
+50
+00:04:23,560 --> 00:04:30,319
+American version. And before that, I was an economist at Amazon. So we do
+
+51
+00:04:30,399 --> 00:04:34,399
+so that Okay, so the difference between these two jobs at Amazon
+
+52
+00:04:34,399 --> 00:04:39,399
+as an economist, I got to do a lot of what I do in PhD. So I
+
+53
+00:04:39,399 --> 00:04:43,240
+read academic papers, I do models, I read machine learning
+
+54
+00:04:43,240 --> 00:04:49,160
+causal inference models. But as a data scientist at Facebook, I mostly
+
+55
+00:04:49,160 --> 00:04:55,720
+just do SQL to get data, and then taproot to plot two charts,
+
+56
+00:04:55,759 --> 00:05:00,160
+basically, I just pop our charts. And then I do kind of
+
+57
+00:05:00,199 --> 00:05:05,040
+analytics. So I tell people what does the data mean, and how
+
+58
+00:05:05,040 --> 00:05:09,920
+does that drives our decisions. So I'm basically using, I guess
+
+59
+00:05:09,920 --> 00:05:13,360
+second year statistical information I'm not doing
+
+60
+00:05:13,360 --> 00:05:18,040
+anything that is related to my PhD education. And I'm actually
+
+61
+00:05:18,040 --> 00:05:22,319
+pretty happy about my current job. And I'll talk later about
+
+62
+00:05:22,560 --> 00:05:25,879
+past dependent, and you wish we don't
+
+63
+00:05:25,879 --> 00:05:30,079
+need to just use what we learned we should unconstrained
+
+64
+00:05:30,079 --> 00:05:33,720
+optimization, but let's save that talk later. And before
+
+65
+00:05:33,720 --> 00:05:39,920
+that, it was Cornell PhD in economics, and it's six years.
+
+66
+00:05:40,199 --> 00:05:44,480
+And I hope this stays as four years that I would have much
+
+67
+00:05:44,480 --> 00:05:46,939
+better much more experience
+
+68
+00:05:46,939 --> 00:05:49,839
+and join the tech companies much earlier.
+
+69
+00:05:49,839 --> 00:05:52,379
+But okay, on the right is my dissertation.
+
+70
+00:05:52,379 --> 00:05:55,199
+So the dissertation is about firms,
+
+71
+00:05:55,199 --> 00:05:57,060
+investors and stock markets.
+
+72
+00:05:58,879 --> 00:06:03,879
+My job market paper is the real impact of IPO.
+
+73
+00:06:04,959 --> 00:06:06,360
+So using some natural
+
+74
+00:06:06,360 --> 00:06:10,399
+shock happening in China to understand the real impact of
+
+75
+00:06:10,399 --> 00:06:18,959
+IPO on like the impact of IPO on real economy. But now, when I
+
+76
+00:06:18,959 --> 00:06:22,720
+look back into my dissertation, I don't even care about what
+
+77
+00:06:22,720 --> 00:06:29,439
+conclusion I drew because it has no impact on the real world. Okay. And before
+
+78
+00:06:29,439 --> 00:06:37,120
+I graduate, so I graduated in August 2017. And before I
+
+79
+00:06:37,120 --> 00:06:41,480
+graduate, I spent three months as a summer consultant at BCG
+
+80
+00:06:41,519 --> 00:06:49,839
+in business office. I liked the experience a lot, but for some personal reasons, I chose to come back to the
+
+81
+00:06:49,839 --> 00:06:56,959
+States and do being tech. And during my PhD, so these are
+
+82
+00:06:56,959 --> 00:07:04,360
+during my PhD, I had some very strange, I guess, abnormal or
+
+83
+00:07:06,379 --> 00:07:08,740
+strange, I guess, abnormal or not normal experiences as a PhD student.
+
+84
+00:07:08,740 --> 00:07:12,160
+We founded a ramen shop in New York City.
+
+85
+00:07:12,160 --> 00:07:16,800
+And we did some, I guess, college grocery delivery
+
+86
+00:07:16,800 --> 00:07:18,120
+business at Cornell.
+
+87
+00:07:18,120 --> 00:07:21,560
+So it's almost like Amazon Fresh.
+
+88
+00:07:21,560 --> 00:07:25,160
+We ran weekly delivery from New York City to
+
+89
+00:07:25,160 --> 00:07:29,040
+Cornell campuses and deliver to student dorms. So definitely
+
+90
+00:07:29,040 --> 00:07:33,639
+raise that eyebrow. These are some screenshots. This is the
+
+91
+00:07:33,680 --> 00:07:40,319
+ramen shop. And we did a holiday market by a Korean town. That
+
+92
+00:07:40,319 --> 00:07:48,079
+was like we go there every morning and the market starts at 11 I think then we do we just
+
+93
+00:07:48,639 --> 00:07:58,480
+make Japanese ramen and we close at I forgot maybe 9 p.m and then we wash the pots the dishes and do
+
+94
+00:07:58,480 --> 00:08:08,199
+it all over again the next day not not me so but I helped. And this is the picture for the college grocery.
+
+95
+00:08:08,199 --> 00:08:12,639
+So we made posters, we collaborate with New York City
+
+96
+00:08:12,639 --> 00:08:15,120
+Chinese grocery store and we deliver other stuff
+
+97
+00:08:15,120 --> 00:08:16,680
+to campuses.
+
+98
+00:08:16,680 --> 00:08:20,439
+So this is you, you get an order on our website,
+
+99
+00:08:20,439 --> 00:08:24,759
+we get our stuff in New York City and we deliver it to you.
+
+100
+00:08:24,759 --> 00:08:25,000
+And this is kind of our delivery. We get our stuff in New York City and we deliver to you.
+
+101
+00:08:25,000 --> 00:08:27,560
+And this is kind of our delivery.
+
+102
+00:08:27,560 --> 00:08:34,200
+So this car goes from New York City to Ithaca and in boxes.
+
+103
+00:08:34,200 --> 00:08:38,879
+So the hierarchical shares at New York City puts the stuff into boxes and then we sort
+
+104
+00:08:38,879 --> 00:08:40,279
+into individual orders.
+
+105
+00:08:40,279 --> 00:08:45,799
+We had to do this because we didn't have a big enough car from New York City to Ithaca.
+
+106
+00:08:48,039 --> 00:08:52,759
+All right, so all those experiences, right?
+
+107
+00:08:53,919 --> 00:08:56,799
+What is my biggest lesson?
+
+108
+00:08:56,799 --> 00:08:59,720
+The biggest lesson is I enjoy my life much better
+
+109
+00:08:59,720 --> 00:09:03,399
+than after PhD than I was during PhD.
+
+110
+00:09:03,399 --> 00:09:06,720
+So during PhD PhD I also lived
+
+111
+00:09:06,720 --> 00:09:10,399
+up. I don't know like I like to explore, I like to do different
+
+112
+00:09:10,399 --> 00:09:15,559
+things. But when I had this constant fear of failing that
+
+113
+00:09:15,559 --> 00:09:19,960
+what if I don't get my PhD, what if I fail at academia, my peers
+
+114
+00:09:19,960 --> 00:09:23,759
+are studying and doing research, and they're so much smarter than
+
+115
+00:09:23,759 --> 00:09:27,639
+me. What I'm doing, you know, enjoying my life. So
+
+116
+00:09:27,639 --> 00:09:33,240
+I like if I go out and just have some fun, I would have a lot of
+
+117
+00:09:33,360 --> 00:09:38,519
+self guilt. And that is not a very pleasant feeling. If you
+
+118
+00:09:38,559 --> 00:09:47,279
+want you are you anxiety and fear, I guess. So after PhD, because I sell my
+
+119
+00:09:47,279 --> 00:09:51,600
+time to the company, I get to separate work versus life, no
+
+120
+00:09:51,600 --> 00:09:55,360
+matter how much or hours I put in my work, I get to enjoy my
+
+121
+00:09:55,360 --> 00:10:02,519
+own life. So an anecdote story is in PCG Beijing, the hours
+
+122
+00:10:02,519 --> 00:10:09,559
+were quite crazy. So I had to work 9 a.m. to about average 2 a.m.
+
+123
+00:10:10,539 --> 00:10:13,759
+Sometimes I go home at 12 and I feel like
+
+124
+00:10:13,759 --> 00:10:18,759
+today is a very lucky day because I get to go home 12 a.m.
+
+125
+00:10:19,179 --> 00:10:22,000
+And sometimes you have to go home at 5 a.m.
+
+126
+00:10:22,000 --> 00:10:23,519
+and wake up the next day,
+
+127
+00:10:23,519 --> 00:10:25,360
+wake up the same day, wake up the same day,
+
+128
+00:10:30,440 --> 00:10:31,159
+sleeping like three hours, but I still felt better than my PhD.
+
+129
+00:10:33,879 --> 00:10:38,000
+That was during my PhD time, like that was before my graduation, I still feel better doing the consulting work with
+
+130
+00:10:38,000 --> 00:10:43,159
+such a long hour than what I experienced during PhD because I
+
+131
+00:10:43,159 --> 00:10:50,679
+get to separate work and life. So and I get to quite like be myself basically, after
+
+132
+00:10:50,679 --> 00:10:54,600
+work, and that felt very good. And the last thing to mention is
+
+133
+00:10:54,639 --> 00:10:59,200
+living expenses, you get to earn much more after PhD. So that's a
+
+134
+00:10:59,200 --> 00:11:05,000
+big bonus. And this is kind of my Instagram story archive.
+
+135
+00:11:06,679 --> 00:11:07,519
+I just,
+
+136
+00:11:11,600 --> 00:11:14,580
+so not happening since I graduated from PhD.
+
+137
+00:11:18,720 --> 00:11:19,559
+Yeah.
+
+138
+00:11:22,000 --> 00:11:23,779
+I got to do things.
+
+139
+00:11:23,779 --> 00:11:30,000
+Yeah, that's lesson number one. And if I could do my PhD all over again, what would I do? So first, I didn't have this theory.
+
+140
+00:11:30,000 --> 00:11:34,000
+I didn't have this world beyond academia, certainly, when I was
+
+141
+00:11:34,000 --> 00:11:39,000
+in PhD, if I had that maybe I can realize much sooner that
+
+142
+00:11:39,000 --> 00:11:43,000
+academia is not what I want to do. So the first thing I want to
+
+143
+00:11:43,000 --> 00:11:48,879
+do is admit that I don't want to do is admit that I don't want to
+
+144
+00:11:48,879 --> 00:11:53,080
+do academia in my second year instead of my sixth year. I
+
+145
+00:11:53,080 --> 00:11:58,919
+stayed in PhD for six years, because I always think that, you
+
+146
+00:11:58,919 --> 00:12:03,720
+know, the best people in my best peers that are doing academia.
+
+147
+00:12:04,080 --> 00:12:05,279
+And that is
+
+148
+00:12:05,279 --> 00:12:10,320
+how the how PhD is supposed to do how we are supposed to do
+
+149
+00:12:10,799 --> 00:12:15,720
+academia. So I came here to do academia, I should do academia.
+
+150
+00:12:16,039 --> 00:12:19,279
+If I feel like I don't want to do academia, that is just
+
+151
+00:12:19,279 --> 00:12:25,279
+because things things are getting too hard. So I'm quitting. I equate
+
+152
+00:12:26,720 --> 00:12:32,240
+not interested in academia as funding excuse for quitting. So
+
+153
+00:12:32,240 --> 00:12:37,960
+I just stayed for too long. If I realize I don't like if I
+
+154
+00:12:37,960 --> 00:12:41,919
+realized that I honestly do not want to do PhD, I would have
+
+155
+00:12:41,919 --> 00:12:44,799
+told my committee that I don't want to do academia as soon as I
+
+156
+00:12:44,799 --> 00:12:46,799
+found that. And then I'll start
+
+157
+00:12:46,799 --> 00:12:50,120
+looking for industry internships. So I didn't do any
+
+158
+00:12:50,120 --> 00:12:55,639
+industry internships during my PhD. So the BCG is my first kind
+
+159
+00:12:55,639 --> 00:12:59,879
+of internship experience during my PhD, I would have done in
+
+160
+00:12:59,899 --> 00:13:03,879
+industry internships. And that would prepare me for much better
+
+161
+00:13:03,960 --> 00:13:05,480
+industry internships, and that would prepare me for much better
+
+162
+00:13:12,039 --> 00:13:15,159
+position or situation when I was looking for industry jobs, that I would have finished my PhD in four years instead of six,
+
+163
+00:13:15,399 --> 00:13:19,120
+because I don't think there was any extra value for me off of
+
+164
+00:13:19,120 --> 00:13:26,399
+the society by me staying in my PhD program for six years. And one thing I'm not
+
+165
+00:13:26,399 --> 00:13:29,879
+sure if it's achievable, but maybe if I realize I don't want
+
+166
+00:13:29,879 --> 00:13:33,600
+to do academia, that is during my PhD, I should have separated
+
+167
+00:13:33,600 --> 00:13:37,440
+my work from my life. I should have just had work hours and
+
+168
+00:13:37,480 --> 00:13:42,320
+nothing about the research and the other stuff I do after the
+
+169
+00:13:42,320 --> 00:13:48,639
+work hours. Because when I think back, I have self guilt.
+
+170
+00:13:49,159 --> 00:13:52,019
+I feel guilty not working.
+
+171
+00:13:52,019 --> 00:13:55,240
+So I constantly think about my work,
+
+172
+00:13:55,240 --> 00:13:57,879
+but it didn't help my productivity.
+
+173
+00:13:57,879 --> 00:14:01,200
+I feel like looking back, if I separated my work
+
+174
+00:14:01,200 --> 00:14:03,879
+and the life, I could be more productive in work
+
+175
+00:14:03,879 --> 00:14:08,759
+and much happier in life. So that is another lesson.
+
+176
+00:14:11,039 --> 00:14:16,840
+Alright, so three advices after having this lesson and spending
+
+177
+00:14:16,840 --> 00:14:20,480
+a couple years after academia. Advice number two is know
+
+178
+00:14:20,480 --> 00:14:25,279
+yourself, because I didn't. and I wasn't completely honest
+
+179
+00:14:25,279 --> 00:14:32,519
+with myself. And I think it's a very easy bias, like, like not
+
+180
+00:14:32,519 --> 00:14:36,320
+knowing yourself is common knowing yourself is difficult.
+
+181
+00:14:36,919 --> 00:14:40,399
+So know what is your true interest and your strengths,
+
+182
+00:14:40,600 --> 00:14:44,000
+like we are all good at studying well good at reading papers,
+
+183
+00:14:44,039 --> 00:14:47,000
+good at doing research. That's why we are here.
+
+184
+00:14:47,000 --> 00:14:56,000
+But beyond that, what is our strengths? And most importantly, what actually drives you? Like, do you feel excited doing research?
+
+185
+00:14:56,000 --> 00:15:07,559
+So I was, okay, so this part, the reason, part of the reason I stayed in academia for a long is I was actually very interested in research. I was in empirical
+
+186
+00:15:07,559 --> 00:15:11,940
+cover finance, and actually found the papers are
+
+187
+00:15:11,940 --> 00:15:16,259
+interesting. And I enjoy reading papers and I enjoy doing
+
+188
+00:15:16,259 --> 00:15:23,700
+research. But even even with that, I still feel like I do not
+
+189
+00:15:23,700 --> 00:15:25,519
+want to do academia because what
+
+190
+00:15:25,519 --> 00:15:31,840
+actually drives me is having an impact on the world. I don't
+
+191
+00:15:31,840 --> 00:15:37,039
+feel like I was doing that. By doing research, like the paper
+
+192
+00:15:37,039 --> 00:15:42,559
+I write, I don't think it's it can actually create the impact I
+
+193
+00:15:42,559 --> 00:15:51,000
+wanted to I want to I want for myself. Yeah, so understanding your underlying motivation is
+
+194
+00:15:51,000 --> 00:15:55,639
+very important. And then have a come, like, be honest about what
+
+195
+00:15:55,639 --> 00:16:00,600
+are your resources, what you can do. And sometimes knowing this
+
+196
+00:16:00,799 --> 00:16:03,679
+takes trying, like you don't know what you don't know, right.
+
+197
+00:16:03,919 --> 00:16:07,980
+So you had to try. Like, in fact, they have to
+
+198
+00:16:07,980 --> 00:16:11,240
+build this a minimal, minimal valuable products to validate
+
+199
+00:16:11,240 --> 00:16:15,419
+your assumptions. Sometimes it doesn't take much, for example,
+
+200
+00:16:15,419 --> 00:16:21,340
+coming to this series and listen to was beyond academia is a way
+
+201
+00:16:21,360 --> 00:16:27,039
+of knowing. Doing internships is a great way to try,
+
+202
+00:16:27,039 --> 00:16:29,759
+if you like, to really get to know the day-to-day
+
+203
+00:16:29,759 --> 00:16:31,519
+of different jobs,
+
+204
+00:16:31,519 --> 00:16:36,440
+and really understand if that is what you want to do, right?
+
+205
+00:16:36,440 --> 00:16:38,720
+And also, when you try,
+
+206
+00:16:38,720 --> 00:16:41,120
+now there are a lot of two-way door decisions,
+
+207
+00:16:41,120 --> 00:16:43,639
+especially when you are in PhD.
+
+208
+00:16:43,639 --> 00:16:48,120
+So for example, if you do an internship in industry, if you don't like
+
+209
+00:16:48,120 --> 00:16:52,299
+it, you can still come back, you can still do academia. So a lot
+
+210
+00:16:52,299 --> 00:16:55,759
+of decisions are two way door, that means you can just try and
+
+211
+00:16:55,759 --> 00:17:00,799
+come back, there is no, not much harm for trying. So definitely
+
+212
+00:17:00,840 --> 00:17:07,519
+take those opportunities. And try like the industry, the industry internship or the industry
+
+213
+00:17:07,519 --> 00:17:11,599
+experiences, if even if you decide to do academia, will be
+
+214
+00:17:11,599 --> 00:17:15,759
+good for your research and for academic job because you know,
+
+215
+00:17:15,799 --> 00:17:18,720
+like, for example, what kind of data is out there, what people
+
+216
+00:17:18,720 --> 00:17:21,920
+actually care about, and maybe you build some connections,
+
+217
+00:17:21,960 --> 00:17:27,119
+maybe like the like having multiple dimensional of experiences is going to help
+
+218
+00:17:27,119 --> 00:17:32,319
+you not going to hurt you. Otherwise, number two is
+
+219
+00:17:32,359 --> 00:17:35,599
+unconstrained optimization is always better than constraint
+
+220
+00:17:35,599 --> 00:17:40,200
+on maybe a bigger equal to bigger than equal to, but it's
+
+221
+00:17:40,359 --> 00:17:43,480
+like most of the case is better, right? Sometimes it's equal.
+
+222
+00:17:44,240 --> 00:17:49,000
+Sometimes we stuck in academia for too long. And that is, I guess, echoes because earlier point
+
+223
+00:17:49,319 --> 00:17:52,640
+that a lot of people stay in academia because one they don't
+
+224
+00:17:52,640 --> 00:17:57,920
+know what they can do outside of academia. And to. They want to
+
+225
+00:17:57,920 --> 00:18:01,759
+use the dispense so much time in academia, they spend so much
+
+226
+00:18:01,759 --> 00:18:07,920
+time in research, they want to use that they want to play that
+
+227
+00:18:07,920 --> 00:18:13,200
+strength. And they don't want to just give it up. But that is, I
+
+228
+00:18:13,200 --> 00:18:17,400
+guess, a bias itself. Like, just think about what makes you happy
+
+229
+00:18:17,400 --> 00:18:22,759
+tomorrow, or in 10 years or in 20 years of our life. It's not
+
+230
+00:18:22,759 --> 00:18:25,960
+going to be like, a lot of cases, it's not going to be like, a lot of cases is
+
+231
+00:18:25,960 --> 00:18:30,079
+not going to be just, you know, repeating what you did for the
+
+232
+00:18:30,079 --> 00:18:35,039
+past 10 years. If today there are two choices, option number
+
+233
+00:18:35,039 --> 00:18:39,839
+one leads to a better life in 10 years or even in one year,
+
+234
+00:18:40,039 --> 00:18:43,799
+option number two is doing what you have been doing or what you
+
+235
+00:18:43,799 --> 00:18:45,960
+are good at. but you are going
+
+236
+00:18:45,960 --> 00:18:47,680
+to be less happy in one year.
+
+237
+00:18:47,680 --> 00:18:48,799
+Choose option number one.
+
+238
+00:18:48,799 --> 00:18:51,480
+Don't choose option number two just
+
+239
+00:18:51,480 --> 00:18:56,039
+because you did option number two for such a long time.
+
+240
+00:18:56,039 --> 00:18:58,119
+So do unconstrained optimization.
+
+241
+00:18:58,119 --> 00:19:01,359
+Don't let your past constrain you.
+
+242
+00:19:01,359 --> 00:19:07,200
+So past dependent, sunk cost, loss a version, those are things that stop you from
+
+243
+00:19:07,200 --> 00:19:14,079
+trying new things. And I talked about this earlier, like, really be honest about yourself,
+
+244
+00:19:14,079 --> 00:19:25,440
+not only like admitting your strengths and your shortcomings, but also, you know, sometimes it's okay to quit and know that it's okay to
+
+245
+00:19:25,440 --> 00:19:31,880
+quit. I was I guess, for me, it was my ego and pride, or like
+
+246
+00:19:31,900 --> 00:19:37,900
+myself, discipline, that got into my way of admitting I'm not
+
+247
+00:19:37,940 --> 00:19:42,420
+interested in academia. So it goes both ways, right? So really
+
+248
+00:19:42,420 --> 00:19:45,319
+be completely honest with yourself.
+
+249
+00:19:45,319 --> 00:19:49,920
+And the cost, the second part is,
+
+250
+00:19:49,920 --> 00:19:53,279
+the cost, a lot of times, the cost of not acting
+
+251
+00:19:53,279 --> 00:19:55,799
+is bigger than the risk of acting.
+
+252
+00:19:55,799 --> 00:19:59,960
+And PhD, the program definitely gives you a shelter,
+
+253
+00:19:59,960 --> 00:20:01,599
+an excuse to not act.
+
+254
+00:20:01,599 --> 00:20:02,859
+What do I mean by this?
+
+255
+00:20:03,799 --> 00:20:08,000
+If you are a PhD
+
+256
+00:20:12,079 --> 00:20:18,079
+in Western schools, right, it's five years program, it is, it is a very long time. And, and the program doesn't ask you much
+
+257
+00:20:18,079 --> 00:20:22,599
+results until the end, because they want to give you some
+
+258
+00:20:22,599 --> 00:20:25,000
+freedom to, to really
+
+259
+00:20:25,000 --> 00:20:30,680
+focus and do research without the worry that, you know, next
+
+260
+00:20:30,680 --> 00:20:33,519
+week, I will tell you how to do next month, what I have to do,
+
+261
+00:20:33,799 --> 00:20:38,559
+to give you some stipends, and they give you a very limited
+
+262
+00:20:38,599 --> 00:20:41,960
+environment. And to tell you, you know, just focus on
+
+263
+00:20:41,960 --> 00:20:46,200
+research. So it's a shelter to not try in different things
+
+264
+00:20:46,200 --> 00:20:49,039
+because for example, for me,
+
+265
+00:20:49,039 --> 00:20:51,880
+before every summer I stayed at Cornell
+
+266
+00:20:51,880 --> 00:20:54,839
+and did extra research.
+
+267
+00:20:54,839 --> 00:20:59,839
+You're apply for a summer RA or TA,
+
+268
+00:21:00,440 --> 00:21:03,200
+and then I stay at school and I go to library every day
+
+269
+00:21:03,200 --> 00:21:06,640
+to do research instead of applying for an internship.
+
+270
+00:21:06,640 --> 00:21:09,220
+And I felt pretty good about my decision
+
+271
+00:21:09,220 --> 00:21:11,900
+because I was focusing on research.
+
+272
+00:21:11,900 --> 00:21:15,400
+I didn't waste any of my time.
+
+273
+00:21:15,400 --> 00:21:20,400
+But now if you ask me, what did I do summer of,
+
+274
+00:21:20,740 --> 00:21:23,960
+I don't know, 2015, I don't remember.
+
+275
+00:21:23,960 --> 00:21:28,119
+I don't remember what paper I read. I don't remember what research I did. I feel like
+
+276
+00:21:28,200 --> 00:21:32,079
+it's a complete, it's not complete waste of time, but it
+
+277
+00:21:32,079 --> 00:21:38,440
+is a waste of time. So that was the cost of me not having not
+
+278
+00:21:38,480 --> 00:21:44,960
+acting to apply for summer internship. And I guess that's
+
+279
+00:21:44,960 --> 00:21:46,839
+an easy trap for a lot of
+
+280
+00:21:46,839 --> 00:21:51,599
+PhD because the program is set up this way. So think about what
+
+281
+00:21:51,599 --> 00:21:56,400
+is the cost of you not acting? And what is the risk if you
+
+282
+00:21:56,400 --> 00:22:00,519
+actually act? A lot of the time the risk of acting is very
+
+283
+00:22:00,519 --> 00:22:08,599
+small, you actually benefit from acting and the cost of not acting is ignored. But the best number
+
+284
+00:22:08,599 --> 00:22:12,720
+three is no ready know what's out there. And this one I think
+
+285
+00:22:12,720 --> 00:22:17,759
+is, I guess, in terms of risk reward is definitely everyone
+
+286
+00:22:17,759 --> 00:22:21,000
+should just know, like, you know, you should know your
+
+287
+00:22:21,000 --> 00:22:24,680
+options beyond academia, right? So coming to this talk, again,
+
+288
+00:22:23,500 --> 00:22:25,759
+you should know your options beyond academia, right? So coming to this talk again, it's great.
+
+289
+00:22:25,759 --> 00:22:30,200
+Your options, what industries you can go.
+
+290
+00:22:30,200 --> 00:22:33,779
+Like I hear a lot of you either come from consulting
+
+291
+00:22:33,779 --> 00:22:36,579
+or come from, or want to do consulting.
+
+292
+00:22:36,579 --> 00:22:38,359
+Consulting is a great industry.
+
+293
+00:22:38,359 --> 00:22:41,799
+I, later on, I'll like post a screenshot
+
+294
+00:22:41,799 --> 00:22:43,079
+of my YouTube channel.
+
+295
+00:22:50,759 --> 00:22:50,960
+And I talked about the value of consulting that brings to the
+
+296
+00:22:54,119 --> 00:22:59,400
+to to the firm that hires consultants. I think it's a great industry. But beyond consulting, there are also a lot
+
+297
+00:22:59,400 --> 00:23:04,720
+of other industry that industries that just hire a PhD
+
+298
+00:23:04,720 --> 00:23:05,279
+because you are a PhD because
+
+299
+00:23:05,279 --> 00:23:09,079
+you are a PhD, for example, tech, hires all sorts of people
+
+300
+00:23:09,480 --> 00:23:13,200
+to solve their problems, whether it's data, whether it's
+
+301
+00:23:13,240 --> 00:23:18,000
+optimization, like some operation research. And
+
+302
+00:23:18,039 --> 00:23:22,000
+sometimes it's even like material science, mechanical
+
+303
+00:23:22,000 --> 00:23:28,839
+engineering, at this heart, all sorts of PhD. So no options, I guess, consulting and data, all the
+
+304
+00:23:28,839 --> 00:23:37,200
+PhDs can just get into and try. So no was really like, no,
+
+305
+00:23:37,200 --> 00:23:42,200
+average salary, no career paths. And what do they do day to day?
+
+306
+00:23:42,200 --> 00:23:48,960
+Yeah, really know what to do.. So then you can fairly assess, are you going to be interested in
+
+307
+00:23:48,960 --> 00:23:53,440
+this type of job or should I do something else. And also now
+
+308
+00:23:53,440 --> 00:23:56,880
+option if you choose to do something else. For example, if
+
+309
+00:23:56,880 --> 00:24:02,880
+you just take a computer science master, or if you go to go do
+
+310
+00:24:02,880 --> 00:24:08,519
+some internship, or if you prepare an interview for half a year,
+
+311
+00:24:08,519 --> 00:24:12,119
+or maybe you take some, I don't know,
+
+312
+00:24:12,119 --> 00:24:14,279
+machine learning courses,
+
+313
+00:24:14,279 --> 00:24:16,599
+and you build your resume that way.
+
+314
+00:24:16,599 --> 00:24:21,059
+It will open a lot of different options for you.
+
+315
+00:24:21,059 --> 00:24:26,660
+So now, based on your current capacity, and based on
+
+316
+00:24:26,660 --> 00:24:32,420
+what you can do in a year, no options and really do the
+
+317
+00:24:32,420 --> 00:24:38,420
+unconstrained optimization. And then the I guess, the last part
+
+318
+00:24:38,420 --> 00:24:43,660
+is chance of success. And that leads to my next slide, how to
+
+319
+00:24:43,660 --> 00:24:45,519
+increase our chance of success
+
+320
+00:24:45,519 --> 00:24:49,660
+of getting what you want to, what you try to get.
+
+321
+00:24:49,660 --> 00:24:53,000
+So find the gap between what you want to do.
+
+322
+00:24:53,000 --> 00:24:55,640
+The first is know what you want to do, right?
+
+323
+00:24:55,640 --> 00:24:57,359
+And know other industries,
+
+324
+00:24:57,359 --> 00:25:00,500
+know what career you want to choose.
+
+325
+00:25:00,500 --> 00:25:02,480
+For example, a lot of you want to do consulting,
+
+326
+00:25:02,480 --> 00:25:03,400
+that's great.
+
+327
+00:25:03,400 --> 00:25:09,000
+Then what is the gap between your current resume, between current knowledge, experiences, projects,
+
+328
+00:25:09,000 --> 00:25:14,000
+do you have the right internships to get to consulting?
+
+329
+00:25:14,000 --> 00:25:17,000
+Are they going to take your resume and give you an interview?
+
+330
+00:25:17,000 --> 00:25:19,000
+And then you need to prepare for interviews, right?
+
+331
+00:25:19,000 --> 00:25:26,519
+And sometimes building connections can give you either recommendations, referral, or just
+
+332
+00:25:26,519 --> 00:25:35,400
+give you some knowledge and, you know, tell you what's the most effective way to prepare
+
+333
+00:25:35,400 --> 00:25:38,380
+for interview or to bridge our gap.
+
+334
+00:25:38,380 --> 00:25:51,160
+So this is, I guess, an action item. Know what's out there. Have access, like a fair, honest access of yourself.
+
+335
+00:25:51,160 --> 00:25:55,720
+And then start acting to close the gap.
+
+336
+00:25:55,720 --> 00:25:58,119
+I have a YouTube video about data science, what
+
+337
+00:25:58,119 --> 00:26:00,200
+data scientists do.
+
+338
+00:26:00,200 --> 00:26:03,279
+And today, I'm going to meet with a friend
+
+339
+00:26:03,279 --> 00:26:11,200
+and shoot another video to talk about how to close the gap to get into data science.
+
+340
+00:26:11,400 --> 00:26:16,200
+So what companies are looking for and how do you prepare,
+
+341
+00:26:16,200 --> 00:26:20,000
+what materials do you need to do to prepare for, to close the gap.
+
+342
+00:26:20,200 --> 00:26:22,599
+So stay tuned and subscribe.
+
+343
+00:26:23,799 --> 00:26:24,200
+All right.
+
+344
+00:26:24,400 --> 00:26:27,680
+So this is a screenshot of my YouTube channel.
+
+345
+00:26:27,680 --> 00:26:29,759
+For example, talk about A-B testing,
+
+346
+00:26:29,759 --> 00:26:33,680
+talk about how AI is applied in big tech companies,
+
+347
+00:26:33,680 --> 00:26:37,799
+what is management consulting, and what is data science.
+
+348
+00:26:37,799 --> 00:26:40,880
+I have some Juhu articles, maybe in the future
+
+349
+00:26:40,880 --> 00:26:44,720
+about also making videos based on these articles.
+
+350
+00:26:49,359 --> 00:26:53,640
+But this one, for example, talks about how you prepare for mock interview. I guess, okay, a little bit about
+
+351
+00:26:53,640 --> 00:26:58,240
+myself. Maybe here. Yeah, it's all going to be okay. Yeah, a
+
+352
+00:26:58,240 --> 00:27:02,599
+little bit about myself in the end. So one, because you are a
+
+353
+00:27:02,599 --> 00:27:07,359
+PhD, you're all smart and diligent, otherwise you won't be able to get here.
+
+354
+00:27:07,359 --> 00:27:09,920
+People, a lot of people, like a lot of us
+
+355
+00:27:09,920 --> 00:27:13,319
+have imposer syndrome that, you know,
+
+356
+00:27:13,319 --> 00:27:17,440
+we got here because of lack or because,
+
+357
+00:27:17,440 --> 00:27:20,440
+but everyone, all my peers are smarter than me,
+
+358
+00:27:20,440 --> 00:27:23,720
+so I must be the imposer, I must be faking it.
+
+359
+00:27:23,720 --> 00:27:26,400
+No, you deserve the PhD,
+
+360
+00:27:27,039 --> 00:27:31,599
+you're smart and intelligent. And you actually have better resource than most people. I'm not
+
+361
+00:27:31,599 --> 00:27:38,559
+only talking about the advisors, your professors, the class you can take, you can take most classes
+
+362
+00:27:38,559 --> 00:27:49,119
+for free as a PhD. So take those classes, do the projects, build your resume. But also, even if you try to fake, if you want to,
+
+363
+00:27:49,119 --> 00:27:58,359
+for example, a lot of people in tech, AI is very easy to fake.
+
+364
+00:27:58,359 --> 00:28:03,279
+Not to fake, but very easy to get to know.
+
+365
+00:28:03,279 --> 00:28:08,400
+For example, machine learning is just basically
+
+366
+00:28:08,400 --> 00:28:14,400
+it takes takes a month or, or maybe three months to get to know
+
+367
+00:28:14,400 --> 00:28:18,039
+AI well, if you're ready to prepare for it. So if it takes
+
+368
+00:28:18,079 --> 00:28:22,359
+three months, and prepare, like learn about AI and then you take
+
+369
+00:28:22,359 --> 00:28:27,359
+another three months write a paper about AI. Maybe it's not, it's useful,
+
+370
+00:28:27,359 --> 00:28:31,240
+maybe it's not. But HR because our PhD will pay attention to
+
+371
+00:28:31,240 --> 00:28:36,400
+you. And it's what adds, it's what boosts our resume and give
+
+372
+00:28:36,400 --> 00:28:39,680
+you a chance to most tech companies. So that is the
+
+373
+00:28:39,680 --> 00:28:44,440
+resource that many people do not have. Then you can maximize
+
+374
+00:28:44,440 --> 00:28:45,839
+your experience on one dimension.
+
+375
+00:28:45,839 --> 00:28:48,619
+You maximize the experience on one dimension.
+
+376
+00:28:49,759 --> 00:28:54,559
+So I, when I was doing consulting, I was back in Beijing
+
+377
+00:28:54,559 --> 00:28:59,559
+and my, I guess my peers, people who are at my same age,
+
+378
+00:29:00,319 --> 00:29:03,140
+I had with people who do startups
+
+379
+00:29:03,140 --> 00:29:07,039
+and a lot of them were quite successful.
+
+380
+00:29:07,039 --> 00:29:13,440
+They started companies that have well-known names, and they had, like, if they went to
+
+381
+00:29:13,440 --> 00:29:16,440
+industry, some of them are directors.
+
+382
+00:29:16,440 --> 00:29:18,640
+They were quite successful.
+
+383
+00:29:18,640 --> 00:29:24,480
+But I feel like I didn't waste my time doing PhD because I met, I also, like, because I
+
+384
+00:29:24,480 --> 00:29:28,400
+had title of PhD, I maximize my experience out of academia.
+
+385
+00:29:28,759 --> 00:29:34,799
+And so pH doing doing PhD in academia is really like playing
+
+386
+00:29:34,799 --> 00:29:38,799
+at a very high level, right? And not many people get to see that.
+
+387
+00:29:38,880 --> 00:29:43,039
+So if you draw an analogy in sports, it's almost like playing
+
+388
+00:29:43,039 --> 00:29:48,000
+a youth team for football club, right? You got to the top level, you know, what
+
+389
+00:29:48,039 --> 00:29:51,799
+the top level looks like. Or like if you're funded, a
+
+390
+00:29:51,839 --> 00:29:55,000
+mildly successful successful startup, if you're like, you
+
+391
+00:29:55,000 --> 00:29:59,039
+don't know what, what does it take to be a to be a true,
+
+392
+00:29:59,240 --> 00:30:03,480
+truly successful startup. But you like you interact with the
+
+393
+00:30:03,480 --> 00:30:08,799
+best scholars in the world. And you have this title that stays with you for a whole life
+
+394
+00:30:08,839 --> 00:30:13,119
+that says, you know, you are a PhD, you complete a great deal
+
+395
+00:30:13,160 --> 00:30:17,440
+in academia, and you are one of the smartest people in the
+
+396
+00:30:17,440 --> 00:30:22,680
+world. So that's great. It's all going to be okay. I want to, oh,
+
+397
+00:30:22,759 --> 00:30:31,359
+one last thing about myself. Yeah. I wasted and not wasted. I spent six years in
+
+398
+00:30:31,680 --> 00:30:37,599
+optimia, and only to realize, on my sixth year, but I don't
+
+399
+00:30:37,599 --> 00:30:48,799
+really want to do optimia. So I applied the BCG, going back to my resume, I applied the BCG job, I think December 2016
+
+400
+00:30:54,240 --> 00:30:58,519
+and got the internship January 2017,
+
+401
+00:30:58,519 --> 00:31:02,799
+sorry, got the interview January 2017.
+
+402
+00:31:02,799 --> 00:31:07,559
+I prepared a week for my mock interviews and got
+
+403
+00:31:07,559 --> 00:31:13,200
+the internship and got in. So one is I had article about how
+
+404
+00:31:13,200 --> 00:31:16,640
+to prepare mock interviews, how to prepare the interviews
+
+405
+00:31:16,640 --> 00:31:22,039
+efficiently. But two, I feel like that's a lucky shot. And
+
+406
+00:31:22,039 --> 00:31:26,279
+then at Amazon, like I didn't apply to any tech
+
+407
+00:31:26,279 --> 00:31:30,880
+jobs. Amazon is the only one applied, I got the interview and
+
+408
+00:31:30,920 --> 00:31:35,519
+I got him. And later I discovered that is kind of one
+
+409
+00:31:35,519 --> 00:31:43,160
+of the best jobs that I can, I can ever have. So a lot of this
+
+410
+00:31:43,160 --> 00:31:47,759
+is luck. But I don't think it's purely luck. It's also because
+
+411
+00:31:47,759 --> 00:31:56,000
+I have the title, I had some experiences during PhD, and I spent the time and ready to prepare
+
+412
+00:31:56,000 --> 00:32:07,000
+for the interview. So there are a lot of things you can do much better than I did by starting early. So that was all my advice and lessons.
+
+413
+00:32:07,000 --> 00:32:10,220
+If I knew this in my second year,
+
+414
+00:32:10,220 --> 00:32:13,680
+I would prepare myself so well that I couldn't fail.
+
+415
+00:32:13,680 --> 00:32:17,440
+So yeah, that is my lessons and advices.
+
+416
+00:32:17,440 --> 00:32:18,880
+Thank you for listening.
+
+417
+00:32:22,599 --> 00:32:24,640
+Thank you, Yujun, that's very helpful.
+
+418
+00:32:24,640 --> 00:32:28,400
+And I think, you know, what's really impressive
+
+419
+00:32:28,400 --> 00:32:33,539
+is how genuine you are in sharing your thoughts and experience. And it's really encouraging
+
+420
+00:32:33,539 --> 00:32:39,559
+to people who are who might be having second doubts about themselves. You know, before
+
+421
+00:32:39,559 --> 00:32:45,240
+people in the audience, feel free to ask questions or type in your questions.
+
+422
+00:32:45,240 --> 00:32:47,400
+But we've had a couple coming in.
+
+423
+00:32:47,400 --> 00:32:50,519
+And I feel like because your experience is so broad,
+
+424
+00:32:50,519 --> 00:32:54,400
+people might ask all sorts of questions.
+
+425
+00:32:54,400 --> 00:32:57,440
+And it could be loosely categorized
+
+426
+00:32:57,440 --> 00:33:00,640
+into your experience as an economist,
+
+427
+00:33:00,640 --> 00:33:04,599
+and then having startups yourselves,
+
+428
+00:33:04,599 --> 00:33:06,180
+and then transitioning into a
+
+429
+00:33:06,180 --> 00:33:11,279
+data scientist and now you know having your own YouTube channel and then some
+
+430
+00:33:11,279 --> 00:33:15,640
+people might just want some general advice for you so let's try to maybe
+
+431
+00:33:15,640 --> 00:33:26,000
+group our questions in this kind of categories. Anyone wants to be the first person asking a question live?
+
+432
+00:33:33,000 --> 00:33:35,000
+Hello?
+
+433
+00:33:35,000 --> 00:33:37,000
+Hello?
+
+434
+00:33:37,000 --> 00:33:45,000
+Hi Fumi, we can hear you. So, would you advise to someone who is interested in going to the
+
+435
+00:33:45,000 --> 00:33:47,000
+industry later to
+
+436
+00:33:48,000 --> 00:33:49,000
+start
+
+437
+00:33:49,000 --> 00:33:50,000
+a
+
+438
+00:33:50,000 --> 00:33:53,000
+video sharing, because that's the rule we said for q&a if you
+
+439
+00:33:53,000 --> 00:33:54,000
+want to ask a question like
+
+440
+00:33:56,000 --> 00:34:00,000
+was the rule. Yeah, there's a rule for q&a if you want to ask
+
+441
+00:34:00,000 --> 00:34:02,000
+in person is better to just share a video.
+
+442
+00:34:04,000 --> 00:34:05,319
+Oh to turn on the video. Right. Yeah, there's a rule for Q&A. If you want to ask in person, it's better to just share
+
+443
+00:34:05,319 --> 00:34:06,319
+a video.
+
+444
+00:34:06,319 --> 00:34:09,559
+Oh, to turn on the video?
+
+445
+00:34:09,559 --> 00:34:10,559
+Right.
+
+446
+00:34:10,559 --> 00:34:11,559
+Oh,
+
+447
+00:34:11,559 --> 00:34:12,559
+unnecessary.
+
+448
+00:34:12,559 --> 00:34:13,559
+All right.
+
+449
+00:34:13,559 --> 00:34:16,559
+Sorry, I didn't prepare.
+
+450
+00:34:16,559 --> 00:34:20,559
+Okay. Yeah, feel free.
+
+451
+00:34:20,559 --> 00:34:26,960
+Okay. Would it be better to try to finish the PhD faster or
+
+452
+00:34:26,960 --> 00:34:31,320
+utilize the summer to do internships? And how would you
+
+453
+00:34:31,320 --> 00:34:35,000
+compare the problems in financial markets to consumer
+
+454
+00:34:35,000 --> 00:34:37,639
+markets? Two questions.
+
+455
+00:34:38,239 --> 00:34:41,800
+Yeah, the first one I think is easy, but I didn't get the
+
+456
+00:34:41,800 --> 00:34:47,199
+second one. So I'll ask for clarification. The first one, like, internship is ready
+
+457
+00:34:47,199 --> 00:34:51,599
+to try out right and build a resume. If you have a good
+
+458
+00:34:51,599 --> 00:34:54,559
+enough resume, and if you know what you need to do, then just
+
+459
+00:34:54,559 --> 00:34:59,800
+finish a PhD and do that. But if you don't, then definitely, you
+
+460
+00:34:59,800 --> 00:35:04,440
+know, try as many internships and until you, you have a good
+
+461
+00:35:04,440 --> 00:35:05,000
+enough resume
+
+462
+00:35:05,480 --> 00:35:08,000
+to do the things you know you want to do.
+
+463
+00:35:09,099 --> 00:35:10,800
+The second question, financial markets
+
+464
+00:35:10,800 --> 00:35:12,039
+and the consumer markets,
+
+465
+00:35:13,679 --> 00:35:16,039
+is it choosing between the industry or?
+
+466
+00:35:17,679 --> 00:35:20,099
+Are the problems similar or different?
+
+467
+00:35:22,300 --> 00:35:23,340
+The promise?
+
+468
+00:35:47,239 --> 00:35:50,400
+Are the problems similar or different. Oh, okay, I guess it's about how did I apply my knowledge of a finance PhD like economics concentrated in finance to consumer markets, right? A lot of tools and skills can be carried over. For example, I did apply econometrics.
+
+469
+00:35:50,400 --> 00:35:55,400
+I did causal inference for the corporate finance study.
+
+470
+00:35:55,559 --> 00:35:58,480
+For example, matching, difference in difference,
+
+471
+00:35:58,480 --> 00:36:01,000
+all those causal inference stuff.
+
+472
+00:36:01,000 --> 00:36:04,280
+And those tools can be directly applied
+
+473
+00:36:04,280 --> 00:36:05,039
+to solve
+
+474
+00:36:05,320 --> 00:36:09,860
+consumer markets problems. That's why Amazon hired me to
+
+475
+00:36:09,860 --> 00:36:15,519
+do or what they hired me to do. But again, going back to not
+
+476
+00:36:15,519 --> 00:36:20,079
+limiting myself, I guess I didn't. This reminds me I
+
+477
+00:36:20,079 --> 00:36:22,599
+didn't I promised to talk about the difference between data
+
+478
+00:36:22,599 --> 00:36:29,079
+scientists and economics and forgot to do that. Like, it
+
+479
+00:36:29,079 --> 00:36:33,840
+doesn't like, what drives me is to solve problems and create
+
+480
+00:36:33,840 --> 00:36:37,800
+impact. And it doesn't take complicated model to solve
+
+481
+00:36:37,800 --> 00:36:42,679
+problems. In a lot of cases, if the problem is worth stopping,
+
+482
+00:36:43,079 --> 00:36:48,280
+like comparing the two means or or you know, finding where the problem is, is much more
+
+483
+00:36:48,280 --> 00:36:51,719
+important than being able to build sophisticated models. Of
+
+484
+00:36:51,719 --> 00:36:54,840
+course, there are problems that needs to be solved by
+
+485
+00:36:54,840 --> 00:37:00,119
+sophisticated models. And I'm also like, mildly interested in
+
+486
+00:37:00,119 --> 00:37:07,440
+doing that. But that is not that is not how I
+
+487
+00:37:07,440 --> 00:37:10,599
+think about my career. When I think about my career is not
+
+488
+00:37:10,599 --> 00:37:15,119
+about how to apply my past knowledge. It's about what
+
+489
+00:37:15,159 --> 00:37:21,719
+problems excites me. So I guess to some to some, some of the
+
+490
+00:37:21,719 --> 00:37:27,639
+skills are transferable. But the domain knowledge, for example, is definitely not relevant. And
+
+491
+00:37:28,639 --> 00:37:31,000
+yeah, I don't feel sorry for that.
+
+492
+00:37:38,440 --> 00:37:41,000
+Right, thank you. Anyone else got a question?
+
+493
+00:37:42,280 --> 00:37:43,800
+Can everyone help me?
+
+494
+00:37:44,760 --> 00:37:45,159
+Yes. Anyone else got a question? Can everyone hear me?
+
+495
+00:37:45,159 --> 00:37:46,440
+Yes.
+
+496
+00:37:46,440 --> 00:37:47,719
+Hi, I'm Ma Chen.
+
+497
+00:37:47,719 --> 00:37:50,239
+I have one question about the stop.
+
+498
+00:37:50,239 --> 00:37:55,559
+So I'm curious what happened to your stop in the end?
+
+499
+00:37:55,559 --> 00:37:58,639
+Oh, we closed College Grocery when we took off,
+
+500
+00:37:58,639 --> 00:38:01,599
+because it's actually a very heavy operation.
+
+501
+00:38:01,599 --> 00:38:03,280
+It takes a lot of operations.
+
+502
+00:38:03,280 --> 00:38:06,920
+For example, you have to do customer service, you had to maintain a good
+
+503
+00:38:06,920 --> 00:38:11,320
+relationship with the grocery store. If you get one kind of
+
+504
+00:38:11,880 --> 00:38:15,840
+vinegar, but they're out of stock, do you replace or do you
+
+505
+00:38:16,480 --> 00:38:21,079
+refund? There are a lot of like tricky, like things that takes
+
+506
+00:38:21,079 --> 00:38:31,599
+time and nobody was willing to do that after I left so we're just gonna see and but I'm still operating in New York City I hope the pandemic didn't
+
+507
+00:38:33,039 --> 00:38:37,440
+didn't make them bankrupt but they had three I think
+
+508
+00:38:40,480 --> 00:38:46,800
+shops in New York City. Okay I see see. Yeah, so I have a second question
+
+509
+00:38:46,800 --> 00:38:48,300
+which is a little personal.
+
+510
+00:38:48,300 --> 00:38:52,280
+So what's the intensive when you decided to
+
+511
+00:38:53,659 --> 00:38:55,320
+like build up a startup?
+
+512
+00:38:55,320 --> 00:38:58,840
+Is it to try to make a lot of money
+
+513
+00:38:58,840 --> 00:39:03,000
+or like just a random decision to try different things?
+
+514
+00:39:03,000 --> 00:39:04,920
+Yeah, good question.
+
+515
+00:39:04,920 --> 00:39:06,920
+Because that's actually my motivation
+
+516
+00:39:06,920 --> 00:39:08,400
+for doing a lot of things, including
+
+517
+00:39:08,400 --> 00:39:09,440
+start a YouTube channel.
+
+518
+00:39:09,440 --> 00:39:12,800
+It's not, it's never about the money.
+
+519
+00:39:12,800 --> 00:39:15,599
+It's just about seeing a problem and I want to solve it.
+
+520
+00:39:15,599 --> 00:39:18,880
+And I have a huge, like a big drive to solve the problem.
+
+521
+00:39:18,880 --> 00:39:23,000
+The startup started because I go to New York City quite often.
+
+522
+00:39:23,000 --> 00:39:25,079
+And every time I go there, people ask me,
+
+523
+00:39:25,079 --> 00:39:27,800
+can you bring us some grocery bag?
+
+524
+00:39:27,800 --> 00:39:32,480
+I'm willing to pay you like 50% above the recipe,
+
+525
+00:39:32,480 --> 00:39:35,760
+like the price.
+
+526
+00:39:35,760 --> 00:39:38,719
+And I said, OK, there is a real demand.
+
+527
+00:39:38,719 --> 00:39:40,000
+Let's try to solve it.
+
+528
+00:39:40,000 --> 00:39:42,639
+And that's how I started.
+
+529
+00:39:42,639 --> 00:39:45,039
+We started with a Google form
+
+530
+00:39:45,039 --> 00:39:46,960
+and then turn into a Wix website
+
+531
+00:39:46,960 --> 00:39:49,239
+and then turn into a Shopify website.
+
+532
+00:39:50,159 --> 00:39:52,920
+In retrospect, it's actually helped
+
+533
+00:39:52,920 --> 00:39:55,960
+a lot of my current experiences
+
+534
+00:39:55,960 --> 00:40:00,119
+because Facebook is doing the Facebook shops with Shopify.
+
+535
+00:40:00,119 --> 00:40:03,440
+And my experiences of running a Shopify store
+
+536
+00:40:03,440 --> 00:40:04,940
+actually helped me understand
+
+537
+00:40:04,940 --> 00:40:05,760
+a lot of
+
+538
+00:40:05,760 --> 00:40:12,239
+e-commerce business in general, but that was never the plan. I see, thank you.
+
+539
+00:40:16,079 --> 00:40:18,000
+Yeah, may I ask one question?
+
+540
+00:40:20,320 --> 00:40:27,679
+Okay, thank you, Yujun. I'm also a PhD student in economics. So I know that Amazon has already
+
+541
+00:40:27,679 --> 00:40:35,679
+established the economics team, while Facebook is resting new in building its economics team.
+
+542
+00:40:35,679 --> 00:40:40,800
+So I'm curious that how do you feel about working in this two companies? Do you feel
+
+543
+00:40:40,800 --> 00:40:45,760
+more like familiar in Amazon environment compared to Facebook?
+
+544
+00:40:47,440 --> 00:40:52,639
+There are two very different companies, even though they are intact. Also, there is more
+
+545
+00:40:52,639 --> 00:40:58,239
+difference between Facebook and Amazon, and between Amazon and BCG even. And I don't think
+
+546
+00:40:58,239 --> 00:41:05,679
+Facebook is going to hire a lot of economists to do the economics economist because at Facebook, it provides
+
+547
+00:41:05,679 --> 00:41:09,840
+a free product. They can run a B testing for almost everything.
+
+548
+00:41:10,199 --> 00:41:14,199
+And Amazon hires economics mostly to do causal inference.
+
+549
+00:41:14,920 --> 00:41:17,559
+But Facebook can do a B testing. So don't they don't need to do
+
+550
+00:41:17,559 --> 00:41:27,559
+this. But my training of economics PhD helped me to I guess the training is helpful. I
+
+551
+00:41:27,559 --> 00:41:30,599
+also have a very short video about this. It forced me to
+
+552
+00:41:30,599 --> 00:41:34,239
+think about equilibrium, I think about marginal, and when you
+
+553
+00:41:34,239 --> 00:41:38,159
+solve problem at tech companies, you'll find a lot of people,
+
+554
+00:41:38,320 --> 00:41:42,199
+they focus on the first order effect of your policy. For
+
+555
+00:41:42,199 --> 00:41:48,760
+example, if you set a price for right, it will make people sell more expensive stuff. But they
+
+556
+00:41:48,760 --> 00:41:51,519
+didn't think about the substitution effect, or the
+
+557
+00:41:51,519 --> 00:41:53,800
+incoming factor, whatever they don't care about, they didn't
+
+558
+00:41:53,800 --> 00:41:57,320
+think about the second order problem. And a lot of the time,
+
+559
+00:41:57,320 --> 00:42:02,800
+the second, the second order impact is more important. So I
+
+560
+00:42:02,800 --> 00:42:05,900
+guess the training of economics PhD, if
+
+561
+00:42:05,900 --> 00:42:09,380
+you have the sufficient tech skill, like if you can write a
+
+562
+00:42:09,380 --> 00:42:13,380
+SQL well, if you can do analysis fast, if you can do data
+
+563
+00:42:13,420 --> 00:42:17,760
+manipulation in Python, then combined with our economics
+
+564
+00:42:17,820 --> 00:42:25,000
+degree is quite welcomed at any company, consulting or tech.
+
+565
+00:42:26,800 --> 00:42:31,800
+But yeah, like don't expect other tech companies
+
+566
+00:42:33,820 --> 00:42:37,139
+to hire economists as Amazon does.
+
+567
+00:42:37,139 --> 00:42:38,659
+Yeah.
+
+568
+00:42:38,659 --> 00:42:39,820
+Thank you.
+
+569
+00:42:39,820 --> 00:42:42,460
+I have a related question on that actually.
+
+570
+00:42:43,619 --> 00:42:45,719
+When I first joined McKinsey,
+
+571
+00:42:45,719 --> 00:42:47,559
+I actually spent three months working
+
+572
+00:42:47,559 --> 00:42:49,360
+on the data science project.
+
+573
+00:42:49,360 --> 00:42:52,119
+And my role was what they call a data translator.
+
+574
+00:42:52,119 --> 00:42:57,039
+So our project was around something that's got to do
+
+575
+00:42:57,039 --> 00:42:59,559
+with clinical and pharmaceutical applications
+
+576
+00:42:59,559 --> 00:43:00,760
+of data science.
+
+577
+00:43:00,760 --> 00:43:03,239
+And we had half of our team,
+
+578
+00:43:03,239 --> 00:43:08,000
+pure data scientists and data engineers, and the other half people with a medical
+
+579
+00:43:08,000 --> 00:43:12,760
+degree or a PhD in biological sciences. So I'm wondering that
+
+580
+00:43:12,780 --> 00:43:16,559
+you know, outside of maybe, you know, consulting related data
+
+581
+00:43:16,559 --> 00:43:20,159
+science projects in the real data science industry, is there
+
+582
+00:43:20,159 --> 00:43:24,599
+a need for this kind of roles of people who may not be coding,
+
+583
+00:43:24,639 --> 00:43:28,119
+but they know something about data science to translate the
+
+584
+00:43:28,119 --> 00:43:32,639
+business or clinical or consumer aspect of the industry.
+
+585
+00:43:38,519 --> 00:43:46,360
+Yes, but okay, so the, the world of consulting is pretty different
+
+586
+00:43:46,360 --> 00:43:51,079
+than a lot of tech. And related to a question in this way,
+
+587
+00:43:51,800 --> 00:43:55,199
+consulting deals with a lot of companies, right? They don't
+
+588
+00:43:55,199 --> 00:43:59,639
+necessarily have the expertise to understand those complex
+
+589
+00:43:59,679 --> 00:44:05,639
+analysis or complex research. So they need a translator. In tech,
+
+590
+00:44:06,000 --> 00:44:10,960
+everyone should know tech, like, they have a very high hiring
+
+591
+00:44:10,960 --> 00:44:18,800
+bar for BA engineers or product manager. So everyone knows their
+
+592
+00:44:18,800 --> 00:44:23,400
+shit, basically. They don't need a translator to translate
+
+593
+00:44:23,440 --> 00:44:27,639
+otherwise they will just fail at their job, because that's the expectation to know
+
+594
+00:44:27,639 --> 00:44:34,840
+their stuff. That being said, said, like, for example, people
+
+595
+00:44:34,840 --> 00:44:39,440
+in business function to don't necessarily that did not do not
+
+596
+00:44:39,440 --> 00:44:43,960
+necessarily well versed in, in models, for example, they
+
+597
+00:44:43,960 --> 00:44:47,719
+understand was the difference between correlation and
+
+598
+00:44:47,719 --> 00:44:51,579
+causation. They know to get this, you have to overcome
+
+599
+00:44:51,579 --> 00:44:55,800
+selection bias. They know, you know, on a very high level what
+
+600
+00:44:55,800 --> 00:45:01,199
+machine learning can do and cannot do. But sometimes if you
+
+601
+00:45:01,199 --> 00:45:04,960
+want to, for example, translate to a devised mean and like a
+
+602
+00:45:04,960 --> 00:45:05,840
+normal mean, how does, translate a devised mean and like a normal mean,
+
+603
+00:45:05,840 --> 00:45:10,559
+how does that translate into business impact? They don't know that. They don't have that
+
+604
+00:45:11,119 --> 00:45:20,800
+knowledge for granted. So I guess in order to be successful in tech as a PhD,
+
+605
+00:45:21,760 --> 00:45:25,639
+knowing, have the domain expertise and have the
+
+606
+00:45:25,679 --> 00:45:29,039
+knowledge, the skill is important. But being able to
+
+607
+00:45:29,039 --> 00:45:34,159
+communicate to a way that most people, like engineers and PMs,
+
+608
+00:45:34,320 --> 00:45:37,719
+you can expect them to have a certain type of level of
+
+609
+00:45:37,719 --> 00:45:40,599
+knowledge, but not as sophisticated as sophisticated
+
+610
+00:45:40,599 --> 00:45:44,719
+as you are. Being able to communicate is also important.
+
+611
+00:45:44,079 --> 00:45:50,440
+sophisticated as you are, being able to communicate is also important. So that is a skill. That is not a type of job that
+
+612
+00:45:50,440 --> 00:45:53,440
+is more of a skill that you, you should have in order to be
+
+613
+00:45:53,440 --> 00:45:55,559
+successful, to be successful.
+
+614
+00:46:04,559 --> 00:46:09,840
+So my question is that as a PhD of economics, you have all the backgrounds of the economics and aesthetics. So the job for a
+
+615
+00:46:09,840 --> 00:46:14,400
+consultant is kind of like fit for you, because you have all
+
+616
+00:46:14,400 --> 00:46:19,920
+the knowledge is so as a consultant, you have to have
+
+617
+00:46:19,920 --> 00:46:23,920
+a lot of knowledge of economics, and you have to have a lot of
+
+618
+00:46:23,920 --> 00:46:25,000
+knowledge of economics fit for you
+
+619
+00:46:26,360 --> 00:46:28,099
+because you have all the knowledges.
+
+620
+00:46:28,099 --> 00:46:32,599
+So as an engineering student as me,
+
+621
+00:46:32,599 --> 00:46:34,960
+I don't have a lot of economics background.
+
+622
+00:46:34,960 --> 00:46:39,960
+So do you have any advice for me to get some resources,
+
+623
+00:46:40,440 --> 00:46:47,659
+to get those knowledges to prepare for the, you know, future consultant or, you know, potential jobs at
+
+624
+00:46:48,039 --> 00:46:50,039
+these kind of fields.
+
+625
+00:46:50,639 --> 00:46:55,840
+Good question. So the, my friend who prepared me for my interview is a
+
+626
+00:46:56,920 --> 00:46:59,559
+biochemistry PhD.
+
+627
+00:47:00,440 --> 00:47:05,000
+The first consultant I worked with is a mechanical engineering PhD.
+
+628
+00:47:05,000 --> 00:47:15,000
+I will say there are less social science PhD at consultant than there are engineering or science PhDs.
+
+629
+00:47:15,000 --> 00:47:28,280
+So, and when I did the consulting interview, they didn't care about my economics background, to care about how I performed in case interviews, to care about how my business sense but they
+
+630
+00:47:28,280 --> 00:47:32,599
+didn't care about my degree. And a lot of times I think having a
+
+631
+00:47:32,599 --> 00:47:38,840
+sense of hard science background gives you the extra edge because
+
+632
+00:47:39,679 --> 00:47:44,039
+you can actually understand the hard problems that your clients
+
+633
+00:47:44,079 --> 00:47:45,400
+are facing. So
+
+634
+00:47:45,400 --> 00:47:50,920
+for example, if your client is a auto manufacturer, then being a
+
+635
+00:47:50,920 --> 00:47:55,480
+mechanical engineer and PhD is a very good boost.
+
+636
+00:47:58,400 --> 00:48:03,480
+So thanks. So is there a fundamental like requirement to
+
+637
+00:48:05,239 --> 00:48:05,280
+So is there a fundamental like requirement to, to, you know,
+
+638
+00:48:11,000 --> 00:48:15,400
+let the HR think, oh, you are at least being able to understand those economics fundamentals? Is there a class I need to take or
+
+639
+00:48:15,400 --> 00:48:17,920
+you advise me to take for the
+
+640
+00:48:18,039 --> 00:48:21,519
+internship is the best way to signal that you are qualified to
+
+641
+00:48:21,519 --> 00:48:24,840
+HR. So get a PTA, get an internship at a second tier
+
+642
+00:48:24,840 --> 00:48:27,199
+consulting company, like get a get the best internship,
+
+643
+00:48:27,239 --> 00:48:30,079
+you can get. That's how to HR.
+
+644
+00:48:30,880 --> 00:48:31,840
+I see. Thanks.
+
+645
+00:48:36,599 --> 00:48:40,400
+I guess I can follow up on this question. So for me personally,
+
+646
+00:48:40,400 --> 00:48:44,239
+I'm considering a transfer future goal is to start a
+
+647
+00:48:44,239 --> 00:48:49,239
+startup. But there are basically a lot of traffic, a lot
+
+648
+00:48:49,239 --> 00:48:53,079
+of ways I can take to achieve that goal. So right now I'm
+
+649
+00:48:53,079 --> 00:48:58,039
+thinking about two sense. The first way is to enter consulting
+
+650
+00:48:58,039 --> 00:49:01,039
+for a couple of years, build out my connections, and then use
+
+651
+00:49:01,039 --> 00:49:04,920
+that connections and resources to help me to build a successful
+
+652
+00:49:04,920 --> 00:49:05,760
+startup.
+
+653
+00:49:05,760 --> 00:49:09,579
+A second, but this actually one of the sense,
+
+654
+00:49:09,579 --> 00:49:13,079
+in the previous talk, the previous speaker was really,
+
+655
+00:49:13,079 --> 00:49:14,239
+he doesn't like this idea,
+
+656
+00:49:14,239 --> 00:49:16,000
+cause he's running startups.
+
+657
+00:49:16,000 --> 00:49:19,840
+And he will recommend that instead of going to consulting,
+
+658
+00:49:19,840 --> 00:49:24,239
+I should consider going into joining a startup directly.
+
+659
+00:49:24,239 --> 00:49:28,079
+So how do you compare these two different chats if my future
+
+660
+00:49:28,079 --> 00:49:29,800
+goal is to build a company?
+
+661
+00:49:32,599 --> 00:49:39,440
+So I think that there are too many variables in that decision.
+
+662
+00:49:39,519 --> 00:49:42,280
+Like for example, if you know the startup is going to be
+
+663
+00:49:42,280 --> 00:49:47,039
+successful, then do that. But I guess that's the uncertainty, right? So the safe
+
+664
+00:49:47,039 --> 00:49:51,599
+path is to join industry, build our experience and you know,
+
+665
+00:49:52,679 --> 00:49:57,079
+take the challenge when you feel you need to or see for you to
+
+666
+00:49:57,079 --> 00:50:05,800
+or when it is, it's like a hood of success is like, but I guess
+
+667
+00:50:05,800 --> 00:50:08,840
+different people have just different risk appetite and
+
+668
+00:50:08,880 --> 00:50:14,440
+different expertise. So I don't know how I can give her a
+
+669
+00:50:14,440 --> 00:50:16,079
+condition. Okay.
+
+670
+00:50:19,519 --> 00:50:20,079
+Excuse me.
+
+671
+00:50:30,000 --> 00:50:31,000
+Excuse me. I have a question. Yeah.
+
+672
+00:50:31,000 --> 00:50:47,860
+I'm curious about, like, you're as a senior data scientist, I'm curious about what the most important techniques or tools you are using in your daily work. I wonder if there's any gaps between the just for the data science and then a gap
+
+673
+00:50:47,860 --> 00:50:52,019
+between the industry and lab, because I'm working on some like
+
+674
+00:50:52,019 --> 00:50:56,019
+a very complicated deep learning or machine learning models. I'm
+
+675
+00:50:56,139 --> 00:51:01,719
+I'm more I'm curious if that is useful in your real work
+
+676
+00:51:01,739 --> 00:51:02,380
+industry.
+
+677
+00:51:02,820 --> 00:51:05,239
+Yes, yes, very.
+
+678
+00:51:05,239 --> 00:51:08,199
+So I guess my two different jobs, right?
+
+679
+00:51:08,199 --> 00:51:11,440
+Facebook, what I do is I run SQL to get data
+
+680
+00:51:11,440 --> 00:51:13,800
+and I use Tableau to plot the data
+
+681
+00:51:13,800 --> 00:51:16,480
+and I use PPT to present the data.
+
+682
+00:51:16,480 --> 00:51:17,320
+That's almost it.
+
+683
+00:51:17,320 --> 00:51:18,800
+And then I write docs.
+
+684
+00:51:18,800 --> 00:51:21,400
+I guess the writing training I received at PhD
+
+685
+00:51:21,400 --> 00:51:23,039
+was actually quite useful.
+
+686
+00:51:23,039 --> 00:51:27,920
+I'm able to produce high quality notes. It's almost like a mini research
+
+687
+00:51:27,920 --> 00:51:33,760
+paper. It's a good speed. So that helped me to land a lot of
+
+688
+00:51:33,760 --> 00:51:38,880
+impact. I sometimes use Python to do data cleaning and do some
+
+689
+00:51:38,880 --> 00:51:43,440
+simple analysis models. But I often use Tableau because the
+
+690
+00:51:43,440 --> 00:51:48,460
+problem just requires Tableau to solve. A-B testing is a must at Facebook,
+
+691
+00:51:48,500 --> 00:51:51,260
+being able to do causal inference based on A-B testing,
+
+692
+00:51:51,260 --> 00:51:55,300
+design the experiment, also data are not contaminated, all those
+
+693
+00:51:55,300 --> 00:52:03,659
+things are a must. At Amazon, I use Spark, Python, mostly
+
+694
+00:52:03,739 --> 00:52:06,440
+because the infrastructure at Amazon is
+
+695
+00:52:06,440 --> 00:52:09,920
+not as good as Facebook. So how to get the data I have to
+
+696
+00:52:10,159 --> 00:52:14,159
+basically set up the machines, the servers to get the data and
+
+697
+00:52:14,639 --> 00:52:18,840
+build the data pipeline, clean the data, and then use Python to
+
+698
+00:52:18,880 --> 00:52:24,559
+to run some. What I did is synthetic cohort and measures
+
+699
+00:52:24,559 --> 00:52:25,360
+completion so simple, simple machine learning models, not And what I did is synthetic cohort and measures completion.
+
+700
+00:52:25,360 --> 00:52:28,920
+So simple machine learning models, not deep learning
+
+701
+00:52:28,920 --> 00:52:33,920
+models, to draw causal inference based on big data set.
+
+702
+00:52:33,920 --> 00:52:39,920
+But I feel like if you can code deep learning model,
+
+703
+00:52:39,920 --> 00:52:42,320
+all the tech requirements should be easy.
+
+704
+00:52:42,320 --> 00:52:48,039
+It's just about preparing for the interview, shopping or communication. And we have a
+
+705
+00:52:48,039 --> 00:52:51,000
+video up incoming to talk about that.
+
+706
+00:52:52,159 --> 00:52:52,880
+Yeah, thank you.
+
+707
+00:52:54,840 --> 00:53:03,199
+Hi. Can you hear me? Okay. So thank you for your presentation
+
+708
+00:53:03,199 --> 00:53:09,000
+and your insight so far. And I'm currently a master's student. And my
+
+709
+00:53:09,000 --> 00:53:15,360
+question is about getting a job in the US after after having a
+
+710
+00:53:15,360 --> 00:53:21,440
+PhD degree. And so as far as I know, in some countries, such as
+
+711
+00:53:21,639 --> 00:53:30,480
+in Germany, sometimes getting a PhD degree is not a good thing because sometimes
+
+712
+00:53:31,360 --> 00:53:38,719
+the companies think that you are overqualified for the job and sometimes they don't want to
+
+713
+00:53:38,719 --> 00:53:50,960
+hire you because they will need to pay you more as compared to a master or a bachelor degree holder and so sometimes you know
+
+714
+00:53:51,840 --> 00:53:58,880
+having a PhD degree makes you less competitive for the job. So my question is can you tell me
+
+715
+00:53:59,599 --> 00:54:07,440
+the situation in the US? I mean can you give me some insight of like, having
+
+716
+00:54:07,440 --> 00:54:14,599
+a is like, is getting a PhD degree is a good thing. And it
+
+717
+00:54:14,599 --> 00:54:20,960
+helps you to to easier finding a job in the US. Yeah, thank you.
+
+718
+00:54:20,960 --> 00:54:21,639
+It's my question.
+
+719
+00:54:21,840 --> 00:54:28,519
+Yeah, so that's my, my first advice is not to answer questions to don't get a PhD. If
+
+720
+00:54:28,800 --> 00:54:33,119
+if our purpose is just to boost our job competitive, like if, if
+
+721
+00:54:33,159 --> 00:54:38,079
+your purpose is to make it easier to apply for a job. Don't
+
+722
+00:54:38,079 --> 00:54:42,960
+get don't get into PhD PhD is designed for research for
+
+723
+00:54:42,960 --> 00:54:48,599
+academia, like we happen to be trained well to be able to do other
+
+724
+00:54:48,599 --> 00:54:52,800
+things. But if you don't like research or academia, it's very
+
+725
+00:54:52,800 --> 00:54:56,119
+difficult to survive. Like I found it difficult to survive
+
+726
+00:54:56,119 --> 00:54:59,599
+myself, even though I liked every piece of my research and
+
+727
+00:54:59,599 --> 00:55:03,719
+the reading papers, I was able to just study like do research
+
+728
+00:55:03,719 --> 00:55:09,420
+like for months without doing anything else. But even that was not a
+
+729
+00:55:09,420 --> 00:55:14,099
+pleasant experience. So it's not worth it to, you know, to spend
+
+730
+00:55:14,099 --> 00:55:17,099
+five years in PhD just to be able to increase our likelihood
+
+731
+00:55:17,099 --> 00:55:20,639
+of getting a job. I feel like if you apply to an internship, and
+
+732
+00:55:20,639 --> 00:55:25,960
+you know, climb up the corporate ladder or whatever, it's much easier.
+
+733
+00:55:25,960 --> 00:55:28,440
+No, but yeah.
+
+734
+00:55:28,440 --> 00:55:33,440
+And I guess the relative competition,
+
+735
+00:55:33,719 --> 00:55:36,480
+or like, is it easier for PhDs to get jobs?
+
+736
+00:55:36,480 --> 00:55:41,099
+I think yes, because most of my PhD friends,
+
+737
+00:55:41,099 --> 00:55:42,639
+if they want to go to industry,
+
+738
+00:55:42,639 --> 00:55:45,519
+if they want to find a job, they can always do that. I haven't seen industry, if they want to find a job, they can always do that.
+
+739
+00:55:46,480 --> 00:55:49,920
+I haven't seen one case that they want to find a job but they couldn't.
+
+740
+00:55:51,199 --> 00:55:54,880
+Even if they couldn't stay in the United States, they can easily find a job back home.
+
+741
+00:55:55,599 --> 00:56:01,360
+Yeah, so one more quick question is that you think that the ranking of the university is a
+
+742
+00:56:03,280 --> 00:56:07,360
+of the university is a critical point, I mean, an important point in finding a job.
+
+743
+00:56:07,360 --> 00:56:11,519
+I mean, do the HR people will pay a lot of attention
+
+744
+00:56:11,519 --> 00:56:12,719
+to the ranking?
+
+745
+00:56:12,719 --> 00:56:13,800
+Yes.
+
+746
+00:56:13,800 --> 00:56:14,800
+OK.
+
+747
+00:56:14,800 --> 00:56:17,440
+Industry, yes.
+
+748
+00:56:17,440 --> 00:56:19,000
+Thank you.
+
+749
+00:56:19,000 --> 00:56:21,519
+Hey, I have a question.
+
+750
+00:56:21,519 --> 00:56:26,239
+So you just said that you are actually
+
+751
+00:56:26,239 --> 00:56:28,199
+very interested in academia and very
+
+752
+00:56:28,199 --> 00:56:30,039
+used to the lifestyle there.
+
+753
+00:56:30,039 --> 00:56:33,760
+But it's still difficult to survive academia.
+
+754
+00:56:33,760 --> 00:56:35,519
+I wonder, is that that difficult?
+
+755
+00:56:35,519 --> 00:56:39,760
+I mean, because you graduated from Cornell.
+
+756
+00:56:39,760 --> 00:56:48,480
+And if you want to go into academia, you can do that, right? I mean, so I'm just and also if you like, actually,
+
+757
+00:56:48,519 --> 00:56:51,559
+like, like from your description of your past PhD life, I feel
+
+758
+00:56:51,559 --> 00:56:57,119
+like, yeah, I feel like you're like, it's very simple, like,
+
+759
+00:56:57,400 --> 00:57:00,920
+like, I just wonder why you change the path, like, you know,
+
+760
+00:57:02,599 --> 00:57:03,079
+thanks.
+
+761
+00:57:05,599 --> 00:57:09,800
+If you want to be successful in academia, it's not impossible to
+
+762
+00:57:09,800 --> 00:57:15,159
+do. I guess it's not it's not very hard to do as well. Or like,
+
+763
+00:57:15,320 --> 00:57:17,719
+if you want to survive, it's not hard to do if you want to do
+
+764
+00:57:17,719 --> 00:57:22,800
+well, it's difficult, but it's still possible. My choice was
+
+765
+00:57:22,800 --> 00:57:25,000
+more related to that, you know, I just, I
+
+766
+00:57:25,000 --> 00:57:29,480
+realized, academia is not my passion. I'm passionate about a
+
+767
+00:57:29,480 --> 00:57:34,079
+very small part of it. The part of, you know, into being
+
+768
+00:57:34,119 --> 00:57:38,199
+intellectually challenged, solve the questions nobody have
+
+769
+00:57:38,199 --> 00:57:41,760
+solved before, like those parts, but I didn't like, you know,
+
+770
+00:57:42,679 --> 00:57:45,760
+rewriting the paper a hundred times,
+
+771
+00:57:45,760 --> 00:57:49,780
+going through a referee process, you know,
+
+772
+00:57:49,780 --> 00:57:53,880
+discussing all the like detail that nobody care about
+
+773
+00:57:53,880 --> 00:57:56,559
+in seminars or with our peers.
+
+774
+00:57:56,559 --> 00:58:00,019
+All those things were like very painful to me.
+
+775
+00:58:00,019 --> 00:58:01,480
+And that was not my passion.
+
+776
+00:58:01,480 --> 00:58:04,159
+I feel like I can, like for example,
+
+777
+00:58:04,159 --> 00:58:06,579
+consulting is a great place to find
+
+778
+00:58:06,579 --> 00:58:08,639
+the same intellectual challenge,
+
+779
+00:58:08,639 --> 00:58:11,679
+but solve problem that people actually care about.
+
+780
+00:58:13,039 --> 00:58:13,860
+Yeah.
+
+781
+00:58:14,679 --> 00:58:15,719
+I see, thank you.
+
+782
+00:58:29,679 --> 00:58:40,519
+Great, any other questions from the audience?
+
+783
+00:58:43,480 --> 00:58:46,119
+I think I see that there is a debate in the chat box about the requirement for advanced
+
+784
+00:58:46,119 --> 00:58:50,360
+degree in the necessity of it if you were to go to industry.
+
+785
+00:58:50,360 --> 00:58:55,639
+I think the clarification that we need to make here is if you think about different
+
+786
+00:58:55,639 --> 00:59:02,960
+career options on the spectrum and you know you rank it whether it's further away from
+
+787
+00:59:02,960 --> 00:59:05,000
+repure research or closer.
+
+788
+00:59:05,360 --> 00:59:07,519
+And I would probably put industry jobs
+
+789
+00:59:07,519 --> 00:59:10,539
+as on the closer end of the spectrum
+
+790
+00:59:10,539 --> 00:59:14,079
+to your actual research and maybe consulting banking
+
+791
+00:59:14,079 --> 00:59:16,360
+or VC on the other spectrum.
+
+792
+00:59:16,360 --> 00:59:18,679
+And there's another dimension,
+
+793
+00:59:18,679 --> 00:59:22,519
+which is also the requirement of specific knowledge
+
+794
+00:59:22,519 --> 00:59:26,480
+and expertise, and that's kind of the reverse to the spectrum.
+
+795
+00:59:26,480 --> 00:59:31,480
+So maybe you probably don't 100% need a PhD
+
+796
+00:59:33,199 --> 00:59:36,679
+to go to industry, but you probably need a master's
+
+797
+00:59:36,679 --> 00:59:39,579
+or related undergraduate degree.
+
+798
+00:59:39,579 --> 00:59:42,800
+And to be honest, I would say higher percentage
+
+799
+00:59:42,800 --> 00:59:45,000
+would require a related advanced degree.
+
+800
+00:59:45,000 --> 00:59:54,000
+But if you go to the other spectrum, if you were to go into banking, consulting, or anything else, it's completely not a requirement at all.
+
+801
+00:59:54,000 --> 01:00:06,199
+In that case, they will probably put more weight on other factors on your CV, such as your, you know, the ranking of your university, the diversity of your extracurricular
+
+802
+01:00:06,199 --> 01:00:09,000
+and any other passion you've shown
+
+803
+01:00:09,000 --> 01:00:11,099
+for their industry or sector?
+
+804
+01:00:12,800 --> 01:00:14,719
+Yeah, that's a good summary.
+
+805
+01:00:14,719 --> 01:00:17,679
+Like, I guess the one end of the spectrum
+
+806
+01:00:17,679 --> 01:00:19,300
+is being a professor, right?
+
+807
+01:00:20,440 --> 01:00:22,320
+You 100% need a PhD.
+
+808
+01:00:22,320 --> 01:00:27,840
+And being a researcher, probably a PhD will help. But I guess the previous question is about, you
+
+809
+01:00:27,840 --> 01:00:32,239
+know, if I want to apply for a job, is PhD going to help me
+
+810
+01:00:32,239 --> 01:00:35,960
+make it be more successful? If you want to be a professor or a
+
+811
+01:00:35,960 --> 01:00:39,199
+researcher, you wouldn't ask this question, because you know,
+
+812
+01:00:39,239 --> 01:00:44,559
+you need a PhD. So it's also, I guess, my answer was to the case
+
+813
+01:00:44,559 --> 01:00:48,000
+that a PhD is an option, but not a necessity.
+
+814
+01:00:48,000 --> 01:00:52,000
+So how should you choose and my advice is don't do it.
+
+815
+01:00:52,000 --> 01:00:55,000
+It's not worth it.
+
+816
+01:00:55,000 --> 01:00:59,000
+I have a question.
+
+817
+01:00:59,000 --> 01:01:05,159
+I have one more question on the data science career of yours.
+
+818
+01:01:05,159 --> 01:01:07,079
+Because a lot of people around me
+
+819
+01:01:07,079 --> 01:01:10,280
+seem to be wanting to be a data scientist.
+
+820
+01:01:10,280 --> 01:01:12,719
+Actually, everyone wants to be a data scientist nowadays.
+
+821
+01:01:12,719 --> 01:01:17,039
+And a lot of them have zero background in anything related.
+
+822
+01:01:17,039 --> 01:01:20,199
+They're probably in bioinformatics,
+
+823
+01:01:20,199 --> 01:01:23,960
+or in physics, or even chemistry.
+
+824
+01:01:23,960 --> 01:01:27,679
+So I wanted to know from people around you who are proper
+
+825
+01:01:27,679 --> 01:01:33,360
+data scientists, what is their background? How many people are actually from non-computer science,
+
+826
+01:01:33,360 --> 01:01:43,760
+non-math, non-economics background? And what do we see are kind of subjects or topics or
+
+827
+01:01:46,079 --> 01:01:46,440
+of subjects or, or, you know, topics or kind of their PhD
+
+828
+01:01:51,400 --> 01:01:52,039
+areas that could be a higher likelihood for them to enter
+
+829
+01:01:52,960 --> 01:01:53,800
+data science.
+
+830
+01:01:59,079 --> 01:02:03,039
+So first, data science is not a high bar. If a PhD have done quantitative research, whether psychology, a PhD or physics,
+
+831
+01:02:03,039 --> 01:02:05,400
+PhD, their skill skill
+
+832
+01:02:05,400 --> 01:02:10,239
+set is good enough for data scientist, because data
+
+833
+01:02:10,239 --> 01:02:14,079
+scientists is about application and about solving problems,
+
+834
+01:02:14,119 --> 01:02:17,719
+analytics application and solving problems. It's not about
+
+835
+01:02:17,760 --> 01:02:22,559
+building the most sophisticated models, right. And they actually
+
+836
+01:02:22,760 --> 01:02:28,440
+like companies hire specifically for machine learning engineers, research scientists or apply
+
+837
+01:02:28,440 --> 01:02:32,360
+scientists, that you know, go and build models and solve the
+
+838
+01:02:32,360 --> 01:02:36,679
+cutting edge artificial problems in artificial intelligence. For
+
+839
+01:02:36,679 --> 01:02:39,760
+example, how to make Amazon's recommendation system better.
+
+840
+01:02:40,199 --> 01:02:45,159
+That requires specific domain knowledge. But for format for my current role,
+
+841
+01:02:45,199 --> 01:02:49,960
+data scientists, as I said, like, second, second year,
+
+842
+01:02:50,239 --> 01:02:56,920
+second, like sophomore, sophomore level of statistic in
+
+843
+01:02:56,920 --> 01:03:01,960
+college, not in PhD, is enough to handle most cases. So if you
+
+844
+01:03:01,960 --> 01:03:06,400
+had done quality quantitative research,
+
+845
+01:03:14,239 --> 01:03:17,039
+you have the skill set. Yeah, like, forgot what the question was. Did that answer the question?
+
+846
+01:03:27,079 --> 01:03:27,400
+Yes. Yeah, like, most PhDs, they're qualified. It's just about the experience and
+
+847
+01:03:32,679 --> 01:03:35,079
+interview. So get your resume to pass the HR stage and then prepare to interview so the hiring manager hires you.
+
+848
+01:03:39,559 --> 01:03:40,159
+Thank you.
+
+849
+01:03:42,519 --> 01:03:49,159
+Okay, like I might have a question, like you mentioned that it would be much better if
+
+850
+01:03:49,159 --> 01:03:58,320
+you could have started preparing for a job like searching at the second year of your
+
+851
+01:03:58,320 --> 01:03:59,320
+PhD.
+
+852
+01:03:59,320 --> 01:04:08,400
+But my question is that like usually like a lot of research takes a long time, much more than two years
+
+853
+01:04:08,400 --> 01:04:10,480
+to even get on track.
+
+854
+01:04:10,480 --> 01:04:17,880
+So what's your suggestion on determining what's the starting point?
+
+855
+01:04:17,880 --> 01:04:24,320
+Because I discussed with some of my friends on when to decide it is the time to quit or
+
+856
+01:04:24,320 --> 01:04:29,400
+to continue. Like my idea is more like maybe it is more about
+
+857
+01:04:29,400 --> 01:04:33,480
+rewarding you have like the more rewarding your rewards you have
+
+858
+01:04:33,500 --> 01:04:38,840
+during your PhD as a academic research and then probably we
+
+859
+01:04:38,840 --> 01:04:43,199
+will continue more on this trend. I guess at this past on
+
+860
+01:04:43,559 --> 01:04:45,519
+like, I just want to hear about
+
+861
+01:04:45,519 --> 01:04:52,960
+like your thoughts on when to decide on the on your past.
+
+862
+01:04:53,480 --> 01:04:54,280
+Yeah, thank you.
+
+863
+01:04:54,840 --> 01:05:02,280
+Yeah. So, I guess I need to clarify, that was my own lesson
+
+864
+01:05:02,320 --> 01:05:08,360
+and what I would have done differently if I started again, everyone's situation is different from my
+
+865
+01:05:08,360 --> 01:05:14,599
+advice is no interest, no, no, strength and no self basically,
+
+866
+01:05:14,840 --> 01:05:18,559
+and then make the decision based on our own scenario, not mine.
+
+867
+01:05:18,599 --> 01:05:23,800
+Right. And but for me, the reason I said I wanted to do to
+
+868
+01:05:23,800 --> 01:05:28,119
+start in my second year is, of course, like my research would take a long
+
+869
+01:05:28,119 --> 01:05:32,960
+time to build. But I stayed six years, I wanted to do acting, I
+
+870
+01:05:32,960 --> 01:05:36,280
+had the counterfactual right had wanted to do acting, I stayed
+
+871
+01:05:36,280 --> 01:05:39,559
+those years, but I wasn't particularly proud of my
+
+872
+01:05:40,679 --> 01:05:44,039
+research paper. It is an important topic, I think is
+
+873
+01:05:44,199 --> 01:05:49,800
+research paper, like it is an important topic, I think is a nicely written paper, but there was no impact. And because what
+
+874
+01:05:49,800 --> 01:05:53,920
+drives me is impact, right? So I don't care. Like, if I, if I
+
+875
+01:05:53,920 --> 01:05:57,920
+stay in my PhD for four years and had a much crappy paper,
+
+876
+01:05:58,119 --> 01:06:01,960
+much crappier paper, I would actually be happier today. So
+
+877
+01:06:03,000 --> 01:06:06,659
+that's why I said, if I do it again,
+
+878
+01:06:06,659 --> 01:06:08,519
+I would start in my second year.
+
+879
+01:06:08,519 --> 01:06:10,000
+But I know everyone's different.
+
+880
+01:06:10,000 --> 01:06:12,719
+So definitely today just make a decision
+
+881
+01:06:12,719 --> 01:06:14,159
+based on our own scenario.
+
+882
+01:06:16,039 --> 01:06:17,039
+Yeah, thank you.
+
+883
+01:06:17,039 --> 01:06:18,000
+Yeah, thanks.
+
+884
+01:06:21,480 --> 01:06:23,159
+I guess to follow up on that,
+
+885
+01:06:23,159 --> 01:06:27,119
+Yujun, is there a moment in your current life where you think back, you say, okay, if I were to follow up on that, you john, is there a moment, you know, current life, we will think back, you say, Okay, if I
+
+886
+01:06:27,119 --> 01:06:29,599
+were to continue and Damian, maybe, you know, I will be a
+
+887
+01:06:29,599 --> 01:06:34,639
+professor. You have no, so you have no moments of regret,
+
+888
+01:06:34,639 --> 01:06:34,880
+right?
+
+889
+01:06:35,920 --> 01:06:40,880
+Just, of course, it's not helpful to regret things. Like,
+
+890
+01:06:40,960 --> 01:06:45,280
+like I said, I'll do HR, I'll do it differently.
+
+891
+01:06:45,280 --> 01:06:52,440
+But I that is more as a device for like this people who are in
+
+892
+01:06:52,440 --> 01:06:57,840
+a PhD program. If I choose my life, I wouldn't necessarily
+
+893
+01:06:57,840 --> 01:07:01,760
+want to do it all over again, because I got I'm happy with my
+
+894
+01:07:01,760 --> 01:07:04,639
+current life, right? So everything that leads to my
+
+895
+01:07:04,639 --> 01:07:07,280
+current life, I think, you know, that they're
+
+896
+01:07:07,280 --> 01:07:11,639
+good. I don't have any particular regrets. And it took
+
+897
+01:07:11,639 --> 01:07:15,400
+me six years to realize I wasn't in leukemia. Maybe that's,
+
+898
+01:07:15,679 --> 01:07:20,280
+that's what I need. If I change my decision in my second year,
+
+899
+01:07:20,280 --> 01:07:25,159
+maybe I will always have self doubt, you know, what, then maybe I'll have
+
+900
+01:07:25,159 --> 01:07:27,599
+questions, like you just mentioned, you know, what, what,
+
+901
+01:07:27,639 --> 01:07:31,400
+what if today I don't have what if because I suffered those six
+
+902
+01:07:31,400 --> 01:07:35,559
+years and I realized, you know, that's not my passion. Okay,
+
+903
+01:07:35,639 --> 01:07:36,599
+that's a good point.
+
+904
+01:07:43,519 --> 01:07:47,280
+And of the jobs you did, I know you had experience startup things, some experience in consulting, and now data
+
+905
+01:07:47,280 --> 01:07:52,000
+scientists, what is the job you like most, or you, the bet on
+
+906
+01:07:52,039 --> 01:07:54,920
+using the best is yet to come. So what you know what I was
+
+907
+01:07:54,920 --> 01:07:55,760
+thinking right now,
+
+908
+01:07:56,000 --> 01:08:03,519
+on my current job. Otherwise, I would have like, so I guess some
+
+909
+01:08:03,519 --> 01:08:08,800
+some data points to back my kind of, you know, my, my current job. Otherwise, I would have like, so I guess some some data points
+
+910
+01:08:08,800 --> 01:08:14,039
+to back my claim. Amazon has a very particular stock vesting
+
+911
+01:08:14,239 --> 01:08:16,880
+schedule. So when you go to a tech company, they give you
+
+912
+01:08:16,880 --> 01:08:21,560
+stocks for four years. But Amazon the first year it was 5%,
+
+913
+01:08:21,600 --> 01:08:26,600
+second year 15%, third and fourth 40% each. And when I
+
+914
+01:08:26,600 --> 01:08:30,520
+joined Amazon, Amazon stock was at 800 something. Now it's at
+
+915
+01:08:30,560 --> 01:08:35,760
+3000. So I was actually underpaid in Facebook, when I
+
+916
+01:08:35,760 --> 01:08:40,119
+took the Facebook job. And so I get paid less at Facebook than
+
+917
+01:08:40,119 --> 01:08:45,680
+I was at Amazon. But I wanted to try the job so I can like if
+
+918
+01:08:45,680 --> 01:08:48,039
+I'm not happy at Facebook, I would go to another job.
+
+919
+01:08:57,800 --> 01:09:00,520
+Great. Any other questions from the audience?
+
+920
+01:09:12,500 --> 01:09:15,000
+I guess we have a lot of comments in the chat box. I try to speak because I cannot.
+
+921
+01:09:15,000 --> 01:09:18,000
+Yeah, yeah, I was muted.
+
+922
+01:09:18,000 --> 01:09:23,279
+I have a two buttons need to unmute so I'm mute one and the other still muted so you
+
+923
+01:09:23,279 --> 01:09:28,000
+can hear me now.
+
+924
+01:09:28,000 --> 01:09:36,000
+Okay, so I put some text comments because previously I got some technical problems to unmute both.
+
+925
+01:09:36,000 --> 01:09:45,000
+It's good, it's good communication we can talk more. So, so today, like I put in the comments, things are changing.
+
+926
+01:09:45,100 --> 01:09:48,300
+Like 20, 30 years ago, if I had PhD,
+
+927
+01:09:48,300 --> 01:09:51,899
+the industry labs will value you more,
+
+928
+01:09:51,899 --> 01:09:53,760
+but today can be different.
+
+929
+01:09:57,979 --> 01:10:02,899
+Yeah, I'm looking at the discussion in the chats.
+
+930
+01:10:02,899 --> 01:10:06,000
+I think there are two things I want to address.
+
+931
+01:10:06,439 --> 01:10:12,479
+One is like still like we focus on the job that requires a PhD.
+
+932
+01:10:12,600 --> 01:10:16,399
+So if you are a PhD, you know, that is our advantage because
+
+933
+01:10:16,399 --> 01:10:20,960
+this jobs. You all have a comparative advantage of being a
+
+934
+01:10:20,960 --> 01:10:27,640
+PhD. So as a PhD definitely focus on those jobs or not focus but you know, pay more attention to those
+
+935
+01:10:27,640 --> 01:10:32,159
+jobs and apply and you'll be successful. I don't know the
+
+936
+01:10:32,159 --> 01:10:37,319
+future, but at least you know, darker jobs. But the second is,
+
+937
+01:10:38,359 --> 01:10:44,319
+like, for example, a lot of big companies have to do research,
+
+938
+01:10:44,800 --> 01:10:52,279
+of big companies have to do research, they have their research department. Yes. And, but don't take industry job as
+
+939
+01:10:52,279 --> 01:10:57,840
+an escape, we cannot do academia well. Like, for example, the
+
+940
+01:10:57,880 --> 01:11:06,840
+Google AI or Facebook AI research. Those are the, they hire the best PhDs, right. So,
+
+941
+01:11:07,600 --> 01:11:11,439
+like, if you want to get into the right, very good, the
+
+942
+01:11:11,439 --> 01:11:18,079
+promising industry research career, you need to be very good
+
+943
+01:11:18,079 --> 01:11:22,439
+at academia, research and creation research that actually
+
+944
+01:11:22,439 --> 01:11:25,000
+has an impact. So I
+
+945
+01:11:26,880 --> 01:11:33,680
+guess those are my two points.
+
+946
+01:11:37,439 --> 01:11:44,239
+Yeah, is the AI is a unique area because the company like a Google, Amazon, they tried to hire the best AI scientists
+
+947
+01:11:44,239 --> 01:11:45,880
+develop the most advanced
+
+948
+01:11:45,880 --> 01:11:51,239
+algorithms. But to develop the AI applications that need or
+
+949
+01:11:51,239 --> 01:11:52,760
+desire to have PhDs.
+
+950
+01:11:55,000 --> 01:11:58,039
+Yeah, and I talked about that in my YouTube channel as well. I
+
+951
+01:11:58,039 --> 01:12:01,119
+feel like a lot of industry application of machine learning
+
+952
+01:12:01,119 --> 01:12:03,680
+is actually an engineering problem, not a science problem.
+
+953
+01:12:03,720 --> 01:12:05,680
+You don't need to develop algorithm to do that.
+
+954
+01:12:05,920 --> 01:12:10,119
+You just need to apply the Python packages to solve, you
+
+955
+01:12:10,119 --> 01:12:13,359
+need you need to define the problem, they need to apply the
+
+956
+01:12:13,359 --> 01:12:15,520
+right Python packages to solve it.
+
+957
+01:12:20,520 --> 01:12:22,680
+Does anyone have any follow up questions?
+
+958
+01:12:23,119 --> 01:12:27,600
+Yeah, we're at the final question. Okay, yeah, so the final one. Yeah.
+
+959
+01:12:28,159 --> 01:12:34,479
+Thank you for the topic. Very sensory content is your personal
+
+960
+01:12:34,479 --> 01:12:41,039
+experience. So my first, can you hear me. Just to confirm. Okay,
+
+961
+01:12:48,000 --> 01:12:55,239
+confirm. Okay, so my question is, after that, that's yet after this year's PhD, everyone wants to have that game more from the
+
+962
+01:12:55,279 --> 01:13:00,239
+PhD experience. But right now you choose to go through the
+
+963
+01:13:00,279 --> 01:13:04,960
+industry and compete with the master student and some
+
+964
+01:13:04,960 --> 01:13:05,359
+undergraduate students. Some of them are your boss right now. to the industry and compete with the master's students and some
+
+965
+01:13:05,359 --> 01:13:10,159
+undergraduate students. Some of them are your boss right now. So
+
+966
+01:13:10,159 --> 01:13:17,920
+how do you how do you take this situation? How do you
+
+967
+01:13:17,920 --> 01:13:28,319
+accept someone is someone with only a master's degree guide to is your boss
+
+968
+01:13:28,319 --> 01:13:28,840
+right now.
+
+969
+01:13:30,680 --> 01:13:35,079
+I didn't capture the kind of type maybe.
+
+970
+01:13:35,159 --> 01:13:39,640
+So I think he was asking. So right now we enter industry for
+
+971
+01:13:39,640 --> 01:13:43,520
+example, in Facebook, or for example, if your boss, he only
+
+972
+01:13:43,520 --> 01:13:46,119
+has a master's degree, how do you feel about that?
+
+973
+01:13:50,000 --> 01:13:54,239
+What's that meritocracy? Yeah, like, the PhD doesn't tell you
+
+974
+01:13:54,239 --> 01:13:58,199
+you are better. Having a PhD just is a certification that
+
+975
+01:13:58,199 --> 01:14:00,920
+you're completing a PhD program. It doesn't mean you're better
+
+976
+01:14:00,920 --> 01:14:04,439
+than a master. So I guess if your boss is better than you
+
+977
+01:14:04,439 --> 01:14:07,239
+listen to him, your idea is better than him, you try to convince him your
+
+978
+01:14:07,239 --> 01:14:14,680
+idea is better. But I don't view the title, like the title. The
+
+979
+01:14:14,680 --> 01:14:16,199
+title doesn't shouldn't mean anything.
+
+980
+01:14:20,520 --> 01:14:21,680
+Okay, thank you.
+
+981
+01:14:28,640 --> 01:14:31,840
+Yes, I guess. So we are coming to one half hours, and I really appreciate you john to take this opportunity to share the
+
+982
+01:14:31,840 --> 01:14:34,960
+advice with Oh, there any other comment.
+
+983
+01:14:39,479 --> 01:14:42,000
+Looks like there's another question. So this is definitely
+
+984
+01:14:42,000 --> 01:14:47,640
+the last one. So I can paraphrase. So he was asking, I
+
+985
+01:14:47,640 --> 01:14:50,560
+don't know if the competition between China and the US would
+
+986
+01:14:50,560 --> 01:14:53,000
+inspire my investments to fundamental fundamental
+
+987
+01:14:53,000 --> 01:14:57,760
+research. What is the take on that seem like right right now
+
+988
+01:14:57,760 --> 01:14:58,640
+this is a trend.
+
+989
+01:15:00,479 --> 01:15:04,199
+I don't know. And I don't care like, what can I do to change
+
+990
+01:15:04,199 --> 01:15:10,920
+that? No. So yeah,
+
+991
+01:15:11,319 --> 01:15:16,279
+I agree on that. So let's thank our speaker again for sharing
+
+992
+01:15:16,600 --> 01:15:21,640
+his useful advice in making these decisions in throughout
+
+993
+01:15:21,640 --> 01:15:26,000
+the PhD. And also, thank all the audience for coming today. And
+
+994
+01:15:26,039 --> 01:15:30,880
+especially for we are running this talk series and that talk
+
+995
+01:15:30,880 --> 01:15:35,680
+is going to be centered around consulting. So, if you're
+
+996
+01:15:35,680 --> 01:15:41,560
+interested, just follow our Twitter, follow our WeChat
+
+997
+01:15:41,560 --> 01:15:44,520
+accounts, we'll be releasing announcements. And let's thank
+
+998
+01:15:44,520 --> 01:15:45,880
+our speaker again, and hope you have a great weekend.
+
+999
+01:15:47,000 --> 01:15:48,079
+All right. Thank you.
+
+1000
+01:15:48,319 --> 01:15:51,039
+Okay, we can. Thank you. Let's connect later.
+
+1001
+01:15:58,760 --> 01:16:03,479
+People are interested in variety of career tracks. And let's keep
+
+1002
+01:16:03,479 --> 01:16:12,000
+in touch.
+
+1003
+01:16:16,000 --> 01:16:18,000
+Oh, hey. Can I also introduce myself here.
+
+1004
+01:16:23,000 --> 01:16:26,239
+Sure, go ahead. Oh, sure. Yeah. So, so my name is Jen Jen Joe and
+
+1005
+01:16:26,239 --> 01:16:30,600
+I'm now a PhD student in computer science in Georgia Tech. And yeah,
+
+1006
+01:16:30,600 --> 01:16:35,159
+I used to be a master's student in University of Michigan, and
+
+1007
+01:16:35,159 --> 01:16:40,880
+I am glad to see you guys here and I'm never like I think, I
+
+1008
+01:16:40,880 --> 01:16:43,159
+thought like too seriously about what I'm going to do in the
+
+1009
+01:16:43,159 --> 01:16:48,079
+future. But like so but like accidentally I think, thought like too seriously about what I'm going to do in the future. But like, so, but like accidentally I got added
+
+1010
+01:16:48,079 --> 01:16:49,819
+in the WeChat, I'm very glad.
+
+1011
+01:16:49,819 --> 01:16:53,619
+And actually I saw some friends who like do consulting jobs
+
+1012
+01:16:53,619 --> 01:16:56,399
+and like, it is a very appealing job for me.
+
+1013
+01:16:56,399 --> 01:16:59,460
+And I want to explore more and see what it's like.
+
+1014
+01:16:59,460 --> 01:17:00,380
+Yeah, thanks.
+
+1015
+01:17:01,760 --> 01:17:03,439
+Jiangjiang, it's good to see you.
+
+1016
+01:17:03,439 --> 01:17:05,760
+We have been WeChat friends for a long time, but it's
+
+1017
+01:17:05,760 --> 01:17:07,000
+the first time I saw you.
+
+1018
+01:17:07,000 --> 01:17:10,000
+Yeah, nice to see you.
+
+1019
+01:17:10,000 --> 01:17:14,079
+Anyone else?
+
