@@ -1,0 +1,40 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "不详",
+    "role": "Product Manager",
+    "category": "career",
+    "episodes": [
+      {
+        "title": "面试准备：如何提升你的Product Sense | 访谈录",
+        "views": "",
+        "url": "",
+        "uploadTime": "2个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期访谈聚焦于如何在面试中展示解决问题的能力，尤其是通过使用咨询公司常用的MISI框架（Mutually Exclusive Collectively Exhaustive）来分析问题。访谈内容涉及到如何在面试中运用框架思考，如何展现商业直觉，以及如何在有限的时间内聚焦最重要的议题。",
+      "keyInsights": [
+        "MISI框架在产品面试中用于分析问题的完整性和覆盖面",
+        "面试时应建立思维框架并与面试官沟通，以展示分析能力",
+        "商业直觉和产品直觉在面试中非常重要，可以帮助识别关键问题",
+        "面试过程中应聚焦于最重要的问题，并用数据和统计方法解决"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "面面俱到重点分析",
+          "context": "在讨论如何在有限时间内有效分析问题的过程中提出的关键点"
+        }
+      ],
+      "topicsCovered": [
+        "产品面试准备",
+        "MISI框架应用",
+        "商业直觉培养",
+        "问题分析方法"
+      ]
+    }
+  }
+}
+```
