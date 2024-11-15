@@ -1,0 +1,236 @@
+[00:00:00,000 -> 00:00:02,640] Hey folks, welcome to my channel.
+[00:00:02,640 -> 00:00:08,560] Today is a special English episode about why Facebook is such a great place for data scientists
+[00:00:08,560 -> 00:00:09,800] to work at.
+[00:00:09,800 -> 00:00:13,800] The content of this video is very similar to my Chinese version, so if you have seen
+[00:00:13,800 -> 00:00:16,480] that video, feel free to skip this one.
+[00:00:16,480 -> 00:00:19,839] But the reason I want to do it in English is because 1.
+[00:00:19,839 -> 00:00:27,559] The knowledge is pretty applicable for English speakers as well. And two, because at the end of this video,
+[00:00:27,559 -> 00:00:29,960] I'm going to announce I'm leaving Facebook.
+[00:00:29,960 -> 00:00:33,880] And I want to help my org, my team, to hire my backfill.
+[00:00:33,880 -> 00:00:36,320] So I want to reach out to other English-speaking data
+[00:00:36,320 -> 00:00:38,439] scientists as well, because you might be
+[00:00:38,439 -> 00:00:40,520] interested after hearing my video.
+[00:00:40,520 -> 00:00:42,359] OK, let's get to it.
+[00:00:42,359 -> 00:00:44,000] So first of all, about the conclusion,
+[00:00:44,000 -> 00:00:46,439] Facebook is a great place for data scientists to work at.
+[00:00:46,719 -> 00:00:51,799] I know everyone's opinion is biased, but I try to collect a lot of information
+[00:00:52,119 -> 00:00:54,439] to be as unbiased as possible.
+[00:00:54,520 -> 00:00:59,560] My personal background is, I worked two years at Amazon as an economist
+[00:00:59,799 -> 00:01:01,280] and then moved to Facebook.
+[00:01:01,439 -> 00:01:08,159] When I came to Facebook, I was shocked by how important data is in the products.
+[00:01:08,159 -> 00:01:11,079] So all the products I see at Facebook
+[00:01:11,079 -> 00:01:13,959] starts with data and ends as data.
+[00:01:13,959 -> 00:01:15,519] And as data scientists,
+[00:01:15,519 -> 00:01:18,519] you really have a lot of say in the direction,
+[00:01:18,519 -> 00:01:21,560] strategy, and outcome of these products.
+[00:01:21,560 -> 00:01:24,040] And people actually listen to you by people,
+[00:01:24,040 -> 00:01:26,280] I mean, cross-functional partners,
+[00:01:26,280 -> 00:01:30,620] such as engineers, PMs, product managers, designers,
+[00:01:30,620 -> 00:01:32,200] researchers, and everyone.
+[00:01:32,200 -> 00:01:33,719] Like, people really respect data.
+[00:01:33,719 -> 00:01:36,599] And I really believe the work I do at Facebook
+[00:01:36,599 -> 00:01:39,560] as a data scientist creates tremendous value
+[00:01:39,560 -> 00:01:40,439] for the product.
+[00:01:40,439 -> 00:01:44,439] After this discovery, I start talking to my industry friends
+[00:01:44,439 -> 00:01:46,000] who work at different companies,
+[00:01:46,000 -> 00:01:53,000] especially the people who joined Facebook from other companies and people who leave Facebook and went to other companies.
+[00:01:53,000 -> 00:02:00,000] And to my surprise, all the people, whether they came to Facebook from other companies or they left Facebook and went to other companies,
+[00:02:00,000 -> 00:02:06,599] they recognized the value of data at Facebook and they all believe Facebook is one of the best places
+[00:02:06,599 -> 00:02:08,280] for data scientists to work at.
+[00:02:08,280 -> 00:02:10,120] Immediately we're thinking, okay,
+[00:02:10,120 -> 00:02:12,800] is it because data scientists at Facebook
+[00:02:12,800 -> 00:02:15,080] are doing particularly different things?
+[00:02:15,080 -> 00:02:17,199] Then we realized it's not the case.
+[00:02:17,199 -> 00:02:20,599] In most companies, at least in most tech companies,
+[00:02:20,599 -> 00:02:23,840] we all have good ideas of what data scientists should do
+[00:02:23,840 -> 00:02:26,039] and what can we bring to the table.
+[00:02:26,039 -> 00:02:29,520] But realities at different companies are very different.
+[00:02:29,520 -> 00:02:32,599] In some companies, people say we want to have
+[00:02:32,599 -> 00:02:35,199] data-driven decisions,
+[00:02:35,199 -> 00:02:37,560] but they actually are just paying lip service.
+[00:02:37,560 -> 00:02:41,759] And they are only using data to confirm their opinions
+[00:02:41,759 -> 00:02:43,819] instead of changing their opinions.
+[00:02:43,819 -> 00:02:46,000] So I went deeper into summarizing
+[00:02:46,000 -> 00:02:50,719] what's so special at Facebook that makes data effective.
+[00:02:50,719 -> 00:02:53,319] And I summarized three key points.
+[00:02:53,319 -> 00:02:55,159] One is the infrastructure.
+[00:02:55,159 -> 00:02:56,900] Two is the culture.
+[00:02:56,900 -> 00:02:59,280] And three is the organizational structure.
+[00:02:59,280 -> 00:03:02,960] And hopefully, this will help you establish a framework
+[00:03:02,960 -> 00:03:04,800] of how Facebook did it.
+[00:03:04,800 -> 00:03:07,439] OK, without further ado, let's start.
+[00:03:07,439 -> 00:03:08,800] First, infrastructure.
+[00:03:08,800 -> 00:03:12,080] Speaking of infrastructure, we have to thank our data engineers.
+[00:03:12,719 -> 00:03:17,199] At Facebook, I think the ratio of data scientists to data engineers is 2 to 1.
+[00:03:17,199 -> 00:03:20,960] And data engineers made the life of data scientists so easy.
+[00:03:20,960 -> 00:03:23,919] When I talk to data scientists at other companies,
+[00:03:23,919 -> 00:03:25,000] depending on the level of infrastructure,
+[00:03:25,000 -> 00:03:28,919] they often spend 50% to 80% of their time
+[00:03:28,919 -> 00:03:30,439] trying to clean the data,
+[00:03:30,439 -> 00:03:32,759] trying to get the data they actually need
+[00:03:32,759 -> 00:03:34,759] before they can do any analysis.
+[00:03:34,759 -> 00:03:38,080] But at Facebook, we have specialized data engineers.
+[00:03:38,080 -> 00:03:40,520] We also have a lot of tools for software engineers
+[00:03:40,520 -> 00:03:43,319] to build the logging and then build the pipeline.
+[00:03:43,319 -> 00:03:49,800] So the data, when we want to analyze, they are right in front of us and in nice format
+[00:03:49,800 -> 00:03:51,139] in the right size.
+[00:03:51,139 -> 00:03:57,719] So all the time that other people have to do to clean the data is saved so we can focus
+[00:03:57,719 -> 00:04:02,919] our, so data scientists can focus our time in analyzing the important questions.
+[00:04:02,919 -> 00:04:08,159] The other side of this infrastructure is the automatic tools are very advanced.
+[00:04:08,159 -> 00:04:09,840] If I want to build a dashboard, I
+[00:04:09,840 -> 00:04:12,639] can directly do that after running a query.
+[00:04:12,639 -> 00:04:14,280] So if I run a query, I don't need
+[00:04:14,280 -> 00:04:16,399] to worry about what machines I'm using.
+[00:04:16,399 -> 00:04:19,000] It's all automatic and elastic.
+[00:04:19,000 -> 00:04:23,240] And after I get the results, I can easily share my results,
+[00:04:23,240 -> 00:04:25,839] or I can do quick analysis or data visualization,
+[00:04:25,839 -> 00:04:32,000] and I can easily copy paste into a dashboard, and it became automatic. So, one, we can scale our
+[00:04:32,000 -> 00:04:38,079] impact because it's there, it's automatic, it's visualized, so more people can look at it,
+[00:04:38,079 -> 00:04:43,759] understand it, and change decisions based on the data or based on the analysis. And two,
+[00:04:43,759 -> 00:04:46,000] we get to automate a lot of our work.
+[00:04:46,000 -> 00:04:48,000] A lot of analytics in other companies,
+[00:04:48,000 -> 00:04:51,000] their role is basically getting the data
+[00:04:51,000 -> 00:04:53,000] and support this ad hoc request.
+[00:04:53,000 -> 00:04:56,000] At Facebook, doing this ad hoc request
+[00:04:56,000 -> 00:04:58,000] is really a data scientist's favor
+[00:04:58,000 -> 00:05:00,000] to the cross-function teams.
+[00:05:00,000 -> 00:05:04,000] They should be able to do most of the ad hoc queries themselves.
+[00:05:04,000 -> 00:05:06,600] It's not part of our core requirement.
+[00:05:06,600 -> 00:05:11,519] Our core requirement is to use scientific methods
+[00:05:11,519 -> 00:05:14,920] to analyze a problem, think strategies,
+[00:05:14,920 -> 00:05:16,560] drive the direction of the product,
+[00:05:16,560 -> 00:05:19,439] and prioritize our team's work.
+[00:05:19,439 -> 00:05:21,360] Needless to say, most of this work
+[00:05:21,360 -> 00:05:24,720] are way more impactful than those ad hoc queries.
+[00:05:24,720 -> 00:05:27,160] OK, so that is infrastructure.
+[00:05:27,160 -> 00:05:33,000] To sum up, it saves us a lot of time to get the data, and it also amplifies our impact
+[00:05:33,000 -> 00:05:34,720] by making things automatic.
+[00:05:34,720 -> 00:05:36,839] The second thing is about culture.
+[00:05:36,839 -> 00:05:41,759] The reason that Facebook has a very strong data culture, I believe, is because Facebook
+[00:05:41,759 -> 00:05:45,279] has a very strong eng a very strong engineering culture.
+[00:05:45,279 -> 00:05:52,079] If you look at big tech companies at Silicon Valley, Facebook and Google are probably the two
+[00:05:52,079 -> 00:05:59,920] most engineer-driven companies. But Google moves kind of slowly and Facebook moves much faster.
+[00:06:00,639 -> 00:06:07,000] So at Facebook, a lot of products are very scrappy, and they start almost like a hackathon.
+[00:06:07,000 -> 00:06:11,000] If an engineer has an idea and wants to try,
+[00:06:11,000 -> 00:06:14,000] he or she already has the freedom to do so,
+[00:06:14,000 -> 00:06:18,000] and they can just start the experiment without many permissions,
+[00:06:18,000 -> 00:06:20,000] without jumping through many loops.
+[00:06:20,000 -> 00:06:27,040] And then we use data to measure the performance of these experiments and decide which one is better for the users.
+[00:06:27,040 -> 00:06:31,879] So it's really this edge-driven culture that makes data powerful because this is
+[00:06:31,879 -> 00:06:33,639] kind of a meritocracy, right?
+[00:06:33,639 -> 00:06:39,360] And you have to have a standard to say which one out of your 100 projects
+[00:06:39,360 -> 00:06:44,160] is more promising and better for the user than you use data to tell.
+[00:06:44,160 -> 00:06:46,800] This also ties back to the infrastructure.
+[00:06:46,800 -> 00:06:52,319] At Facebook, A-B testing infrastructure is very advanced and very efficient.
+[00:06:52,319 -> 00:07:00,579] Actually there is a former Facebook VP, Vijay, he started a company called StatSec to try
+[00:07:00,579 -> 00:07:08,040] to make Facebook A-B testing infrastructure available to the public. I'm actually going to interview him and his company
+[00:07:08,040 -> 00:07:09,839] in the following weeks.
+[00:07:09,839 -> 00:07:12,600] So stay tuned if you want to know more about this.
+[00:07:12,600 -> 00:07:14,720] But to sum up my previous point,
+[00:07:14,720 -> 00:07:16,360] Facebook has a very strong data culture
+[00:07:16,360 -> 00:07:18,800] because it has a very strong edge culture.
+[00:07:18,800 -> 00:07:22,120] And to be able to make this meritocracy work,
+[00:07:22,120 -> 00:07:24,120] be able to hold people accountable,
+[00:07:24,120 -> 00:07:25,279] we really need to find ways to make data speak and work, be able to hold people accountable. We really need to find
+[00:07:25,279 -> 00:07:32,560] ways to make data speak and data scientists be the objective voice. So that helps us to build a very
+[00:07:32,560 -> 00:07:38,160] strong data culture. And because data scientists have a lot of time to think about products,
+[00:07:38,160 -> 00:07:43,439] we also have the ability to do a scientific understanding and a scientific analysis.
+[00:07:43,439 -> 00:07:46,240] We also deal with data all the time, so we probably
+[00:07:46,240 -> 00:07:53,519] know which part of the product is more impactful and easier to drive. So naturally, data scientists
+[00:07:53,519 -> 00:08:01,920] contribute to strategies. Most products start with data, which means we do some analysis pointing out
+[00:08:01,920 -> 00:08:07,720] a potential opportunity or something that is a gap and we need to fix.
+[00:08:07,720 -> 00:08:11,680] And then we start working on those and ends with data.
+[00:08:11,680 -> 00:08:15,160] We use all sorts of measurement, including A-B testing
+[00:08:15,160 -> 00:08:18,639] and including other, like such as retention analysis
+[00:08:18,639 -> 00:08:22,040] to say, okay, this is when we reached
+[00:08:22,040 -> 00:08:23,439] our potential opportunity.
+[00:08:23,439 -> 00:08:26,959] And this is a product that this work
+[00:08:26,959 -> 00:08:29,180] is actually helping our users.
+[00:08:30,319 -> 00:08:34,039] So the culture, data scientist has a lot of say
+[00:08:34,039 -> 00:08:37,139] and a lot of influence in products.
+[00:08:37,139 -> 00:08:39,919] Then the third thing is the org structure,
+[00:08:39,919 -> 00:08:41,600] organizational structure.
+[00:08:41,600 -> 00:08:43,960] At Facebook, the organizational structure
+[00:08:43,960 -> 00:08:47,899] is this centralized but embedded structure. At Facebook, the organizational structure is this centralized but embedded structure.
+[00:08:47,899 -> 00:08:49,899] Centralized means data scientists
+[00:08:49,899 -> 00:08:52,659] report to data scientists and tell where they're at.
+[00:08:52,659 -> 00:08:56,799] So for example, at Amazon, engineers, PMs, designers,
+[00:08:56,799 -> 00:09:00,820] data scientists, they all roll up their reporting chain
+[00:09:00,820 -> 00:09:02,659] to a senior manager or to a director.
+[00:09:02,659 -> 00:09:05,200] So they report to the same director.
+[00:09:05,200 -> 00:09:08,240] But at Facebook, your data scientist
+[00:09:08,240 -> 00:09:09,720] reports to data scientist manager,
+[00:09:09,720 -> 00:09:12,080] who report to data scientist director,
+[00:09:12,080 -> 00:09:16,080] and then data scientist director, data scientist VP.
+[00:09:16,080 -> 00:09:19,240] My reporting chain doesn't merge
+[00:09:19,240 -> 00:09:22,440] with an engineer reporting chain until Fiji,
+[00:09:22,440 -> 00:09:24,480] who is the boss of Facebook app.
+[00:09:24,480 -> 00:09:27,000] And engineers also have their own reporting chain. PMs have their own reporting chain and tell Fiji, who is the boss of Facebook app. And engineers also have their own reporting chain.
+[00:09:27,000 -> 00:09:28,940] PMs have their own reporting chain.
+[00:09:28,940 -> 00:09:30,679] Designers have their own reporting chain.
+[00:09:30,860 -> 00:09:33,000] So this is the centralized part of it.
+[00:09:33,480 -> 00:09:36,720] This allows us to remain independent, right?
+[00:09:36,960 -> 00:09:40,159] Our credibility really comes from us being neutral.
+[00:09:40,440 -> 00:09:46,399] Like if I report to a senior manager who is also the single-thread owner of this product
+[00:09:46,759 -> 00:09:54,600] He or she may not want me to say certain things if their career is tied to the success or failure of this product
+[00:09:54,600 -> 00:09:59,779] I cannot speak ill of this product, but if my reporting chain is
+[00:10:00,440 -> 00:10:07,039] Independent I'm free to say whatever I feel like is objectively true and also best
+[00:10:07,039 -> 00:10:13,100] for the org overall, instead of just best for the career of this particular PM or this
+[00:10:13,100 -> 00:10:15,019] particular engineer manager.
+[00:10:15,019 -> 00:10:21,799] And when we have disagreement, I'm free to escalate to my boss and then the bosses can
+[00:10:21,799 -> 00:10:23,440] have their discussions.
+[00:10:23,440 -> 00:10:28,700] So I don't have to be strong- handed by my cross-functional partners.
+[00:10:28,700 -> 00:10:31,460] I have my own people to back me up.
+[00:10:31,460 -> 00:10:33,980] Meanwhile, I'm also embedded.
+[00:10:33,980 -> 00:10:41,679] Embedded means all the cross-functional team get together to work on one product.
+[00:10:41,679 -> 00:10:46,240] So for example, I'm working on the Seller team at Marketplace, and we have
+[00:10:46,240 -> 00:10:54,080] engineers who work on this, we have PMs work on this. I work solely on this product, on this area
+[00:10:54,080 -> 00:11:02,080] of the product. So I develop my domain expertise of this product, and I think about this product
+[00:11:02,080 -> 00:11:07,080] all the time. So it gives me this product sense and business sense.
+[00:11:07,080 -> 00:11:11,399] So my analysis is not just pure analysis based on math.
+[00:11:11,399 -> 00:11:14,399] It's based on my understanding of the product and
+[00:11:14,399 -> 00:11:17,720] my desire to solve problems for this product.
+[00:11:17,720 -> 00:11:21,440] So that's the org structure, the centralized plus embedding,
+[00:11:21,440 -> 00:11:24,639] allows us to remain independent, but
+[00:11:24,639 -> 00:11:27,440] also be invested in the products
+[00:11:27,440 -> 00:11:29,360] and have impact on the product.
+[00:11:29,360 -> 00:11:32,480] All right, so those are the three reasons I summarized
+[00:11:32,480 -> 00:11:37,440] of why I think data is particularly effective at Facebook.
+[00:11:37,440 -> 00:11:40,399] To balance my opinion, I also try to think about
+[00:11:40,399 -> 00:11:43,480] why Facebook is not a good place
+[00:11:43,480 -> 00:11:46,399] for data scientists to work at. And I found two reasons.
+[00:11:47,360 -> 00:11:53,360] One, especially for junior data scientists, because it's a centralized and embedded model,
+[00:11:54,000 -> 00:12:02,399] you are the data owner of this product. And your manager cannot help you as much as other companies.
+[00:12:02,399 -> 00:12:05,840] In other companies, it's usually like data is a consultant
+[00:12:05,840 -> 00:12:11,120] role, right? And your manager gets some big projects and he or she can handle you a small
+[00:12:11,120 -> 00:12:19,600] piece of it. And your manager would know how to do this. But at Facebook, data scientists have
+[00:12:19,600 -> 00:12:26,159] a lot of autonomy to do things that they believe are best for the product, but because of that,
+[00:12:26,159 -> 00:12:29,519] it also lacks directions and guidance.
+[00:12:29,519 -> 00:12:32,620] You need to figure out what you need to do.
+[00:12:32,620 -> 00:12:35,899] That may not be very productive for junior data scientists.
+[00:12:35,899 -> 00:12:40,440] The second thing is Facebook has been able to attract a lot of great data scientists,
+[00:12:40,440 -> 00:12:43,080] a lot of smart talents.
+[00:12:43,080 -> 00:12:46,919] It works very well when the product is growing very fast,
+[00:12:46,919 -> 00:12:50,860] but in certain areas of the product, it is maybe mature,
+[00:12:50,860 -> 00:12:52,440] or then you will have more people
+[00:12:52,440 -> 00:12:53,840] than the projects you have,
+[00:12:53,840 -> 00:12:56,960] and then you will have very smart people compete with you
+[00:12:56,960 -> 00:13:01,019] for those high impact projects that can create stress.
+[00:13:01,019 -> 00:13:02,600] It's not my personal experience
+[00:13:02,600 -> 00:13:05,360] because the product I'm working on is in hyper growth
+[00:13:05,360 -> 00:13:10,879] stage. We always have more things to do, but I certainly have heard about this from other people
+[00:13:10,879 -> 00:13:16,480] who work on other products. All right, end of the video. This is a recruiting call. If you are
+[00:13:16,480 -> 00:13:22,639] interested in Facebook, the org I'm working in is Marketplace. If you use Facebook, you probably
+[00:13:22,639 -> 00:13:25,519] know Marketplace or use use marketplace. If not,
+[00:13:26,080 -> 00:13:34,000] it is a great place for you to sell your stuff. And it is becoming a great place for small
+[00:13:34,000 -> 00:13:40,480] businesses to start their commerce activities because it's very easy to set up. Like Amazon,
+[00:13:40,480 -> 00:13:48,419] we don't charge a lot of seller fees. and there are a lot of buyers coming to marketplace every day trying to find products to purchase.
+[00:13:48,419 -> 00:13:50,960] So it's a very promising area.
+[00:13:50,960 -> 00:13:56,460] And because I'm going back to China, we need to hire a backfill for my position.
+[00:13:56,460 -> 00:13:59,600] And the org has a lot of open headcounts.
+[00:13:59,600 -> 00:14:07,360] So I'm going to post the linking of my manager, you feel free to reach out to her and send her a resume.
+[00:14:07,360 -> 00:14:09,919] She'll be more than happy to refer you to a position.
+[00:14:09,919 -> 00:14:11,879] Alright, this is the end of the video.
+[00:14:11,879 -> 00:14:12,879] Hope you enjoyed.
+[00:14:12,879 -> 00:14:13,879] See you next time.
+[00:14:13,879 -> 00:14:13,899] Bye.
