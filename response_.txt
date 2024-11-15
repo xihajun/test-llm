@@ -1,0 +1,40 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Howard Schultz",
+    "role": "Founder of Starbucks",
+    "category": "career",
+    "episodes": [
+      {
+        "title": "職業發展中的可塑之才 | Howard Schultz 訪談",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": "",
+    "analysis": {
+      "summary": "本期访谈中，星巴克创始人Howard Schultz分享了他对职业发展中可塑之才（Being Culturable）的重要性的见解。他强调了人际关系和感激之情在职业成功中的关键作用，并通过自身经历讲述了如何通过正确估值人情来获得机遇和发展。",
+      "keyInsights": [
+        "可塑之才（Being Culturable）是职业发展中最重要的特质之一，它能让你获得更多的机会和资源。",
+        "人际关系中的感激和正确估值人情的能力是成功的关键。",
+        "在请求帮助时，明确表达你是需要一个人情，这样能建立清晰的界限和相互的尊重。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在AI时代，最危险的是固守过时的知识",
+          "context": "虽然这句话是在讨论AI时代的重要性，但它同样适用于任何时代和行业中的职业发展。"
+        }
+      ],
+      "topicsCovered": [
+        "职业发展",
+        "人际关系",
+        "感激之情",
+        "人情估值",
+        "可塑之才"
+      ]
+    }
+  }
+}
+```
