@@ -1,0 +1,44 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Ethan",
+    "role": "VP of Engineering",
+    "category": "career",
+    "episodes": [
+      {
+        "title": "领导力的关键：技术与沟通的平衡 | Ethan访谈",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "在这期访谈中，VP of Engineering Ethan分享了他在选拔高级工程师时所看重的技能。他强调了技术能力与沟通能力的平衡，以及高级工程师在领导决策和跨部门沟通中的重要性。Ethan指出，一个合格的高级工程师不仅需要在技术上出色，还需要具备影响力和说服力，能够在跨部门合作中代表团队并有效沟通。",
+      "keyInsights": [
+        "技术能力和沟通能力同样重要",
+        "高级工程师需具备领导力和影响力",
+        "能够代表团队在跨部门沟通中发挥关键作用",
+        "技术与社会技能的结合是晋升的关键"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "All of these skills have to do with not just building technology, but your ability to explain it, understand it in context and influence others.",
+          "context": "Ethan在讨论晋升高级工程师的标准时强调了技术能力和沟通能力的平衡。"
+        },
+        {
+          "quote": "I need to be able to send my principal engineer to the principal engineer for another division and have them represent what we're trying to do and influence that person.",
+          "context": "Ethan描述了高级工程师在跨部门合作中的代表角色。"
+        }
+      ],
+      "topicsCovered": [
+        "技术与沟通能力",
+        "领导力与影响力",
+        "高级工程师的晋升标准",
+        "跨部门沟通"
+      ]
+    }
+  }
+}
+```
