@@ -1,0 +1,44 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "数据科学家",
+    "role": "Data Scientist",
+    "category": "thinking",
+    "episodes": [
+      {
+        "title": "Assumption vs Hypothesis: 数据科学家视角的解析",
+        "views": "",
+        "url": "",
+        "uploadTime": "2个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期视频内容由一位数据科学家主讲，详细解释了假设（Assumption）和假说（Hypothesis）在科学研究和业务决策中的差异。他通过示例和案例分析，强调了在数据科学工作中，hypothesis的可测试性和assumption的简化作用，帮助观众理解这两者在实际应用中的重要性。",
+      "keyInsights": [
+        "Hypothesis是可以被测试的假设，而Assumption是直接认为成立的假设。",
+        "数据科学家应该围绕hypothesis设计实验和测试，确保数据分析的科学性。",
+        "Assumption在简化问题时有重要作用，但不应被误用为hypothesis。",
+        "在业务决策中，hypothesis testing是关键步骤，用于验证产品或功能的有效性。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在AI时代，最危险的是固守过时的知识",
+          "context": "讨论终身学习的重要性时的核心观点"
+        },
+        {
+          "quote": "hypothesis是可以被test的东西",
+          "context": "解释hypothesis在数据科学中的应用"
+        }
+      ],
+      "topicsCovered": [
+        "科学研究方法",
+        "数据科学工作流程",
+        "业务决策中的假说测试",
+        "假设与假说的区别"
+      ]
+    }
+  }
+}
+```
