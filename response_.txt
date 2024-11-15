@@ -1,0 +1,38 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "Unknown",
+    "role": "Wine Expert",
+    "category": "hobby",
+    "episodes": [
+      {
+        "title": "品尝意大利红酒之王：Barolo的秘密 | 酒评访谈",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": "",
+    "analysis": {
+      "summary": "本期访谈聚焦于意大利红酒之王Barolo，探讨了其制作工艺、陈酿过程和品鉴体验。访谈中，嘉宾详细介绍了Barolo酒的特点、年份的重要性以及陈酿过程对其口感的影响。",
+      "keyInsights": [
+        "Barolo需要长时间陈酿来柔化其强劲的酒体",
+        "传统Barolo酒庄会选择在木桶中沉淀至少五年",
+        "陈酿过程丰富了Barolo的味道，增加了其复杂性"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在市场上买到的Barolo，很多人会选择陈年十年以后才购买，因为如果在那之前的话出来酒已经就太涩了，大家其实都喝不了。",
+          "context": "讨论Barolo的陈酿年份和口感问题时"
+        }
+      ],
+      "topicsCovered": [
+        "Barolo的制作工艺",
+        "陈酿过程对酒品的影响",
+        "Barolo的品鉴体验"
+      ]
+    }
+  }
+}
+```
