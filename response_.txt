@@ -1,0 +1,45 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Howie",
+    "role": "Entrepreneur and Educator",
+    "category": "career",
+    "episodes": [
+      {
+        "title": "如何找到Product-Market-Fit | Howie访谈",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期访谈中，Howie分享了他对创业中如何找到Product-Market-Fit（产品市场契合度）的见解。他以自身的创业经历和朋友在美国寻找市场机会的案例，详细讲解了MVP（最小可行产品）、以终为始的思考方式以及多次尝试市场的重要性。Howie强调了在创业初期验证核心假设的重要性，并提供了一些实用的策略和方法来帮助创业者更有效地找到适合的市场。",
+      "keyInsights": [
+        "MVP的核心作用是验证假设，而不是快速上线。",
+        "以终为始的思考方式能帮助创业者更早地发现市场机会。",
+        "在市场验证阶段多次尝试是必要的，以找到最佳的市场进入方式。",
+        "创业者需要将资源集中在验证Product-Market-Fit上，而不是过早投入技术开发。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在Project Market Fit这件事情上，花更多的时间和更早的去做，才是你ROI更大的行为。",
+          "context": "讨论以终为始的重要性时"
+        },
+        {
+          "quote": "MVP的真正作用是帮助你验证核心假设，如果这个假设是是的话，你就可以往前走。",
+          "context": "解释MVP的目的和作用时"
+        }
+      ],
+      "topicsCovered": [
+        "Product-Market-Fit的概念",
+        "MVP（最小可行产品）",
+        "创业策略",
+        "市场验证",
+        "以终为始的思考方法"
+      ]
+    }
+  }
+}
+```
