@@ -1,0 +1,44 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "张明",
+    "role": "餐饮业主",
+    "category": "life",
+    "episodes": [
+      {
+        "title": "疫情下的餐饮业：美国政府补助与社区治安",
+        "views": "",
+        "url": "",
+        "uploadTime": "3个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期访谈中，张明分享了他在疫情期间从美国政府获得的财政支持以及在西雅图中国城开店的经历。他详细介绍了美国政府的PPP贷款和Restaurant Revitalization Fund，如何帮助餐饮业主度过疫情难关，同时也提到了社区治安问题及政府在治安方面的不足。",
+      "keyInsights": [
+        "美国政府通过PPP贷款和Restaurant Revitalization Fund提供了大力度的财政支持，帮助餐饮业在疫情中维持运营和员工就业。",
+        "政府的财政支持主要通过直接补助和免税的方式，帮助餐饮业主恢复业务。",
+        "社区治安问题在疫情期间变得更加严重，政府在治安维护方面存在不足。",
+        "尽管存在诸多困难，张明仍然选择继续经营，寻求解决问题的方法。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "直接给你补400万，对就是非常慷慨",
+          "context": "描述政府在疫情期间通过Restaurant Revitalization Fund对餐饮业的大力补助"
+        },
+        {
+          "quote": "我们店被入室抢劫三次，警察那边都没有什么作为",
+          "context": "讨论社区治安问题和政府的反应"
+        }
+      ],
+      "topicsCovered": [
+        "疫情期间的政府补助政策",
+        "PPP贷款和Restaurant Revitalization Fund",
+        "社区治安问题",
+        "餐饮业的挑战与应对措施"
+      ]
+    }
+  }
+}
+```
