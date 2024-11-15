@@ -1,0 +1,274 @@
+[00:00:00,000 -> 00:00:02,600] Hi folks, welcome back to my channel.
+[00:00:02,600 -> 00:00:04,219] Today is a special episode.
+[00:00:04,219 -> 00:00:09,720] I have the honor of interviewing Vijay at his newly found startup, StatSig.
+[00:00:09,720 -> 00:00:14,140] Vijay and I both worked at Facebook, but I was here and he was there.
+[00:00:14,140 -> 00:00:18,320] Before leaving Facebook, Vijay was the VP and head of entertainment.
+[00:00:18,320 -> 00:00:27,280] So he was in charge of Facebook gaming, Facebook video, and other sorts of entertainments. Vijay is special because he has this high position
+[00:00:27,280 -> 00:00:31,559] and successful career in a big tech company.
+[00:00:31,559 -> 00:00:34,200] And then he left to start his own startup.
+[00:00:34,200 -> 00:00:37,240] But more than that, I'm a special fan of Vijay's work
+[00:00:37,240 -> 00:00:40,920] because Vijay actually started a lot of successful product
+[00:00:40,920 -> 00:00:44,520] at Facebook, which is actually rare in big companies.
+[00:00:44,520 -> 00:00:49,000] Like in big companies, people usually do one work well and they do it and they go to a
+[00:00:49,000 -> 00:00:53,520] high position, but Vijay actually did five and they're all successful.
+[00:00:53,520 -> 00:00:57,219] Such kind of track record is also rare in big companies.
+[00:00:57,219 -> 00:00:59,619] So he did Audience Network.
+[00:00:59,619 -> 00:01:05,000] He did Neko, which is the mobile app as he also started a marketplace.
+[00:01:07,700 -> 00:01:10,439] So I had a job at Facebook, thanks to Vijay,
+[00:01:10,439 -> 00:01:12,000] I work on a marketplace.
+[00:01:12,000 -> 00:01:14,959] He also started Facebook gaming and Facebook video.
+[00:01:14,959 -> 00:01:17,519] All these five products are super successful
+[00:01:17,519 -> 00:01:20,000] and Vijay started them from scratch.
+[00:01:20,000 -> 00:01:22,040] If you, especially like if you consider
+[00:01:22,040 -> 00:01:24,640] how many successful products Facebook launched
+[00:01:24,640 -> 00:01:26,000] over the past few years,
+[00:01:26,000 -> 00:01:28,000] this is actually very phenomenal.
+[00:01:28,000 -> 00:01:35,000] Within Facebook, Vijay is viewed as this godfather figure to the engineers.
+[00:01:35,000 -> 00:01:42,000] He gives very transparent advice for engineers, and he can inspire people by his vision.
+[00:01:42,000 -> 00:01:46,879] Also, the five teams VijJ started share a very common trait
+[00:01:46,879 -> 00:01:52,760] scrappy. The meaning and importance of being scrappy in product development is
+[00:01:52,760 -> 00:01:58,200] worth its own episode so I won't go there today but I do think that is a big
+[00:01:58,200 -> 00:02:04,000] part of why VJ's team are so successful and also I have high hopes for his
+[00:02:04,000 -> 00:02:05,000] startup.
+[00:02:05,719 -> 00:02:07,439] Into this episode, I want to show you
+[00:02:07,439 -> 00:02:10,520] how working at a very early startup look like.
+[00:02:10,520 -> 00:02:12,000] Vijay is very transparent.
+[00:02:12,000 -> 00:02:14,060] I actually filmed their standup meeting.
+[00:02:14,060 -> 00:02:16,919] So in a standup meeting, they talk actual business,
+[00:02:16,919 -> 00:02:18,719] talk actual problem.
+[00:02:18,719 -> 00:02:23,000] So this is the most insider view you can get into a startup.
+[00:02:23,000 -> 00:02:27,280] I also interviewed Vijay to ask about his life stories,
+[00:02:27,280 -> 00:02:35,039] what made him decide to do startup, and also his recommendations for common folks like you and I,
+[00:02:35,039 -> 00:02:41,919] especially junior folks who work at a tech company, how to optimize our career for the
+[00:02:41,919 -> 00:02:45,360] things we want to grow. All right, so without further ado,
+[00:02:45,360 -> 00:02:46,759] let's start the interview.
+[00:02:48,879 -> 00:02:49,719] Hi, Vijay.
+[00:02:49,719 -> 00:02:51,240] Hey, good to have you.
+[00:02:51,240 -> 00:02:53,800] Thank you, and yeah, thank you for inviting me here.
+[00:02:53,800 -> 00:02:55,039] Yeah. It's a very cool place.
+[00:02:55,039 -> 00:02:56,800] It's always good to have visitors.
+[00:02:56,800 -> 00:02:59,800] Yeah, so let's get to it.
+[00:02:59,800 -> 00:03:02,360] Like, you left Facebook from a very high position
+[00:03:02,360 -> 00:03:05,240] with a lot of successful track records.
+[00:03:05,240 -> 00:03:08,800] And so, like, the future of Facebook is bright.
+[00:03:08,800 -> 00:03:11,719] But then you started this company
+[00:03:11,719 -> 00:03:14,159] with probably a lot of uncertainties.
+[00:03:14,159 -> 00:03:15,000] There is.
+[00:03:15,000 -> 00:03:18,520] Yeah, so I guess, what is your story?
+[00:03:18,520 -> 00:03:19,400] So my story is this.
+[00:03:19,400 -> 00:03:24,159] I started at Microsoft and spent 10 years at Microsoft
+[00:03:24,159 -> 00:03:25,300] building various different products. I was an engineer there. And and spent 10 years at Microsoft building various different products.
+[00:03:25,300 -> 00:03:26,780] I was an engineer there.
+[00:03:26,780 -> 00:03:30,639] And then after 10 years, I decided I wanna do something
+[00:03:30,639 -> 00:03:32,300] different for the next decade.
+[00:03:32,300 -> 00:03:36,759] And so I went and joined Facebook as an engineer in 2011.
+[00:03:36,759 -> 00:03:39,979] When I joined Facebook, it was a very small company.
+[00:03:39,979 -> 00:03:42,199] We had, it is still called a startup.
+[00:03:42,199 -> 00:03:44,120] We had only like 600 engineers.
+[00:03:44,120 -> 00:03:47,580] And then I built various products
+[00:03:47,580 -> 00:03:50,360] and then went up in career ladder
+[00:03:50,360 -> 00:03:51,919] and I spent 10 years at Facebook.
+[00:03:51,919 -> 00:03:53,520] So that was my second decade.
+[00:03:53,520 -> 00:03:57,240] And when I left, I was the head of engineering,
+[00:03:57,240 -> 00:03:59,560] I'm sorry, head of entertainment,
+[00:03:59,560 -> 00:04:01,800] taking care of engineering and product teams
+[00:04:01,800 -> 00:04:06,960] that included video gaming, music, sports, and so on.
+[00:04:06,960 -> 00:04:08,620] So that was my second decade.
+[00:04:08,620 -> 00:04:14,159] So when it came close to the decade, I kind of like thought, what should my third decade
+[00:04:14,159 -> 00:04:15,159] look like?
+[00:04:15,159 -> 00:04:20,959] And so lots of opportunities in the world, but there's one that is always special, which
+[00:04:20,959 -> 00:04:25,160] is if you start your own company and how would that look
+[00:04:25,160 -> 00:04:30,399] like and what a startup journey would look like was always a curiosity
+[00:04:30,399 -> 00:04:35,199] something that I really wanted to do and so the timing was right for my third
+[00:04:35,199 -> 00:04:38,639] decade to come and start a company so that's what happened with Statsync.
+[00:04:38,639 -> 00:04:46,160] I already have so many questions because I sense a philosophy in how you count in decades.
+[00:04:46,160 -> 00:04:50,279] And two, when you joined Facebook, it was a startup.
+[00:04:50,279 -> 00:04:53,519] Funny that I never thought about it that way, right?
+[00:04:53,519 -> 00:04:56,079] Like I think, like you left a big company,
+[00:04:56,079 -> 00:04:57,240] joining another big company,
+[00:04:57,240 -> 00:05:00,399] but actually you left a big company and joined a startup.
+[00:05:00,399 -> 00:05:01,759] So let's start with the first one.
+[00:05:01,759 -> 00:05:03,199] What is the philosophy?
+[00:05:03,199 -> 00:05:04,680] You said the timing is right
+[00:05:04,680 -> 00:05:07,560] because this is right around the decade.
+[00:05:07,560 -> 00:05:08,560] Why?
+[00:05:08,560 -> 00:05:14,439] Yeah, I think a lot of it is basically personal.
+[00:05:14,439 -> 00:05:19,920] For me, I came to the US in 2001 and I was for Microsoft.
+[00:05:19,920 -> 00:05:26,240] And I happened to leave Microsoft in 2011 and joined Facebook in 2011.
+[00:05:26,240 -> 00:05:28,240] And so naturally for me,
+[00:05:29,600 -> 00:05:34,600] 2021 was a natural kind of moment
+[00:05:34,680 -> 00:05:38,079] to reflect on like what should my next decade be?
+[00:05:38,079 -> 00:05:39,720] So that's how it ended up for me.
+[00:05:39,720 -> 00:05:41,759] It may not be the same for everyone.
+[00:05:41,759 -> 00:05:46,959] And a decade is not necessarily the time period you want to think about, but it
+[00:05:46,959 -> 00:05:48,959] just so happened for me that way.
+[00:05:49,480 -> 00:05:54,800] And the interesting thing is like, you know, the opportunities are also there.
+[00:05:55,120 -> 00:05:58,060] When you start looking for them, it'll appear.
+[00:05:59,699 -> 00:06:06,279] But does it mean like, I guess my question is, during a decade at Facebook,
+[00:06:06,279 -> 00:06:08,680] was there a time you were thinking about your career,
+[00:06:08,680 -> 00:06:12,240] reflecting, or did you just wait until, you know?
+[00:06:12,240 -> 00:06:15,279] Yeah, I always think about my career.
+[00:06:15,279 -> 00:06:17,560] One thing I always do is to like,
+[00:06:17,560 -> 00:06:20,199] what do I want to do in the next five years?
+[00:06:20,199 -> 00:06:23,319] And then once I understand what I want to do in five years,
+[00:06:23,319 -> 00:06:26,120] then I make sure that whatever I'm doing today
+[00:06:26,120 -> 00:06:28,079] leads me to that five years.
+[00:06:28,079 -> 00:06:29,480] So I'll give you an example.
+[00:06:30,560 -> 00:06:32,120] Five years into Facebook,
+[00:06:32,120 -> 00:06:35,639] I was pretty certain that I want to go do my own company,
+[00:06:35,639 -> 00:06:37,100] build my own company.
+[00:06:37,100 -> 00:06:38,759] So then the question was,
+[00:06:38,759 -> 00:06:43,759] okay, what experiences or expertise do I have to gather
+[00:06:44,759 -> 00:06:47,180] in order to go do my own company?
+[00:06:47,180 -> 00:06:48,800] And am I gathering that now?
+[00:06:48,800 -> 00:06:50,560] So that made me make some decisions.
+[00:06:50,560 -> 00:06:53,379] So one of the important decisions I made was
+[00:06:53,379 -> 00:06:57,480] I was the head of engineering for Marketplace,
+[00:06:57,480 -> 00:06:58,680] Facebook Marketplace.
+[00:06:58,680 -> 00:07:00,519] I decided to leave the head of engineering
+[00:07:00,519 -> 00:07:03,560] for Facebook Marketplace and then go start a new
+[00:07:03,560 -> 00:07:05,220] product unit called gaming
+[00:07:05,220 -> 00:07:08,319] and became the product group lead for gaming.
+[00:07:08,319 -> 00:07:11,040] So what that made me is like getting the experience
+[00:07:11,040 -> 00:07:14,199] on managing product managers, designers,
+[00:07:14,199 -> 00:07:16,839] working with designers, working with researchers,
+[00:07:16,839 -> 00:07:19,240] working with content strategy and data scientists
+[00:07:19,240 -> 00:07:23,279] and a lot of other exposure that I wouldn't have gotten
+[00:07:23,279 -> 00:07:25,240] if I was just an engineering leader.
+[00:07:25,240 -> 00:07:29,279] So that was important because I know that if you're going to do a startup, you have
+[00:07:29,279 -> 00:07:33,560] to hire a designer, hire a researcher, hire a marketing lead.
+[00:07:33,560 -> 00:07:36,879] And so you need to be able to know what the role entails.
+[00:07:36,879 -> 00:07:42,839] And so to me, leading up to building a startup was all about gaining those experiences.
+[00:07:42,839 -> 00:07:45,040] Funny that Mary actually told me this.
+[00:07:45,040 -> 00:07:47,319] You gave this advice to engineers.
+[00:07:47,319 -> 00:07:49,959] You'd ask them, what do you optimize for?
+[00:07:49,959 -> 00:07:51,839] And if you want to build a startup,
+[00:07:51,839 -> 00:07:54,600] you shouldn't go for middle management.
+[00:07:54,600 -> 00:07:56,560] You want to start a new product.
+[00:07:56,560 -> 00:07:57,399] Yeah, exactly.
+[00:07:57,399 -> 00:07:58,759] But was that possible?
+[00:07:58,759 -> 00:08:00,800] How did it make the change?
+[00:08:00,800 -> 00:08:03,360] Did Facebook allow it or did they make a swing case?
+[00:08:03,360 -> 00:08:12,160] I think, so for me, was going from like head of engineering to when I had about 100 people
+[00:08:12,160 -> 00:08:17,800] reporting in my org to taking on 12 engineers.
+[00:08:17,800 -> 00:08:21,560] So it was a lot of people think of that as a step down.
+[00:08:21,560 -> 00:08:27,199] But for me it felt like it's more different experiences. So it actually
+[00:08:27,199 -> 00:08:33,639] like stretched me in other ways than the size of the org. So for me, the size of the org
+[00:08:33,639 -> 00:08:41,940] didn't matter. And so those kinds of changes are always possible, but very rare that people
+[00:08:41,940 -> 00:08:47,899] actually take it. So but I recommend that Yeah, I had a video about your growth method
+[00:08:47,899 -> 00:08:52,980] But like you are not only the growing in terms of career actually growing your skills
+[00:08:52,980 -> 00:08:58,220] Yes, and but you must have very strong conviction of that you want to start our own company
+[00:08:58,480 -> 00:09:03,519] but like was it because you see an opportunity and you want to do something or
+[00:09:04,039 -> 00:09:07,759] Do you just want to try startup
+[00:09:07,759 -> 00:09:10,679] and being the founder of something?
+[00:09:10,679 -> 00:09:13,379] What's the mission or motivation behind doing it all?
+[00:09:14,840 -> 00:09:17,039] When you wanna go do a startup
+[00:09:17,039 -> 00:09:19,779] or actually even join an early, early startup,
+[00:09:20,759 -> 00:09:23,759] there's a huge element of craziness.
+[00:09:28,580 -> 00:09:30,720] There's a huge element of craziness. So there's a huge element of uncertainty and combined with like, you know,
+[00:09:30,720 -> 00:09:35,720] some irrational fate in where the startup is going,
+[00:09:36,440 -> 00:09:38,779] what the people are gonna do and so on.
+[00:09:38,779 -> 00:09:43,220] So every single startup has those elements.
+[00:09:43,220 -> 00:09:47,080] And if everybody was making rational decisions
+[00:09:47,080 -> 00:09:50,000] about what is the expected outcome
+[00:09:50,000 -> 00:09:53,200] and then multiply that with the value,
+[00:09:53,200 -> 00:09:55,039] nobody will ever go start a startup.
+[00:09:55,039 -> 00:09:58,200] But nobody will ever go join an early, early stage startup
+[00:09:58,200 -> 00:10:02,919] because the odds will always work against you.
+[00:10:02,919 -> 00:10:06,240] So to me, it's more of like, do you have the conviction
+[00:10:07,440 -> 00:10:14,879] that this will be a good idea to invest in? Do you have the right people to take that idea,
+[00:10:14,879 -> 00:10:26,600] execute on the idea and take it further? Do you have the time? And then there's also like, you know, there are times in your life where it's more easy.
+[00:10:27,919 -> 00:10:30,379] I think it's easier to go do a startup.
+[00:10:32,440 -> 00:10:36,000] There's elements of financial security comes into play
+[00:10:36,000 -> 00:10:38,559] where, you know, for me, I have like two kids.
+[00:10:38,559 -> 00:10:42,639] What stages my kids are in, that comes into play.
+[00:10:42,639 -> 00:10:45,320] Am I, is my wife supportive of this?
+[00:10:45,320 -> 00:10:47,600] Those are, there's a lot of factors that go into,
+[00:10:47,600 -> 00:10:52,120] going into like, you know, leaving behind a very nice,
+[00:10:52,120 -> 00:10:56,000] comfortable, and a more dependable job
+[00:10:56,000 -> 00:10:57,559] to come and like, you know, start a startup,
+[00:10:57,559 -> 00:11:00,360] which is, yes, lots of risks.
+[00:11:00,360 -> 00:11:02,919] That's actually, I think, partially answers the question
+[00:11:02,919 -> 00:11:06,539] I wanted to ask, because as an economist, I think partially answers the question I wanted to ask because as an economist I think about opportunity cost
+[00:11:06,539 -> 00:11:11,220] and as a Facebook VP the opportunity cost is high, but
+[00:11:13,240 -> 00:11:17,580] Maybe you like because you optimize for different things
+[00:11:18,299 -> 00:11:22,480] You don't view that as opportunity cost you view that as a foundation or yeah
+[00:11:23,159 -> 00:11:26,360] Yeah, I think there's a you I think there's two sides, right?
+[00:11:26,360 -> 00:11:33,240] So the opportunity cost of going and starting a startup, which could become big, and then
+[00:11:33,240 -> 00:11:49,000] continuing on in the side of like a VP at Facebook, you get good pay, you have a stable job, but the upsides are capped.
+[00:11:49,000 -> 00:11:55,600] There's the stuff that you keep doing in the large company, in a large org, which is very,
+[00:11:55,600 -> 00:12:00,000] very different from what I'm doing now in a startup as a CEO.
+[00:12:00,000 -> 00:12:09,480] So the opportunity cost of not experiencing a startup CEO role is the downside of being
+[00:12:09,480 -> 00:12:10,960] an exec.
+[00:12:10,960 -> 00:12:15,120] So did it turn out to be what you expected?
+[00:12:15,120 -> 00:12:16,120] I don't know.
+[00:12:16,120 -> 00:12:17,120] It's too early.
+[00:12:17,120 -> 00:12:20,080] It's only three and a half months, but I'm having a blast.
+[00:12:20,080 -> 00:12:22,600] We're having a lot of fun.
+[00:12:22,600 -> 00:12:28,200] This is one of the best teams that I could have gathered. And so these are folks that are very, very good.
+[00:12:28,200 -> 00:12:33,720] And I think I have set all the environment factors to go
+[00:12:33,720 -> 00:12:36,440] and increase the odds of us becoming successful.
+[00:12:36,440 -> 00:12:40,759] But we have to wait and see where it actually goes,
+[00:12:40,759 -> 00:12:44,320] how far we can take this startup, how patient we are.
+[00:12:44,320 -> 00:12:45,039] And there's a lot of
+[00:12:45,039 -> 00:12:47,720] factors here, so it's hard to say anything at this point.
+[00:12:47,720 -> 00:12:54,679] Yeah, but regardless of the success, it's going to be a risky decision,
+[00:12:54,679 -> 00:13:00,960] but there must be one thing, right? For you, is it the
+[00:13:00,960 -> 00:13:08,000] experience or I want to make this product work? I want to create this company and this product?
+[00:13:08,000 -> 00:13:09,799] I think it's an element of both.
+[00:13:09,799 -> 00:13:13,200] So number one, I really want to make the startup successful.
+[00:13:13,200 -> 00:13:17,000] I want to make the company successful by making the product
+[00:13:17,000 -> 00:13:18,799] and the people that use the product successful.
+[00:13:18,799 -> 00:13:22,600] So to me, it's very, very important that we provide the right product
+[00:13:22,600 -> 00:13:26,039] and make the people, the customers that use our product very, very important that we provide the right product and make the people, the customers
+[00:13:26,039 -> 00:13:27,940] that use our product very, very successful.
+[00:13:27,940 -> 00:13:31,519] So there's a huge, huge drive from there.
+[00:13:31,519 -> 00:13:38,519] There's also an element of like this startup, this journey that I'm on, I will never forget
+[00:13:38,519 -> 00:13:39,519] in my life.
+[00:13:39,519 -> 00:13:47,000] This is like I'm creating a milestone and memories of like, you know, building startup.
+[00:13:47,000 -> 00:13:52,000] It's an experience that can never be acquired unless you actually go through it.
+[00:13:52,000 -> 00:14:00,000] And so, to me, you know, hey, if I run really, really hard, really fast for the next two, three years,
+[00:14:00,000 -> 00:14:08,000] and even if the startup fails, I would always remember this moment till the end of my life.
+[00:14:08,000 -> 00:14:11,000] So in a way, we're creating these memories.
+[00:14:11,000 -> 00:14:15,000] All right. Actually, that's kind of my last question.
+[00:14:15,000 -> 00:14:16,000] Yeah.
+[00:14:16,000 -> 00:14:22,000] Like, would it fail? And how would success failure look to you?
+[00:14:22,000 -> 00:14:25,519] How does success failure look like to you?
+[00:14:25,519 -> 00:14:28,559] And if it fails, are you prepared to fail?
+[00:14:28,559 -> 00:14:29,559] Yeah, absolutely.
+[00:14:29,559 -> 00:14:32,080] I mean, if you're going to go to startup, be prepared to fail.
+[00:14:32,080 -> 00:14:36,639] But the other thing is, I would say, that's the plan B, but never optimize for plan B.
+[00:14:36,639 -> 00:14:38,720] Plan A is always about success.
+[00:14:38,720 -> 00:14:42,399] So believe in making your startup into a success.
+[00:14:42,399 -> 00:14:43,480] That's what I believe.
+[00:14:43,480 -> 00:14:45,200] I believe, if anyone asks me,
+[00:14:45,200 -> 00:14:46,039] are you gonna be successful?
+[00:14:46,039 -> 00:14:48,960] Absolutely, we're gonna be successful.
+[00:14:48,960 -> 00:14:50,080] But are you prepared to fail?
+[00:14:50,080 -> 00:14:53,100] Yes, if you're not prepared to fail, don't jump.
+[00:14:53,960 -> 00:14:56,539] I think that's the takeaway from here.
+[00:14:57,559 -> 00:15:00,759] But look, this is the thing about startups.
+[00:15:00,759 -> 00:15:05,000] There's an element of irrational behavior
+[00:15:05,120 -> 00:15:08,799] where you leap without a parachute,
+[00:15:10,019 -> 00:15:14,240] but you expect to land safely,
+[00:15:14,240 -> 00:15:16,200] and that's all what startups do.
+[00:15:16,200 -> 00:15:19,399] And you make it happen along the way.
+[00:15:19,399 -> 00:15:21,340] With the right team, with the right execution,
+[00:15:21,340 -> 00:15:24,120] with the right people, and a lot of luck,
+[00:15:24,120 -> 00:15:25,379] you will land safely.
+[00:15:25,379 -> 00:15:27,580] And that's all we're all hoping for.
+[00:15:27,580 -> 00:15:29,179] They started logging today,
+[00:15:29,179 -> 00:15:30,240] but if you go to the metrics page,
+[00:15:30,240 -> 00:15:32,539] you just see basically nothing.
+[00:15:32,539 -> 00:15:35,259] So I'm making it so you see the hourly view.
+[00:15:35,259 -> 00:15:37,419] And there's like, so right now we show
+[00:15:37,419 -> 00:15:39,139] the events count per day.
+[00:15:39,139 -> 00:15:40,580] I'm gonna have it be, if you don't have
+[00:15:40,580 -> 00:15:42,059] the events count for the day,
+[00:15:42,059 -> 00:15:44,539] we'd show events counts per hour.
+[00:15:44,539 -> 00:15:47,000] Otherwise we show events count in the last hour, having created gates.
+[00:15:47,000 -> 00:15:50,000] When you go to the console, it defaults you to the metrics page.
+[00:15:50,000 -> 00:15:53,000] Oh yeah, yeah, yeah. You're only pulling the remnants...
+[00:15:53,000 -> 00:15:56,000] Yeah, because we only pull the last, like, 100 events actively.
+[00:15:56,000 -> 00:15:59,000] Yeah, you have to stream all the events to all regions.
+[00:15:59,000 -> 00:16:01,000] Yeah, which one of these.
