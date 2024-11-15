@@ -1,0 +1,45 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Yan",
+    "role": "Instructor",
+    "category": "tech",
+    "episodes": [
+      {
+        "title": "From Users to Builders: AI-Powered Productivity for Tech Roles",
+        "views": "Not specified",
+        "url": "",
+        "uploadTime": "2个月前"
+      }
+    ],
+    "totalViews": "Not specified",
+    "analysis": {
+      "summary": "In this session of the course 'From Users to Builders: AI-Powered Productivity for Tech Roles', Yan introduces techniques to improve productivity using AI, focusing on understanding and managing the 'context window' of AI tools like ChatGPT. He explains how the limitations of context windows lead to AI appearing 'lazy' or 'forgetful', and provides a practical solution through a simple editing trick to manage these windows effectively. The session also covers the importance of training to use AI tools more intuitively and effectively.",
+      "keyInsights": [
+        "The design of conversational AI like ChatGPT can lead to issues with memory and detail tracking due to context window limitations.",
+        "Proper management of the context window can significantly enhance AI's performance and reduce issues of laziness or forgetfulness.",
+        "AI tools require training to be used optimally, similar to learning to drive or operate complex machinery.",
+        "Effective AI usage involves not just interaction but understanding and managing the underlying mechanics of the AI system."
+      ],
+      "notableQuotes": [
+        {
+          "quote": "The best way to use ChatGPT is actually to not chat.",
+          "context": "Yan emphasizes the importance of managing the context window over continuous chatting to improve AI performance."
+        },
+        {
+          "quote": "ChatGPT is like an intern... it's energetic, it doesn't know what is tightest. And it can work 24-7. But it needs some hand-holding.",
+          "context": "Yan uses the intern analogy to explain how AI needs structured interaction to perform effectively."
+        }
+      ],
+      "topicsCovered": [
+        "AI productivity tools",
+        "Context window management",
+        "AI training and best practices",
+        "Prompt engineering",
+        "Limitations and enhancements of AI models"
+      ]
+    }
+  }
+}
+```
