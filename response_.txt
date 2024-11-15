@@ -1,0 +1,44 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Sany",
+    "role": "Hobbyist and Amazon Employee",
+    "category": "hobby",
+    "episodes": [
+      {
+        "title": "西雅图户外活动指南：徒步、划板与跳伞",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "在这期访谈中，Sany介绍了适合西雅图地区的三种户外活动：徒步露营、桨板运动和跳伞。她分享了如何从零开始尝试这些活动，包括购买装备、练习技巧以及如何享受户外生活。Sany强调了这些活动不仅能锻炼身体，还能带来美景和独特体验，鼓励观众在疫情期间探索户外活动。",
+      "keyInsights": [
+        "户外活动可以提供独特的体验和美景，是疫情期间的理想娱乐方式。",
+        "对于初学者，建议从较为简单的Dayhike开始，逐步过渡到Backcountry camping。",
+        "桨板运动在西雅图非常流行，且入门并不难，适合各种天气。",
+        "跳伞不仅仅是依赖教练的Tandem Skydiving，更好的方式是通过学习成为独立跳伞者。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在你买了装备之后，在你开始露营之前，我会建议你在家或者在一个控制环境先搭一遍帐篷。",
+          "context": "Sany提供如何准备露营装备的建议"
+        },
+        {
+          "quote": "其实Paddleboard和Kyle或者其他划船特别不一样的是，它的自主性和灵活性都强了非常多。",
+          "context": "Sany解释桨板运动的独特优势"
+        }
+      ],
+      "topicsCovered": [
+        "户外活动介绍",
+        "徒步露营准备",
+        "Paddleboard运动",
+        "跳伞体验与学习"
+      ]
+    }
+  }
+}
+```
