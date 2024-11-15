@@ -1,0 +1,44 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "向上社交专家",
+    "role": "Networking Strategist",
+    "category": "life",
+    "episodes": [
+      {
+        "title": "社交秘诀与人脉建立 | 向上社交专家访谈",
+        "views": "",
+        "url": "",
+        "uploadTime": "1个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "本期访谈聚焦于社交策略和人脉建立的技巧。向上社交专家分享了如何通过温暖介绍（warm introduction）来提高社交成功率，并强调了自我介绍和意图清晰的重要性。专家还提到不要因未得到回应而产生负面情绪，并强调了跟进的重要性。",
+      "keyInsights": [
+        "通过熟人介绍（warm introduction）可以提高社交成功率",
+        "在自我介绍中要清晰表达自己的意图和诚意",
+        "避免因未得到回应而产生负面情绪，保持开放心态",
+        "跟进是建立和维护人脉的重要步骤"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "你去cold reach out 很多时候是没有什么成功率的",
+          "context": "讨论社交策略时提到冷联系的低成功率"
+        },
+        {
+          "quote": "你要珍惜你这个朋友和appreciate这个朋友的行为",
+          "context": "强调朋友介绍的重要性和对朋友的感激"
+        }
+      ],
+      "topicsCovered": [
+        "社交策略",
+        "人脉建立",
+        "自我介绍技巧",
+        "跟进的重要性"
+      ]
+    }
+  }
+}
+```
