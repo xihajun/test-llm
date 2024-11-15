@@ -1,0 +1,42 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "Michael Burry",
+    "role": "Investment Manager",
+    "category": "thinking",
+    "episodes": [
+      {
+        "title": "投资策略与富利增长 | Michael Burry访谈",
+        "views": "10万",
+        "url": "",
+        "uploadTime": "3个月前"
+      }
+    ],
+    "totalViews": 100000,
+    "analysis": {
+      "summary": "本期访谈中，Michael Burry深入探讨了投资策略中的富利（复利）增长概念。他通过实例解释了为什么长期来看，稳定的增长率比短期的高回报更重要，并分享了他对风险与回报的深刻理解。访谈中，他强调了专注于核心的重要性，并以多个案例说明了如何在生活和商业中应用复利增长法则。",
+      "keyInsights": [
+        "复利效应在长期投资中具有显著优势，稳定的增长率最终带来更高的收益。",
+        "关注核心的增长循环（loop）而不是分散精力于无关紧要的事务。",
+        "短期的高回报可能伴随着高风险，长期来看，稳定的增长率更能确保财富积累。",
+        "识别并专注于可以带来复利增长的事物或项目。",
+        "不要被短期的噪音（noise）所干扰，坚持长期的复利增长策略。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "The main thing is to keep the main thing the main thing",
+          "context": "讨论如何在商业中保持专注，避免分散精力于无关紧要的事务。"
+        }
+      ],
+      "topicsCovered": [
+        "复利增长",
+        "投资策略",
+        "风险与回报",
+        "专注与核心增长",
+        "长期投资"
+      ]
+    }
+  }
+}
+```
