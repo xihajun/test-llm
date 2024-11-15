@@ -172,7 +172,7 @@ jobs:
           mkdir -p .github/workflows
           
           # 创建 convert2txt.py 脚本
-          cat > .github/workflows/convert2txt.py << 'EOL'
+          cat > convert2txt.py << 'EOL'
           import os
           from transformers import pipeline
           import logging
@@ -247,7 +247,7 @@ jobs:
                   sys.exit(1)
           EOL
 
-          chmod +x .github/workflows/convert2txt.py
+          chmod +x convert2txt.py
 
       - name: Process branches
         env:
@@ -290,7 +290,7 @@ jobs:
             fi
             
             # 运行转录脚本
-            if python3 .github/workflows/convert2txt.py; then
+            if python3 convert2txt.py; then
               if [[ -f transcript.srt && -f transcript.txt ]]; then
                 git add transcript.srt transcript.txt
                 if ! git diff --staged --quiet; then
