@@ -1,0 +1,45 @@
+```json
+{
+  "guest": {
+    "id": 1,
+    "name": "John Doe",
+    "role": "Autonomous Vehicle Expert",
+    "category": "tech",
+    "episodes": [
+      {
+        "title": "Exploring Autonomous Driving and Tesla's FSD | John Doe Interview",
+        "views": "",
+        "url": "",
+        "uploadTime": "3个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "In this interview, John Doe, an expert in autonomous driving technology, discusses the current state and future of self-driving vehicles, particularly focusing on Tesla's Full Self-Driving (FSD) capabilities. He critiques Tesla's approach to autonomous driving, highlighting the discrepancy between its marketing and actual capabilities, and the ethical and legal implications of its technology deployment. John also touches on the broader industry challenges in achieving true full autonomy and the potential societal impacts of autonomous vehicles.",
+      "keyInsights": [
+        "Tesla's current hardware and software are not capable of achieving Level 4 autonomy due to lacking redundancy systems required for full self-driving.",
+        "The naming of Tesla's FSD has led to misconceptions about the technology's capabilities, potentially causing safety issues.",
+        "The transition to fully autonomous vehicles involves not just technological advancements but also regulatory, ethical, and societal changes.",
+        "Autonomous vehicles could significantly alter urban planning, reducing the need for parking and potentially changing ownership models."
+      ],
+      "notableQuotes": [
+        {
+          "quote": "The biggest problem is the so-called corner case problem. How can your car solve situations where the training data is rarely seen?",
+          "context": "Discussing the challenges in training autonomous systems to handle rare or unexpected scenarios."
+        },
+        {
+          "quote": "I believe technology progress is not too fast but too slow, especially in autonomous driving.",
+          "context": "Expressing the view that advancements in autonomous driving are crucial and should be accelerated."
+        }
+      ],
+      "topicsCovered": [
+        "Autonomous driving technology",
+        "Tesla's FSD (Full Self-Driving) system",
+        "Ethics and responsibility in autonomous vehicles",
+        "Market impact of autonomous vehicles",
+        "Future of transportation and urban planning"
+      ]
+    }
+  }
+}
+```
