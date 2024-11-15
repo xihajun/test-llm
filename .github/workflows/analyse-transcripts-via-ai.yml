@@ -1,0 +1,211 @@
+name: Process Transcripts with AI
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: 'Number of branches to process in one batch'
+        required: false
+        default: '10'
+
+permissions:
+  contents: write
+
+jobs:
+  process-transcripts:
+    runs-on: runner
+    timeout-minutes: 360  # 6 hours
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set up Python environment
+        run: |
+          source /home/junfan/test/venv/bin/activate
+          pip install python-dotenv llm_dialog_manager
+
+      - name: Create .env file
+        run: |
+          # echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" > .env
+          # echo "ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}" >> .env
+          # echo "GROQ_API_KEY=${{ secrets.GROQ_API_KEY }}" >> .env
+          echo "XAI_API_KEY=${{ secrets.XAI_API_KEY }}" >> .env
+          cat .env  # Debug: print env file (without values)
+
+      - name: Create and verify process_transcripts.py
+        run: |
+          # Create directory if it doesn't exist
+          mkdir -p scripts
+          
+          # Create the Python script
+          cat > scripts/process_transcripts.py << 'EOL'
+          import os
+          import re
+          from llm_dialog_manager import Agent
+          import logging
+          from dotenv import load_dotenv
+
+          # Configure logging
+          logging.basicConfig(
+              level=logging.INFO,
+              format='%(asctime)s - %(levelname)s - %(message)s'
+          )
+
+          def clean_srt(srt_content):
+              """Remove timestamps and line numbers from SRT content."""
+              lines = srt_content.split('\n')
+              clean_lines = []
+              
+              for line in lines:
+                  # Skip empty lines, numbers, and timestamp lines
+                  if not line.strip() or line.strip().isdigit() or '-->' in line:
+                      continue
+                  # Add non-empty content lines
+                  if line.strip():
+                      clean_lines.append(line.strip())
+              
+              return ' '.join(clean_lines)
+
+          def process_transcript(srt_path):
+              """Process an SRT file and generate AI response."""
+              try:
+                  # Read SRT file
+                  with open(srt_path, 'r', encoding='utf-8') as f:
+                      srt_content = f.read()
+                  
+                  # Clean the content
+                  clean_content = clean_srt(srt_content)
+                  logging.info(f"Cleaned content length: {len(clean_content)} characters")
+                  
+                  # Initialize AI agent
+                  agent = Agent("grok-beta", memory_enabled=True)
+                  
+                  # Add system and user messages
+                  agent.add_message("system", "<TODO> reply something like json and with categrsoe, 嘉宾名字，多少人，之类的")
+                  agent.add_message("user", f"Here's the transcript: {clean_content}\n\nPlease provide:\n1. A brief summary\n2. Key points or insights\n3. Any notable quotes or important moments\n4. Overall analysis or recommendations")
+                  
+                  # Generate response
+                  response = agent.generate_response()
+                  
+                  # Get directory path for response file
+                  dir_path = os.path.dirname(srt_path)
+                  base_name = os.path.basename(os.path.dirname(srt_path))
+                  response_path = os.path.join(dir_path, f"response_{base_name}.txt")
+                  
+                  # Save response
+                  with open(response_path, 'w', encoding='utf-8') as f:
+                      f.write(response)
+                  
+                  logging.info(f"Successfully created response file: {response_path}")
+                  return response_path
+                  
+              except Exception as e:
+                  logging.error(f"Error processing {srt_path}: {str(e)}")
+                  return None
+
+          if __name__ == "__main__":
+              try:
+                  # Load environment variables
+                  load_dotenv()
+                  
+                  # Verify environment variables
+                  required_keys = ['XAI_API_KEY']
+                  for key in required_keys:
+                      if not os.getenv(key):
+                          logging.warning(f"Warning: {key} not found in environment variables")
+                  
+                  # Process current directory
+                  if os.path.exists('transcript.srt'):
+                      logging.info("Found transcript.srt in current directory")
+                      response_file = process_transcript('transcript.srt')
+                      
+                      if response_file:
+                          # Create status file for GitHub Actions
+                          with open('processed_files.txt', 'w', encoding='utf-8') as f:
+                              f.write(response_file)
+                          logging.info("Successfully completed processing")
+                          exit(0)
+                      else:
+                          logging.error("Failed to process transcript")
+                          exit(1)
+                  else:
+                      logging.error("No transcript.srt found in current directory")
+                      exit(1)
+                      
+              except Exception as e:
+                  logging.error(f"Fatal error: {str(e)}")
+                  exit(1)
+          EOL
+          
+          # Make the script executable
+          chmod +x scripts/process_transcripts.py
+          
+          # Verify the script exists and is readable
+          if [ -f scripts/process_transcripts.py ]; then
+            echo "Script created successfully"
+            ls -l scripts/process_transcripts.py
+          else
+            echo "Failed to create script"
+            exit 1
+          fi
+
+      - name: Find and process branches
+        run: |
+          # Configure git
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
+          
+          # Get all branches with transcript.srt
+          BRANCHES=$(git branch -r | grep 'origin/process-' | sed 's|origin/||')
+          
+          for branch in $BRANCHES; do
+            echo "Processing branch: $branch"
+            
+            # Checkout branch
+            if ! git checkout "$branch"; then
+              echo "Failed to checkout branch: $branch"
+              continue
+            fi
+            
+            git pull origin "$branch"
+            
+            # Check if branch has transcript.srt
+            if [ -f "transcript.srt" ]; then
+              echo "Found transcript.srt in $branch"
+              
+              # Process transcript
+              if python3 scripts/process_transcripts.py; then
+                # Check if response file was created
+                if [ -f "processed_files.txt" ]; then
+                  # Add and commit changes
+                  git add response_*.txt processed_files.txt
+                  if ! git diff --staged --quiet; then
+                    git commit -m "Add AI analysis for $branch"
+                    if git push origin "$branch"; then
+                      echo "Successfully processed and pushed changes for $branch"
+                    else
+                      echo "Failed to push changes for $branch"
+                    fi
+                  else
+                    echo "No changes to commit for $branch"
+                  fi
+                else
+                  echo "No response files generated for $branch"
+                fi
+              else
+                echo "Failed to process transcript for $branch"
+              fi
+            else
+              echo "No transcript.srt found in $branch"
+            fi
+          done
+
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -f .env
+          rm -rf scripts/
