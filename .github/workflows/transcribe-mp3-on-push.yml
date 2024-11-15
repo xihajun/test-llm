@@ -3,7 +3,7 @@ name: Transcribe MP3 on Push
 on:
   push:
     branches:
-      - 'process-*'  # Trigger only on branches that start with "process-"
+      - 'process-ban-*'  # Trigger only on branches that start with "process-"
 
 permissions:
   contents: write
