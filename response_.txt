@@ -1,0 +1,46 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "Nick",
+    "role": "Master Sommelier",
+    "category": "hobby",
+    "episodes": [
+      {
+        "title": "Exploring the World of Wine with Master Sommelier Nick",
+        "views": "",
+        "url": "",
+        "uploadTime": "3个月前"
+      }
+    ],
+    "totalViews": 0,
+    "analysis": {
+      "summary": "Nick, a Master Sommelier, discusses his journey in the wine industry, emphasizing his passion for unique and representative wines from around the world. He shares insights on how he selects wines, his personal motivations, and his approach to business, including his vision for educating others about wine and the behind-the-scenes work involved in his profession.",
+      "keyInsights": [
+        "Nick's selection process involves choosing wines that represent classic and unique styles from various regions globally.",
+        "His motivation stems from a love for the craft rather than competition, focusing on personal growth and exploration.",
+        "He views his wine collection not just as bottles but as a personal expression of creativity and a library of world wine history.",
+        "Nick aims to share his knowledge through educational content, potentially via video or audio platforms, to help others appreciate and understand wine better.",
+        "He believes in the democratization of wine knowledge, suggesting that sharing his methods and insights can help others in the industry."
+      ],
+      "notableQuotes": [
+        {
+          "quote": "My biggest supporter and biggest adversary is myself.",
+          "context": "Discussing the internal drive and personal standards he sets for his work in wine selection and education."
+        },
+        {
+          "quote": "It's not just having the tools, it's showing up every day and doing it rain or shine.",
+          "context": "Explaining the importance of hard work and dedication in the wine business beyond just having the knowledge."
+        }
+      ],
+      "topicsCovered": [
+        "Wine selection and curation",
+        "Personal motivation and passion in wine industry",
+        "Education and sharing wine knowledge",
+        "Business operations in wine",
+        "Unique wine regions and varieties"
+      ]
+    }
+  }
+}
+```
