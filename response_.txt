@@ -1,0 +1,45 @@
+```json
+{
+  "guest": {
+    "id": 8,
+    "name": "YZ",
+    "role": "Data Scientist",
+    "category": "tech",
+    "episodes": [
+      {
+        "title": "数据科学家在Facebook的工作价值与成长 | YZ访谈",
+        "views": "",
+        "url": "",
+        "uploadTime": "2个月前"
+      }
+    ],
+    "totalViews": "",
+    "analysis": {
+      "summary": "本期视频中，YZ分享了他在Facebook的数据科学家工作经验，重点讨论了为什么数据科学家在Facebook能够发挥重要作用。他从基础设施、文化、组织结构以及公司的业务模式四个方面进行了深入分析，指出这些因素如何促进数据科学家在Facebook的高效工作和职业成长。",
+      "keyInsights": [
+        "数据科学家在Facebook的价值不仅在于分析，还在于通过实验和数据教育来支持团队自主分析能力。",
+        "Facebook的数据文化强调'Mirrortocracy'，通过A-B Testing来验证产品的效果，避免追求不切实际的模型。",
+        "嵌入式和集中式的数据科学组织结构确保了数据科学家的独立性和专业性，同时增强了其在产品决策中的影响力。",
+        "Facebook的商业模式和大数据工具支持了数据科学家对大规模数据的实时分析，提升了分析效率。"
+      ],
+      "notableQuotes": [
+        {
+          "quote": "在Facebook，数据科学家的工作非常重要，无论是工作价值、存在感、影响力、话语权、主动性都非常强。",
+          "context": "描述数据科学家在Facebook的地位和重要性。"
+        },
+        {
+          "quote": "数据科学家在Facebook发挥的作用是一个结果，而不是一个原因。",
+          "context": "解释为什么数据科学家在Facebook如此重要。"
+        }
+      ],
+      "topicsCovered": [
+        "数据科学家的角色",
+        "A-B Testing的重要性",
+        "数据科学家的职业发展",
+        "Facebook的数据文化",
+        "数据科学家的工作环境和工具"
+      ]
+    }
+  }
+}
+```
